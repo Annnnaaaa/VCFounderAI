@@ -1,0 +1,19 @@
+# Render blueprint for the VC Brain data spine (Lane 1).
+# Render auto-detects this at the repo root. Secrets are NOT stored here —
+# sync:false means you set them once in the Render dashboard.
+services:
+  - type: web
+    name: vcbrain-spine
+    runtime: python
+    rootDir: spine
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.9"
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_KEY
+        sync: false
