@@ -1,31 +1,29 @@
 {
   "opportunity_id": "vectorforge",
   "sections": {
-    "company_snapshot": "VectorForge is a company operating in the AI infrastructure space, focusing on vector databases. The company has established traction with three enterprise design partners using its GPU vector engine in production, serving approximately 220 million vectors per day [claim:vf-c1]. The team is led by a CTO who is a recognized researcher in approximate nearest neighbor (ANN) search, maintaining a widely used open-source library [claim:vf-c2].",
+    "company_snapshot": "VectorForge is an AI infrastructure startup focused on providing a high-performance GPU vector engine. The company is currently working with three enterprise design partners and serves approximately 220 million vectors per day [claim:vf-c1].",
     "investment_hypotheses": [
-      "VectorForge is positioned to capitalize on the expanding market for vector databases, driven by the adoption of Retrieval-Augmented Generation (RAG) and the need for efficient inference-time retrieval [claim:vf-c3].",
-      "The company's traction with three design partners and significant vector serving capacity indicates strong product-market fit and potential for growth [claim:vf-c1].",
-      "The technical expertise of the founding team, particularly the CTO's contributions to the field, provides a competitive advantage in developing advanced vector database solutions [claim:vf-c2]."
+      "VectorForge's traction with enterprise design partners and significant vector serving capacity indicates strong product-market fit [claim:vf-c1].",
+      "The CTO's expertise and recognition in the field of approximate nearest-neighbor search provide a competitive advantage in developing cutting-edge vector database solutions [claim:vf-c2].",
+      "The expanding market for vector databases, driven by the adoption of retrieval-augmented generation (RAG), presents a significant growth opportunity for VectorForge [claim:vf-c3]."
     ],
     "swot": {
       "strengths": [
-        "Strong technical team with recognized expertise in ANN and vector search [claim:vf-c2].",
-        "Established traction with enterprise design partners and significant vector serving capacity [claim:vf-c1]."
+        "Strong technical team with recognized expertise in vector databases [claim:vf-c2].",
+        "Proven traction with enterprise design partners and growing query volume [claim:vf-c1]."
       ],
       "weaknesses": [
-        "Current revenue is limited to $18K MRR from two paid design partners, indicating early-stage monetization [claim:vf-c4]."
+        "Limited revenue with only $18K MRR from two paid partners [claim:vf-c4]."
       ],
       "opportunities": [
-        "Expanding TAM for vector databases with the adoption of RAG, presenting growth potential [claim:vf-c3].",
-        "Potential to convert additional pilots into paid contracts, increasing revenue [claim:vf-c4]."
+        "Expanding TAM for vector databases with the rise of RAG [claim:vf-c3]."
       ],
       "threats": [
-        "Competitive landscape in the vector database space could impact market share.",
-        "Dependence on a small number of design partners for current revenue."
+        "Potential competition from established vector database companies."
       ]
     },
-    "problem_product": "VectorForge addresses the bottleneck in inference-time retrieval for vector databases, a critical issue as the market expands with the adoption of Retrieval-Augmented Generation (RAG) [claim:vf-c3]. The company's GPU vector engine is designed to efficiently serve vectors, as evidenced by its traction with enterprise design partners [claim:vf-c1].",
-    "traction_kpis": "VectorForge reports serving approximately 220 million vectors per day with three design partners in production, and has experienced 3x quarter-over-quarter query growth [claim:vf-c1]. The company currently generates $18K MRR from two paid design partners, with plans to convert a third pilot into a paid contract next quarter [claim:vf-c4]."
+    "problem_product": "VectorForge addresses the bottleneck in inference-time retrieval for vector databases, a critical issue as retrieval-augmented generation becomes more prevalent [claim:vf-c3].",
+    "traction_kpis": "The company has three design partners in production, serves 220 million vectors daily, and reports a 3x quarter-over-quarter query growth [claim:vf-c1]."
   },
   "gap_flags": [
     "Cap table: not disclosed",
@@ -38,5 +36,5 @@
     "vf-c4"
   ],
   "recommendation": "invest",
-  "what_would_change_my_mind": "Disclosure of a comprehensive cap table and detailed financial projections."
+  "what_would_change_my_mind": "Disclosure of a detailed cap table and financial projections."
 }

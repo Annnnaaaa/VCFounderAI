@@ -1,0 +1,20 @@
+{
+  "opportunity_id": "117ddf0b-334e-4605-bae3-09845828c794",
+  "is_cold_start": true,
+  "founder_quality": {
+    "band": "low",
+    "interval": [
+      0.11,
+      0.48
+    ],
+    "signals_used": 1
+  },
+  "signals": [
+    {
+      "kind": "domain_insight",
+      "weight": 0.5,
+      "evidence_ref": "Nomadic \u2013 Minimize RAG Hallucinations with 1 Hyperparameter Experiment"
+    }
+  ],
+  "caveat": "The founder has a very limited public footprint, with only a single project indicating some domain insight."
+}

@@ -1,0 +1,24 @@
+{
+  "opportunity_id": "117ddf0b-334e-4605-bae3-09845828c794",
+  "claims": [
+    {
+      "claim_id": "bd9950de-2298-52f4-bf03-9e7639f9c2e1",
+      "opportunity_id": "117ddf0b-334e-4605-bae3-09845828c794",
+      "text": "Show HN launch reached 95 points with 19 comments",
+      "type": "traction",
+      "source": "hn",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://news.ycombinator.com/item?id=41459121",
+            "snippet": "Show HN: Nomadic \u2013 Minimize RAG Hallucinations with 1 Hyperparameter Experiment \u2014 95 points, 19 comments, by mustafabal.",
+            "source": "hn"
+          }
+        ],
+        "note": "The evidence directly supports the claim, showing the Show HN launch reached 95 points with 19 comments."
+      }
+    }
+  ]
+}

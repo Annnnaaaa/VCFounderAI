@@ -1,0 +1,79 @@
+{
+  "opportunity_id": "2db00f67-67d1-4aba-a75e-3f450129d1e7",
+  "claims": [
+    {
+      "claim_id": "d937b210-a2c4-5d4e-97df-850374edfd54",
+      "opportunity_id": "2db00f67-67d1-4aba-a75e-3f450129d1e7",
+      "text": "$30K MRR and growing 40% month over month",
+      "type": "revenue",
+      "source": "deck_slide_3",
+      "trust": {
+        "status": "contradicted",
+        "confidence": 0.9,
+        "evidence": [
+          {
+            "url": "https://agentstack.dev",
+            "snippet": "AgentStack \u2014 Docs, GitHub, Discord. No pricing or billing page present; no paid tier advertised.",
+            "source": "tavily"
+          },
+          {
+            "url": "https://github.com/marcusfeld/agentstack",
+            "snippet": "agentstack \u2014 created 21 days ago. 40 stars, 3 forks, 2 contributors.",
+            "source": "github"
+          }
+        ],
+        "note": "The claim of $30K MRR and 40% growth is contradicted by the lack of a pricing or billing page on the website (evidence 0) and the very recent creation of the GitHub repository with minimal activity (evidence 1). This suggests the traction claimed is implausible."
+      }
+    },
+    {
+      "claim_id": "8ee516ec-b18f-5bd8-8546-fcc9899217d5",
+      "opportunity_id": "2db00f67-67d1-4aba-a75e-3f450129d1e7",
+      "text": "Team of 4 ex-FAANG infrastructure engineers",
+      "type": "team",
+      "source": "deck_slide_1",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.8,
+        "evidence": [],
+        "note": "The evidence provided does not address the claim about the team composition of 4 ex-FAANG infrastructure engineers. The evidence is unrelated to the claim."
+      }
+    },
+    {
+      "claim_id": "9d83b524-ab64-59ee-9a81-5c7c354bf369",
+      "opportunity_id": "2db00f67-67d1-4aba-a75e-3f450129d1e7",
+      "text": "Used in production by 12 companies",
+      "type": "traction",
+      "source": "deck_slide_4",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.8,
+        "evidence": [],
+        "note": "None of the evidence items provide information about the number of companies using the product in production."
+      }
+    },
+    {
+      "claim_id": "d9b302f6-76e5-534d-aab5-4a6820531318",
+      "opportunity_id": "2db00f67-67d1-4aba-a75e-3f450129d1e7",
+      "text": "2,000 paying developers on the platform",
+      "type": "traction",
+      "source": "deck_slide_3",
+      "trust": {
+        "status": "contradicted",
+        "confidence": 0.9,
+        "evidence": [
+          {
+            "url": "https://github.com/marcusfeld/agentstack",
+            "snippet": "agentstack \u2014 created 21 days ago. 40 stars, 3 forks, 2 contributors.",
+            "source": "github"
+          },
+          {
+            "url": "https://agentstack.dev",
+            "snippet": "AgentStack \u2014 Docs, GitHub, Discord. No pricing or billing page present; no paid tier advertised.",
+            "source": "tavily"
+          }
+        ],
+        "note": "The GitHub repository is very new with minimal activity, and the website lacks any indication of a paid tier or billing, making the claim of 2,000 paying developers implausible."
+      }
+    }
+  ]
+}

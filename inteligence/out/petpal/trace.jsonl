@@ -1,2 +1,2 @@
-{"opportunity_id": "petpal", "step": "deck_extract", "detail": "Loaded 1 pre-attached claims from bundle (no deck vision needed)", "evidence_refs": ["pp-c1"], "ts": "2026-07-18T22:07:17.467478+00:00"}
-{"opportunity_id": "petpal", "step": "screen", "detail": "viable=False: The company focuses on consumer social for pet owners, which does not align with the pre-seed AI infrastructure thesis.", "evidence_refs": [], "ts": "2026-07-18T22:07:18.258028+00:00"}
+{"opportunity_id": "petpal", "step": "deck_extract", "detail": "Reused 1 claims already attached to the opportunity (no deck vision needed)", "evidence_refs": ["pp-c1"], "ts": "2026-07-19T04:46:29.707195+00:00"}
+{"opportunity_id": "petpal", "step": "screen", "detail": "viable=False: The opportunity is in the consumer social sector, which does not align with the fund's focus on AI infrastructure.", "evidence_refs": [], "ts": "2026-07-19T04:46:31.298696+00:00"}

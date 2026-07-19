@@ -1,0 +1,62 @@
+{
+  "opportunity_id": "cc3cae99-7b04-4dcc-9eac-c9ed053e2334",
+  "claims": [
+    {
+      "claim_id": "c0fb9434-f723-59a9-94ac-4c3b6985eec5",
+      "opportunity_id": "cc3cae99-7b04-4dcc-9eac-c9ed053e2334",
+      "text": "Actively maintained \u2014 last commit 15 days ago",
+      "type": "tech",
+      "source": "github",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://github.com/JuliusBrussee/caveman",
+            "snippet": "JuliusBrussee/caveman \u2014 \ud83e\udea8 why use many token when few token do trick \u2014 Claude Code skill that cuts 65% of tokens by talking like caveman. 90587 stars, 5135 forks, last push 2026-07-03T11:10:42Z.",
+            "source": "github"
+          }
+        ],
+        "note": "The last push date of 2026-07-03 is 16 days before today's date, which is consistent with the claim of a commit 15 days ago, considering time zone differences."
+      }
+    },
+    {
+      "claim_id": "ceff7917-ba85-5d13-8125-4a68965fe5da",
+      "opportunity_id": "cc3cae99-7b04-4dcc-9eac-c9ed053e2334",
+      "text": "2263 GitHub followers across 50 public repos",
+      "type": "team",
+      "source": "github",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://github.com/JuliusBrussee",
+            "snippet": "JuliusBrussee \u2014 Julius Brussee. 2263 followers, 50 public repos.",
+            "source": "github"
+          }
+        ],
+        "note": "The evidence directly supports the claim of having 2263 GitHub followers and 50 public repos."
+      }
+    },
+    {
+      "claim_id": "debd7448-729f-5b7b-b470-357219bccc3b",
+      "opportunity_id": "cc3cae99-7b04-4dcc-9eac-c9ed053e2334",
+      "text": "90587 GitHub stars on caveman",
+      "type": "traction",
+      "source": "github",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://github.com/JuliusBrussee/caveman",
+            "snippet": "JuliusBrussee/caveman \u2014 \ud83e\udea8 why use many token when few token do trick \u2014 Claude Code skill that cuts 65% of tokens by talking like caveman. 90587 stars, 5135 forks, last push 2026-07-03T11:10:42Z.",
+            "source": "github"
+          }
+        ],
+        "note": "The GitHub repository shows 90587 stars, which matches the claim."
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "opportunity_id": "a8de1d93-5a6f-4ddb-a904-db275d6b124e",
+  "is_cold_start": true,
+  "founder_quality": {
+    "band": "medium",
+    "interval": [
+      0.36,
+      0.64
+    ],
+    "signals_used": 2
+  },
+  "signals": [
+    {
+      "kind": "oss",
+      "weight": 0.6,
+      "evidence_ref": "https://github.com/jasonlee-datanexus/DataNexusTools"
+    },
+    {
+      "kind": "domain_insight",
+      "weight": 0.4,
+      "evidence_ref": "claim_id:Jason has a background in data management and has worked with small businesses to improve their data handling processes."
+    }
+  ],
+  "caveat": "The assessment is based on limited public information and contributions, primarily from open-source work and claimed domain expertise."
+}

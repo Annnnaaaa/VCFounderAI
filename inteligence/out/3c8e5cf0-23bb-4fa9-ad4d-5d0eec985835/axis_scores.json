@@ -1,0 +1,26 @@
+{
+  "opportunity_id": "3c8e5cf0-23bb-4fa9-ad4d-5d0eec985835",
+  "axes": {
+    "founder": {
+      "score": 85,
+      "trend": "up",
+      "rationale": "Affaan Mustafa has demonstrated strong technical capabilities and community engagement, as evidenced by the high number of GitHub stars (230973) and followers (8506) across multiple repositories. The project is actively maintained, indicating a commitment to development and improvement.",
+      "evidence_refs": [
+        "a8cf87ad-c3c3-5cec-bf7a-fd61fa4ec558",
+        "db8a390d-c9b7-5439-b18d-3d3cb15b1f11",
+        "01826965-db42-52d8-98e7-a0f32b6b18b7",
+        "dd3219c8-58dd-5777-b87c-7a648db717b8"
+      ]
+    },
+    "market": {
+      "rating": "bull",
+      "rationale": "The AI infrastructure market, particularly in performance optimization for AI agents, is experiencing significant growth. With the increasing adoption of AI technologies, there is a strong demand for tools that enhance performance and efficiency, making this a promising market.",
+      "evidence_refs": []
+    },
+    "idea_vs_market": {
+      "verdict": "survives",
+      "rationale": "The idea of a performance optimization system for AI agents aligns well with current market needs. As AI models become more complex, the demand for optimization tools is expected to grow, supporting the viability of ECC in the market.",
+      "evidence_refs": []
+    }
+  }
+}

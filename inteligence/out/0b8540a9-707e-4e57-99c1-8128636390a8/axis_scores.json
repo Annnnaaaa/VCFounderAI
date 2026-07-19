@@ -1,0 +1,23 @@
+{
+  "opportunity_id": "0b8540a9-707e-4e57-99c1-8128636390a8",
+  "axes": {
+    "founder": {
+      "score": 50,
+      "trend": "flat",
+      "rationale": "The founder's score remains at 50 due to lack of new verified information. The unverified revenue claim does not contribute positively to the score.",
+      "evidence_refs": []
+    },
+    "market": {
+      "rating": "neutral",
+      "rationale": "Without specific information about the company's focus or industry, a neutral stance is taken on the market. The AI infrastructure space is generally promising, but specifics are needed for a more accurate assessment.",
+      "evidence_refs": []
+    },
+    "idea_vs_market": {
+      "verdict": "needs_pivot",
+      "rationale": "Without a clear understanding of the company's product or service, it's difficult to determine if the idea aligns with market needs. The unverified revenue claim suggests potential, but lacks sufficient evidence to confirm market fit.",
+      "evidence_refs": [
+        "ad37482c-da47-4bbb-af41-6187a034310b"
+      ]
+    }
+  }
+}

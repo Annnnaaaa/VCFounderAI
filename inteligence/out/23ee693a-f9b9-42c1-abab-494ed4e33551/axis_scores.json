@@ -1,0 +1,28 @@
+{
+  "opportunity_id": "23ee693a-f9b9-42c1-abab-494ed4e33551",
+  "axes": {
+    "founder": {
+      "score": 90,
+      "trend": "up",
+      "rationale": "Sebastian Raschka has a strong presence in the AI and machine learning community, as evidenced by his significant GitHub following and the high number of stars on his project. His active maintenance of the project further demonstrates commitment and capability.",
+      "evidence_refs": [
+        "795676cc-0115-5baf-ab48-7d8d257312c7",
+        "1728fdcd-f383-514c-b54c-a70d160c29cb",
+        "847de1ac-ddc8-5ebe-88c0-34953b533267"
+      ]
+    },
+    "market": {
+      "rating": "bull",
+      "rationale": "The market for large language models (LLMs) and AI infrastructure is rapidly growing, with increasing demand for customizable and open-source solutions. This trend is supported by the widespread adoption of AI technologies across various industries.",
+      "evidence_refs": []
+    },
+    "idea_vs_market": {
+      "verdict": "survives",
+      "rationale": "The idea of implementing a ChatGPT-like LLM from scratch in PyTorch aligns well with current market trends towards open-source AI development and education. The project's traction and active maintenance suggest it meets a real need in the market.",
+      "evidence_refs": [
+        "1728fdcd-f383-514c-b54c-a70d160c29cb",
+        "847de1ac-ddc8-5ebe-88c0-34953b533267"
+      ]
+    }
+  }
+}

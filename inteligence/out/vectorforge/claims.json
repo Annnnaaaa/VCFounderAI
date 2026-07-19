@@ -17,7 +17,7 @@
             "source": "tavily"
           }
         ],
-        "note": "Evidence [0] confirms the claim of having three design partners in production and serving approximately 200M vectors per day, which aligns closely with the claim of 220M vectors served/day. The evidence does not directly address the 3x QoQ query growth, but the corroboration of the other elements increases confidence in the overall traction claim."
+        "note": "Evidence [0] confirms the claim of having three design partners in production and serving approximately 200M vectors per day, which is close to the claimed 220M. The evidence does not directly address the 3x QoQ query growth, but the corroboration of the other elements increases confidence in the overall claim."
       }
     },
     {
@@ -41,7 +41,7 @@
             "source": "tavily"
           }
         ],
-        "note": "The evidence supports the claim: the GitHub repository shows the CTO as the primary maintainer of a widely used library, and the author profile indicates recognition in ANN research."
+        "note": "The evidence supports the claim: the GitHub repository shows the CTO as the primary maintainer of a widely used library (6,100 stars), and the author profile indicates recognition in the field with 410 citations."
       }
     },
     {
@@ -71,7 +71,7 @@
       "source": "deck_slide_5",
       "trust": {
         "status": "corroborated",
-        "confidence": 0.8,
+        "confidence": 0.9,
         "evidence": [
           {
             "url": "https://techcrunch.com/vectorforge-design-partners",
@@ -79,7 +79,7 @@
             "source": "tavily"
           }
         ],
-        "note": "The evidence supports the claim that there are two paid design partners and a third pilot, aligning with the claim's description of revenue sources."
+        "note": "The evidence supports the claim that there are two paid design partners and a third pilot, aligning with the claim of $18K MRR from these partners."
       }
     }
   ]

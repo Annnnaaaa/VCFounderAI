@@ -1,0 +1,23 @@
+{
+  "opportunity_id": "c31c7aac-a6ac-4d36-a851-d8a84365ca68",
+  "axes": {
+    "founder": {
+      "score": 60,
+      "trend": "up",
+      "rationale": "The founder has successfully launched a product that gained significant attention on Hacker News, as evidenced by the high number of points and comments. This indicates a level of competence in generating interest and potentially in product development. However, there is no prior track record or public presence to further assess the founder's capabilities.",
+      "evidence_refs": [
+        "805abfdc-f793-57da-bcd6-df4042cc832c"
+      ]
+    },
+    "market": {
+      "rating": "bull",
+      "rationale": "The market for real-time AI video agents is growing, driven by increasing demand for interactive and responsive AI applications across various sectors such as customer service, gaming, and virtual events. The ability to deliver under 1 second of latency is a significant technical advantage in this space.",
+      "evidence_refs": []
+    },
+    "idea_vs_market": {
+      "verdict": "survives",
+      "rationale": "The idea of a real-time AI video agent with under 1 second of latency aligns well with current market demands for low-latency, high-performance AI solutions. This technical capability is crucial for applications requiring immediate interaction, suggesting the idea is well-suited to the market.",
+      "evidence_refs": []
+    }
+  }
+}

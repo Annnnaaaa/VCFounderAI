@@ -1,0 +1,43 @@
+{
+  "opportunity_id": "232b78a3-cc40-4fbd-b9b7-970975ada49c",
+  "claims": [
+    {
+      "claim_id": "bd6ae710-7770-5cef-8184-c03c9ac4b61b",
+      "opportunity_id": "232b78a3-cc40-4fbd-b9b7-970975ada49c",
+      "text": "Show HN launch reached 58 points with 28 comments",
+      "type": "traction",
+      "source": "hn",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://news.ycombinator.com/item?id=43292058",
+            "snippet": "Show HN: A big tech dev experience for an open source CMS \u2014 58 points, 28 comments, by randall.",
+            "source": "hn"
+          }
+        ],
+        "note": "The evidence directly supports the claim by showing the exact points and comments mentioned."
+      }
+    },
+    {
+      "claim_id": "f22bc34c-0419-5739-8f7a-1d2d7d0181ae",
+      "opportunity_id": "232b78a3-cc40-4fbd-b9b7-970975ada49c",
+      "text": "Shipped a public product at https://contentfoundry.com/",
+      "type": "tech",
+      "source": "hn",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 0.8,
+        "evidence": [
+          {
+            "url": "https://contentfoundry.com/",
+            "snippet": "Product link submitted with the Show HN post: A big tech dev experience for an open source CMS",
+            "source": "hn"
+          }
+        ],
+        "note": "The evidence shows a link to the product, indicating it is publicly accessible, which supports the claim of having shipped a public product."
+      }
+    }
+  ]
+}

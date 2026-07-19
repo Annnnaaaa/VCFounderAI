@@ -11,14 +11,14 @@
     },
     "market": {
       "rating": "bull",
-      "rationale": "The market for multi-agent orchestration is emerging and has been corroborated as having many entrants, indicating a growing interest and potential for innovation in this space.",
+      "rationale": "The market for multi-agent orchestration is emerging and gaining traction, as evidenced by corroborated claims of many entrants in the space. This suggests a growing interest and potential for innovation and adoption.",
       "evidence_refs": [
         "as-c4"
       ]
     },
     "idea_vs_market": {
       "verdict": "needs_pivot",
-      "rationale": "The idea of supporting parallel tool-calling agents with sub-second scheduling is unverified, and the traction claims are also unverified. Given the contradiction in revenue claims, the current idea may not be sustainable without further validation and adjustments to align with market needs.",
+      "rationale": "The idea of an agent runtime supporting parallel tool-calling agents with sub-second scheduling is intriguing but lacks verified traction or technical validation. The contradicted revenue claim further suggests that the current approach may not be resonating with the market as expected.",
       "evidence_refs": [
         "as-c1",
         "as-c2",

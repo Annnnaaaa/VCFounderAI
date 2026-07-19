@@ -1,0 +1,25 @@
+{
+  "opportunity_id": "f22b0bcd-0fc7-43af-baf9-3bdcb1c452d8",
+  "is_cold_start": true,
+  "founder_quality": {
+    "band": "low",
+    "interval": [
+      0.16,
+      0.43
+    ],
+    "signals_used": 2
+  },
+  "signals": [
+    {
+      "kind": "side_project",
+      "weight": 0.4,
+      "evidence_ref": "Cactus \u2013 Ollama for Smartphones"
+    },
+    {
+      "kind": "domain_insight",
+      "weight": 0.3,
+      "evidence_ref": "Cactus \u2013 Ollama for Smartphones"
+    }
+  ],
+  "caveat": "The assessment is based on limited information available about the founder and their project."
+}

@@ -1,0 +1,27 @@
+{
+  "opportunity_id": "eb5c3f1a-5ecd-42ce-b500-2e21fd1dae07",
+  "axes": {
+    "founder": {
+      "score": 75,
+      "trend": "up",
+      "rationale": "Alex Newman has demonstrated significant technical capability and community engagement, as evidenced by the high number of GitHub stars (87,763) on the claude-mem project and a substantial following (1,830 followers) across numerous public repositories (121 repos). This indicates a strong technical foundation and the ability to attract and maintain interest in their work.",
+      "evidence_refs": [
+        "45e94260-4821-5939-be00-a27d296030a2",
+        "5f329b8d-b5d5-5d52-88d4-e8bace4fd14d"
+      ]
+    },
+    "market": {
+      "rating": "bull",
+      "rationale": "The market for AI infrastructure, particularly tools that enhance the functionality and usability of AI agents across sessions, is growing rapidly. The integration with major AI platforms like Claude Code, OpenClaw, Codex, and others suggests a strong demand for solutions that improve persistent context management, which is a critical need in AI development.",
+      "evidence_refs": []
+    },
+    "idea_vs_market": {
+      "verdict": "survives",
+      "rationale": "The idea of providing persistent context across sessions for AI agents is well-aligned with current market needs. As AI applications become more complex and integrated into various workflows, the ability to maintain context across sessions is increasingly valuable. The existing traction and active maintenance of the project further support its viability in the market.",
+      "evidence_refs": [
+        "45e94260-4821-5939-be00-a27d296030a2",
+        "a2e7a580-685f-5383-a2e4-e49fe072b13f"
+      ]
+    }
+  }
+}

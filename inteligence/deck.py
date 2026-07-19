@@ -28,16 +28,44 @@ SCREEN_SYSTEM = (
 )
 
 
-def _render_pdf(path: Path) -> List[bytes]:
+class UnreadableDeck(Exception):
+    """The deck exists but can't be rendered (truncated, stub, or not a PDF).
+
+    Raised rather than swallowed so the pipeline records WHY it has no deck
+    claims instead of silently producing an evidence-free memo."""
+
+
+def _render_pdf_bytes(data: bytes) -> List[bytes]:
     import fitz  # PyMuPDF
 
-    doc = fitz.open(path)
+    try:
+        doc = fitz.open(stream=data, filetype="pdf")
+    except Exception as e:  # noqa: BLE001
+        raise UnreadableDeck(
+            f"not a readable PDF ({len(data)} bytes): {e}"
+        ) from e
     images: List[bytes] = []
     for page in doc:
         pix = page.get_pixmap(dpi=150)
         images.append(pix.tobytes("png"))
     doc.close()
+    if not images:
+        raise UnreadableDeck("PDF opened but contains zero pages")
     return images
+
+
+def _render_pdf(path: Path) -> List[bytes]:
+    return _render_pdf_bytes(path.read_bytes())
+
+
+def render_deck_url(deck_url: str) -> List[bytes]:
+    """Decks live in Supabase storage on the live Spine — fetch then render."""
+    import spine
+
+    data = spine.fetch_deck(deck_url)
+    if deck_url.lower().split("?")[0].endswith(".pdf") or data[:4] == b"%PDF":
+        return _render_pdf_bytes(data)
+    return [data]  # assume an image otherwise
 
 
 def _render_images(paths: List[Path]) -> List[bytes]:
@@ -60,12 +88,12 @@ def render_deck(deck_path: str) -> List[bytes]:
 
 
 def extract_from_deck(
-    opportunity_id: str, deck_path: str
+    opportunity_id: str, deck_path: str | None = None, deck_url: str | None = None
 ) -> Tuple[DeckExtraction, List[Claim]]:
-    """Vision extraction from an actual deck file."""
+    """Vision extraction from a deck file path OR a remote deck URL."""
     from llm import structured  # lazy import so mock paths need no OpenAI key
 
-    images = render_deck(deck_path)
+    images = render_deck_url(deck_url) if deck_url else render_deck(deck_path)
     ex = structured(
         DeckExtraction,
         SCREEN_SYSTEM,

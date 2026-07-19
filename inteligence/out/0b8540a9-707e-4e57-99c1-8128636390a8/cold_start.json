@@ -1,0 +1,25 @@
+{
+  "opportunity_id": "0b8540a9-707e-4e57-99c1-8128636390a8",
+  "is_cold_start": true,
+  "founder_quality": {
+    "band": "low",
+    "interval": [
+      0.16,
+      0.43
+    ],
+    "signals_used": 2
+  },
+  "signals": [
+    {
+      "kind": "oss",
+      "weight": 0.3,
+      "evidence_ref": "github:testfounder0bd621"
+    },
+    {
+      "kind": "side_project",
+      "weight": 0.2,
+      "evidence_ref": "claim_id:side_project_001"
+    }
+  ],
+  "caveat": "The founder has a GitHub presence, indicating some involvement in open source projects, which is a positive signal. However, without more detailed information on the nature and impact of these contributions, the weight is limited. Additionally, there is a mention of a side project, but without specifics, it is difficult to assess its significance. Overall, the evidence is thin and does not strongly indicate high founder quality."
+}

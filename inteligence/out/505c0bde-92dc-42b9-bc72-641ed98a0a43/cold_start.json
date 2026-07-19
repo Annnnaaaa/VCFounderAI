@@ -1,0 +1,25 @@
+{
+  "opportunity_id": "505c0bde-92dc-42b9-bc72-641ed98a0a43",
+  "is_cold_start": true,
+  "founder_quality": {
+    "band": "medium",
+    "interval": [
+      0.36,
+      0.64
+    ],
+    "signals_used": 2
+  },
+  "signals": [
+    {
+      "kind": "side_project",
+      "weight": 0.4,
+      "evidence_ref": "Smart model routing directly in Claude, Codex and Cursor indicates a side project or initiative that suggests technical engagement and innovation."
+    },
+    {
+      "kind": "domain_insight",
+      "weight": 0.3,
+      "evidence_ref": "The focus on model routing in AI tools like Claude, Codex, and Cursor suggests some level of domain insight into AI and machine learning."
+    }
+  ],
+  "caveat": "The founder has a thin track record with limited public information, making the assessment uncertain."
+}

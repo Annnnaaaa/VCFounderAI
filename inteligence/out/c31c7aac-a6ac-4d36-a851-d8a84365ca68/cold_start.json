@@ -1,0 +1,25 @@
+{
+  "opportunity_id": "c31c7aac-a6ac-4d36-a851-d8a84365ca68",
+  "is_cold_start": true,
+  "founder_quality": {
+    "band": "low",
+    "interval": [
+      0.11,
+      0.39
+    ],
+    "signals_used": 2
+  },
+  "signals": [
+    {
+      "kind": "side_project",
+      "weight": 0.3,
+      "evidence_ref": "claim_id:real_time_ai_video_agent_project"
+    },
+    {
+      "kind": "domain_insight",
+      "weight": 0.2,
+      "evidence_ref": "claim_id:under_1_second_latency_claim"
+    }
+  ],
+  "caveat": "The founder has no public handles or prior track record, and the evidence is based on claims about a project with no external validation."
+}

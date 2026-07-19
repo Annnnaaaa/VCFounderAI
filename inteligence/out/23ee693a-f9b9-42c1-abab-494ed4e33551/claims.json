@@ -1,0 +1,62 @@
+{
+  "opportunity_id": "23ee693a-f9b9-42c1-abab-494ed4e33551",
+  "claims": [
+    {
+      "claim_id": "795676cc-0115-5baf-ab48-7d8d257312c7",
+      "opportunity_id": "23ee693a-f9b9-42c1-abab-494ed4e33551",
+      "text": "38957 GitHub followers across 150 public repos",
+      "type": "team",
+      "source": "github",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://github.com/rasbt",
+            "snippet": "rasbt \u2014 Sebastian Raschka. 38957 followers, 150 public repos. AI Research Engineer working on LLMs.",
+            "source": "github"
+          }
+        ],
+        "note": "The evidence directly supports the claim, showing 38957 followers and 150 public repos on GitHub."
+      }
+    },
+    {
+      "claim_id": "1728fdcd-f383-514c-b54c-a70d160c29cb",
+      "opportunity_id": "23ee693a-f9b9-42c1-abab-494ed4e33551",
+      "text": "99331 GitHub stars on LLMs-from-scratch",
+      "type": "traction",
+      "source": "github",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://github.com/rasbt/LLMs-from-scratch",
+            "snippet": "rasbt/LLMs-from-scratch \u2014 Implement a ChatGPT-like LLM in PyTorch from scratch, step by step. 99331 stars, 15244 forks, last push 2026-07-11T20:45:39Z.",
+            "source": "github"
+          }
+        ],
+        "note": "The GitHub repository shows 99331 stars, which matches the claim exactly."
+      }
+    },
+    {
+      "claim_id": "847de1ac-ddc8-5ebe-88c0-34953b533267",
+      "opportunity_id": "23ee693a-f9b9-42c1-abab-494ed4e33551",
+      "text": "Actively maintained \u2014 last commit 7 days ago",
+      "type": "tech",
+      "source": "github",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://github.com/rasbt/LLMs-from-scratch",
+            "snippet": "rasbt/LLMs-from-scratch \u2014 Implement a ChatGPT-like LLM in PyTorch from scratch, step by step. 99331 stars, 15244 forks, last push 2026-07-11T20:45:39Z.",
+            "source": "github"
+          }
+        ],
+        "note": "The last push date of 2026-07-11 is 8 days before today's date, which supports the claim of being actively maintained with a recent commit."
+      }
+    }
+  ]
+}

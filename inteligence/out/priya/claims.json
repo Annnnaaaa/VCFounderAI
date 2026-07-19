@@ -9,9 +9,9 @@
       "source": "deck_slide_2",
       "trust": {
         "status": "unverified",
-        "confidence": 0.6,
+        "confidence": 0.7,
         "evidence": [],
-        "note": "The evidence provides information about the GitHub repository but does not specifically address whether the prototype reuses KV-cache across sessions to cut local inference latency."
+        "note": "The evidence does not specifically address whether the prototype reuses KV-cache across sessions to cut local inference latency. The GitHub repository provides general information about the project but does not confirm or deny the specific claim about KV-cache reuse."
       }
     },
     {

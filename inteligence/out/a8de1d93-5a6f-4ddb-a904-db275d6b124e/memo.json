@@ -1,0 +1,38 @@
+{
+  "opportunity_id": "a8de1d93-5a6f-4ddb-a904-db275d6b124e",
+  "sections": {
+    "company_snapshot": "The company is developing simple vector data tools aimed at small and medium-sized enterprises (SMEs). The team consists of three part-time members [claim:c6878d80-87df-55f7-88de-907bb3c7861e].",
+    "investment_hypotheses": [
+      "The company is addressing a sizable market need by targeting SMEs with accessible data tooling solutions [claim:d5d0b57d-7709-5ef6-b190-78ea7dc0dfb4].",
+      "The completion of a prototype, which is currently in the user testing phase, indicates progress towards product-market fit [claim:f599f952-049a-5d0c-afee-2cbea36082b8]."
+    ],
+    "swot": {
+      "strengths": [
+        "The product aligns well with the needs of SMEs seeking simple data solutions [claim:d5d0b57d-7709-5ef6-b190-78ea7dc0dfb4]."
+      ],
+      "weaknesses": [
+        "The team is small and only working part-time, which may limit development speed and scalability [claim:c6878d80-87df-55f7-88de-907bb3c7861e]."
+      ],
+      "opportunities": [
+        "The $500 million market for data tooling for SMEs presents a significant opportunity if the company can capture even a small share [claim:d5d0b57d-7709-5ef6-b190-78ea7dc0dfb4]."
+      ],
+      "threats": [
+        "The lack of verified traction and team capacity could hinder growth and investor confidence [claim:708bd520-1a6a-5aa8-a14c-2950e5302d87, claim:c6878d80-87df-55f7-88de-907bb3c7861e]."
+      ]
+    },
+    "problem_product": "The company aims to solve the problem of complex data tools that are not accessible to SMEs by providing simple vector data tools. The prototype is reportedly completed and in user testing, although this claim is unverified [claim:f599f952-049a-5d0c-afee-2cbea36082b8].",
+    "traction_kpis": "The company claims to have over 150 GitHub stars on its initial open-source project, but this is unverified [claim:708bd520-1a6a-5aa8-a14c-2950e5302d87]."
+  },
+  "gap_flags": [
+    "Cap table: not disclosed",
+    "Financials: pre-revenue, none"
+  ],
+  "claim_refs": [
+    "c6878d80-87df-55f7-88de-907bb3c7861e",
+    "d5d0b57d-7709-5ef6-b190-78ea7dc0dfb4",
+    "f599f952-049a-5d0c-afee-2cbea36082b8",
+    "708bd520-1a6a-5aa8-a14c-2950e5302d87"
+  ],
+  "recommendation": "pass",
+  "what_would_change_my_mind": "Verification of traction and team capacity."
+}

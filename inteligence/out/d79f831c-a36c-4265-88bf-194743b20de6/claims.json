@@ -1,0 +1,18 @@
+{
+  "opportunity_id": "d79f831c-a36c-4265-88bf-194743b20de6",
+  "claims": [
+    {
+      "claim_id": "1b13e04a-67a6-4af2-953b-7ca84c7a01aa",
+      "opportunity_id": "d79f831c-a36c-4265-88bf-194743b20de6",
+      "text": "probe with trust",
+      "type": "tech",
+      "source": "deck_slide_1",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.5,
+        "evidence": [],
+        "note": "There is no external evidence provided to verify or contradict the claim."
+      }
+    }
+  ]
+}

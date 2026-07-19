@@ -1,0 +1,25 @@
+{
+  "opportunity_id": "8c905734-f012-4a64-b676-f64363316d45",
+  "is_cold_start": true,
+  "founder_quality": {
+    "band": "low",
+    "interval": [
+      0.11,
+      0.39
+    ],
+    "signals_used": 2
+  },
+  "signals": [
+    {
+      "kind": "side_project",
+      "weight": 0.3,
+      "evidence_ref": "Tantris is working on a project involving LLM-powered NPCs running on personal hardware, which indicates initiative and technical interest."
+    },
+    {
+      "kind": "domain_insight",
+      "weight": 0.2,
+      "evidence_ref": "The project suggests some understanding of both LLM technology and gaming, which are relevant domains."
+    }
+  ],
+  "caveat": "The founder has no public handles or prior track record, making it difficult to assess their capabilities beyond the current project description."
+}

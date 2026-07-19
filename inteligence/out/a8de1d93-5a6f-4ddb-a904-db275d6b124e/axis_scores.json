@@ -1,0 +1,28 @@
+{
+  "opportunity_id": "a8de1d93-5a6f-4ddb-a904-db275d6b124e",
+  "axes": {
+    "founder": {
+      "score": 40,
+      "trend": "flat",
+      "rationale": "Jason Lee has no prior track record on file, and the current claims about the team and traction are unverified. The small team size and part-time commitment suggest limited capacity for rapid development and scaling.",
+      "evidence_refs": [
+        "c6878d80-87df-55f7-88de-907bb3c7861e",
+        "708bd520-1a6a-5aa8-a14c-2950e5302d87"
+      ]
+    },
+    "market": {
+      "rating": "neutral",
+      "rationale": "The market for data tooling for SMEs is sizable at $500 million, but the claim is unverified. The market's potential is acknowledged, but without evidence, it's difficult to be bullish.",
+      "evidence_refs": [
+        "d5d0b57d-7709-5ef6-b190-78ea7dc0dfb4"
+      ]
+    },
+    "idea_vs_market": {
+      "verdict": "survives",
+      "rationale": "The idea of providing simple vector data tools for small businesses is aligned with the needs of SMEs looking for accessible data solutions. The completion of a prototype, even if unverified, suggests some progress towards market fit.",
+      "evidence_refs": [
+        "f599f952-049a-5d0c-afee-2cbea36082b8"
+      ]
+    }
+  }
+}

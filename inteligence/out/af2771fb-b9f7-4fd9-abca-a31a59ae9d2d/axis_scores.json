@@ -1,0 +1,28 @@
+{
+  "opportunity_id": "af2771fb-b9f7-4fd9-abca-a31a59ae9d2d",
+  "axes": {
+    "founder": {
+      "score": 40,
+      "trend": "flat",
+      "rationale": "Sara Patel has no prior track record on file, and the current claims about traction and team are unverified. The team is small and part-time, which may limit execution capacity.",
+      "evidence_refs": [
+        "6281e8c4-30a5-5c0d-8861-abc954f2df36",
+        "2882a51a-02ec-5a4c-a455-e69ec6dcf754"
+      ]
+    },
+    "market": {
+      "rating": "neutral",
+      "rationale": "The AI inference solutions market is sizable at $400 million, but the claim is unverified. The market is competitive, with many players offering similar solutions, which could pose challenges for a new entrant.",
+      "evidence_refs": [
+        "3c8ce56e-a546-5a4a-9650-16aa550a916f"
+      ]
+    },
+    "idea_vs_market": {
+      "verdict": "needs_pivot",
+      "rationale": "The idea of providing lightweight inference solutions is interesting, but the unverified claim of implementation in 5 startups and the competitive nature of the market suggest that the current approach may need refinement or differentiation to succeed.",
+      "evidence_refs": [
+        "3cd84fe9-5224-5b0e-bf80-27c8689723c3"
+      ]
+    }
+  }
+}

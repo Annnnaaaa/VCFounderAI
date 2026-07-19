@@ -1,0 +1,43 @@
+{
+  "opportunity_id": "505c0bde-92dc-42b9-bc72-641ed98a0a43",
+  "claims": [
+    {
+      "claim_id": "d8db5cfd-946c-50fb-a317-48c2b7133f2a",
+      "opportunity_id": "505c0bde-92dc-42b9-bc72-641ed98a0a43",
+      "text": "Show HN launch reached 216 points with 113 comments",
+      "type": "traction",
+      "source": "hn",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://news.ycombinator.com/item?id=48688700",
+            "snippet": "Show HN: Smart model routing directly in Claude, Codex and Cursor \u2014 216 points, 113 comments, by adchurch.",
+            "source": "hn"
+          }
+        ],
+        "note": "The evidence directly supports the claim with the same points and comments count."
+      }
+    },
+    {
+      "claim_id": "f4d79c41-fcc0-5382-8449-0c65f23451a1",
+      "opportunity_id": "505c0bde-92dc-42b9-bc72-641ed98a0a43",
+      "text": "Shipped a public product at https://github.com/workweave/router",
+      "type": "tech",
+      "source": "hn",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 0.9,
+        "evidence": [
+          {
+            "url": "https://github.com/workweave/router",
+            "snippet": "Product link submitted with the Show HN post: Smart model routing directly in Claude, Codex and Cursor",
+            "source": "hn"
+          }
+        ],
+        "note": "The evidence shows a GitHub link to the product, which supports the claim that a public product was shipped at the specified URL."
+      }
+    }
+  ]
+}

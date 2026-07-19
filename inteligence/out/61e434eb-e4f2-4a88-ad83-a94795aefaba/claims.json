@@ -1,0 +1,62 @@
+{
+  "opportunity_id": "61e434eb-e4f2-4a88-ad83-a94795aefaba",
+  "claims": [
+    {
+      "claim_id": "39102606-e494-5286-b81a-0c97dc564c4c",
+      "opportunity_id": "61e434eb-e4f2-4a88-ad83-a94795aefaba",
+      "text": "47658 GitHub stars on LocalAI",
+      "type": "traction",
+      "source": "github",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://github.com/mudler/LocalAI",
+            "snippet": "mudler/LocalAI \u2014 LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.. 47658 stars, 4256 forks, last push 2026-07-19T03:42:17Z.",
+            "source": "github"
+          }
+        ],
+        "note": "The GitHub repository for LocalAI shows 47658 stars, which matches the claim."
+      }
+    },
+    {
+      "claim_id": "b0545b7e-ff57-5f67-8ffa-1fb98437abd0",
+      "opportunity_id": "61e434eb-e4f2-4a88-ad83-a94795aefaba",
+      "text": "Actively maintained \u2014 last commit 0 days ago",
+      "type": "tech",
+      "source": "github",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://github.com/mudler/LocalAI",
+            "snippet": "mudler/LocalAI \u2014 LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.. 47658 stars, 4256 forks, last push 2026-07-19T03:42:17Z.",
+            "source": "github"
+          }
+        ],
+        "note": "The evidence shows the last push was on 2026-07-19, which corroborates the claim that the last commit was 0 days ago."
+      }
+    },
+    {
+      "claim_id": "a3463490-b84c-552c-82a2-1f116b082f6a",
+      "opportunity_id": "61e434eb-e4f2-4a88-ad83-a94795aefaba",
+      "text": "2376 GitHub followers across 304 public repos",
+      "type": "team",
+      "source": "github",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://github.com/mudler",
+            "snippet": "mudler \u2014 Ettore Di Giacinto. 2376 followers, 304 public repos. Local AI is the way.\r\n\r\nex-SUSE/Rancher, ex-gentoo, ex-Sabayon, @mocaccinoOS",
+            "source": "github"
+          }
+        ],
+        "note": "The evidence directly supports the claim, showing 2376 followers and 304 public repos on the GitHub profile."
+      }
+    }
+  ]
+}

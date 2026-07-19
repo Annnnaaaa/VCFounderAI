@@ -13,9 +13,14 @@ survives/needs_pivot.
 """
 from __future__ import annotations
 
+from datetime import datetime, timezone
 from typing import Dict, List
 
 from llm import structured
+
+
+def _today() -> str:
+    return datetime.now(timezone.utc).strftime("%Y-%m-%d")
 from models import (
     AxisScores,
     Claim,
@@ -37,7 +42,12 @@ TRUST_SYSTEM = (
     "claim with zero external support is unverified with LOW confidence.\n"
     "Confidence is your certainty in the STATUS you assigned (0..1). Cite the "
     "0-based indices of the evidence items that drove your verdict; cite none "
-    "if unverified. Never invent evidence."
+    "if unverified. Never invent evidence.\n"
+    "DATES: today's date is given below. Trust it over any intuition about what "
+    "year it is — dates at or before today are in the PAST and are NOT evidence "
+    "of a contradiction. Only call a recency claim contradicted when the "
+    "evidence genuinely disagrees (e.g. claim says 'updated last week' but the "
+    "last push was 14 months before today)."
 )
 
 
@@ -50,6 +60,7 @@ def verify_claim(claim: Claim, evidence: List[Evidence]) -> Trust:
         or "(no external evidence attached)"
     )
     user = (
+        f"TODAY'S DATE: {_today()}\n\n"
         f"CLAIM ({claim.type}, from {claim.source}): {claim.text}\n\n"
         f"EVIDENCE:\n{ev_lines}"
     )
@@ -99,6 +110,7 @@ def _claims_digest(claims: List[Claim]) -> str:
 
 def score_axes(opportunity_id: str, claims: List[Claim], founder_ctx: str = "") -> AxisScores:
     user = (
+        f"TODAY'S DATE: {_today()} (treat earlier dates as the past)\n"
         f"Opportunity {opportunity_id}. Founder context: {founder_ctx or 'n/a'}\n\n"
         f"CLAIMS (with trust verdicts):\n{_claims_digest(claims)}\n\n"
         "Score the three independent axes. Cite claim_ids in evidence_refs."

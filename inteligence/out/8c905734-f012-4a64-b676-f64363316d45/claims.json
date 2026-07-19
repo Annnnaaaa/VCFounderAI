@@ -1,0 +1,43 @@
+{
+  "opportunity_id": "8c905734-f012-4a64-b676-f64363316d45",
+  "claims": [
+    {
+      "claim_id": "7b56f198-6103-55cf-ad32-155f2cad8c4b",
+      "opportunity_id": "8c905734-f012-4a64-b676-f64363316d45",
+      "text": "Show HN launch reached 24 points with 4 comments",
+      "type": "traction",
+      "source": "hn",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://news.ycombinator.com/item?id=40212925",
+            "snippet": "Show HN: LLM-powered NPCs running on your hardware \u2014 24 points, 4 comments, by Tantris.",
+            "source": "hn"
+          }
+        ],
+        "note": "The evidence directly supports the claim, showing the Show HN post with 24 points and 4 comments."
+      }
+    },
+    {
+      "claim_id": "df6c443e-2f07-5c32-8e13-c21a3a144ea1",
+      "opportunity_id": "8c905734-f012-4a64-b676-f64363316d45",
+      "text": "Shipped a public product at https://github.com/GigaxGames/gigax",
+      "type": "tech",
+      "source": "hn",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 0.9,
+        "evidence": [
+          {
+            "url": "https://github.com/GigaxGames/gigax",
+            "snippet": "Product link submitted with the Show HN post: LLM-powered NPCs running on your hardware",
+            "source": "hn"
+          }
+        ],
+        "note": "The evidence shows a GitHub repository link that matches the claim of a public product being shipped. The repository is publicly accessible, which supports the claim."
+      }
+    }
+  ]
+}

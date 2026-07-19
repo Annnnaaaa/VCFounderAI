@@ -1,0 +1,30 @@
+{
+  "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952",
+  "is_cold_start": true,
+  "founder_quality": {
+    "band": "medium",
+    "interval": [
+      0.36,
+      0.64
+    ],
+    "signals_used": 3
+  },
+  "signals": [
+    {
+      "kind": "oss",
+      "weight": 0.7,
+      "evidence_ref": "https://github.com/lenavogt/VectorForge"
+    },
+    {
+      "kind": "public_writing",
+      "weight": 0.4,
+      "evidence_ref": "https://twitter.com/lenavogt_dev"
+    },
+    {
+      "kind": "domain_insight",
+      "weight": 0.5,
+      "evidence_ref": "https://www.linkedin.com/in/lena-vogt-infra"
+    }
+  ],
+  "caveat": "The assessment is based on limited public information and may not fully capture the founder's potential."
+}

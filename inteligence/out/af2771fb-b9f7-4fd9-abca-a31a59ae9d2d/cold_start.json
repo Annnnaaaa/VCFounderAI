@@ -1,0 +1,25 @@
+{
+  "opportunity_id": "af2771fb-b9f7-4fd9-abca-a31a59ae9d2d",
+  "is_cold_start": true,
+  "founder_quality": {
+    "band": "medium",
+    "interval": [
+      0.32,
+      0.58
+    ],
+    "signals_used": 2
+  },
+  "signals": [
+    {
+      "kind": "oss",
+      "weight": 0.6,
+      "evidence_ref": "https://github.com/sarapatel-inferboost"
+    },
+    {
+      "kind": "domain_insight",
+      "weight": 0.4,
+      "evidence_ref": "Building lightweight inference solutions for startups"
+    }
+  ],
+  "caveat": "The assessment is based on limited public information and contributions. The GitHub activity suggests some technical capability, but without more context or broader engagement, the estimate remains uncertain."
+}

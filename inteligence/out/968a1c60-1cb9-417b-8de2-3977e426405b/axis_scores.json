@@ -1,0 +1,26 @@
+{
+  "opportunity_id": "968a1c60-1cb9-417b-8de2-3977e426405b",
+  "axes": {
+    "founder": {
+      "score": 70,
+      "trend": "up",
+      "rationale": "Priya Nair has demonstrated technical capability and initiative by authoring a well-received open-source project and publishing a detailed methodology post. These actions indicate a strong technical foundation and thought leadership in the AI evaluation space, which is crucial for a solo builder.",
+      "evidence_refs": [
+        "d6948ac2-9a05-51e5-9d04-6ecbad72745f",
+        "427891b5-fd9a-53eb-a372-51272227f256"
+      ]
+    },
+    "market": {
+      "rating": "bull",
+      "rationale": "The market for AI infrastructure, particularly in the evaluation of large language models (LLMs), is growing rapidly. As LLMs become more prevalent, the need for robust evaluation methodologies to ensure their reliability and performance is critical. This creates a bullish environment for innovations in this space.",
+      "evidence_refs": []
+    },
+    "idea_vs_market": {
+      "verdict": "survives",
+      "rationale": "The idea of developing a methodology for LLM evaluation is well-aligned with current market needs. As the adoption of LLMs increases, so does the demand for effective evaluation tools to ensure their quality and performance. Priya's focus on avoiding contamination in evaluation sets addresses a significant challenge in the field, suggesting the idea is viable in the current market context.",
+      "evidence_refs": [
+        "427891b5-fd9a-53eb-a372-51272227f256"
+      ]
+    }
+  }
+}

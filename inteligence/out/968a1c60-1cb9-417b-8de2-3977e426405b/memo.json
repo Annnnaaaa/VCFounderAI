@@ -1,0 +1,40 @@
+{
+  "opportunity_id": "968a1c60-1cb9-417b-8de2-3977e426405b",
+  "sections": {
+    "company_snapshot": "The company is led by Priya Nair, who has demonstrated significant technical expertise in the AI evaluation space. Priya is the author of a well-received open-source LLM evaluation harness, 'evalharness', which has garnered 120 stars on GitHub [claim:d6948ac2-9a05-51e5-9d04-6ecbad72745f]. Additionally, Priya has published a detailed methodology post on avoiding contamination in LLM evaluation sets [claim:427891b5-fd9a-53eb-a372-51272227f256].",
+    "investment_hypotheses": [
+      "Priya Nair's technical expertise and thought leadership in AI evaluation provide a strong foundation for developing innovative solutions in the LLM evaluation space.",
+      "The growing market for AI infrastructure, particularly in LLM evaluation, presents a significant opportunity for the company's offerings.",
+      "The focus on avoiding contamination in LLM evaluation sets addresses a critical challenge, enhancing the viability of the company's solutions."
+    ],
+    "swot": {
+      "strengths": [
+        "Priya Nair's technical expertise and initiative in the AI evaluation space [claim:d6948ac2-9a05-51e5-9d04-6ecbad72745f].",
+        "A well-received open-source project that demonstrates capability and thought leadership [claim:d6948ac2-9a05-51e5-9d04-6ecbad72745f]."
+      ],
+      "weaknesses": [
+        "Solo founder risk, which may impact scalability and business development."
+      ],
+      "opportunities": [
+        "Rapidly growing market for AI infrastructure and LLM evaluation tools.",
+        "Increasing demand for robust evaluation methodologies as LLM adoption rises."
+      ],
+      "threats": [
+        "Potential competition from established AI infrastructure companies.",
+        "Technological advancements that may render current methodologies obsolete."
+      ]
+    },
+    "problem_product": "The company addresses the problem of contamination in LLM evaluation sets, which can lead to unreliable performance metrics. Priya Nair's methodology for avoiding such contamination is a critical innovation in ensuring the reliability and performance of LLMs [claim:427891b5-fd9a-53eb-a372-51272227f256].",
+    "traction_kpis": "The open-source project 'evalharness' has achieved 120 stars on GitHub, indicating community interest and validation of the technical approach [claim:d6948ac2-9a05-51e5-9d04-6ecbad72745f]."
+  },
+  "gap_flags": [
+    "Cap table: not disclosed",
+    "Financials: pre-revenue, none"
+  ],
+  "claim_refs": [
+    "d6948ac2-9a05-51e5-9d04-6ecbad72745f",
+    "427891b5-fd9a-53eb-a372-51272227f256"
+  ],
+  "recommendation": "needs_call",
+  "what_would_change_my_mind": "Disclosure of cap table and financial projections."
+}

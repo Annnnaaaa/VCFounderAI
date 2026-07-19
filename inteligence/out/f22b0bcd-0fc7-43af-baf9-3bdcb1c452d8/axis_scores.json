@@ -1,0 +1,24 @@
+{
+  "opportunity_id": "f22b0bcd-0fc7-43af-baf9-3bdcb1c452d8",
+  "axes": {
+    "founder": {
+      "score": 60,
+      "trend": "up",
+      "rationale": "The founder, Henry Ndubuaku, has successfully launched a product that gained significant attention on Hacker News, as evidenced by the 231 points and 82 comments. Additionally, the public release of a product on GitHub demonstrates technical capability and a commitment to transparency. However, the lack of a public track record or previous entrepreneurial experience limits the score.",
+      "evidence_refs": [
+        "ebcb7311-e382-5f71-86b8-330cd8af4e76",
+        "3ce27cf5-2c4f-59a2-94e3-0bf497e02712"
+      ]
+    },
+    "market": {
+      "rating": "neutral",
+      "rationale": "The market for AI infrastructure on smartphones is emerging, with potential for growth as mobile devices become more powerful and capable of handling complex AI tasks. However, it is still in its early stages, and the competitive landscape is not fully defined, leading to a neutral market rating.",
+      "evidence_refs": []
+    },
+    "idea_vs_market": {
+      "verdict": "survives",
+      "rationale": "The idea of bringing AI infrastructure to smartphones aligns with the trend of increasing mobile computing power and the demand for on-device AI processing. This concept is viable in the current market context, where there is a push towards decentralizing AI processing from cloud to edge devices.",
+      "evidence_refs": []
+    }
+  }
+}

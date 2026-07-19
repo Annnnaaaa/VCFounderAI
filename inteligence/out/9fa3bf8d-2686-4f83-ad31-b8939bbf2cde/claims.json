@@ -1,0 +1,62 @@
+{
+  "opportunity_id": "9fa3bf8d-2686-4f83-ad31-b8939bbf2cde",
+  "claims": [
+    {
+      "claim_id": "d7560e6c-42c6-5f36-bd69-a534548cc2d9",
+      "opportunity_id": "9fa3bf8d-2686-4f83-ad31-b8939bbf2cde",
+      "text": "73361 GitHub stars on LlamaFactory",
+      "type": "traction",
+      "source": "github",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://github.com/hiyouga/LlamaFactory",
+            "snippet": "hiyouga/LlamaFactory \u2014 Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024). 73361 stars, 8959 forks, last push 2026-07-17T14:50:13Z.",
+            "source": "github"
+          }
+        ],
+        "note": "The evidence directly supports the claim of 73361 GitHub stars on LlamaFactory."
+      }
+    },
+    {
+      "claim_id": "6ff60277-4228-5a64-a12f-a77b453b9409",
+      "opportunity_id": "9fa3bf8d-2686-4f83-ad31-b8939bbf2cde",
+      "text": "Actively maintained \u2014 last commit 1 days ago",
+      "type": "tech",
+      "source": "github",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://github.com/hiyouga/LlamaFactory",
+            "snippet": "hiyouga/LlamaFactory \u2014 Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024). 73361 stars, 8959 forks, last push 2026-07-17T14:50:13Z.",
+            "source": "github"
+          }
+        ],
+        "note": "The last push date of 2026-07-17 is consistent with the claim that the last commit was 1 day ago, given today's date is 2026-07-19."
+      }
+    },
+    {
+      "claim_id": "5a5bc5c4-b5db-522a-9b79-50c0ef7ca5be",
+      "opportunity_id": "9fa3bf8d-2686-4f83-ad31-b8939bbf2cde",
+      "text": "6428 GitHub followers across 64 public repos",
+      "type": "team",
+      "source": "github",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://github.com/hiyouga",
+            "snippet": "hiyouga \u2014 Yaowei Zheng. 6428 followers, 64 public repos. No code All live",
+            "source": "github"
+          }
+        ],
+        "note": "The evidence directly supports the claim of having 6428 GitHub followers and 64 public repos."
+      }
+    }
+  ]
+}

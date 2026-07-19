@@ -1,0 +1,18 @@
+{
+  "opportunity_id": "0b8540a9-707e-4e57-99c1-8128636390a8",
+  "claims": [
+    {
+      "claim_id": "ad37482c-da47-4bbb-af41-6187a034310b",
+      "opportunity_id": "0b8540a9-707e-4e57-99c1-8128636390a8",
+      "text": "$2M ARR, 3x YoY",
+      "type": "revenue",
+      "source": "deck_slide_4",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.5,
+        "evidence": [],
+        "note": "The evidence provided does not address the claim about $2M ARR or 3x YoY growth, leaving the claim unverified."
+      }
+    }
+  ]
+}

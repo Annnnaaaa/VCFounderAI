@@ -1,0 +1,62 @@
+{
+  "opportunity_id": "415b8eaa-75e5-451d-acbc-2b319c57d5e9",
+  "claims": [
+    {
+      "claim_id": "e35946c6-9912-5a7f-bf35-5fc5fe9f1883",
+      "opportunity_id": "415b8eaa-75e5-451d-acbc-2b319c57d5e9",
+      "text": "85638 GitHub stars on ponytail",
+      "type": "traction",
+      "source": "github",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://github.com/DietrichGebert/ponytail",
+            "snippet": "DietrichGebert/ponytail \u2014 Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.. 85638 stars, 4667 forks, last push 2026-07-15T21:32:15Z.",
+            "source": "github"
+          }
+        ],
+        "note": "The GitHub repository for 'ponytail' shows 85638 stars, which matches the claim."
+      }
+    },
+    {
+      "claim_id": "0e0a5fd6-c315-53e0-aad1-4c8c177b6207",
+      "opportunity_id": "415b8eaa-75e5-451d-acbc-2b319c57d5e9",
+      "text": "Actively maintained \u2014 last commit 3 days ago",
+      "type": "tech",
+      "source": "github",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://github.com/DietrichGebert/ponytail",
+            "snippet": "DietrichGebert/ponytail \u2014 Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.. 85638 stars, 4667 forks, last push 2026-07-15T21:32:15Z.",
+            "source": "github"
+          }
+        ],
+        "note": "The last push date of 2026-07-15 corroborates the claim that the last commit was 3 days ago."
+      }
+    },
+    {
+      "claim_id": "bcce91f2-ca25-5669-b2b4-44ca547eadba",
+      "opportunity_id": "415b8eaa-75e5-451d-acbc-2b319c57d5e9",
+      "text": "1201 GitHub followers across 3 public repos",
+      "type": "team",
+      "source": "github",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://github.com/DietrichGebert",
+            "snippet": "DietrichGebert \u2014 DietrichGebert. 1201 followers, 3 public repos.",
+            "source": "github"
+          }
+        ],
+        "note": "The evidence directly supports the claim of having 1201 GitHub followers across 3 public repos."
+      }
+    }
+  ]
+}

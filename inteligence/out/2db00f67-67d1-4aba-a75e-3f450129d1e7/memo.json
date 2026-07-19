@@ -1,0 +1,38 @@
+{
+  "opportunity_id": "2db00f67-67d1-4aba-a75e-3f450129d1e7",
+  "sections": {
+    "company_snapshot": "AgentStack is a company developing orchestration frameworks for LLM agents, targeting the growing AI infrastructure market [claim:8ee516ec-b18f-5bd8-8546-fcc9899217d5].",
+    "investment_hypotheses": [
+      "The AI infrastructure market is expanding rapidly, and AgentStack's focus on orchestration frameworks for LLM agents positions it well to capitalize on this trend [claim:8ee516ec-b18f-5bd8-8546-fcc9899217d5]."
+    ],
+    "swot": {
+      "strengths": [
+        "The market for AI infrastructure is experiencing significant growth, providing a favorable environment for AgentStack's offerings [claim:8ee516ec-b18f-5bd8-8546-fcc9899217d5]."
+      ],
+      "weaknesses": [
+        "The founder has a history of making claims that are contradicted by available evidence, impacting trust [claim:d937b210-a2c4-5d4e-97df-850374edfd54, claim:d9b302f6-76e5-534d-aab5-4a6820531318].",
+        "The product may not be resonating with the target audience as expected, indicating potential misalignment with market needs [claim:d937b210-a2c4-5d4e-97df-850374edfd54, claim:d9b302f6-76e5-534d-aab5-4a6820531318]."
+      ],
+      "opportunities": [
+        "The increasing adoption of AI across industries creates a demand for tools that can efficiently manage and deploy AI models [claim:8ee516ec-b18f-5bd8-8546-fcc9899217d5]."
+      ],
+      "threats": [
+        "The lack of verified traction and revenue claims could hinder future investment and growth opportunities [claim:d937b210-a2c4-5d4e-97df-850374edfd54, claim:d9b302f6-76e5-534d-aab5-4a6820531318]."
+      ]
+    },
+    "problem_product": "AgentStack aims to solve the problem of efficiently managing and deploying AI models through its orchestration frameworks for LLM agents. However, the claims of traction and revenue are contradicted by the lack of a pricing or billing page and minimal GitHub activity, suggesting the product may not be as established as claimed [claim:d937b210-a2c4-5d4e-97df-850374edfd54, claim:d9b302f6-76e5-534d-aab5-4a6820531318].",
+    "traction_kpis": "The company claims to have $30K MRR and 40% month-over-month growth, but this is contradicted by the lack of a pricing or billing page and minimal GitHub activity [claim:d937b210-a2c4-5d4e-97df-850374edfd54]. Additionally, the claim of 2,000 paying developers is contradicted by similar evidence [claim:d9b302f6-76e5-534d-aab5-4a6820531318]."
+  },
+  "gap_flags": [
+    "Cap table: not disclosed",
+    "Financials: pre-revenue, none"
+  ],
+  "claim_refs": [
+    "d937b210-a2c4-5d4e-97df-850374edfd54",
+    "8ee516ec-b18f-5bd8-8546-fcc9899217d5",
+    "9d83b524-ab64-59ee-9a81-5c7c354bf369",
+    "d9b302f6-76e5-534d-aab5-4a6820531318"
+  ],
+  "recommendation": "pass",
+  "what_would_change_my_mind": "Verified traction and revenue data."
+}

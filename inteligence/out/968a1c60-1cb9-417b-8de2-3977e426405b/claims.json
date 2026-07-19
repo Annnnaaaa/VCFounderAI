@@ -1,0 +1,43 @@
+{
+  "opportunity_id": "968a1c60-1cb9-417b-8de2-3977e426405b",
+  "claims": [
+    {
+      "claim_id": "d6948ac2-9a05-51e5-9d04-6ecbad72745f",
+      "opportunity_id": "968a1c60-1cb9-417b-8de2-3977e426405b",
+      "text": "Author of a 120-star open-source LLM evaluation harness",
+      "type": "tech",
+      "source": "github",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://github.com/priyanair-ml/evalharness",
+            "snippet": "evalharness \u2014 task-agnostic evaluation harness for LLMs. 120 stars, 14 forks, 61 commits.",
+            "source": "github"
+          }
+        ],
+        "note": "The GitHub repository 'evalharness' has 120 stars, which corroborates the claim about the author's open-source LLM evaluation harness."
+      }
+    },
+    {
+      "claim_id": "427891b5-fd9a-53eb-a372-51272227f256",
+      "opportunity_id": "968a1c60-1cb9-417b-8de2-3977e426405b",
+      "text": "Published a detailed methodology post on avoiding contamination in LLM eval sets",
+      "type": "tech",
+      "source": "tavily",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 0.9,
+        "evidence": [
+          {
+            "url": "https://priyanair.dev/posts/eval-contamination",
+            "snippet": "On contamination in LLM eval sets \u2014 why held-out splits leak, and a cheap detection recipe.",
+            "source": "tavily"
+          }
+        ],
+        "note": "The evidence is a blog post on the topic of contamination in LLM eval sets, which supports the claim of publishing a detailed methodology post on this subject."
+      }
+    }
+  ]
+}

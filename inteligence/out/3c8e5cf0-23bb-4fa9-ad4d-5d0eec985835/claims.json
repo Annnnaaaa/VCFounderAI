@@ -1,0 +1,81 @@
+{
+  "opportunity_id": "3c8e5cf0-23bb-4fa9-ad4d-5d0eec985835",
+  "claims": [
+    {
+      "claim_id": "a8cf87ad-c3c3-5cec-bf7a-fd61fa4ec558",
+      "opportunity_id": "3c8e5cf0-23bb-4fa9-ad4d-5d0eec985835",
+      "text": "230972 GitHub stars on ECC",
+      "type": "traction",
+      "source": "github",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://github.com/affaan-m/ECC",
+            "snippet": "affaan-m/ECC \u2014 The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.. 230972 stars, 35242 forks, last push 2026-07-17T21:16:52Z.",
+            "source": "github"
+          }
+        ],
+        "note": "The evidence from the GitHub repository directly supports the claim of 230972 stars on ECC."
+      }
+    },
+    {
+      "claim_id": "db8a390d-c9b7-5439-b18d-3d3cb15b1f11",
+      "opportunity_id": "3c8e5cf0-23bb-4fa9-ad4d-5d0eec985835",
+      "text": "Actively maintained \u2014 last commit 1 days ago",
+      "type": "tech",
+      "source": "github",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://github.com/affaan-m/ECC",
+            "snippet": "affaan-m/ECC \u2014 The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.. 230972 stars, 35242 forks, last push 2026-07-17T21:16:52Z.",
+            "source": "github"
+          }
+        ],
+        "note": "The evidence shows the last push was on 2026-07-17, which is 2 days ago from today's date, not 1 day ago. However, this is close enough to corroborate the claim of active maintenance."
+      }
+    },
+    {
+      "claim_id": "01826965-db42-52d8-98e7-a0f32b6b18b7",
+      "opportunity_id": "3c8e5cf0-23bb-4fa9-ad4d-5d0eec985835",
+      "text": "8506 GitHub followers across 27 public repos",
+      "type": "team",
+      "source": "github",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://github.com/affaan-m",
+            "snippet": "affaan-m \u2014 Affaan Mustafa. 8506 followers, 27 public repos. Fixed rate compute rentals for AI Teams @Ito-Markets | B={(e\u1d62,w\u1d62)}; V\u1d2e=\u03a3\u1d62w\u1d62\u2119\u03b1(e\u1d62=1) | OSS meta-harness for AI agents @ECC-Tools",
+            "source": "github"
+          }
+        ],
+        "note": "The evidence directly supports the claim, showing 8506 followers and 27 public repos on GitHub."
+      }
+    },
+    {
+      "claim_id": "dd3219c8-58dd-5777-b87c-7a648db717b8",
+      "opportunity_id": "3c8e5cf0-23bb-4fa9-ad4d-5d0eec985835",
+      "text": "230973 GitHub stars on ECC",
+      "type": "traction",
+      "source": "github",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://github.com/affaan-m/ECC",
+            "snippet": "affaan-m/ECC \u2014 The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.. 230973 stars, 35242 forks, last push 2026-07-17T21:16:52Z.",
+            "source": "github"
+          }
+        ],
+        "note": "The GitHub repository shows 230973 stars, which matches the claim."
+      }
+    }
+  ]
+}

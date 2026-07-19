@@ -1,0 +1,25 @@
+{
+  "opportunity_id": "7f073006-dc87-48ff-8841-276ff1d5c682",
+  "is_cold_start": true,
+  "founder_quality": {
+    "band": "medium",
+    "interval": [
+      0.36,
+      0.64
+    ],
+    "signals_used": 2
+  },
+  "signals": [
+    {
+      "kind": "oss",
+      "weight": 0.6,
+      "evidence_ref": "https://github.com/lisa-nguyen-infiagent"
+    },
+    {
+      "kind": "domain_insight",
+      "weight": 0.4,
+      "evidence_ref": "InfiAgent Solutions is focused on simplifying agent frameworks, indicating some level of domain insight in software development."
+    }
+  ],
+  "caveat": "The assessment is based on limited public information and contributions, primarily from open-source work and inferred domain insight."
+}

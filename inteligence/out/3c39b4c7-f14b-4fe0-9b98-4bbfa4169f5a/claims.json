@@ -1,0 +1,62 @@
+{
+  "opportunity_id": "3c39b4c7-f14b-4fe0-9b98-4bbfa4169f5a",
+  "claims": [
+    {
+      "claim_id": "ac3e7460-595e-518e-93c5-fd116dbcfd3b",
+      "opportunity_id": "3c39b4c7-f14b-4fe0-9b98-4bbfa4169f5a",
+      "text": "124065 GitHub stars on awesome-llm-apps",
+      "type": "traction",
+      "source": "github",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+            "snippet": "Shubhamsaboo/awesome-llm-apps \u2014 100+ AI Agent & RAG apps you can actually run \u2014 clone, customize, ship.. 124065 stars, 18309 forks, last push 2026-07-19T00:39:40Z.",
+            "source": "github"
+          }
+        ],
+        "note": "The GitHub repository shows 124065 stars, which matches the claim."
+      }
+    },
+    {
+      "claim_id": "ef9207e6-5e3c-51e2-90ad-6b6929c52f0d",
+      "opportunity_id": "3c39b4c7-f14b-4fe0-9b98-4bbfa4169f5a",
+      "text": "Actively maintained \u2014 last commit 0 days ago",
+      "type": "tech",
+      "source": "github",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+            "snippet": "Shubhamsaboo/awesome-llm-apps \u2014 100+ AI Agent & RAG apps you can actually run \u2014 clone, customize, ship.. 124065 stars, 18309 forks, last push 2026-07-19T00:39:40Z.",
+            "source": "github"
+          }
+        ],
+        "note": "The evidence shows the last push was on 2026-07-19, which corroborates the claim of a commit 0 days ago."
+      }
+    },
+    {
+      "claim_id": "e520ea3d-532d-53aa-9ca2-a549c42dbea1",
+      "opportunity_id": "3c39b4c7-f14b-4fe0-9b98-4bbfa4169f5a",
+      "text": "9254 GitHub followers across 184 public repos",
+      "type": "team",
+      "source": "github",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://github.com/Shubhamsaboo",
+            "snippet": "Shubhamsaboo \u2014 Shubham Saboo. 9254 followers, 184 public repos. Senior AI PM @ Google Cloud | Building open-source repository of practical world class tutorials on AI Agents, RAG and LLMs \u23f3",
+            "source": "github"
+          }
+        ],
+        "note": "The evidence directly supports the claim with matching numbers for followers and public repos."
+      }
+    }
+  ]
+}

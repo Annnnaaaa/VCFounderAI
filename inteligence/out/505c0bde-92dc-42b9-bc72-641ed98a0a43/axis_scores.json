@@ -1,0 +1,24 @@
+{
+  "opportunity_id": "505c0bde-92dc-42b9-bc72-641ed98a0a43",
+  "axes": {
+    "founder": {
+      "score": 70,
+      "trend": "up",
+      "rationale": "The founder has demonstrated the ability to launch a product that gained significant attention on a platform like Hacker News, as evidenced by the high engagement (216 points and 113 comments). Additionally, the founder has successfully shipped a public product on GitHub, indicating technical capability and execution skills.",
+      "evidence_refs": [
+        "d8db5cfd-946c-50fb-a317-48c2b7133f2a",
+        "f4d79c41-fcc0-5382-8449-0c65f23451a1"
+      ]
+    },
+    "market": {
+      "rating": "bull",
+      "rationale": "The market for AI infrastructure, particularly in optimizing model routing for popular AI models like Claude, Codex, and Cursor, is growing. As AI models become more prevalent in various applications, the need for efficient model routing solutions is likely to increase, making this a promising market.",
+      "evidence_refs": []
+    },
+    "idea_vs_market": {
+      "verdict": "survives",
+      "rationale": "The idea of smart model routing directly in popular AI models aligns well with the current market trends and demands. As AI models are increasingly integrated into various applications, optimizing their performance through smart routing is a relevant and valuable proposition.",
+      "evidence_refs": []
+    }
+  }
+}

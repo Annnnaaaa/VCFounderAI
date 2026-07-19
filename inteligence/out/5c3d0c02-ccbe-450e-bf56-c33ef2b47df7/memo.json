@@ -1,0 +1,40 @@
+{
+  "opportunity_id": "5c3d0c02-ccbe-450e-bf56-c33ef2b47df7",
+  "sections": {
+    "company_snapshot": "The company claims to have achieved $2M in Annual Recurring Revenue (ARR) with a 3x Year-over-Year growth rate [claim:a868ad50-2dc7-4968-947d-63639d318cae]. However, this claim is unverified due to a lack of supporting evidence.",
+    "investment_hypotheses": [
+      "The company is potentially positioned in a growing sector, possibly AI infrastructure, which could offer significant growth opportunities if the market alignment is clarified.",
+      "The founder's stable score of 78 suggests a competent leadership team, which is a positive indicator for potential investment."
+    ],
+    "swot": {
+      "strengths": [
+        "The company claims significant revenue growth, which, if verified, indicates strong market traction [claim:a868ad50-2dc7-4968-947d-63639d318cae].",
+        "The founder has a stable and relatively high score, indicating strong leadership potential."
+      ],
+      "weaknesses": [
+        "The revenue claim is unverified, which raises concerns about the accuracy of the company's financial health [claim:a868ad50-2dc7-4968-947d-63639d318cae].",
+        "There is a lack of clarity regarding the company's product and market focus, suggesting a potential need for a strategic pivot."
+      ],
+      "opportunities": [
+        "If the company is indeed in the AI infrastructure space, there is a significant opportunity for growth given the sector's expansion."
+      ],
+      "threats": [
+        "The unverified revenue claim could indicate potential issues with transparency or financial stability [claim:a868ad50-2dc7-4968-947d-63639d318cae].",
+        "Without a clear product-market fit, the company may struggle to capture or sustain market share."
+      ]
+    },
+    "problem_product": "The company has not clearly articulated its product offering or the specific market problem it addresses. This lack of clarity makes it difficult to assess the potential for market success.",
+    "traction_kpis": "The company claims $2M ARR with a 3x YoY growth rate, but this is unverified and lacks supporting evidence [claim:a868ad50-2dc7-4968-947d-63639d318cae]."
+  },
+  "gap_flags": [
+    "Cap table: not disclosed",
+    "Financials: pre-revenue, none",
+    "Product description: not provided",
+    "Market focus: unclear"
+  ],
+  "claim_refs": [
+    "a868ad50-2dc7-4968-947d-63639d318cae"
+  ],
+  "recommendation": "needs_call",
+  "what_would_change_my_mind": "Verification of the $2M ARR and 3x YoY growth claim with supporting evidence."
+}

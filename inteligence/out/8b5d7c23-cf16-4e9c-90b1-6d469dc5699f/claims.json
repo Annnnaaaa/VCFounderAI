@@ -1,0 +1,62 @@
+{
+  "opportunity_id": "8b5d7c23-cf16-4e9c-90b1-6d469dc5699f",
+  "claims": [
+    {
+      "claim_id": "4cd88158-f1e0-5c4e-93c4-fd2e0a129b51",
+      "opportunity_id": "8b5d7c23-cf16-4e9c-90b1-6d469dc5699f",
+      "text": "Actively maintained \u2014 last commit 0 days ago",
+      "type": "tech",
+      "source": "github",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://github.com/ruvnet/ruflo",
+            "snippet": "ruvnet/ruflo \u2014 \ud83c\udf0a The leading agent meta-harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, RAG integration, and native Claude Code / Codex / Hermes and many more Integrated. 65074 stars, 7727 forks, last push 2026-07-19T00:24:20Z.",
+            "source": "github"
+          }
+        ],
+        "note": "The evidence shows the last push was on 2026-07-19, which corroborates the claim of being actively maintained with a last commit 0 days ago."
+      }
+    },
+    {
+      "claim_id": "689af3ee-eebd-55f9-af62-fbd11a1fd613",
+      "opportunity_id": "8b5d7c23-cf16-4e9c-90b1-6d469dc5699f",
+      "text": "10326 GitHub followers across 197 public repos",
+      "type": "team",
+      "source": "github",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://github.com/ruvnet",
+            "snippet": "ruvnet \u2014 rUv. 10326 followers, 197 public repos. Unicorn Breeder.",
+            "source": "github"
+          }
+        ],
+        "note": "The evidence directly supports the claim with the exact number of followers and public repos."
+      }
+    },
+    {
+      "claim_id": "31068a8b-50b8-5bb5-8aca-b83ad188d9c4",
+      "opportunity_id": "8b5d7c23-cf16-4e9c-90b1-6d469dc5699f",
+      "text": "65074 GitHub stars on ruflo",
+      "type": "traction",
+      "source": "github",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://github.com/ruvnet/ruflo",
+            "snippet": "ruvnet/ruflo \u2014 \ud83c\udf0a The leading agent meta-harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, RAG integration, and native Claude Code / Codex / Hermes and many more Integrated. 65074 stars, 7727 forks, last push 2026-07-19T00:24:20Z.",
+            "source": "github"
+          }
+        ],
+        "note": "The GitHub repository for 'ruflo' shows 65074 stars, which matches the claim."
+      }
+    }
+  ]
+}

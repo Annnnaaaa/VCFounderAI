@@ -9,7 +9,7 @@
       "source": "deck_slide_3",
       "trust": {
         "status": "contradicted",
-        "confidence": 0.9,
+        "confidence": 1.0,
         "evidence": [
           {
             "url": "https://github.com/agentstack/runtime",
@@ -27,7 +27,7 @@
             "source": "hn"
           }
         ],
-        "note": "The claim of having 2,000 paying developers and $30K MRR is contradicted by the evidence. The GitHub repository is only 3 weeks old with minimal activity, the website lacks a pricing page or checkout system, and the Hacker News post indicates the product is not yet usable. These factors make the claimed traction implausible."
+        "note": "The claim of having 2,000 paying developers and $30K MRR is contradicted by the evidence. The GitHub repository is only 3 weeks old with minimal activity, there is no pricing page available, and the Hacker News post indicates the product is not yet usable."
       }
     },
     {
@@ -38,7 +38,7 @@
       "source": "deck_slide_4",
       "trust": {
         "status": "unverified",
-        "confidence": 0.6,
+        "confidence": 0.8,
         "evidence": [],
         "note": "The evidence does not provide any information about the growth rate or active workflows, so the claim cannot be verified or contradicted."
       }
@@ -51,15 +51,9 @@
       "source": "deck_slide_5",
       "trust": {
         "status": "unverified",
-        "confidence": 0.6,
-        "evidence": [
-          {
-            "url": "https://github.com/agentstack/runtime",
-            "snippet": "README describes a scheduler and tool-calling abstraction; example scripts present, no benchmarks published.",
-            "source": "github"
-          }
-        ],
-        "note": "The README mentions a scheduler and tool-calling abstraction, but there are no benchmarks or specific details confirming sub-second scheduling."
+        "confidence": 0.7,
+        "evidence": [],
+        "note": "The README mentions a scheduler and tool-calling abstraction, but there are no benchmarks or specific details about sub-second scheduling or parallel capabilities."
       }
     },
     {
@@ -78,7 +72,7 @@
             "source": "tavily"
           }
         ],
-        "note": "The evidence lists a dozen agent-orchestration frameworks launched recently, supporting the claim that it's an emerging category with many entrants."
+        "note": "The evidence lists multiple agent-orchestration frameworks launched recently, supporting the claim of it being an emerging category with many entrants."
       }
     }
   ]

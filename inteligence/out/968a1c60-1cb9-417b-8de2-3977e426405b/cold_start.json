@@ -1,0 +1,25 @@
+{
+  "opportunity_id": "968a1c60-1cb9-417b-8de2-3977e426405b",
+  "is_cold_start": true,
+  "founder_quality": {
+    "band": "medium",
+    "interval": [
+      0.32,
+      0.58
+    ],
+    "signals_used": 2
+  },
+  "signals": [
+    {
+      "kind": "oss",
+      "weight": 0.6,
+      "evidence_ref": "https://github.com/priyanair-ml"
+    },
+    {
+      "kind": "domain_insight",
+      "weight": 0.4,
+      "evidence_ref": "Working on LLM evaluation methodology, indicating some domain knowledge in machine learning and AI."
+    }
+  ],
+  "caveat": "The assessment is based on limited public information and contributions, primarily from GitHub activity and the specific project focus."
+}

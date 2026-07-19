@@ -1,0 +1,57 @@
+{
+  "opportunity_id": "af2771fb-b9f7-4fd9-abca-a31a59ae9d2d",
+  "claims": [
+    {
+      "claim_id": "6281e8c4-30a5-5c0d-8861-abc954f2df36",
+      "opportunity_id": "af2771fb-b9f7-4fd9-abca-a31a59ae9d2d",
+      "text": "Secured 90 stars on our open-source library within 8 months",
+      "type": "traction",
+      "source": "deck_slide_1",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.5,
+        "evidence": [],
+        "note": "There is no external evidence provided to verify or contradict the claim about the open-source library's stars."
+      }
+    },
+    {
+      "claim_id": "2882a51a-02ec-5a4c-a455-e69ec6dcf754",
+      "opportunity_id": "af2771fb-b9f7-4fd9-abca-a31a59ae9d2d",
+      "text": "Team of 4 developers contributing part-time to the project",
+      "type": "team",
+      "source": "deck_slide_2",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.8,
+        "evidence": [],
+        "note": "There is no external evidence provided to verify or contradict the claim about the team composition."
+      }
+    },
+    {
+      "claim_id": "3cd84fe9-5224-5b0e-bf80-27c8689723c3",
+      "opportunity_id": "af2771fb-b9f7-4fd9-abca-a31a59ae9d2d",
+      "text": "Basic version of our solution has been implemented in 5 startups",
+      "type": "tech",
+      "source": "deck_slide_4",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.5,
+        "evidence": [],
+        "note": "The evidence provided does not address whether the basic version of the solution has been implemented in 5 startups. The evidence is about AI infrastructure startups but does not mention the specific solution or its implementation in any startups."
+      }
+    },
+    {
+      "claim_id": "3c8ce56e-a546-5a4a-9650-16aa550a916f",
+      "opportunity_id": "af2771fb-b9f7-4fd9-abca-a31a59ae9d2d",
+      "text": "Targeting a $400 million market in AI inference solutions",
+      "type": "market",
+      "source": "deck_slide_3",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.7,
+        "evidence": [],
+        "note": "The evidence provided does not specifically address the size of the AI inference solutions market, which is claimed to be $400 million. The evidence discusses AI infrastructure startups and their roles but does not provide market size data."
+      }
+    }
+  ]
+}

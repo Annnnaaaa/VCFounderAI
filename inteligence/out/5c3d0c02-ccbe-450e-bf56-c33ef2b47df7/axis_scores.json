@@ -1,0 +1,23 @@
+{
+  "opportunity_id": "5c3d0c02-ccbe-450e-bf56-c33ef2b47df7",
+  "axes": {
+    "founder": {
+      "score": 78,
+      "trend": "flat",
+      "rationale": "The founder's score remains stable at 78. There is no new information to suggest a change in the founder's capabilities or reputation. The unverified revenue claim does not impact the score as it lacks sufficient evidence.",
+      "evidence_refs": []
+    },
+    "market": {
+      "rating": "neutral",
+      "rationale": "Without specific information about the company's focus or industry, it's challenging to provide a precise market rating. However, given the general growth in AI infrastructure, a neutral stance is appropriate until more details are available.",
+      "evidence_refs": []
+    },
+    "idea_vs_market": {
+      "verdict": "needs_pivot",
+      "rationale": "The lack of a clear company focus or product description makes it difficult to assess the idea's fit with the market. The unverified revenue claim does not provide enough context to determine market alignment.",
+      "evidence_refs": [
+        "a868ad50-2dc7-4968-947d-63639d318cae"
+      ]
+    }
+  }
+}

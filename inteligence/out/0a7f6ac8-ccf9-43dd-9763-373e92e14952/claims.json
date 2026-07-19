@@ -1,0 +1,159 @@
+{
+  "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952",
+  "claims": [
+    {
+      "claim_id": "5143e3f6-9f9d-5dbd-851d-35ebfc5c5ab6",
+      "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952",
+      "text": "800 GitHub stars on the VectorForge inference runtime",
+      "type": "traction",
+      "source": "deck_slide_2",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 0.9,
+        "evidence": [
+          {
+            "url": "https://github.com/lenavogt/vectorforge",
+            "snippet": "vectorforge \u2014 low-latency inference runtime. 812 stars, 47 forks, last commit 2 days ago.",
+            "source": "github"
+          }
+        ],
+        "note": "The GitHub repository for VectorForge shows 812 stars, which supports the claim of having 800 stars."
+      }
+    },
+    {
+      "claim_id": "9a6039eb-8bf6-53d6-9ec6-403c522b41ca",
+      "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952",
+      "text": "Show HN launch reached the front page",
+      "type": "traction",
+      "source": "deck_slide_2",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 0.9,
+        "evidence": [
+          {
+            "url": "https://news.ycombinator.com/item?id=40218877",
+            "snippet": "Show HN: VectorForge \u2013 3x faster quantized inference on commodity GPUs (287 points, 94 comments)",
+            "source": "hn"
+          }
+        ],
+        "note": "The evidence from Hacker News shows that the Show HN launch of VectorForge reached the front page with 287 points and 94 comments, supporting the claim."
+      }
+    },
+    {
+      "claim_id": "0277f5cf-a79d-508c-b9e8-bf92ec7f8625",
+      "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952",
+      "text": "Founder spent 4 years as an inference engineer on a production ML serving team",
+      "type": "team",
+      "source": "deck_slide_1",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.8,
+        "evidence": [],
+        "note": "The evidence provided does not address the claim about the founder's experience as an inference engineer."
+      }
+    },
+    {
+      "claim_id": "89efb466-6513-5e97-8de6-85cc8d17f8cc",
+      "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952",
+      "text": "Inference tooling spend is growing as open-weight models displace hosted APIs",
+      "type": "market",
+      "source": "deck_slide_4",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.7,
+        "evidence": [],
+        "note": "There is no external evidence provided to support or contradict the claim about the growth in inference tooling spend due to open-weight models displacing hosted APIs."
+      }
+    },
+    {
+      "claim_id": "8860dd30-e736-4d21-9038-59b42a9965be",
+      "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952",
+      "text": "Founder spent 4 years as an inference engineer on a production ML serving team",
+      "type": "team",
+      "source": "deck_slide_1",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.8,
+        "evidence": [],
+        "note": "The evidence provided does not address the claim about the founder's experience as an inference engineer."
+      }
+    },
+    {
+      "claim_id": "20694d4e-d940-4379-9496-1cc9951eed61",
+      "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952",
+      "text": "Sub-50ms p99 cold start for 7B quantized models",
+      "type": "tech",
+      "source": "deck_slide_3",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.8,
+        "evidence": [],
+        "note": "There is no external evidence provided to verify or contradict the claim about the sub-50ms p99 cold start for 7B quantized models."
+      }
+    },
+    {
+      "claim_id": "e15fb62e-c5b6-4ad2-b85e-56c1202fd974",
+      "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952",
+      "text": "Inference tooling spend is growing as open-weight models displace hosted APIs",
+      "type": "market",
+      "source": "deck_slide_4",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.5,
+        "evidence": [],
+        "note": "There is no external evidence provided to verify or contradict the claim about the growth in inference tooling spend due to open-weight models displacing hosted APIs."
+      }
+    },
+    {
+      "claim_id": "9d6f0ead-ce64-591d-9bde-1a4a9581eab0",
+      "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952",
+      "text": "Sub-50ms p99 cold start for 7B quantized models",
+      "type": "tech",
+      "source": "deck_slide_3",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.5,
+        "evidence": [],
+        "note": "There is no external evidence provided to verify or contradict the claim about the sub-50ms p99 cold start for 7B quantized models."
+      }
+    },
+    {
+      "claim_id": "f15ec9b5-edd6-4b37-91d6-02fad2d1b782",
+      "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952",
+      "text": "800 GitHub stars on the VectorForge inference runtime",
+      "type": "traction",
+      "source": "deck_slide_2",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://github.com/lenavogt/vectorforge",
+            "snippet": "vectorforge \u2014 low-latency inference runtime. 812 stars, 47 forks, last commit 2 days ago.",
+            "source": "github"
+          }
+        ],
+        "note": "The GitHub repository for VectorForge shows 812 stars, which supports the claim of having 800 stars."
+      }
+    },
+    {
+      "claim_id": "95fd04f3-a9bf-49fb-a3e6-f3011b6609b4",
+      "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952",
+      "text": "Show HN launch reached the front page",
+      "type": "traction",
+      "source": "deck_slide_2",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 0.9,
+        "evidence": [
+          {
+            "url": "https://news.ycombinator.com/item?id=40218877",
+            "snippet": "Show HN: VectorForge \u2013 3x faster quantized inference on commodity GPUs (287 points, 94 comments)",
+            "source": "hn"
+          }
+        ],
+        "note": "The evidence from Hacker News shows a 'Show HN' post for VectorForge with 287 points and 94 comments, indicating it reached the front page."
+      }
+    }
+  ]
+}

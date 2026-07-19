@@ -1,0 +1,62 @@
+{
+  "opportunity_id": "eb5c3f1a-5ecd-42ce-b500-2e21fd1dae07",
+  "claims": [
+    {
+      "claim_id": "45e94260-4821-5939-be00-a27d296030a2",
+      "opportunity_id": "eb5c3f1a-5ecd-42ce-b500-2e21fd1dae07",
+      "text": "87763 GitHub stars on claude-mem",
+      "type": "traction",
+      "source": "github",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://github.com/thedotmack/claude-mem",
+            "snippet": "thedotmack/claude-mem \u2014 Persistent Context Across Sessions for Every Agent \u2013  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More. 87763 stars, 7617 forks, last push 2026-07-18T10:51:25Z.",
+            "source": "github"
+          }
+        ],
+        "note": "The GitHub repository shows 87763 stars, which matches the claim."
+      }
+    },
+    {
+      "claim_id": "a2e7a580-685f-5383-a2e4-e49fe072b13f",
+      "opportunity_id": "eb5c3f1a-5ecd-42ce-b500-2e21fd1dae07",
+      "text": "Actively maintained \u2014 last commit 0 days ago",
+      "type": "tech",
+      "source": "github",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://github.com/thedotmack/claude-mem",
+            "snippet": "thedotmack/claude-mem \u2014 Persistent Context Across Sessions for Every Agent \u2013  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More. 87763 stars, 7617 forks, last push 2026-07-18T10:51:25Z.",
+            "source": "github"
+          }
+        ],
+        "note": "The evidence shows the last push was on 2026-07-18, which is 1 day ago, supporting the claim of active maintenance."
+      }
+    },
+    {
+      "claim_id": "5f329b8d-b5d5-5d52-88d4-e8bace4fd14d",
+      "opportunity_id": "eb5c3f1a-5ecd-42ce-b500-2e21fd1dae07",
+      "text": "1830 GitHub followers across 121 public repos",
+      "type": "team",
+      "source": "github",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://github.com/thedotmack",
+            "snippet": "thedotmack \u2014 Alex Newman. 1830 followers, 121 public repos.",
+            "source": "github"
+          }
+        ],
+        "note": "The GitHub profile shows exactly 1830 followers and 121 public repos, which matches the claim."
+      }
+    }
+  ]
+}

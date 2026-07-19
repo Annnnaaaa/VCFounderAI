@@ -1,0 +1,30 @@
+{
+  "opportunity_id": "5c3d0c02-ccbe-450e-bf56-c33ef2b47df7",
+  "is_cold_start": true,
+  "founder_quality": {
+    "band": "medium",
+    "interval": [
+      0.36,
+      0.64
+    ],
+    "signals_used": 3
+  },
+  "signals": [
+    {
+      "kind": "oss",
+      "weight": 0.4,
+      "evidence_ref": "github:testfounderc17f03"
+    },
+    {
+      "kind": "side_project",
+      "weight": 0.3,
+      "evidence_ref": "claim_id:side_project_involvement"
+    },
+    {
+      "kind": "community",
+      "weight": 0.2,
+      "evidence_ref": "claim_id:community_participation"
+    }
+  ],
+  "caveat": "The assessment is based on limited public information and contributions, which makes the estimate uncertain."
+}

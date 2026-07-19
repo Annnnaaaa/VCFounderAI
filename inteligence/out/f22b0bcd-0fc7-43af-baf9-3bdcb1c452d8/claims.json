@@ -1,0 +1,43 @@
+{
+  "opportunity_id": "f22b0bcd-0fc7-43af-baf9-3bdcb1c452d8",
+  "claims": [
+    {
+      "claim_id": "ebcb7311-e382-5f71-86b8-330cd8af4e76",
+      "opportunity_id": "f22b0bcd-0fc7-43af-baf9-3bdcb1c452d8",
+      "text": "Show HN launch reached 231 points with 82 comments",
+      "type": "traction",
+      "source": "hn",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 1.0,
+        "evidence": [
+          {
+            "url": "https://news.ycombinator.com/item?id=44524544",
+            "snippet": "Show HN: Cactus \u2013 Ollama for Smartphones \u2014 231 points, 82 comments, by HenryNdubuaku.",
+            "source": "hn"
+          }
+        ],
+        "note": "The evidence directly supports the claim by showing the exact points and comments mentioned."
+      }
+    },
+    {
+      "claim_id": "3ce27cf5-2c4f-59a2-94e3-0bf497e02712",
+      "opportunity_id": "f22b0bcd-0fc7-43af-baf9-3bdcb1c452d8",
+      "text": "Shipped a public product at https://github.com/cactus-compute/cactus",
+      "type": "tech",
+      "source": "hn",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 0.9,
+        "evidence": [
+          {
+            "url": "https://github.com/cactus-compute/cactus",
+            "snippet": "Product link submitted with the Show HN post: Cactus \u2013 Ollama for Smartphones",
+            "source": "hn"
+          }
+        ],
+        "note": "The evidence shows that the product is publicly available at the provided GitHub link, corroborating the claim."
+      }
+    }
+  ]
+}

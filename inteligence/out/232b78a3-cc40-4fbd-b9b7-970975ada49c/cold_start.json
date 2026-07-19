@@ -1,0 +1,25 @@
+{
+  "opportunity_id": "232b78a3-cc40-4fbd-b9b7-970975ada49c",
+  "is_cold_start": true,
+  "founder_quality": {
+    "band": "medium",
+    "interval": [
+      0.36,
+      0.64
+    ],
+    "signals_used": 2
+  },
+  "signals": [
+    {
+      "kind": "oss",
+      "weight": 0.6,
+      "evidence_ref": "A big tech dev experience for an open source CMS"
+    },
+    {
+      "kind": "domain_insight",
+      "weight": 0.4,
+      "evidence_ref": "A big tech dev experience for an open source CMS"
+    }
+  ],
+  "caveat": "The founder has a thin track record with limited public information, but involvement in an open source CMS project suggests some technical capability and domain insight."
+}

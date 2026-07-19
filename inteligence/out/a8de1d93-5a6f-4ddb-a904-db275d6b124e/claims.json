@@ -1,0 +1,57 @@
+{
+  "opportunity_id": "a8de1d93-5a6f-4ddb-a904-db275d6b124e",
+  "claims": [
+    {
+      "claim_id": "708bd520-1a6a-5aa8-a14c-2950e5302d87",
+      "opportunity_id": "a8de1d93-5a6f-4ddb-a904-db275d6b124e",
+      "text": "Over 150 GitHub stars on our initial open-source project",
+      "type": "traction",
+      "source": "deck_slide_1",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.5,
+        "evidence": [],
+        "note": "There is no external evidence provided to verify or contradict the claim about GitHub stars."
+      }
+    },
+    {
+      "claim_id": "c6878d80-87df-55f7-88de-907bb3c7861e",
+      "opportunity_id": "a8de1d93-5a6f-4ddb-a904-db275d6b124e",
+      "text": "Small team of 3 working part-time on the project",
+      "type": "team",
+      "source": "deck_slide_2",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.8,
+        "evidence": [],
+        "note": "There is no external evidence provided to verify or contradict the claim about the team size and their part-time status."
+      }
+    },
+    {
+      "claim_id": "d5d0b57d-7709-5ef6-b190-78ea7dc0dfb4",
+      "opportunity_id": "a8de1d93-5a6f-4ddb-a904-db275d6b124e",
+      "text": "Targeting a $500 million market in data tooling for SMEs",
+      "type": "market",
+      "source": "deck_slide_3",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.5,
+        "evidence": [],
+        "note": "There is no external evidence provided to verify or contradict the claim about the market size."
+      }
+    },
+    {
+      "claim_id": "f599f952-049a-5d0c-afee-2cbea36082b8",
+      "opportunity_id": "a8de1d93-5a6f-4ddb-a904-db275d6b124e",
+      "text": "Prototype completed and in user testing phase",
+      "type": "tech",
+      "source": "deck_slide_4",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.8,
+        "evidence": [],
+        "note": "There is no external evidence provided to verify the claim that the prototype is completed and in user testing phase."
+      }
+    }
+  ]
+}

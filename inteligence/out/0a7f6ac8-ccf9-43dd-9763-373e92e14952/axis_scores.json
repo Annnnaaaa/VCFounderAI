@@ -1,0 +1,31 @@
+{
+  "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952",
+  "axes": {
+    "founder": {
+      "score": 75,
+      "trend": "up",
+      "rationale": "Lena Vogt has demonstrated traction with the VectorForge project, evidenced by 800 GitHub stars and a successful Show HN launch. However, her claimed experience as an inference engineer is unverified, which slightly tempers the score. The corroborated traction suggests a positive trend in her capabilities and influence.",
+      "evidence_refs": [
+        "5143e3f6-9f9d-5dbd-851d-35ebfc5c5ab6",
+        "9a6039eb-8bf6-53d6-9ec6-403c522b41ca",
+        "0277f5cf-a79d-508c-b9e8-bf92ec7f8625"
+      ]
+    },
+    "market": {
+      "rating": "neutral",
+      "rationale": "The market for inference tooling is potentially growing, as suggested by unverified claims about the displacement of hosted APIs by open-weight models. However, the lack of corroborated evidence makes it difficult to confidently rate the market as bullish.",
+      "evidence_refs": [
+        "89efb466-6513-5e97-8de6-85cc8d17f8cc",
+        "e15fb62e-c5b6-4ad2-b85e-56c1202fd974"
+      ]
+    },
+    "idea_vs_market": {
+      "verdict": "survives",
+      "rationale": "The idea of a low-latency inference runtime for quantized open-weight models aligns well with the current trends in AI infrastructure, where efficiency and cost-effectiveness are key. The traction achieved by VectorForge supports the viability of this idea in the market.",
+      "evidence_refs": [
+        "5143e3f6-9f9d-5dbd-851d-35ebfc5c5ab6",
+        "9a6039eb-8bf6-53d6-9ec6-403c522b41ca"
+      ]
+    }
+  }
+}

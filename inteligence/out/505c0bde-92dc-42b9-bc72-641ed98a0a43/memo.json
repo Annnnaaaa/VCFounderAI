@@ -1,0 +1,37 @@
+{
+  "opportunity_id": "505c0bde-92dc-42b9-bc72-641ed98a0a43",
+  "sections": {
+    "company_snapshot": "The company has developed a smart model routing solution that integrates directly with popular AI models such as Claude, Codex, and Cursor. This solution is publicly available on GitHub, indicating a commitment to open-source development and community engagement [claim:f4d79c41-fcc0-5382-8449-0c65f23451a1].",
+    "investment_hypotheses": [
+      "The company's product has already gained significant traction, as evidenced by its successful launch on Hacker News, which garnered 216 points and 113 comments [claim:d8db5cfd-946c-50fb-a317-48c2b7133f2a]. This level of engagement suggests strong interest and potential demand for the product.",
+      "The market for AI infrastructure, particularly in optimizing model routing, is expanding. As AI models become more prevalent, the need for efficient routing solutions will likely grow, positioning the company well within a promising market segment."
+    ],
+    "swot": {
+      "strengths": [
+        "The product has demonstrated initial traction with a successful Show HN launch [claim:d8db5cfd-946c-50fb-a317-48c2b7133f2a].",
+        "The founder has shown technical capability by shipping a public product on GitHub [claim:f4d79c41-fcc0-5382-8449-0c65f23451a1]."
+      ],
+      "weaknesses": [
+        "The company is pre-revenue, and financials have not been disclosed, which poses a risk in assessing financial viability."
+      ],
+      "opportunities": [
+        "The growing market for AI infrastructure and model optimization presents a significant opportunity for expansion and adoption of the company's solution."
+      ],
+      "threats": [
+        "The competitive landscape in AI infrastructure could pose challenges if larger players enter the model routing space with more resources."
+      ]
+    },
+    "problem_product": "The company addresses the problem of inefficient model routing in AI applications by providing a smart routing solution that optimizes the performance of popular AI models like Claude, Codex, and Cursor [claim:f4d79c41-fcc0-5382-8449-0c65f23451a1].",
+    "traction_kpis": "The product's launch on Hacker News achieved 216 points and 113 comments, indicating strong initial traction and interest from the tech community [claim:d8db5cfd-946c-50fb-a317-48c2b7133f2a]."
+  },
+  "gap_flags": [
+    "Cap table: not disclosed",
+    "Financials: pre-revenue, none"
+  ],
+  "claim_refs": [
+    "d8db5cfd-946c-50fb-a317-48c2b7133f2a",
+    "f4d79c41-fcc0-5382-8449-0c65f23451a1"
+  ],
+  "recommendation": "needs_call",
+  "what_would_change_my_mind": "Disclosure of financials and a detailed cap table."
+}
