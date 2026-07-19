@@ -1,72 +1,5 @@
 [
   {
-    "id": "3c39b4c7-f14b-4fe0-9b98-4bbfa4169f5a",
-    "source": "outbound_github",
-    "founder": {
-      "name": "Shubham Saboo",
-      "handles": {
-        "github": "Shubhamsaboo",
-        "twitter": "Saboo_Shubham_",
-        "linkedin": ""
-      },
-      "identity": "github:shubhamsaboo",
-      "location": ""
-    },
-    "company": {
-      "name": "awesome-llm-apps",
-      "stage": "pre-seed",
-      "sector": "vector/data tooling",
-      "one_liner": "100+ AI Agent & RAG apps you can actually run \u2014 clone, customize, ship."
-    },
-    "deck_present": false,
-    "deck_url": null,
-    "created_at": "2026-07-19T04:16:36.39931+00:00",
-    "status": "screened",
-    "founder_score": {
-      "trend": "up",
-      "value": 85,
-      "history": [
-        {
-          "ts": "2026-07-19T05:03:42.423171+00:00",
-          "value": 70.0,
-          "reason": "Shubham Saboo has a significant presence on GitHub with 124065 stars on the 'awesome-llm-apps' repository and 9254 followers across 184 public repos, indicating a strong technical reputation and commu",
-          "opportunity_id": "3c39b4c7-f14b-4fe0-9b98-4bbfa4169f5a"
-        },
-        {
-          "ts": "2026-07-19T05:26:26.952405+00:00",
-          "value": 85.0,
-          "reason": "Shubham Saboo has demonstrated significant traction and influence in the AI community, as evidenced by the high number of GitHub stars (124065) and followers (9254). The active maintenance of the proj",
-          "opportunity_id": "3c39b4c7-f14b-4fe0-9b98-4bbfa4169f5a"
-        }
-      ],
-      "confidence": 0.6
-    },
-    "axes": {
-      "market": {
-        "rating": "bull",
-        "rationale": "The market for AI infrastructure and applications, particularly those involving AI agents and retrieval-augmented generation (RAG), is experiencing rapid growth. The increasing demand for customizable AI solutions supports a bullish outlook.",
-        "evidence_refs": []
-      },
-      "founder": {
-        "score": 85,
-        "trend": "up",
-        "rationale": "Shubham Saboo has demonstrated significant traction and influence in the AI community, as evidenced by the high number of GitHub stars (124065) and followers (9254). The active maintenance of the project further supports the founder's commitment and capability.",
-        "evidence_refs": [
-          "ac3e7460-595e-518e-93c5-fd116dbcfd3b",
-          "ef9207e6-5e3c-51e2-90ad-6b6929c52f0d",
-          "e520ea3d-532d-53aa-9ca2-a549c42dbea1"
-        ]
-      },
-      "idea_vs_market": {
-        "verdict": "survives",
-        "rationale": "The idea of providing a platform for 100+ AI Agent & RAG apps that are easily customizable and deployable aligns well with current market trends. The high GitHub engagement indicates strong market interest and validation.",
-        "evidence_refs": [
-          "ac3e7460-595e-518e-93c5-fd116dbcfd3b"
-        ]
-      }
-    }
-  },
-  {
     "id": "cc3cae99-7b04-4dcc-9eac-c9ed053e2334",
     "source": "outbound_github",
     "founder": {
@@ -91,7 +24,7 @@
     "status": "memo_ready",
     "founder_score": {
       "trend": "up",
-      "value": 85,
+      "value": 90,
       "history": [
         {
           "ts": "2026-07-19T05:02:10.507125+00:00",
@@ -104,6 +37,12 @@
           "value": 85.0,
           "reason": "Julius Brussee has a strong technical background as evidenced by the active maintenance of the project (claim_id=c0fb9434-f723-59a9-94ac-4c3b6985eec5) and significant GitHub following (claim_id=ceff79",
           "opportunity_id": "cc3cae99-7b04-4dcc-9eac-c9ed053e2334"
+        },
+        {
+          "ts": "2026-07-19T05:29:52.275957+00:00",
+          "value": 90.0,
+          "reason": "Julius Brussee has demonstrated strong technical capabilities and community engagement. The active maintenance of the project (claim_id=c0fb9434-f723-59a9-94ac-4c3b6985eec5) and significant GitHub fol",
+          "opportunity_id": "cc3cae99-7b04-4dcc-9eac-c9ed053e2334"
         }
       ],
       "confidence": 0.6
@@ -111,15 +50,13 @@
     "axes": {
       "market": {
         "rating": "neutral",
-        "rationale": "The market for AI infrastructure tools, particularly those focused on token optimization, is competitive and evolving. While there is a clear demand for efficient AI models, the specific niche of token reduction may face challenges in differentiation and scalability. However, the substantial traction on GitHub suggests there is interest, warranting a neutral stance until further market dynamics are observed.",
-        "evidence_refs": [
-          "debd7448-729f-5b7b-b470-357219bccc3b"
-        ]
+        "rationale": "The market for AI infrastructure tools, particularly those focused on token optimization, is competitive but growing. While there is demand for efficient AI models, the niche of drastically reducing tokens by altering language style is unproven at scale. The market's receptiveness to such a unique approach remains to be seen.",
+        "evidence_refs": []
       },
       "founder": {
-        "score": 85,
+        "score": 90,
         "trend": "up",
-        "rationale": "Julius Brussee has a strong technical background as evidenced by the active maintenance of the project (claim_id=c0fb9434-f723-59a9-94ac-4c3b6985eec5) and significant GitHub following (claim_id=ceff7917-ba85-5d13-8125-4a68965fe5da). The project has also gained substantial traction with over 90,000 stars (claim_id=debd7448-729f-5b7b-b470-357219bccc3b), indicating a high level of interest and validation from the developer community. This suggests a positive trend in the founder's capabilities and influence.",
+        "rationale": "Julius Brussee has demonstrated strong technical capabilities and community engagement. The active maintenance of the project (claim_id=c0fb9434-f723-59a9-94ac-4c3b6985eec5) and significant GitHub following (claim_id=ceff7917-ba85-5d13-8125-4a68965fe5da) indicate a well-regarded presence in the developer community. The high number of stars on the caveman project (claim_id=debd7448-729f-5b7b-b470-357219bccc3b) further supports his credibility and influence.",
         "evidence_refs": [
           "c0fb9434-f723-59a9-94ac-4c3b6985eec5",
           "ceff7917-ba85-5d13-8125-4a68965fe5da",
@@ -127,11 +64,9 @@
         ]
       },
       "idea_vs_market": {
-        "verdict": "survives",
-        "rationale": "The idea of reducing tokens in AI models is relevant given the ongoing need for efficiency in AI processing. The significant traction on GitHub (claim_id=debd7448-729f-5b7b-b470-357219bccc3b) indicates that the idea resonates with a large audience, suggesting it can survive in the current market environment. However, continued innovation and differentiation will be key to maintaining its relevance.",
-        "evidence_refs": [
-          "debd7448-729f-5b7b-b470-357219bccc3b"
-        ]
+        "verdict": "needs_pivot",
+        "rationale": "While the idea of reducing tokens by simplifying language is innovative, it may face challenges in adoption due to potential trade-offs in clarity and precision. The market may require more robust solutions that balance token efficiency with maintaining the integrity of the original content.",
+        "evidence_refs": []
       }
     }
   },
@@ -160,7 +95,7 @@
     "status": "memo_ready",
     "founder_score": {
       "trend": "up",
-      "value": 85,
+      "value": 90,
       "history": [
         {
           "ts": "2026-07-19T05:01:39.083653+00:00",
@@ -173,6 +108,12 @@
           "value": 85.0,
           "reason": "Sebastian Raschka has a strong technical background as evidenced by his active maintenance of the project (claim_id=847de1ac-ddc8-5ebe-88c0-34953b533267) and significant GitHub following (claim_id=795",
           "opportunity_id": "23ee693a-f9b9-42c1-abab-494ed4e33551"
+        },
+        {
+          "ts": "2026-07-19T05:30:23.871790+00:00",
+          "value": 90.0,
+          "reason": "Sebastian Raschka has a strong presence in the AI and machine learning community, as evidenced by his significant GitHub following and the high number of stars on his project. His active maintenance o",
+          "opportunity_id": "23ee693a-f9b9-42c1-abab-494ed4e33551"
         }
       ],
       "confidence": 0.6
@@ -180,39 +121,311 @@
     "axes": {
       "market": {
         "rating": "bull",
-        "rationale": "The market for large language models (LLMs) and AI infrastructure is currently very strong, with increasing demand for customizable and open-source AI solutions. The ongoing interest in AI and machine learning, coupled with the need for transparency and control over AI models, supports a bullish outlook.",
+        "rationale": "The market for large language models (LLMs) and AI infrastructure is rapidly growing, with increasing demand for customizable and open-source solutions. This trend is supported by the widespread adoption of AI technologies across various industries.",
         "evidence_refs": []
       },
       "founder": {
-        "score": 85,
+        "score": 90,
         "trend": "up",
-        "rationale": "Sebastian Raschka has a strong technical background as evidenced by his active maintenance of the project (claim_id=847de1ac-ddc8-5ebe-88c0-34953b533267) and significant GitHub following (claim_id=795676cc-0115-5baf-ab48-7d8d257312c7). The high number of stars on the project (claim_id=1728fdcd-f383-514c-b54c-a70d160c29cb) indicates strong community interest and validation of his work.",
+        "rationale": "Sebastian Raschka has a strong presence in the AI and machine learning community, as evidenced by his significant GitHub following and the high number of stars on his project. His active maintenance of the project further demonstrates commitment and capability.",
         "evidence_refs": [
-          "847de1ac-ddc8-5ebe-88c0-34953b533267",
           "795676cc-0115-5baf-ab48-7d8d257312c7",
-          "1728fdcd-f383-514c-b54c-a70d160c29cb"
+          "1728fdcd-f383-514c-b54c-a70d160c29cb",
+          "847de1ac-ddc8-5ebe-88c0-34953b533267"
         ]
       },
       "idea_vs_market": {
         "verdict": "survives",
-        "rationale": "The idea of implementing a ChatGPT-like LLM from scratch in PyTorch aligns well with current market trends towards open-source AI development and educational resources. The high level of interest as indicated by GitHub stars suggests that the project meets a real need in the market.",
+        "rationale": "The idea of implementing a ChatGPT-like LLM from scratch in PyTorch aligns well with current market trends towards open-source AI development and education. The project's traction and active maintenance suggest it meets a real need in the market.",
         "evidence_refs": [
-          "1728fdcd-f383-514c-b54c-a70d160c29cb"
+          "1728fdcd-f383-514c-b54c-a70d160c29cb",
+          "847de1ac-ddc8-5ebe-88c0-34953b533267"
         ]
       }
     }
   },
   {
-    "id": "0b8540a9-707e-4e57-99c1-8128636390a8",
+    "id": "3c39b4c7-f14b-4fe0-9b98-4bbfa4169f5a",
+    "source": "outbound_github",
+    "founder": {
+      "name": "Shubham Saboo",
+      "handles": {
+        "github": "Shubhamsaboo",
+        "twitter": "Saboo_Shubham_",
+        "linkedin": ""
+      },
+      "identity": "github:shubhamsaboo",
+      "location": ""
+    },
+    "company": {
+      "name": "awesome-llm-apps",
+      "stage": "pre-seed",
+      "sector": "vector/data tooling",
+      "one_liner": "100+ AI Agent & RAG apps you can actually run \u2014 clone, customize, ship."
+    },
+    "deck_present": false,
+    "deck_url": null,
+    "created_at": "2026-07-19T04:16:36.39931+00:00",
+    "status": "memo_ready",
+    "founder_score": {
+      "trend": "up",
+      "value": 90,
+      "history": [
+        {
+          "ts": "2026-07-19T05:03:42.423171+00:00",
+          "value": 70.0,
+          "reason": "Shubham Saboo has a significant presence on GitHub with 124065 stars on the 'awesome-llm-apps' repository and 9254 followers across 184 public repos, indicating a strong technical reputation and commu",
+          "opportunity_id": "3c39b4c7-f14b-4fe0-9b98-4bbfa4169f5a"
+        },
+        {
+          "ts": "2026-07-19T05:26:26.952405+00:00",
+          "value": 85.0,
+          "reason": "Shubham Saboo has demonstrated significant traction and influence in the AI community, as evidenced by the high number of GitHub stars (124065) and followers (9254). The active maintenance of the proj",
+          "opportunity_id": "3c39b4c7-f14b-4fe0-9b98-4bbfa4169f5a"
+        },
+        {
+          "ts": "2026-07-19T05:45:30.457338+00:00",
+          "value": 90.0,
+          "reason": "Shubham Saboo has demonstrated significant traction and influence in the AI community, as evidenced by the high number of GitHub stars (124065) and followers (9254). The active maintenance of the proj",
+          "opportunity_id": "3c39b4c7-f14b-4fe0-9b98-4bbfa4169f5a"
+        }
+      ],
+      "confidence": 0.6
+    },
+    "axes": {
+      "market": {
+        "rating": "bull",
+        "rationale": "The market for AI applications, particularly those involving large language models (LLMs) and retrieval-augmented generation (RAG), is rapidly expanding. The ability to clone, customize, and ship AI applications aligns well with current market demands for flexible and scalable AI solutions.",
+        "evidence_refs": []
+      },
+      "founder": {
+        "score": 90,
+        "trend": "up",
+        "rationale": "Shubham Saboo has demonstrated significant traction and influence in the AI community, as evidenced by the high number of GitHub stars (124065) and followers (9254). The active maintenance of the project further supports the founder's commitment and capability.",
+        "evidence_refs": [
+          "ac3e7460-595e-518e-93c5-fd116dbcfd3b",
+          "ef9207e6-5e3c-51e2-90ad-6b6929c52f0d",
+          "e520ea3d-532d-53aa-9ca2-a549c42dbea1"
+        ]
+      },
+      "idea_vs_market": {
+        "verdict": "survives",
+        "rationale": "The idea of providing a platform for running, customizing, and deploying AI applications is well-aligned with the growing demand for AI-driven solutions. The high level of interest and engagement on GitHub suggests that the idea is resonating with the market.",
+        "evidence_refs": [
+          "ac3e7460-595e-518e-93c5-fd116dbcfd3b"
+        ]
+      }
+    }
+  },
+  {
+    "id": "3c8e5cf0-23bb-4fa9-ad4d-5d0eec985835",
+    "source": "outbound_github",
+    "founder": {
+      "name": "Affaan Mustafa",
+      "handles": {
+        "github": "affaan-m",
+        "twitter": "affaanmustafa",
+        "linkedin": ""
+      },
+      "identity": "github:affaan-m",
+      "location": "NYC"
+    },
+    "company": {
+      "name": "ECC",
+      "stage": "pre-seed",
+      "sector": "inference",
+      "one_liner": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
+    },
+    "deck_present": false,
+    "deck_url": null,
+    "created_at": "2026-07-19T04:16:36.39931+00:00",
+    "status": "memo_ready",
+    "founder_score": {
+      "trend": "up",
+      "value": 85,
+      "history": [
+        {
+          "ts": "2026-07-19T05:03:12.670902+00:00",
+          "value": 70.0,
+          "reason": "Affaan Mustafa has a strong presence on GitHub with 8506 followers and a significant number of stars on the ECC project, indicating a high level of interest and potential influence in the developer co",
+          "opportunity_id": "3c8e5cf0-23bb-4fa9-ad4d-5d0eec985835"
+        },
+        {
+          "ts": "2026-07-19T05:34:32.146821+00:00",
+          "value": 85.0,
+          "reason": "Affaan Mustafa has demonstrated strong technical capabilities and community engagement, as evidenced by the high number of GitHub stars (230973) and followers (8506) across multiple repositories. The ",
+          "opportunity_id": "3c8e5cf0-23bb-4fa9-ad4d-5d0eec985835"
+        }
+      ],
+      "confidence": 0.6
+    },
+    "axes": {
+      "market": {
+        "rating": "bull",
+        "rationale": "The AI infrastructure market, particularly in performance optimization for AI agents, is experiencing significant growth. With the increasing adoption of AI technologies, there is a strong demand for tools that enhance performance and efficiency, making this a promising market.",
+        "evidence_refs": []
+      },
+      "founder": {
+        "score": 85,
+        "trend": "up",
+        "rationale": "Affaan Mustafa has demonstrated strong technical capabilities and community engagement, as evidenced by the high number of GitHub stars (230973) and followers (8506) across multiple repositories. The project is actively maintained, indicating a commitment to development and improvement.",
+        "evidence_refs": [
+          "a8cf87ad-c3c3-5cec-bf7a-fd61fa4ec558",
+          "db8a390d-c9b7-5439-b18d-3d3cb15b1f11",
+          "01826965-db42-52d8-98e7-a0f32b6b18b7",
+          "dd3219c8-58dd-5777-b87c-7a648db717b8"
+        ]
+      },
+      "idea_vs_market": {
+        "verdict": "survives",
+        "rationale": "The idea of a performance optimization system for AI agents aligns well with current market needs. As AI models become more complex, the demand for optimization tools is expected to grow, supporting the viability of ECC in the market.",
+        "evidence_refs": []
+      }
+    }
+  },
+  {
+    "id": "8b5d7c23-cf16-4e9c-90b1-6d469dc5699f",
+    "source": "outbound_github",
+    "founder": {
+      "name": "rUv",
+      "handles": {
+        "github": "ruvnet",
+        "twitter": "ruv",
+        "linkedin": ""
+      },
+      "identity": "github:ruvnet",
+      "location": "0x"
+    },
+    "company": {
+      "name": "ruflo",
+      "stage": "pre-seed",
+      "sector": "agent frameworks",
+      "one_liner": "\ud83c\udf0a The leading agent meta-harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, RAG integration, and native Claude Code / Codex / Hermes and many more Integrated"
+    },
+    "deck_present": false,
+    "deck_url": null,
+    "created_at": "2026-07-19T04:19:16.733357+00:00",
+    "status": "memo_ready",
+    "founder_score": {
+      "trend": "up",
+      "value": 85,
+      "history": [
+        {
+          "ts": "2026-07-19T05:05:05.869405+00:00",
+          "value": 70.0,
+          "reason": "The founder, rUv, has a significant presence on GitHub with 10,326 followers and 197 public repositories, indicating a strong technical background and community engagement (claim_id=689af3ee-eebd-55f9",
+          "opportunity_id": "8b5d7c23-cf16-4e9c-90b1-6d469dc5699f"
+        },
+        {
+          "ts": "2026-07-19T05:32:25.298336+00:00",
+          "value": 85.0,
+          "reason": "The founder, rUv, has demonstrated significant technical capability and community engagement. The project is actively maintained (claim_id=4cd88158-f1e0-5c4e-93c4-fd2e0a129b51), and the founder has a ",
+          "opportunity_id": "8b5d7c23-cf16-4e9c-90b1-6d469dc5699f"
+        }
+      ],
+      "confidence": 0.6
+    },
+    "axes": {
+      "market": {
+        "rating": "bull",
+        "rationale": "The market for AI infrastructure, particularly in areas like autonomous workflows, conversational AI, and intelligent agent systems, is experiencing rapid growth. The integration of advanced technologies such as adaptive memory and self-learning intelligence aligns well with current market trends and demands. The presence of major players like Claude Code, Codex, and Hermes further validates the market's potential.",
+        "evidence_refs": []
+      },
+      "founder": {
+        "score": 85,
+        "trend": "up",
+        "rationale": "The founder, rUv, has demonstrated significant technical capability and community engagement. The project is actively maintained (claim_id=4cd88158-f1e0-5c4e-93c4-fd2e0a129b51), and the founder has a substantial following on GitHub with 10,326 followers across 197 public repositories (claim_id=689af3ee-eebd-55f9-af62-fbd11a1fd613). Additionally, the project has garnered 65,074 stars, indicating strong traction and interest (claim_id=31068a8b-50b8-5bb5-8aca-b83ad188d9c4). These factors contribute to an upward trend in the founder's score.",
+        "evidence_refs": [
+          "4cd88158-f1e0-5c4e-93c4-fd2e0a129b51",
+          "689af3ee-eebd-55f9-af62-fbd11a1fd613",
+          "31068a8b-50b8-5bb5-8aca-b83ad188d9c4"
+        ]
+      },
+      "idea_vs_market": {
+        "verdict": "survives",
+        "rationale": "The idea of deploying intelligent multi-player swarms and coordinating autonomous workflows is well-aligned with the current market needs. The integration of RAG and support for multiple AI systems like Claude Code and Codex suggests a robust and versatile platform that can adapt to various use cases, ensuring its relevance in the evolving AI infrastructure landscape.",
+        "evidence_refs": []
+      }
+    }
+  },
+  {
+    "id": "9fa3bf8d-2686-4f83-ad31-b8939bbf2cde",
+    "source": "outbound_github",
+    "founder": {
+      "name": "Yaowei Zheng",
+      "handles": {
+        "github": "hiyouga",
+        "twitter": "code_hiyouga",
+        "linkedin": ""
+      },
+      "identity": "github:hiyouga",
+      "location": "Beijing, China"
+    },
+    "company": {
+      "name": "LlamaFactory",
+      "stage": "pre-seed",
+      "sector": "inference",
+      "one_liner": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)"
+    },
+    "deck_present": false,
+    "deck_url": null,
+    "created_at": "2026-07-19T04:19:16.732361+00:00",
+    "status": "memo_ready",
+    "founder_score": {
+      "trend": "up",
+      "value": 85,
+      "history": [
+        {
+          "ts": "2026-07-19T05:04:37.540230+00:00",
+          "value": 70.0,
+          "reason": "Yaowei Zheng has a strong presence on GitHub with 73,361 stars on LlamaFactory and 6,428 followers across 64 public repositories, indicating significant community interest and engagement. However, the",
+          "opportunity_id": "9fa3bf8d-2686-4f83-ad31-b8939bbf2cde"
+        },
+        {
+          "ts": "2026-07-19T05:33:18.284759+00:00",
+          "value": 85.0,
+          "reason": "Yaowei Zheng has demonstrated significant technical capability and community engagement, as evidenced by the high number of GitHub stars (73,361) on LlamaFactory and a substantial following (6,428 fol",
+          "opportunity_id": "9fa3bf8d-2686-4f83-ad31-b8939bbf2cde"
+        }
+      ],
+      "confidence": 0.6
+    },
+    "axes": {
+      "market": {
+        "rating": "bull",
+        "rationale": "The market for AI infrastructure, particularly in the area of fine-tuning large language models (LLMs) and vision-language models (VLMs), is rapidly growing. The increasing demand for efficient and scalable AI solutions supports a bullish outlook for this sector.",
+        "evidence_refs": []
+      },
+      "founder": {
+        "score": 85,
+        "trend": "up",
+        "rationale": "Yaowei Zheng has demonstrated significant technical capability and community engagement, as evidenced by the high number of GitHub stars (73,361) on LlamaFactory and a substantial following (6,428 followers) across multiple repositories. The project is actively maintained, indicating a strong commitment to the product's development.",
+        "evidence_refs": [
+          "d7560e6c-42c6-5f36-bd69-a534548cc2d9",
+          "6ff60277-4228-5a64-a12f-a77b453b9409",
+          "5a5bc5c4-b5db-522a-9b79-50c0ef7ca5be"
+        ]
+      },
+      "idea_vs_market": {
+        "verdict": "survives",
+        "rationale": "The idea of providing a unified platform for efficient fine-tuning of over 100 LLMs and VLMs aligns well with current market needs, as organizations seek to optimize AI model performance and reduce costs associated with training large models.",
+        "evidence_refs": [
+          "d7560e6c-42c6-5f36-bd69-a534548cc2d9"
+        ]
+      }
+    }
+  },
+  {
+    "id": "5c3d0c02-ccbe-450e-bf56-c33ef2b47df7",
     "source": "inbound_apply",
     "founder": {
       "name": "Test Founder",
       "handles": {
-        "github": "testfounder0bd621",
+        "github": "testfounderc17f03",
         "twitter": "",
         "linkedin": ""
       },
-      "identity": "github:testfounder0bd621",
+      "identity": "github:testfounderc17f03",
       "location": ""
     },
     "company": {
@@ -222,50 +435,52 @@
       "one_liner": ""
     },
     "deck_present": true,
-    "deck_url": "https://vzlqgccpvajxacponhud.supabase.co/storage/v1/object/public/decks/0b8540a9-707e-4e57-99c1-8128636390a8/deck.pdf",
-    "created_at": "2026-07-18T21:31:22.916107+00:00",
+    "deck_url": "https://vzlqgccpvajxacponhud.supabase.co/storage/v1/object/public/decks/5c3d0c02-ccbe-450e-bf56-c33ef2b47df7/deck.pdf",
+    "created_at": "2026-07-18T21:39:15.876503+00:00",
     "status": "memo_ready",
     "founder_score": {
-      "trend": "down",
-      "value": 50,
+      "trend": "flat",
+      "value": 78,
       "history": [
         {
-          "ts": "2026-07-18T21:31:27.315035+00:00",
+          "ts": "2026-07-18T21:39:20.052604+00:00",
           "value": 60.0,
           "reason": "first pass",
-          "opportunity_id": "0b8540a9-707e-4e57-99c1-8128636390a8"
+          "opportunity_id": "5c3d0c02-ccbe-450e-bf56-c33ef2b47df7"
         },
         {
-          "ts": "2026-07-18T21:31:28.042615+00:00",
+          "ts": "2026-07-18T21:39:20.667292+00:00",
           "value": 78.0,
           "reason": "shipped OSS",
-          "opportunity_id": "d79f831c-a36c-4265-88bf-194743b20de6"
+          "opportunity_id": "1475fc9d-b67c-49be-a1f0-39959f62cdbe"
         },
         {
-          "ts": "2026-07-19T04:58:56.339327+00:00",
-          "value": 50.0,
-          "reason": "The founder's identity and location are undisclosed, which limits the ability to assess their background and credibility. The GitHub handle suggests some technical involvement, but without verified cl",
-          "opportunity_id": "d79f831c-a36c-4265-88bf-194743b20de6"
+          "ts": "2026-07-19T05:31:17.995209+00:00",
+          "value": 78.0,
+          "reason": "The founder's score remains stable at 78. There is no new information to suggest a change in the founder's capabilities or reputation. The unverified revenue claim does not impact the score as it lack",
+          "opportunity_id": "5c3d0c02-ccbe-450e-bf56-c33ef2b47df7"
         }
       ],
       "confidence": 0.6
     },
     "axes": {
       "market": {
-        "rating": "bull",
-        "rationale": "inference spend growing",
+        "rating": "neutral",
+        "rationale": "Without specific information about the company's focus or industry, it's challenging to provide a precise market rating. However, given the general growth in AI infrastructure, a neutral stance is appropriate until more details are available.",
         "evidence_refs": []
       },
       "founder": {
         "score": 78,
-        "trend": "up",
-        "rationale": "shipped OSS",
+        "trend": "flat",
+        "rationale": "The founder's score remains stable at 78. There is no new information to suggest a change in the founder's capabilities or reputation. The unverified revenue claim does not impact the score as it lacks sufficient evidence.",
         "evidence_refs": []
       },
       "idea_vs_market": {
-        "verdict": "survives",
-        "rationale": "wedge holds",
-        "evidence_refs": []
+        "verdict": "needs_pivot",
+        "rationale": "The lack of a clear company focus or product description makes it difficult to assess the idea's fit with the market. The unverified revenue claim does not provide enough context to determine market alignment.",
+        "evidence_refs": [
+          "a868ad50-2dc7-4968-947d-63639d318cae"
+        ]
       }
     }
   },
@@ -293,7 +508,7 @@
     "created_at": "2026-07-18T21:39:16.34558+00:00",
     "status": "new",
     "founder_score": {
-      "trend": "up",
+      "trend": "flat",
       "value": 78,
       "history": [
         {
@@ -307,6 +522,56 @@
           "value": 78.0,
           "reason": "shipped OSS",
           "opportunity_id": "1475fc9d-b67c-49be-a1f0-39959f62cdbe"
+        },
+        {
+          "ts": "2026-07-19T05:31:17.995209+00:00",
+          "value": 78.0,
+          "reason": "The founder's score remains stable at 78. There is no new information to suggest a change in the founder's capabilities or reputation. The unverified revenue claim does not impact the score as it lack",
+          "opportunity_id": "5c3d0c02-ccbe-450e-bf56-c33ef2b47df7"
+        }
+      ],
+      "confidence": 0.6
+    },
+    "axes": {}
+  },
+  {
+    "id": "b4f30e1f-a847-48fc-b083-c5c060ac553d",
+    "source": "inbound_apply",
+    "founder": {
+      "name": "",
+      "handles": {
+        "github": "testfounder2807b0",
+        "twitter": "",
+        "linkedin": ""
+      },
+      "identity": "github:testfounder2807b0",
+      "location": ""
+    },
+    "company": {
+      "name": "Second Venture",
+      "stage": "pre-seed",
+      "sector": "",
+      "one_liner": ""
+    },
+    "deck_present": false,
+    "deck_url": null,
+    "created_at": "2026-07-19T06:15:20.499585+00:00",
+    "status": "new",
+    "founder_score": {
+      "trend": "up",
+      "value": 78,
+      "history": [
+        {
+          "ts": "2026-07-19T06:15:24.488544+00:00",
+          "value": 60.0,
+          "reason": "first pass",
+          "opportunity_id": "891c7426-cc2e-4fb7-a6bc-c2ed363f9c9a"
+        },
+        {
+          "ts": "2026-07-19T06:15:25.202128+00:00",
+          "value": 78.0,
+          "reason": "shipped OSS",
+          "opportunity_id": "b4f30e1f-a847-48fc-b083-c5c060ac553d"
         }
       ],
       "confidence": 0
@@ -314,16 +579,16 @@
     "axes": {}
   },
   {
-    "id": "5c3d0c02-ccbe-450e-bf56-c33ef2b47df7",
+    "id": "891c7426-cc2e-4fb7-a6bc-c2ed363f9c9a",
     "source": "inbound_apply",
     "founder": {
       "name": "Test Founder",
       "handles": {
-        "github": "testfounderc17f03",
+        "github": "testfounder2807b0",
         "twitter": "",
         "linkedin": ""
       },
-      "identity": "github:testfounderc17f03",
+      "identity": "github:testfounder2807b0",
       "location": ""
     },
     "company": {
@@ -333,24 +598,24 @@
       "one_liner": ""
     },
     "deck_present": true,
-    "deck_url": "https://vzlqgccpvajxacponhud.supabase.co/storage/v1/object/public/decks/5c3d0c02-ccbe-450e-bf56-c33ef2b47df7/deck.pdf",
-    "created_at": "2026-07-18T21:39:15.876503+00:00",
+    "deck_url": "https://vzlqgccpvajxacponhud.supabase.co/storage/v1/object/public/decks/891c7426-cc2e-4fb7-a6bc-c2ed363f9c9a/deck.pdf",
+    "created_at": "2026-07-19T06:15:19.667882+00:00",
     "status": "memo_ready",
     "founder_score": {
       "trend": "up",
       "value": 78,
       "history": [
         {
-          "ts": "2026-07-18T21:39:20.052604+00:00",
+          "ts": "2026-07-19T06:15:24.488544+00:00",
           "value": 60.0,
           "reason": "first pass",
-          "opportunity_id": "5c3d0c02-ccbe-450e-bf56-c33ef2b47df7"
+          "opportunity_id": "891c7426-cc2e-4fb7-a6bc-c2ed363f9c9a"
         },
         {
-          "ts": "2026-07-18T21:39:20.667292+00:00",
+          "ts": "2026-07-19T06:15:25.202128+00:00",
           "value": 78.0,
           "reason": "shipped OSS",
-          "opportunity_id": "1475fc9d-b67c-49be-a1f0-39959f62cdbe"
+          "opportunity_id": "b4f30e1f-a847-48fc-b083-c5c060ac553d"
         }
       ],
       "confidence": 0
@@ -370,6 +635,284 @@
       "idea_vs_market": {
         "verdict": "survives",
         "rationale": "wedge holds",
+        "evidence_refs": []
+      }
+    }
+  },
+  {
+    "id": "415b8eaa-75e5-451d-acbc-2b319c57d5e9",
+    "source": "outbound_github",
+    "founder": {
+      "name": "DietrichGebert",
+      "handles": {
+        "github": "DietrichGebert",
+        "twitter": "",
+        "linkedin": ""
+      },
+      "identity": "github:dietrichgebert",
+      "location": ""
+    },
+    "company": {
+      "name": "ponytail",
+      "stage": "pre-seed",
+      "sector": "inference",
+      "one_liner": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote."
+    },
+    "deck_present": false,
+    "deck_url": null,
+    "created_at": "2026-07-19T04:19:16.732361+00:00",
+    "status": "memo_ready",
+    "founder_score": {
+      "trend": "up",
+      "value": 75,
+      "history": [
+        {
+          "ts": "2026-07-19T05:04:12.010746+00:00",
+          "value": 65.0,
+          "reason": "The founder, Dietrich Gebert, has a significant GitHub presence with 85,638 stars on the project 'ponytail' and 1,201 followers across three public repositories. This indicates a strong technical repu",
+          "opportunity_id": "415b8eaa-75e5-451d-acbc-2b319c57d5e9"
+        },
+        {
+          "ts": "2026-07-19T05:35:00.041629+00:00",
+          "value": 75.0,
+          "reason": "Dietrich Gebert has demonstrated significant traction and credibility in the developer community, as evidenced by the high number of GitHub stars (claim_id=e35946c6-9912-5a7f-bf35-5fc5fe9f1883) and ac",
+          "opportunity_id": "415b8eaa-75e5-451d-acbc-2b319c57d5e9"
+        }
+      ],
+      "confidence": 0.6
+    },
+    "axes": {
+      "market": {
+        "rating": "bull",
+        "rationale": "The market for AI tools that enhance developer productivity is growing rapidly. With the increasing complexity of software development and the demand for efficient coding practices, tools that can automate or simplify coding tasks are highly sought after. The traction shown by ponytail suggests strong market interest and potential.",
+        "evidence_refs": [
+          "e35946c6-9912-5a7f-bf35-5fc5fe9f1883"
+        ]
+      },
+      "founder": {
+        "score": 75,
+        "trend": "up",
+        "rationale": "Dietrich Gebert has demonstrated significant traction and credibility in the developer community, as evidenced by the high number of GitHub stars (claim_id=e35946c6-9912-5a7f-bf35-5fc5fe9f1883) and active maintenance of the project (claim_id=0e0a5fd6-c315-53e0-aad1-4c8c177b6207). The substantial GitHub following (claim_id=bcce91f2-ca25-5669-b2b4-44ca547eadba) further supports the founder's influence and capability, indicating an upward trend from the previous score of 65.",
+        "evidence_refs": [
+          "e35946c6-9912-5a7f-bf35-5fc5fe9f1883",
+          "0e0a5fd6-c315-53e0-aad1-4c8c177b6207",
+          "bcce91f2-ca25-5669-b2b4-44ca547eadba"
+        ]
+      },
+      "idea_vs_market": {
+        "verdict": "survives",
+        "rationale": "The idea of creating an AI agent that mimics the decision-making of a senior developer aligns well with current market needs for productivity-enhancing tools. The high GitHub star count indicates that the concept resonates with developers, suggesting that the idea is viable in the current market context.",
+        "evidence_refs": [
+          "e35946c6-9912-5a7f-bf35-5fc5fe9f1883"
+        ]
+      }
+    }
+  },
+  {
+    "id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952",
+    "source": "inbound_apply",
+    "founder": {
+      "name": "Lena Vogt",
+      "handles": {
+        "github": "lenavogt",
+        "twitter": "lenavogt_dev",
+        "linkedin": "lena-vogt-infra"
+      },
+      "identity": "github:lenavogt",
+      "location": "Berlin, Germany"
+    },
+    "company": {
+      "name": "VectorForge",
+      "stage": "pre-seed",
+      "sector": "inference",
+      "one_liner": "Low-latency inference runtime for quantized open-weight models."
+    },
+    "deck_present": false,
+    "deck_url": null,
+    "created_at": "2026-07-19T03:54:30.455603+00:00",
+    "status": "memo_ready",
+    "founder_score": {
+      "trend": "up",
+      "value": 75,
+      "history": [
+        {
+          "ts": "2026-07-19T04:19:26.565639+00:00",
+          "value": 65.0,
+          "reason": "Lena Vogt has demonstrated initial traction with 800 GitHub stars and a successful Show HN launch, indicating community interest and engagement. However, her technical experience claim is unverified, ",
+          "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952"
+        },
+        {
+          "ts": "2026-07-19T04:40:54.768908+00:00",
+          "value": 70.0,
+          "reason": "Lena Vogt has demonstrated some traction with the VectorForge project, evidenced by 800 GitHub stars and a successful Show HN launch, both corroborated claims (claim_ids: 5143e3f6-9f9d-5dbd-851d-35ebf",
+          "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952"
+        },
+        {
+          "ts": "2026-07-19T05:33:58.719980+00:00",
+          "value": 75.0,
+          "reason": "Lena Vogt has demonstrated traction with the VectorForge project, evidenced by 800 GitHub stars and a successful Show HN launch. However, her claimed experience as an inference engineer is unverified,",
+          "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952"
+        }
+      ],
+      "confidence": 0.6
+    },
+    "axes": {
+      "market": {
+        "rating": "neutral",
+        "rationale": "The market for inference tooling is potentially growing, as suggested by unverified claims about the displacement of hosted APIs by open-weight models. However, the lack of corroborated evidence makes it difficult to confidently rate the market as bullish.",
+        "evidence_refs": [
+          "89efb466-6513-5e97-8de6-85cc8d17f8cc",
+          "e15fb62e-c5b6-4ad2-b85e-56c1202fd974"
+        ]
+      },
+      "founder": {
+        "score": 75,
+        "trend": "up",
+        "rationale": "Lena Vogt has demonstrated traction with the VectorForge project, evidenced by 800 GitHub stars and a successful Show HN launch. However, her claimed experience as an inference engineer is unverified, which slightly tempers the score. The corroborated traction suggests a positive trend in her capabilities and influence.",
+        "evidence_refs": [
+          "5143e3f6-9f9d-5dbd-851d-35ebfc5c5ab6",
+          "9a6039eb-8bf6-53d6-9ec6-403c522b41ca",
+          "0277f5cf-a79d-508c-b9e8-bf92ec7f8625"
+        ]
+      },
+      "idea_vs_market": {
+        "verdict": "survives",
+        "rationale": "The idea of a low-latency inference runtime for quantized open-weight models aligns well with the current trends in AI infrastructure, where efficiency and cost-effectiveness are key. The traction achieved by VectorForge supports the viability of this idea in the market.",
+        "evidence_refs": [
+          "5143e3f6-9f9d-5dbd-851d-35ebfc5c5ab6",
+          "9a6039eb-8bf6-53d6-9ec6-403c522b41ca"
+        ]
+      }
+    }
+  },
+  {
+    "id": "eb5c3f1a-5ecd-42ce-b500-2e21fd1dae07",
+    "source": "outbound_github",
+    "founder": {
+      "name": "Alex Newman",
+      "handles": {
+        "github": "thedotmack",
+        "twitter": "Claude_Memory",
+        "linkedin": ""
+      },
+      "identity": "github:thedotmack",
+      "location": ""
+    },
+    "company": {
+      "name": "claude-mem",
+      "stage": "pre-seed",
+      "sector": "vector/data tooling",
+      "one_liner": "Persistent Context Across Sessions for Every Agent \u2013  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More"
+    },
+    "deck_present": false,
+    "deck_url": null,
+    "created_at": "2026-07-19T04:19:16.732361+00:00",
+    "status": "memo_ready",
+    "founder_score": {
+      "trend": "up",
+      "value": 75,
+      "history": [
+        {
+          "ts": "2026-07-19T05:02:40.526798+00:00",
+          "value": 70.0,
+          "reason": "Alex Newman has a strong GitHub presence with 1830 followers and 121 public repos, indicating a solid technical background and community engagement. The high number of GitHub stars on the claude-mem p",
+          "opportunity_id": "eb5c3f1a-5ecd-42ce-b500-2e21fd1dae07"
+        },
+        {
+          "ts": "2026-07-19T05:31:56.445676+00:00",
+          "value": 75.0,
+          "reason": "Alex Newman has demonstrated significant technical capability and community engagement, as evidenced by the high number of GitHub stars (87,763) on the claude-mem project and a substantial following (",
+          "opportunity_id": "eb5c3f1a-5ecd-42ce-b500-2e21fd1dae07"
+        }
+      ],
+      "confidence": 0.6
+    },
+    "axes": {
+      "market": {
+        "rating": "bull",
+        "rationale": "The market for AI infrastructure, particularly tools that enhance the functionality and usability of AI agents across sessions, is growing rapidly. The integration with major AI platforms like Claude Code, OpenClaw, Codex, and others suggests a strong demand for solutions that improve persistent context management, which is a critical need in AI development.",
+        "evidence_refs": []
+      },
+      "founder": {
+        "score": 75,
+        "trend": "up",
+        "rationale": "Alex Newman has demonstrated significant technical capability and community engagement, as evidenced by the high number of GitHub stars (87,763) on the claude-mem project and a substantial following (1,830 followers) across numerous public repositories (121 repos). This indicates a strong technical foundation and the ability to attract and maintain interest in their work.",
+        "evidence_refs": [
+          "45e94260-4821-5939-be00-a27d296030a2",
+          "5f329b8d-b5d5-5d52-88d4-e8bace4fd14d"
+        ]
+      },
+      "idea_vs_market": {
+        "verdict": "survives",
+        "rationale": "The idea of providing persistent context across sessions for AI agents is well-aligned with current market needs. As AI applications become more complex and integrated into various workflows, the ability to maintain context across sessions is increasingly valuable. The existing traction and active maintenance of the project further support its viability in the market.",
+        "evidence_refs": [
+          "45e94260-4821-5939-be00-a27d296030a2",
+          "a2e7a580-685f-5383-a2e4-e49fe072b13f"
+        ]
+      }
+    }
+  },
+  {
+    "id": "61e434eb-e4f2-4a88-ad83-a94795aefaba",
+    "source": "outbound_github",
+    "founder": {
+      "name": "Ettore Di Giacinto",
+      "handles": {
+        "github": "mudler",
+        "twitter": "mudler_it",
+        "linkedin": ""
+      },
+      "identity": "github:mudler",
+      "location": "Italy"
+    },
+    "company": {
+      "name": "LocalAI",
+      "stage": "pre-seed",
+      "sector": "agent frameworks",
+      "one_liner": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required."
+    },
+    "deck_present": false,
+    "deck_url": null,
+    "created_at": "2026-07-19T04:19:16.733357+00:00",
+    "status": "memo_ready",
+    "founder_score": {
+      "trend": "up",
+      "value": 75,
+      "history": [
+        {
+          "ts": "2026-07-19T05:05:38.438925+00:00",
+          "value": 70.0,
+          "reason": "Ettore Di Giacinto has a strong presence on GitHub with 2376 followers and 304 public repositories, indicating a well-established reputation in the developer community. The LocalAI project has garnere",
+          "opportunity_id": "61e434eb-e4f2-4a88-ad83-a94795aefaba"
+        },
+        {
+          "ts": "2026-07-19T05:32:53.161306+00:00",
+          "value": 75.0,
+          "reason": "Ettore Di Giacinto has demonstrated strong technical capabilities and community engagement, as evidenced by the significant GitHub traction with 47,658 stars on LocalAI (claim_id=39102606-e494-5286-b8",
+          "opportunity_id": "61e434eb-e4f2-4a88-ad83-a94795aefaba"
+        }
+      ],
+      "confidence": 0.6
+    },
+    "axes": {
+      "market": {
+        "rating": "bull",
+        "rationale": "The AI infrastructure market is experiencing rapid growth, driven by increasing demand for AI solutions across various industries. The ability to run AI models on any hardware without the need for GPUs is particularly attractive, as it lowers the barrier to entry for many organizations. This positions LocalAI well within a bullish market environment.",
+        "evidence_refs": []
+      },
+      "founder": {
+        "score": 75,
+        "trend": "up",
+        "rationale": "Ettore Di Giacinto has demonstrated strong technical capabilities and community engagement, as evidenced by the significant GitHub traction with 47,658 stars on LocalAI (claim_id=39102606-e494-5286-b81a-0c97dc564c4c) and active maintenance of the project (claim_id=b0545b7e-ff57-5f67-8ffa-1fb98437abd0). Additionally, the founder's broad GitHub following (claim_id=a3463490-b84c-552c-82a2-1f116b082f6a) indicates a solid reputation in the open-source community. These factors contribute to an upward trend in the founder's score.",
+        "evidence_refs": [
+          "39102606-e494-5286-b81a-0c97dc564c4c",
+          "b0545b7e-ff57-5f67-8ffa-1fb98437abd0",
+          "a3463490-b84c-552c-82a2-1f116b082f6a"
+        ]
+      },
+      "idea_vs_market": {
+        "verdict": "survives",
+        "rationale": "LocalAI's proposition of running AI models on any hardware without GPUs aligns well with current market trends towards democratizing AI technology and reducing hardware dependency. This idea is likely to find strong adoption in a market eager for cost-effective and flexible AI solutions.",
         "evidence_refs": []
       }
     }
@@ -414,435 +957,6 @@
     }
   },
   {
-    "id": "eb5c3f1a-5ecd-42ce-b500-2e21fd1dae07",
-    "source": "outbound_github",
-    "founder": {
-      "name": "Alex Newman",
-      "handles": {
-        "github": "thedotmack",
-        "twitter": "Claude_Memory",
-        "linkedin": ""
-      },
-      "identity": "github:thedotmack",
-      "location": ""
-    },
-    "company": {
-      "name": "claude-mem",
-      "stage": "pre-seed",
-      "sector": "vector/data tooling",
-      "one_liner": "Persistent Context Across Sessions for Every Agent \u2013  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More"
-    },
-    "deck_present": false,
-    "deck_url": null,
-    "created_at": "2026-07-19T04:19:16.732361+00:00",
-    "status": "memo_ready",
-    "founder_score": {
-      "trend": "flat",
-      "value": 0,
-      "history": [],
-      "confidence": 0.0
-    },
-    "axes": {
-      "market": {
-        "rating": "bull",
-        "rationale": "The market for AI infrastructure, particularly tools that enhance AI agents' capabilities, is growing rapidly. The integration with multiple popular AI platforms like Claude Code, OpenClaw, Codex, and others suggests a strong demand for such solutions.",
-        "evidence_refs": []
-      },
-      "founder": {
-        "score": 70,
-        "trend": "up",
-        "rationale": "Alex Newman has a strong GitHub presence with 1830 followers and 121 public repos, indicating a solid technical background and community engagement. The high number of GitHub stars on the claude-mem project further supports the founder's credibility. However, the contradiction regarding active maintenance slightly tempers the score.",
-        "evidence_refs": [
-          "45e94260-4821-5939-be00-a27d296030a2",
-          "5f329b8d-b5d5-5d52-88d4-e8bace4fd14d",
-          "a2e7a580-685f-5383-a2e4-e49fe072b13f"
-        ]
-      },
-      "idea_vs_market": {
-        "verdict": "survives",
-        "rationale": "The idea of providing persistent context across sessions for AI agents is compelling and aligns well with current market needs for more intelligent and context-aware AI systems. The ability to integrate with a wide range of AI platforms enhances its applicability and potential market fit.",
-        "evidence_refs": []
-      }
-    }
-  },
-  {
-    "id": "8b5d7c23-cf16-4e9c-90b1-6d469dc5699f",
-    "source": "outbound_github",
-    "founder": {
-      "name": "rUv",
-      "handles": {
-        "github": "ruvnet",
-        "twitter": "ruv",
-        "linkedin": ""
-      },
-      "identity": "github:ruvnet",
-      "location": "0x"
-    },
-    "company": {
-      "name": "ruflo",
-      "stage": "pre-seed",
-      "sector": "agent frameworks",
-      "one_liner": "\ud83c\udf0a The leading agent meta-harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, RAG integration, and native Claude Code / Codex / Hermes and many more Integrated"
-    },
-    "deck_present": false,
-    "deck_url": null,
-    "created_at": "2026-07-19T04:19:16.733357+00:00",
-    "status": "memo_ready",
-    "founder_score": {
-      "trend": "flat",
-      "value": 70,
-      "history": [
-        {
-          "ts": "2026-07-19T05:05:05.869405+00:00",
-          "value": 70.0,
-          "reason": "The founder, rUv, has a significant presence on GitHub with 10,326 followers and 197 public repositories, indicating a strong technical background and community engagement (claim_id=689af3ee-eebd-55f9",
-          "opportunity_id": "8b5d7c23-cf16-4e9c-90b1-6d469dc5699f"
-        }
-      ],
-      "confidence": 0.6
-    },
-    "axes": {
-      "market": {
-        "rating": "bull",
-        "rationale": "The market for AI infrastructure, particularly in deploying intelligent multi-agent systems and conversational AI, is experiencing rapid growth. The integration of adaptive memory, self-learning intelligence, and RAG (Retrieval-Augmented Generation) aligns well with current trends in AI development, making this a bullish market.",
-        "evidence_refs": []
-      },
-      "founder": {
-        "score": 70,
-        "trend": "up",
-        "rationale": "The founder, rUv, has a significant presence on GitHub with 10,326 followers and 197 public repositories, indicating a strong technical background and community engagement (claim_id=689af3ee-eebd-55f9-af62-fbd11a1fd613). Additionally, the project ruflo has garnered 65,074 GitHub stars, suggesting substantial interest and validation from the developer community (claim_id=31068a8b-50b8-5bb5-8aca-b83ad188d9c4). However, there is a contradiction regarding the active maintenance of the project, which slightly impacts the score (claim_id=4cd88158-f1e0-5c4e-93c4-fd2e0a129b51).",
-        "evidence_refs": [
-          "31068a8b-50b8-5bb5-8aca-b83ad188d9c4",
-          "689af3ee-eebd-55f9-af62-fbd11a1fd613",
-          "4cd88158-f1e0-5c4e-93c4-fd2e0a129b51"
-        ]
-      },
-      "idea_vs_market": {
-        "verdict": "survives",
-        "rationale": "The idea of a meta-harness for deploying intelligent multi-agent systems and coordinating autonomous workflows is well-aligned with the current market demand for scalable and flexible AI solutions. The integration with popular AI models like Claude Code, Codex, and Hermes further strengthens its market fit.",
-        "evidence_refs": []
-      }
-    }
-  },
-  {
-    "id": "61e434eb-e4f2-4a88-ad83-a94795aefaba",
-    "source": "outbound_github",
-    "founder": {
-      "name": "Ettore Di Giacinto",
-      "handles": {
-        "github": "mudler",
-        "twitter": "mudler_it",
-        "linkedin": ""
-      },
-      "identity": "github:mudler",
-      "location": "Italy"
-    },
-    "company": {
-      "name": "LocalAI",
-      "stage": "pre-seed",
-      "sector": "agent frameworks",
-      "one_liner": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required."
-    },
-    "deck_present": false,
-    "deck_url": null,
-    "created_at": "2026-07-19T04:19:16.733357+00:00",
-    "status": "memo_ready",
-    "founder_score": {
-      "trend": "flat",
-      "value": 70,
-      "history": [
-        {
-          "ts": "2026-07-19T05:05:38.438925+00:00",
-          "value": 70.0,
-          "reason": "Ettore Di Giacinto has a strong presence on GitHub with 2376 followers and 304 public repositories, indicating a well-established reputation in the developer community. The LocalAI project has garnere",
-          "opportunity_id": "61e434eb-e4f2-4a88-ad83-a94795aefaba"
-        }
-      ],
-      "confidence": 0.6
-    },
-    "axes": {
-      "market": {
-        "rating": "bull",
-        "rationale": "The market for AI infrastructure, especially solutions that allow running AI models on any hardware without the need for GPUs, is rapidly growing. This is driven by the increasing demand for democratizing AI capabilities and reducing hardware costs, making it a bullish market.",
-        "evidence_refs": []
-      },
-      "founder": {
-        "score": 70,
-        "trend": "up",
-        "rationale": "Ettore Di Giacinto has a strong presence on GitHub with 2376 followers and 304 public repositories, indicating a well-established reputation in the developer community. The LocalAI project has garnered significant attention with 47658 stars, suggesting a high level of interest and potential influence in the open-source AI community. However, the contradiction regarding the project's active maintenance slightly tempers the score.",
-        "evidence_refs": [
-          "39102606-e494-5286-b81a-0c97dc564c4c",
-          "a3463490-b84c-552c-82a2-1f116b082f6a",
-          "b0545b7e-ff57-5f67-8ffa-1fb98437abd0"
-        ]
-      },
-      "idea_vs_market": {
-        "verdict": "survives",
-        "rationale": "LocalAI's proposition of running AI models on any hardware without GPUs aligns well with current market trends towards cost-effective and accessible AI solutions. The significant GitHub traction supports the viability of the idea in the current market.",
-        "evidence_refs": [
-          "39102606-e494-5286-b81a-0c97dc564c4c"
-        ]
-      }
-    }
-  },
-  {
-    "id": "9fa3bf8d-2686-4f83-ad31-b8939bbf2cde",
-    "source": "outbound_github",
-    "founder": {
-      "name": "Yaowei Zheng",
-      "handles": {
-        "github": "hiyouga",
-        "twitter": "code_hiyouga",
-        "linkedin": ""
-      },
-      "identity": "github:hiyouga",
-      "location": "Beijing, China"
-    },
-    "company": {
-      "name": "LlamaFactory",
-      "stage": "pre-seed",
-      "sector": "inference",
-      "one_liner": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)"
-    },
-    "deck_present": false,
-    "deck_url": null,
-    "created_at": "2026-07-19T04:19:16.732361+00:00",
-    "status": "memo_ready",
-    "founder_score": {
-      "trend": "flat",
-      "value": 70,
-      "history": [
-        {
-          "ts": "2026-07-19T05:04:37.540230+00:00",
-          "value": 70.0,
-          "reason": "Yaowei Zheng has a strong presence on GitHub with 73,361 stars on LlamaFactory and 6,428 followers across 64 public repositories, indicating significant community interest and engagement. However, the",
-          "opportunity_id": "9fa3bf8d-2686-4f83-ad31-b8939bbf2cde"
-        }
-      ],
-      "confidence": 0.6
-    },
-    "axes": {
-      "market": {
-        "rating": "bull",
-        "rationale": "The market for AI infrastructure, particularly in fine-tuning large language models (LLMs) and vision-language models (VLMs), is rapidly growing. The increasing demand for efficient AI model deployment and customization supports a bullish outlook.",
-        "evidence_refs": []
-      },
-      "founder": {
-        "score": 70,
-        "trend": "up",
-        "rationale": "Yaowei Zheng has a strong presence on GitHub with 73,361 stars on LlamaFactory and 6,428 followers across 64 public repositories, indicating significant community interest and engagement. However, the claim of active maintenance was contradicted, which slightly impacts the score.",
-        "evidence_refs": [
-          "d7560e6c-42c6-5f36-bd69-a534548cc2d9",
-          "5a5bc5c4-b5db-522a-9b79-50c0ef7ca5be",
-          "6ff60277-4228-5a64-a12f-a77b453b9409"
-        ]
-      },
-      "idea_vs_market": {
-        "verdict": "survives",
-        "rationale": "The idea of providing a unified platform for fine-tuning over 100 LLMs and VLMs aligns well with current market needs for scalable and efficient AI solutions. The high GitHub star count suggests strong interest and potential adoption.",
-        "evidence_refs": [
-          "d7560e6c-42c6-5f36-bd69-a534548cc2d9"
-        ]
-      }
-    }
-  },
-  {
-    "id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952",
-    "source": "inbound_apply",
-    "founder": {
-      "name": "Lena Vogt",
-      "handles": {
-        "github": "lenavogt",
-        "twitter": "lenavogt_dev",
-        "linkedin": "lena-vogt-infra"
-      },
-      "identity": "github:lenavogt",
-      "location": "Berlin, Germany"
-    },
-    "company": {
-      "name": "VectorForge",
-      "stage": "pre-seed",
-      "sector": "inference",
-      "one_liner": "Low-latency inference runtime for quantized open-weight models."
-    },
-    "deck_present": true,
-    "deck_url": null,
-    "created_at": "2026-07-19T03:54:30.455603+00:00",
-    "status": "memo_ready",
-    "founder_score": {
-      "trend": "up",
-      "value": 70,
-      "history": [
-        {
-          "ts": "2026-07-19T04:19:26.565639+00:00",
-          "value": 65.0,
-          "reason": "Lena Vogt has demonstrated initial traction with 800 GitHub stars and a successful Show HN launch, indicating community interest and engagement. However, her technical experience claim is unverified, ",
-          "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952"
-        },
-        {
-          "ts": "2026-07-19T04:40:54.768908+00:00",
-          "value": 70.0,
-          "reason": "Lena Vogt has demonstrated some traction with the VectorForge project, evidenced by 800 GitHub stars and a successful Show HN launch, both corroborated claims (claim_ids: 5143e3f6-9f9d-5dbd-851d-35ebf",
-          "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952"
-        }
-      ],
-      "confidence": 0.6
-    },
-    "axes": {
-      "market": {
-        "rating": "neutral",
-        "rationale": "The market for inference tooling is potentially growing, as suggested by the unverified claim that open-weight models are displacing hosted APIs (claim_ids: 89efb466-6513-5e97-8de6-85cc8d17f8cc, e15fb62e-c5b6-4ad2-b85e-56c1202fd974). However, without corroborated evidence, the market outlook remains uncertain, warranting a neutral rating.",
-        "evidence_refs": [
-          "89efb466-6513-5e97-8de6-85cc8d17f8cc",
-          "e15fb62e-c5b6-4ad2-b85e-56c1202fd974"
-        ]
-      },
-      "founder": {
-        "score": 70,
-        "trend": "up",
-        "rationale": "Lena Vogt has demonstrated some traction with the VectorForge project, evidenced by 800 GitHub stars and a successful Show HN launch, both corroborated claims (claim_ids: 5143e3f6-9f9d-5dbd-851d-35ebfc5c5ab6, 9a6039eb-8bf6-53d6-9ec6-403c522b41ca). Her technical background is partially supported by unverified claims of her experience as an inference engineer (claim_ids: 0277f5cf-a79d-508c-b9e8-bf92ec7f8625, 8860dd30-e736-4d21-9038-59b42a9965be). The upward trend is due to the corroborated traction and potential technical expertise.",
-        "evidence_refs": [
-          "5143e3f6-9f9d-5dbd-851d-35ebfc5c5ab6",
-          "9a6039eb-8bf6-53d6-9ec6-403c522b41ca",
-          "0277f5cf-a79d-508c-b9e8-bf92ec7f8625",
-          "8860dd30-e736-4d21-9038-59b42a9965be"
-        ]
-      },
-      "idea_vs_market": {
-        "verdict": "survives",
-        "rationale": "The idea of a low-latency inference runtime for quantized models is aligned with the current trends in AI infrastructure, where efficiency and cost-effectiveness are critical. The unverified technical claim of achieving sub-50ms p99 cold start times (claim_ids: 9d6f0ead-ce64-591d-9bde-1a4a9581eab0, 20694d4e-d940-4379-9496-1cc9951eed61) suggests potential viability, though further validation is needed.",
-        "evidence_refs": [
-          "9d6f0ead-ce64-591d-9bde-1a4a9581eab0",
-          "20694d4e-d940-4379-9496-1cc9951eed61"
-        ]
-      }
-    }
-  },
-  {
-    "id": "3c8e5cf0-23bb-4fa9-ad4d-5d0eec985835",
-    "source": "outbound_github",
-    "founder": {
-      "name": "Affaan Mustafa",
-      "handles": {
-        "github": "affaan-m",
-        "twitter": "affaanmustafa",
-        "linkedin": ""
-      },
-      "identity": "github:affaan-m",
-      "location": "NYC"
-    },
-    "company": {
-      "name": "ECC",
-      "stage": "pre-seed",
-      "sector": "inference",
-      "one_liner": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond."
-    },
-    "deck_present": false,
-    "deck_url": null,
-    "created_at": "2026-07-19T04:16:36.39931+00:00",
-    "status": "memo_ready",
-    "founder_score": {
-      "trend": "flat",
-      "value": 70,
-      "history": [
-        {
-          "ts": "2026-07-19T05:03:12.670902+00:00",
-          "value": 70.0,
-          "reason": "Affaan Mustafa has a strong presence on GitHub with 8506 followers and a significant number of stars on the ECC project, indicating a high level of interest and potential influence in the developer co",
-          "opportunity_id": "3c8e5cf0-23bb-4fa9-ad4d-5d0eec985835"
-        }
-      ],
-      "confidence": 0.6
-    },
-    "axes": {
-      "market": {
-        "rating": "bull",
-        "rationale": "The market for AI infrastructure, particularly in performance optimization for AI models like Claude Code, Codex, and others, is growing rapidly. There is a strong demand for tools that enhance AI capabilities and efficiency, making this a promising market.",
-        "evidence_refs": []
-      },
-      "founder": {
-        "score": 70,
-        "trend": "up",
-        "rationale": "Affaan Mustafa has a strong presence on GitHub with 8506 followers and a significant number of stars on the ECC project, indicating a high level of interest and potential influence in the developer community. However, the contradiction regarding the project's maintenance status slightly impacts the score.",
-        "evidence_refs": [
-          "a8cf87ad-c3c3-5cec-bf7a-fd61fa4ec558",
-          "01826965-db42-52d8-98e7-a0f32b6b18b7",
-          "dd3219c8-58dd-5777-b87c-7a648db717b8",
-          "db8a390d-c9b7-5439-b18d-3d3cb15b1f11"
-        ]
-      },
-      "idea_vs_market": {
-        "verdict": "survives",
-        "rationale": "The idea of a performance optimization system for AI agents aligns well with the current market needs, given the increasing complexity and deployment of AI models. The high GitHub star count suggests significant interest and potential adoption.",
-        "evidence_refs": [
-          "a8cf87ad-c3c3-5cec-bf7a-fd61fa4ec558",
-          "dd3219c8-58dd-5777-b87c-7a648db717b8"
-        ]
-      }
-    }
-  },
-  {
-    "id": "415b8eaa-75e5-451d-acbc-2b319c57d5e9",
-    "source": "outbound_github",
-    "founder": {
-      "name": "DietrichGebert",
-      "handles": {
-        "github": "DietrichGebert",
-        "twitter": "",
-        "linkedin": ""
-      },
-      "identity": "github:dietrichgebert",
-      "location": ""
-    },
-    "company": {
-      "name": "ponytail",
-      "stage": "pre-seed",
-      "sector": "inference",
-      "one_liner": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote."
-    },
-    "deck_present": false,
-    "deck_url": null,
-    "created_at": "2026-07-19T04:19:16.732361+00:00",
-    "status": "memo_ready",
-    "founder_score": {
-      "trend": "flat",
-      "value": 65,
-      "history": [
-        {
-          "ts": "2026-07-19T05:04:12.010746+00:00",
-          "value": 65.0,
-          "reason": "The founder, Dietrich Gebert, has a significant GitHub presence with 85,638 stars on the project 'ponytail' and 1,201 followers across three public repositories. This indicates a strong technical repu",
-          "opportunity_id": "415b8eaa-75e5-451d-acbc-2b319c57d5e9"
-        }
-      ],
-      "confidence": 0.6
-    },
-    "axes": {
-      "market": {
-        "rating": "neutral",
-        "rationale": "The market for AI tools that optimize developer productivity is competitive but growing. There is a demand for tools that can automate or simplify coding tasks, but the market is also saturated with various solutions. The unique angle of making AI think like a 'lazy senior dev' could appeal to a niche segment, but it is not clear if it can capture a significant market share.",
-        "evidence_refs": []
-      },
-      "founder": {
-        "score": 65,
-        "trend": "flat",
-        "rationale": "The founder, Dietrich Gebert, has a significant GitHub presence with 85,638 stars on the project 'ponytail' and 1,201 followers across three public repositories. This indicates a strong technical reputation and community interest. However, the claim of active maintenance is contradicted, which raises concerns about the reliability of ongoing project support.",
-        "evidence_refs": [
-          "e35946c6-9912-5a7f-bf35-5fc5fe9f1883",
-          "bcce91f2-ca25-5669-b2b4-44ca547eadba",
-          "0e0a5fd6-c315-53e0-aad1-4c8c177b6207"
-        ]
-      },
-      "idea_vs_market": {
-        "verdict": "survives",
-        "rationale": "The idea of creating an AI that mimics the behavior of a 'lazy senior dev' aligns with current trends in AI-driven developer tools aimed at increasing efficiency and reducing unnecessary code. Given the corroborated traction on GitHub, there is evidence of interest and potential adoption in the developer community.",
-        "evidence_refs": [
-          "e35946c6-9912-5a7f-bf35-5fc5fe9f1883"
-        ]
-      }
-    }
-  },
-  {
     "id": "505c0bde-92dc-42b9-bc72-641ed98a0a43",
     "source": "outbound_hn",
     "founder": {
@@ -866,12 +980,18 @@
     "created_at": "2026-07-19T04:38:44.28436+00:00",
     "status": "memo_ready",
     "founder_score": {
-      "trend": "flat",
-      "value": 65,
+      "trend": "up",
+      "value": 70,
       "history": [
         {
           "ts": "2026-07-19T05:08:22.289257+00:00",
           "value": 65.0,
+          "reason": "The founder has demonstrated the ability to launch a product that gained significant attention on a platform like Hacker News, as evidenced by the high engagement (216 points and 113 comments). Additi",
+          "opportunity_id": "505c0bde-92dc-42b9-bc72-641ed98a0a43"
+        },
+        {
+          "ts": "2026-07-19T05:35:22.072346+00:00",
+          "value": 70.0,
           "reason": "The founder has demonstrated the ability to launch a product that gained significant attention on a platform like Hacker News, as evidenced by the high engagement (216 points and 113 comments). Additi",
           "opportunity_id": "505c0bde-92dc-42b9-bc72-641ed98a0a43"
         }
@@ -881,11 +1001,11 @@
     "axes": {
       "market": {
         "rating": "bull",
-        "rationale": "The market for AI infrastructure, particularly in optimizing model routing and integration with popular models like Claude, Codex, and Cursor, is growing. As AI models become more prevalent, the need for efficient routing and integration solutions is likely to increase, suggesting a bullish market outlook.",
+        "rationale": "The market for AI infrastructure, particularly in optimizing model routing for popular AI models like Claude, Codex, and Cursor, is growing. As AI models become more prevalent in various applications, the need for efficient model routing solutions is likely to increase, making this a promising market.",
         "evidence_refs": []
       },
       "founder": {
-        "score": 65,
+        "score": 70,
         "trend": "up",
         "rationale": "The founder has demonstrated the ability to launch a product that gained significant attention on a platform like Hacker News, as evidenced by the high engagement (216 points and 113 comments). Additionally, the founder has successfully shipped a public product on GitHub, indicating technical capability and execution skills.",
         "evidence_refs": [
@@ -895,10 +1015,8 @@
       },
       "idea_vs_market": {
         "verdict": "survives",
-        "rationale": "The idea of smart model routing directly in popular AI models like Claude, Codex, and Cursor aligns well with the current market demand for efficient AI infrastructure solutions. The traction from the Show HN launch further supports the viability of the idea in the current market context.",
-        "evidence_refs": [
-          "d8db5cfd-946c-50fb-a317-48c2b7133f2a"
-        ]
+        "rationale": "The idea of smart model routing directly in popular AI models aligns well with the current market trends and demands. As AI models are increasingly integrated into various applications, optimizing their performance through smart routing is a relevant and valuable proposition.",
+        "evidence_refs": []
       }
     }
   },
@@ -926,13 +1044,19 @@
     "created_at": "2026-07-19T03:54:30.456603+00:00",
     "status": "memo_ready",
     "founder_score": {
-      "trend": "flat",
-      "value": 65,
+      "trend": "up",
+      "value": 70,
       "history": [
         {
           "ts": "2026-07-19T04:59:46.018437+00:00",
           "value": 65.0,
           "reason": "Priya Nair has demonstrated technical capability and initiative by developing an open-source LLM evaluation harness with 120 stars on GitHub, which indicates a level of community interest and validati",
+          "opportunity_id": "968a1c60-1cb9-417b-8de2-3977e426405b"
+        },
+        {
+          "ts": "2026-07-19T05:35:46.241576+00:00",
+          "value": 70.0,
+          "reason": "Priya Nair has demonstrated technical capability and initiative by authoring a well-received open-source project and publishing a detailed methodology post. These actions indicate a strong technical f",
           "opportunity_id": "968a1c60-1cb9-417b-8de2-3977e426405b"
         }
       ],
@@ -941,13 +1065,13 @@
     "axes": {
       "market": {
         "rating": "bull",
-        "rationale": "The market for LLM evaluation methodologies is growing as the adoption of large language models increases across various industries. There is a strong demand for robust evaluation tools to ensure model reliability and performance, making this a promising area for innovation and development.",
+        "rationale": "The market for AI infrastructure, particularly in the evaluation of large language models (LLMs), is growing rapidly. As LLMs become more prevalent, the need for robust evaluation methodologies to ensure their reliability and performance is critical. This creates a bullish environment for innovations in this space.",
         "evidence_refs": []
       },
       "founder": {
-        "score": 65,
+        "score": 70,
         "trend": "up",
-        "rationale": "Priya Nair has demonstrated technical capability and initiative by developing an open-source LLM evaluation harness with 120 stars on GitHub, which indicates a level of community interest and validation. Additionally, she has published a detailed methodology post on a relevant topic, showing thought leadership in the field. However, as a solo builder with no prior track record or company formation, there is limited evidence of her ability to scale or manage a larger venture.",
+        "rationale": "Priya Nair has demonstrated technical capability and initiative by authoring a well-received open-source project and publishing a detailed methodology post. These actions indicate a strong technical foundation and thought leadership in the AI evaluation space, which is crucial for a solo builder.",
         "evidence_refs": [
           "d6948ac2-9a05-51e5-9d04-6ecbad72745f",
           "427891b5-fd9a-53eb-a372-51272227f256"
@@ -955,11 +1079,141 @@
       },
       "idea_vs_market": {
         "verdict": "survives",
-        "rationale": "The idea of developing an LLM evaluation methodology aligns well with the current market needs. As the use of LLMs expands, the necessity for effective evaluation tools becomes critical. Priya's focus on avoiding contamination in evaluation sets addresses a significant challenge in the field, suggesting that her approach is relevant and timely.",
+        "rationale": "The idea of developing a methodology for LLM evaluation is well-aligned with current market needs. As the adoption of LLMs increases, so does the demand for effective evaluation tools to ensure their quality and performance. Priya's focus on avoiding contamination in evaluation sets addresses a significant challenge in the field, suggesting the idea is viable in the current market context.",
         "evidence_refs": [
-          "d6948ac2-9a05-51e5-9d04-6ecbad72745f",
           "427891b5-fd9a-53eb-a372-51272227f256"
         ]
+      }
+    }
+  },
+  {
+    "id": "f22b0bcd-0fc7-43af-baf9-3bdcb1c452d8",
+    "source": "outbound_hn",
+    "founder": {
+      "name": "HenryNdubuaku",
+      "handles": {
+        "github": "",
+        "twitter": "",
+        "linkedin": ""
+      },
+      "identity": "name:henryndubuaku",
+      "location": ""
+    },
+    "company": {
+      "name": "Cactus \u2013 Ollama for Smartphones",
+      "stage": "pre-seed",
+      "sector": "inference",
+      "one_liner": "Cactus \u2013 Ollama for Smartphones"
+    },
+    "deck_present": false,
+    "deck_url": null,
+    "created_at": "2026-07-19T04:38:44.28436+00:00",
+    "status": "memo_ready",
+    "founder_score": {
+      "trend": "up",
+      "value": 65,
+      "history": [
+        {
+          "ts": "2026-07-19T05:07:57.344250+00:00",
+          "value": 60.0,
+          "reason": "The founder, Henry Ndubuaku, has successfully launched a product that gained significant attention on Hacker News, as evidenced by the 231 points and 82 comments. Additionally, the public release of a",
+          "opportunity_id": "f22b0bcd-0fc7-43af-baf9-3bdcb1c452d8"
+        },
+        {
+          "ts": "2026-07-19T05:36:59.057928+00:00",
+          "value": 65.0,
+          "reason": "The founder, Henry Ndubuaku, has demonstrated the ability to launch a product that gained significant attention on a reputable platform like Hacker News, as evidenced by the Show HN launch reaching 23",
+          "opportunity_id": "f22b0bcd-0fc7-43af-baf9-3bdcb1c452d8"
+        }
+      ],
+      "confidence": 0.6
+    },
+    "axes": {
+      "market": {
+        "rating": "neutral",
+        "rationale": "The market for AI infrastructure, particularly for smartphone applications, is competitive but growing. While there is potential for growth, the market is also saturated with established players and new entrants. The neutral rating reflects the balance between opportunity and competition.",
+        "evidence_refs": []
+      },
+      "founder": {
+        "score": 65,
+        "trend": "up",
+        "rationale": "The founder, Henry Ndubuaku, has demonstrated the ability to launch a product that gained significant attention on a reputable platform like Hacker News, as evidenced by the Show HN launch reaching 231 points with 82 comments (claim_id=ebcb7311-e382-5f71-86b8-330cd8af4e76). Additionally, the founder has successfully shipped a public product on GitHub (claim_id=3ce27cf5-2c4f-59a2-94e3-0bf497e02712), indicating technical capability and execution skills. These factors contribute to an upward trend in the founder's score.",
+        "evidence_refs": [
+          "ebcb7311-e382-5f71-86b8-330cd8af4e76",
+          "3ce27cf5-2c4f-59a2-94e3-0bf497e02712"
+        ]
+      },
+      "idea_vs_market": {
+        "verdict": "survives",
+        "rationale": "The idea of providing AI infrastructure specifically tailored for smartphones is viable given the increasing demand for mobile AI applications. The successful launch and public product release suggest that the idea has traction and can survive in the current market environment.",
+        "evidence_refs": [
+          "ebcb7311-e382-5f71-86b8-330cd8af4e76",
+          "3ce27cf5-2c4f-59a2-94e3-0bf497e02712"
+        ]
+      }
+    }
+  },
+  {
+    "id": "8c905734-f012-4a64-b676-f64363316d45",
+    "source": "outbound_hn",
+    "founder": {
+      "name": "Tantris",
+      "handles": {
+        "github": "",
+        "twitter": "",
+        "linkedin": ""
+      },
+      "identity": "name:tantris",
+      "location": ""
+    },
+    "company": {
+      "name": "LLM-powered NPCs running on your hardware",
+      "stage": "pre-seed",
+      "sector": "inference",
+      "one_liner": "LLM-powered NPCs running on your hardware"
+    },
+    "deck_present": false,
+    "deck_url": null,
+    "created_at": "2026-07-19T04:38:44.283358+00:00",
+    "status": "memo_ready",
+    "founder_score": {
+      "trend": "up",
+      "value": 65,
+      "history": [
+        {
+          "ts": "2026-07-19T05:06:32.002526+00:00",
+          "value": 60.0,
+          "reason": "The founder has demonstrated the ability to ship a public product, as evidenced by the GitHub repository (claim_id=df6c443e-2f07-5c32-8e13-c21a3a144ea1). Additionally, the Show HN launch garnered some",
+          "opportunity_id": "8c905734-f012-4a64-b676-f64363316d45"
+        },
+        {
+          "ts": "2026-07-19T05:37:24.037893+00:00",
+          "value": 65.0,
+          "reason": "The founder has demonstrated the ability to ship a public product, as evidenced by the GitHub repository for GigaxGames, which is a positive indicator of technical capability and execution. Additional",
+          "opportunity_id": "8c905734-f012-4a64-b676-f64363316d45"
+        }
+      ],
+      "confidence": 0.6
+    },
+    "axes": {
+      "market": {
+        "rating": "neutral",
+        "rationale": "The market for LLM-powered NPCs is niche but growing, as AI and gaming continue to intersect. However, the market is competitive with several players and technologies vying for dominance, which makes it challenging to predict clear winners.",
+        "evidence_refs": []
+      },
+      "founder": {
+        "score": 65,
+        "trend": "up",
+        "rationale": "The founder has demonstrated the ability to ship a public product, as evidenced by the GitHub repository for GigaxGames, which is a positive indicator of technical capability and execution. Additionally, the Show HN launch, while modest, indicates some level of community engagement and interest.",
+        "evidence_refs": [
+          "7b56f198-6103-55cf-ad32-155f2cad8c4b",
+          "df6c443e-2f07-5c32-8e13-c21a3a144ea1"
+        ]
+      },
+      "idea_vs_market": {
+        "verdict": "survives",
+        "rationale": "The idea of running LLM-powered NPCs on user hardware aligns with current trends in gaming and AI, where personalization and local processing are becoming more desirable. This approach could offer advantages in terms of performance and privacy, which are appealing in the current market landscape.",
+        "evidence_refs": []
       }
     }
   },
@@ -987,13 +1241,19 @@
     "created_at": "2026-07-19T04:38:44.283358+00:00",
     "status": "memo_ready",
     "founder_score": {
-      "trend": "flat",
-      "value": 60,
+      "trend": "up",
+      "value": 65,
       "history": [
         {
           "ts": "2026-07-19T05:06:05.312920+00:00",
           "value": 60.0,
           "reason": "The founder, Randall, has successfully launched a product on Show HN, which received moderate attention (58 points and 28 comments). Additionally, they have shipped a public product, indicating some l",
+          "opportunity_id": "232b78a3-cc40-4fbd-b9b7-970975ada49c"
+        },
+        {
+          "ts": "2026-07-19T05:36:11.364875+00:00",
+          "value": 65.0,
+          "reason": "The founder, Randall, has demonstrated the ability to launch a product that gained some traction on a reputable platform like Hacker News, as evidenced by the Show HN launch reaching 58 points with 28",
           "opportunity_id": "232b78a3-cc40-4fbd-b9b7-970975ada49c"
         }
       ],
@@ -1002,13 +1262,13 @@
     "axes": {
       "market": {
         "rating": "neutral",
-        "rationale": "The market for developer tools and experiences, especially those enhancing open source CMS platforms, is competitive but also growing. There is a consistent demand for improved developer experiences, but the market is crowded with established players and new entrants.",
+        "rationale": "The market for developer tools and experiences, especially those targeting open source CMS platforms, is moderately competitive. While there is a steady demand for improved developer experiences, the market is saturated with various solutions, making it challenging to stand out. However, the open source nature of the CMS could provide opportunities for community-driven growth and adoption, balancing the competitive pressures.",
         "evidence_refs": []
       },
       "founder": {
-        "score": 60,
-        "trend": "flat",
-        "rationale": "The founder, Randall, has successfully launched a product on Show HN, which received moderate attention (58 points and 28 comments). Additionally, they have shipped a public product, indicating some level of execution capability. However, there is no prior track record or public presence to further assess their experience or reputation.",
+        "score": 65,
+        "trend": "up",
+        "rationale": "The founder, Randall, has demonstrated the ability to launch a product that gained some traction on a reputable platform like Hacker News, as evidenced by the Show HN launch reaching 58 points with 28 comments (claim_id=bd6ae710-7770-5cef-8184-c03c9ac4b61b). Additionally, the founder has successfully shipped a public product, which indicates a level of technical competence and execution capability (claim_id=f22bc34c-0419-5739-8f7a-1d2d7d0181ae). These factors contribute to an upward trend in the founder's score.",
         "evidence_refs": [
           "bd6ae710-7770-5cef-8184-c03c9ac4b61b",
           "f22bc34c-0419-5739-8f7a-1d2d7d0181ae"
@@ -1016,9 +1276,75 @@
       },
       "idea_vs_market": {
         "verdict": "survives",
-        "rationale": "The idea of providing a 'big tech' developer experience for an open source CMS is viable. There is a clear need for enhanced developer tools in the CMS space, and the founder's ability to ship a product suggests they can potentially meet this need. However, differentiation and execution will be key in a competitive market.",
+        "rationale": "The idea of providing a 'big tech' developer experience for an open source CMS aligns with current market trends towards enhancing developer productivity and experience. Given the corroborated traction and the existence of a public product, the idea appears to have a viable path forward in the current market landscape.",
         "evidence_refs": [
+          "bd6ae710-7770-5cef-8184-c03c9ac4b61b",
           "f22bc34c-0419-5739-8f7a-1d2d7d0181ae"
+        ]
+      }
+    }
+  },
+  {
+    "id": "c31c7aac-a6ac-4d36-a851-d8a84365ca68",
+    "source": "outbound_hn",
+    "founder": {
+      "name": "hassaanr",
+      "handles": {
+        "github": "",
+        "twitter": "",
+        "linkedin": ""
+      },
+      "identity": "name:hassaanr",
+      "location": ""
+    },
+    "company": {
+      "name": "A real time AI video agent with under 1 second of latency",
+      "stage": "pre-seed",
+      "sector": "agent frameworks",
+      "one_liner": "A real time AI video agent with under 1 second of latency"
+    },
+    "deck_present": false,
+    "deck_url": null,
+    "created_at": "2026-07-19T04:38:44.28436+00:00",
+    "status": "memo_ready",
+    "founder_score": {
+      "trend": "up",
+      "value": 65,
+      "history": [
+        {
+          "ts": "2026-07-19T05:07:27.357709+00:00",
+          "value": 60.0,
+          "reason": "The founder has successfully launched a product that gained significant attention on Hacker News, as evidenced by the high number of points and comments. This indicates a level of competence in genera",
+          "opportunity_id": "c31c7aac-a6ac-4d36-a851-d8a84365ca68"
+        },
+        {
+          "ts": "2026-07-19T05:37:46.090408+00:00",
+          "value": 65.0,
+          "reason": "The founder, hassaanr, has demonstrated the ability to generate significant interest in the product, as evidenced by the successful Show HN launch that garnered 455 points and 256 comments on Hacker N",
+          "opportunity_id": "c31c7aac-a6ac-4d36-a851-d8a84365ca68"
+        }
+      ],
+      "confidence": 0.6
+    },
+    "axes": {
+      "market": {
+        "rating": "bull",
+        "rationale": "The market for real-time AI video agents is growing, driven by increasing demand for interactive and responsive AI applications in various sectors such as customer service, gaming, and live streaming. The ability to deliver AI solutions with under 1 second of latency is particularly appealing as it addresses a critical need for speed and efficiency in real-time applications.",
+        "evidence_refs": []
+      },
+      "founder": {
+        "score": 65,
+        "trend": "up",
+        "rationale": "The founder, hassaanr, has demonstrated the ability to generate significant interest in the product, as evidenced by the successful Show HN launch that garnered 455 points and 256 comments on Hacker News. This indicates a strong initial traction and suggests the founder's capability in engaging with a tech-savvy audience.",
+        "evidence_refs": [
+          "805abfdc-f793-57da-bcd6-df4042cc832c"
+        ]
+      },
+      "idea_vs_market": {
+        "verdict": "survives",
+        "rationale": "The idea of a real-time AI video agent with under 1 second of latency aligns well with current market demands for fast and efficient AI solutions. The corroborated traction from the Show HN launch further supports the viability of the idea in the current market landscape.",
+        "evidence_refs": [
+          "805abfdc-f793-57da-bcd6-df4042cc832c"
         ]
       }
     }
@@ -1055,65 +1381,12 @@
           "value": 60.0,
           "reason": "The founder, mustafabal, has no prior track record on file, which typically would result in a lower score. However, the successful launch on Hacker News, achieving 95 points and generating 19 comments",
           "opportunity_id": "117ddf0b-334e-4605-bae3-09845828c794"
-        }
-      ],
-      "confidence": 0.6
-    },
-    "axes": {
-      "market": {
-        "rating": "neutral",
-        "rationale": "The market for AI infrastructure, particularly in reducing hallucinations in retrieval-augmented generation (RAG) models, is growing but competitive. While there is demand for solutions that improve AI model reliability, the market is also saturated with various approaches and solutions, making it neither overly bullish nor bearish.",
-        "evidence_refs": []
-      },
-      "founder": {
-        "score": 60,
-        "trend": "up",
-        "rationale": "The founder, mustafabal, has no prior track record on file, which typically would result in a lower score. However, the successful launch on Hacker News, achieving 95 points and generating 19 comments, indicates a positive reception and some level of community engagement, suggesting potential competence and market awareness.",
-        "evidence_refs": [
-          "bd9950de-2298-52f4-bf03-9e7639f9c2e1"
-        ]
-      },
-      "idea_vs_market": {
-        "verdict": "survives",
-        "rationale": "The idea of minimizing RAG hallucinations with a single hyperparameter is innovative and addresses a known issue in AI model deployment. Given the corroborated traction from the Hacker News launch, the idea appears to resonate with the target audience, suggesting it is viable in the current market context.",
-        "evidence_refs": [
-          "bd9950de-2298-52f4-bf03-9e7639f9c2e1"
-        ]
-      }
-    }
-  },
-  {
-    "id": "f22b0bcd-0fc7-43af-baf9-3bdcb1c452d8",
-    "source": "outbound_hn",
-    "founder": {
-      "name": "HenryNdubuaku",
-      "handles": {
-        "github": "",
-        "twitter": "",
-        "linkedin": ""
-      },
-      "identity": "name:henryndubuaku",
-      "location": ""
-    },
-    "company": {
-      "name": "Cactus \u2013 Ollama for Smartphones",
-      "stage": "pre-seed",
-      "sector": "inference",
-      "one_liner": "Cactus \u2013 Ollama for Smartphones"
-    },
-    "deck_present": false,
-    "deck_url": null,
-    "created_at": "2026-07-19T04:38:44.28436+00:00",
-    "status": "memo_ready",
-    "founder_score": {
-      "trend": "flat",
-      "value": 60,
-      "history": [
+        },
         {
-          "ts": "2026-07-19T05:07:57.344250+00:00",
+          "ts": "2026-07-19T05:36:34.890162+00:00",
           "value": 60.0,
-          "reason": "The founder, Henry Ndubuaku, has successfully launched a product that gained significant attention on Hacker News, as evidenced by the 231 points and 82 comments. Additionally, the public release of a",
-          "opportunity_id": "f22b0bcd-0fc7-43af-baf9-3bdcb1c452d8"
+          "reason": "The founder, Mustafabal, has maintained a consistent score of 60. The corroborated traction from the Show HN launch, which reached 95 points with 19 comments, indicates some level of community interes",
+          "opportunity_id": "117ddf0b-334e-4605-bae3-09845828c794"
         }
       ],
       "confidence": 0.6
@@ -1121,140 +1394,104 @@
     "axes": {
       "market": {
         "rating": "neutral",
-        "rationale": "The market for AI infrastructure on smartphones is emerging, with potential for growth as mobile devices become more powerful and capable of handling complex AI tasks. However, it is still in its early stages, and the competitive landscape is not fully defined, leading to a neutral market rating.",
-        "evidence_refs": []
-      },
-      "founder": {
-        "score": 60,
-        "trend": "up",
-        "rationale": "The founder, Henry Ndubuaku, has successfully launched a product that gained significant attention on Hacker News, as evidenced by the 231 points and 82 comments. Additionally, the public release of a product on GitHub demonstrates technical capability and a commitment to transparency. However, the lack of a public track record or previous entrepreneurial experience limits the score.",
-        "evidence_refs": [
-          "ebcb7311-e382-5f71-86b8-330cd8af4e76",
-          "3ce27cf5-2c4f-59a2-94e3-0bf497e02712"
-        ]
-      },
-      "idea_vs_market": {
-        "verdict": "survives",
-        "rationale": "The idea of bringing AI infrastructure to smartphones aligns with the trend of increasing mobile computing power and the demand for on-device AI processing. This concept is viable in the current market context, where there is a push towards decentralizing AI processing from cloud to edge devices.",
-        "evidence_refs": []
-      }
-    }
-  },
-  {
-    "id": "8c905734-f012-4a64-b676-f64363316d45",
-    "source": "outbound_hn",
-    "founder": {
-      "name": "Tantris",
-      "handles": {
-        "github": "",
-        "twitter": "",
-        "linkedin": ""
-      },
-      "identity": "name:tantris",
-      "location": ""
-    },
-    "company": {
-      "name": "LLM-powered NPCs running on your hardware",
-      "stage": "pre-seed",
-      "sector": "inference",
-      "one_liner": "LLM-powered NPCs running on your hardware"
-    },
-    "deck_present": false,
-    "deck_url": null,
-    "created_at": "2026-07-19T04:38:44.283358+00:00",
-    "status": "memo_ready",
-    "founder_score": {
-      "trend": "flat",
-      "value": 60,
-      "history": [
-        {
-          "ts": "2026-07-19T05:06:32.002526+00:00",
-          "value": 60.0,
-          "reason": "The founder has demonstrated the ability to ship a public product, as evidenced by the GitHub repository (claim_id=df6c443e-2f07-5c32-8e13-c21a3a144ea1). Additionally, the Show HN launch garnered some",
-          "opportunity_id": "8c905734-f012-4a64-b676-f64363316d45"
-        }
-      ],
-      "confidence": 0.6
-    },
-    "axes": {
-      "market": {
-        "rating": "neutral",
-        "rationale": "The market for LLM-powered NPCs is emerging, with potential interest from gaming and AI enthusiasts. However, it is not yet clear how large or sustainable this market is, as it depends on broader adoption of AI technologies in gaming and the ability to run such models efficiently on consumer hardware.",
+        "rationale": "The market for AI infrastructure, particularly in reducing hallucinations in retrieval-augmented generation (RAG) models, is growing but also becoming increasingly competitive. While there is demand for solutions that improve AI model reliability, the market is crowded with numerous players offering various approaches. This results in a neutral outlook as the opportunity for differentiation exists but is challenging.",
         "evidence_refs": []
       },
       "founder": {
         "score": 60,
         "trend": "flat",
-        "rationale": "The founder has demonstrated the ability to ship a public product, as evidenced by the GitHub repository (claim_id=df6c443e-2f07-5c32-8e13-c21a3a144ea1). Additionally, the Show HN launch garnered some attention, indicating a level of community interest (claim_id=7b56f198-6103-55cf-ad32-155f2cad8c4b). However, there is no prior track record or public presence to further assess the founder's capabilities.",
+        "rationale": "The founder, Mustafabal, has maintained a consistent score of 60. The corroborated traction from the Show HN launch, which reached 95 points with 19 comments, indicates some level of community interest and engagement. However, there is no additional information about the founder's background, previous successes, or failures to suggest a change in the score.",
         "evidence_refs": [
-          "7b56f198-6103-55cf-ad32-155f2cad8c4b",
-          "df6c443e-2f07-5c32-8e13-c21a3a144ea1"
+          "bd9950de-2298-52f4-bf03-9e7639f9c2e1"
         ]
       },
       "idea_vs_market": {
         "verdict": "survives",
-        "rationale": "The idea of running LLM-powered NPCs on user hardware is innovative and aligns with current trends in gaming and AI. The ability to leverage local hardware could appeal to privacy-conscious users and those interested in customizable gaming experiences. The existing traction, though modest, suggests initial market interest.",
+        "rationale": "The idea of minimizing RAG hallucinations with a single hyperparameter is intriguing and potentially valuable in the AI infrastructure space. Given the corroborated traction from the Show HN launch, there is initial interest in the concept. The idea aligns with current market needs for more efficient and reliable AI models, suggesting it can survive in the current market environment.",
         "evidence_refs": [
-          "7b56f198-6103-55cf-ad32-155f2cad8c4b",
-          "df6c443e-2f07-5c32-8e13-c21a3a144ea1"
+          "bd9950de-2298-52f4-bf03-9e7639f9c2e1"
         ]
       }
     }
   },
   {
-    "id": "c31c7aac-a6ac-4d36-a851-d8a84365ca68",
-    "source": "outbound_hn",
+    "id": "0b8540a9-707e-4e57-99c1-8128636390a8",
+    "source": "inbound_apply",
     "founder": {
-      "name": "hassaanr",
+      "name": "Test Founder",
       "handles": {
-        "github": "",
+        "github": "testfounder0bd621",
         "twitter": "",
         "linkedin": ""
       },
-      "identity": "name:hassaanr",
+      "identity": "github:testfounder0bd621",
       "location": ""
     },
     "company": {
-      "name": "A real time AI video agent with under 1 second of latency",
+      "name": "Acceptance Labs",
       "stage": "pre-seed",
-      "sector": "agent frameworks",
-      "one_liner": "A real time AI video agent with under 1 second of latency"
+      "sector": "eval & observability",
+      "one_liner": ""
     },
-    "deck_present": false,
-    "deck_url": null,
-    "created_at": "2026-07-19T04:38:44.28436+00:00",
+    "deck_present": true,
+    "deck_url": "https://vzlqgccpvajxacponhud.supabase.co/storage/v1/object/public/decks/0b8540a9-707e-4e57-99c1-8128636390a8/deck.pdf",
+    "created_at": "2026-07-18T21:31:22.916107+00:00",
     "status": "memo_ready",
     "founder_score": {
       "trend": "flat",
-      "value": 60,
+      "value": 50,
       "history": [
         {
-          "ts": "2026-07-19T05:07:27.357709+00:00",
+          "ts": "2026-07-18T21:31:27.315035+00:00",
           "value": 60.0,
-          "reason": "The founder has successfully launched a product that gained significant attention on Hacker News, as evidenced by the high number of points and comments. This indicates a level of competence in genera",
-          "opportunity_id": "c31c7aac-a6ac-4d36-a851-d8a84365ca68"
+          "reason": "first pass",
+          "opportunity_id": "0b8540a9-707e-4e57-99c1-8128636390a8"
+        },
+        {
+          "ts": "2026-07-18T21:31:28.042615+00:00",
+          "value": 78.0,
+          "reason": "shipped OSS",
+          "opportunity_id": "d79f831c-a36c-4265-88bf-194743b20de6"
+        },
+        {
+          "ts": "2026-07-19T04:58:56.339327+00:00",
+          "value": 50.0,
+          "reason": "The founder's identity and location are undisclosed, which limits the ability to assess their background and credibility. The GitHub handle suggests some technical involvement, but without verified cl",
+          "opportunity_id": "d79f831c-a36c-4265-88bf-194743b20de6"
+        },
+        {
+          "ts": "2026-07-19T05:30:48.793586+00:00",
+          "value": 50.0,
+          "reason": "The founder's score remains at 50 due to lack of new verified information. The unverified revenue claim does not contribute positively to the score.",
+          "opportunity_id": "0b8540a9-707e-4e57-99c1-8128636390a8"
+        },
+        {
+          "ts": "2026-07-19T05:38:10.686318+00:00",
+          "value": 50.0,
+          "reason": "The founder's score remains flat at 50 due to the lack of new information or verified claims that could influence the score positively or negatively. The only available claim is unverified, which does",
+          "opportunity_id": "d79f831c-a36c-4265-88bf-194743b20de6"
         }
       ],
       "confidence": 0.6
     },
     "axes": {
       "market": {
-        "rating": "bull",
-        "rationale": "The market for real-time AI video agents is growing, driven by increasing demand for interactive and responsive AI applications across various sectors such as customer service, gaming, and virtual events. The ability to deliver under 1 second of latency is a significant technical advantage in this space.",
+        "rating": "neutral",
+        "rationale": "Without specific information about the company's focus or industry, a neutral stance is taken on the market. The AI infrastructure space is generally promising, but specifics are needed for a more accurate assessment.",
         "evidence_refs": []
       },
       "founder": {
-        "score": 60,
-        "trend": "up",
-        "rationale": "The founder has successfully launched a product that gained significant attention on Hacker News, as evidenced by the high number of points and comments. This indicates a level of competence in generating interest and potentially in product development. However, there is no prior track record or public presence to further assess the founder's capabilities.",
-        "evidence_refs": [
-          "805abfdc-f793-57da-bcd6-df4042cc832c"
-        ]
+        "score": 50,
+        "trend": "flat",
+        "rationale": "The founder's score remains at 50 due to lack of new verified information. The unverified revenue claim does not contribute positively to the score.",
+        "evidence_refs": []
       },
       "idea_vs_market": {
-        "verdict": "survives",
-        "rationale": "The idea of a real-time AI video agent with under 1 second of latency aligns well with current market demands for low-latency, high-performance AI solutions. This technical capability is crucial for applications requiring immediate interaction, suggesting the idea is well-suited to the market.",
-        "evidence_refs": []
+        "verdict": "needs_pivot",
+        "rationale": "Without a clear understanding of the company's product or service, it's difficult to determine if the idea aligns with market needs. The unverified revenue claim suggests potential, but lacks sufficient evidence to confirm market fit.",
+        "evidence_refs": [
+          "ad37482c-da47-4bbb-af41-6187a034310b"
+        ]
       }
     }
   },
@@ -1282,7 +1519,7 @@
     "created_at": "2026-07-18T21:31:23.395504+00:00",
     "status": "memo_ready",
     "founder_score": {
-      "trend": "down",
+      "trend": "flat",
       "value": 50,
       "history": [
         {
@@ -1302,6 +1539,18 @@
           "value": 50.0,
           "reason": "The founder's identity and location are undisclosed, which limits the ability to assess their background and credibility. The GitHub handle suggests some technical involvement, but without verified cl",
           "opportunity_id": "d79f831c-a36c-4265-88bf-194743b20de6"
+        },
+        {
+          "ts": "2026-07-19T05:30:48.793586+00:00",
+          "value": 50.0,
+          "reason": "The founder's score remains at 50 due to lack of new verified information. The unverified revenue claim does not contribute positively to the score.",
+          "opportunity_id": "0b8540a9-707e-4e57-99c1-8128636390a8"
+        },
+        {
+          "ts": "2026-07-19T05:38:10.686318+00:00",
+          "value": 50.0,
+          "reason": "The founder's score remains flat at 50 due to the lack of new information or verified claims that could influence the score positively or negatively. The only available claim is unverified, which does",
+          "opportunity_id": "d79f831c-a36c-4265-88bf-194743b20de6"
         }
       ],
       "confidence": 0.6
@@ -1309,21 +1558,23 @@
     "axes": {
       "market": {
         "rating": "neutral",
-        "rationale": "Without specific information about the company's focus or market, it's challenging to provide a bullish or bearish rating. The neutral stance reflects the absence of data to suggest a strong market opportunity or significant challenges.",
+        "rationale": "Without specific information about the market or industry the company is targeting, a neutral stance is appropriate. There is no evidence to suggest a particularly bullish or bearish outlook.",
         "evidence_refs": []
       },
       "founder": {
         "score": 50,
-        "trend": "down",
-        "rationale": "The founder's identity and location are undisclosed, which limits the ability to assess their background and credibility. The GitHub handle suggests some technical involvement, but without verified claims or evidence of past successes, the score is reduced. The prior score was 78, indicating a downward trend due to lack of verifiable information.",
+        "trend": "flat",
+        "rationale": "The founder's score remains flat at 50 due to the lack of new information or verified claims that could influence the score positively or negatively. The only available claim is unverified, which does not provide a basis for increasing trust or confidence in the founder's capabilities.",
         "evidence_refs": [
           "1b13e04a-67a6-4af2-953b-7ca84c7a01aa"
         ]
       },
       "idea_vs_market": {
         "verdict": "needs_pivot",
-        "rationale": "Given the lack of a clear company one-liner or detailed description of the product or service, it's difficult to determine if the idea aligns with market needs. This suggests a need for a pivot or clearer articulation of the market fit.",
-        "evidence_refs": []
+        "rationale": "Given the lack of information about the company's focus or product, and no verified claims to support the current idea's fit with the market, it is prudent to suggest that the idea may need a pivot to better align with market demands or opportunities.",
+        "evidence_refs": [
+          "1b13e04a-67a6-4af2-953b-7ca84c7a01aa"
+        ]
       }
     }
   },
@@ -1346,18 +1597,24 @@
       "sector": "vector/data tooling",
       "one_liner": "Providing simple vector data tools for small businesses."
     },
-    "deck_present": true,
+    "deck_present": false,
     "deck_url": null,
     "created_at": "2026-07-19T03:54:45.0385+00:00",
     "status": "memo_ready",
     "founder_score": {
-      "trend": "flat",
-      "value": 40,
+      "trend": "up",
+      "value": 45,
       "history": [
         {
           "ts": "2026-07-19T04:49:13.648250+00:00",
           "value": 40.0,
           "reason": "Jason Lee has no prior track record on file, and the current claims about the team and traction are unverified. The small team size and part-time commitment suggest limited capacity for rapid developm",
+          "opportunity_id": "a8de1d93-5a6f-4ddb-a904-db275d6b124e"
+        },
+        {
+          "ts": "2026-07-19T05:38:39.860262+00:00",
+          "value": 45.0,
+          "reason": "Jason Lee has a public web presence corroborated by LinkedIn, which adds some credibility. However, the team is small and working part-time, and there is no verified traction or completed product. The",
           "opportunity_id": "a8de1d93-5a6f-4ddb-a904-db275d6b124e"
         }
       ],
@@ -1366,25 +1623,27 @@
     "axes": {
       "market": {
         "rating": "neutral",
-        "rationale": "The market for data tooling for SMEs is sizable at $500 million, but the claim is unverified. The market's potential is acknowledged, but without evidence, it's difficult to be bullish.",
+        "rationale": "The market size claim is unverified, but the data tooling market for SMEs is generally recognized as a growing sector. However, without verified evidence of the market size, a neutral rating is appropriate.",
         "evidence_refs": [
           "d5d0b57d-7709-5ef6-b190-78ea7dc0dfb4"
         ]
       },
       "founder": {
-        "score": 40,
-        "trend": "flat",
-        "rationale": "Jason Lee has no prior track record on file, and the current claims about the team and traction are unverified. The small team size and part-time commitment suggest limited capacity for rapid development and scaling.",
+        "score": 45,
+        "trend": "up",
+        "rationale": "Jason Lee has a public web presence corroborated by LinkedIn, which adds some credibility. However, the team is small and working part-time, and there is no verified traction or completed product. The score is slightly improved from the prior score due to the public presence but remains low due to the lack of verified claims.",
         "evidence_refs": [
-          "c6878d80-87df-55f7-88de-907bb3c7861e",
-          "708bd520-1a6a-5aa8-a14c-2950e5302d87"
+          "ce1a4782-a649-5a5b-b47b-e7c3f643dff5",
+          "c6878d80-87df-55f7-88de-907bb3c7861e"
         ]
       },
       "idea_vs_market": {
-        "verdict": "survives",
-        "rationale": "The idea of providing simple vector data tools for small businesses is aligned with the needs of SMEs looking for accessible data solutions. The completion of a prototype, even if unverified, suggests some progress towards market fit.",
+        "verdict": "needs_pivot",
+        "rationale": "The idea of providing simple vector data tools for small businesses is interesting, but the lack of verified traction and the small, part-time team suggest that the current approach may not be sufficient to capture the market effectively. A pivot might be necessary to better align with market needs or to differentiate from existing solutions.",
         "evidence_refs": [
-          "f599f952-049a-5d0c-afee-2cbea36082b8"
+          "f599f952-049a-5d0c-afee-2cbea36082b8",
+          "708bd520-1a6a-5aa8-a14c-2950e5302d87",
+          "c6878d80-87df-55f7-88de-907bb3c7861e"
         ]
       }
     }
@@ -1408,7 +1667,7 @@
       "sector": "inference",
       "one_liner": "Building lightweight inference solutions for startups."
     },
-    "deck_present": true,
+    "deck_present": false,
     "deck_url": null,
     "created_at": "2026-07-19T03:54:45.039505+00:00",
     "status": "memo_ready",
@@ -1421,6 +1680,12 @@
           "value": 40.0,
           "reason": "Sara Patel has no prior track record on file, and the current claims about traction and team are unverified. The team is small and part-time, which may limit execution capacity.",
           "opportunity_id": "af2771fb-b9f7-4fd9-abca-a31a59ae9d2d"
+        },
+        {
+          "ts": "2026-07-19T05:39:11.894429+00:00",
+          "value": 40.0,
+          "reason": "Sara Patel's founder score remains at 40, consistent with the prior score history. The claims about traction, team, and technology are all unverified, which does not provide a basis for increasing the",
+          "opportunity_id": "af2771fb-b9f7-4fd9-abca-a31a59ae9d2d"
         }
       ],
       "confidence": 0.6
@@ -1428,7 +1693,7 @@
     "axes": {
       "market": {
         "rating": "neutral",
-        "rationale": "The AI inference solutions market is sizable at $400 million, but the claim is unverified. The market is competitive, with many players offering similar solutions, which could pose challenges for a new entrant.",
+        "rationale": "The market for AI inference solutions is estimated at $400 million, which is a moderate size. However, the claim regarding the market size is unverified, which tempers enthusiasm. The market is neither exceptionally large nor small, placing it in a neutral position until further verification or market analysis is provided.",
         "evidence_refs": [
           "3c8ce56e-a546-5a4a-9650-16aa550a916f"
         ]
@@ -1436,17 +1701,81 @@
       "founder": {
         "score": 40,
         "trend": "flat",
-        "rationale": "Sara Patel has no prior track record on file, and the current claims about traction and team are unverified. The team is small and part-time, which may limit execution capacity.",
+        "rationale": "Sara Patel's founder score remains at 40, consistent with the prior score history. The claims about traction, team, and technology are all unverified, which does not provide a basis for increasing the score. The lack of verified evidence for these claims suggests a need for caution in assessing the founder's current capabilities and achievements.",
         "evidence_refs": [
           "6281e8c4-30a5-5c0d-8861-abc954f2df36",
-          "2882a51a-02ec-5a4c-a455-e69ec6dcf754"
+          "2882a51a-02ec-5a4c-a455-e69ec6dcf754",
+          "3cd84fe9-5224-5b0e-bf80-27c8689723c3"
         ]
       },
       "idea_vs_market": {
         "verdict": "needs_pivot",
-        "rationale": "The idea of providing lightweight inference solutions is interesting, but the unverified claim of implementation in 5 startups and the competitive nature of the market suggest that the current approach may need refinement or differentiation to succeed.",
+        "rationale": "The idea of providing lightweight inference solutions for startups is potentially valuable, but the lack of verified traction and the unverified claim of market size suggest that the current approach may not be fully aligned with market needs or sufficiently differentiated. A pivot might be necessary to better address market demands or to validate the solution's fit.",
         "evidence_refs": [
-          "3cd84fe9-5224-5b0e-bf80-27c8689723c3"
+          "6281e8c4-30a5-5c0d-8861-abc954f2df36",
+          "3cd84fe9-5224-5b0e-bf80-27c8689723c3",
+          "3c8ce56e-a546-5a4a-9650-16aa550a916f"
+        ]
+      }
+    }
+  },
+  {
+    "id": "d4081c05-b9a8-4874-8539-b1f035969a40",
+    "source": "inbound_apply",
+    "founder": {
+      "name": "Mark Chen",
+      "handles": {
+        "github": "markchen-evalguard",
+        "twitter": "",
+        "linkedin": ""
+      },
+      "identity": "github:markchen-evalguard",
+      "location": "San Jose, CA"
+    },
+    "company": {
+      "name": "EvalGuard Tech",
+      "stage": "pre-seed",
+      "sector": "eval & observability",
+      "one_liner": "Creating evaluation tools to improve AI model performance."
+    },
+    "deck_present": false,
+    "deck_url": null,
+    "created_at": "2026-07-19T03:54:45.039505+00:00",
+    "status": "memo_ready",
+    "founder_score": {
+      "trend": "flat",
+      "value": 30,
+      "history": [
+        {
+          "ts": "2026-07-19T05:40:55.597493+00:00",
+          "value": 30.0,
+          "reason": "Mark Chen is a solo founder with no external hires, which can be challenging in scaling and executing the business effectively. There is no prior track record or verified achievements to boost confide",
+          "opportunity_id": "d4081c05-b9a8-4874-8539-b1f035969a40"
+        }
+      ],
+      "confidence": 0.6
+    },
+    "axes": {
+      "market": {
+        "rating": "neutral",
+        "rationale": "The market for AI evaluation tools is potentially significant, with an estimated size of $250 million. However, this claim is unverified, and the competitive landscape and demand dynamics are not detailed, making it difficult to fully assess the market potential.",
+        "evidence_refs": [
+          "17a84232-8145-53a4-8b85-9941c1fc9832"
+        ]
+      },
+      "founder": {
+        "score": 30,
+        "trend": "flat",
+        "rationale": "Mark Chen is a solo founder with no external hires, which can be challenging in scaling and executing the business effectively. There is no prior track record or verified achievements to boost confidence in his ability to lead and grow the company.",
+        "evidence_refs": [
+          "5b5aca44-3c88-5c1a-bc85-a60d0703c2be"
+        ]
+      },
+      "idea_vs_market": {
+        "verdict": "survives",
+        "rationale": "The idea of creating evaluation tools to improve AI model performance is relevant given the growing complexity and deployment of AI models. While the market size claim is unverified, the concept aligns with industry needs for better AI model evaluation and performance tools.",
+        "evidence_refs": [
+          "17a84232-8145-53a4-8b85-9941c1fc9832"
         ]
       }
     }
@@ -1470,20 +1799,33 @@
       "sector": "agent frameworks",
       "one_liner": "Simplifying agent frameworks for developers everywhere."
     },
-    "deck_present": true,
+    "deck_present": false,
     "deck_url": null,
     "created_at": "2026-07-19T03:54:45.039505+00:00",
     "status": "memo_ready",
     "founder_score": {
       "trend": "flat",
-      "value": 0,
-      "history": [],
-      "confidence": 0.0
+      "value": 30,
+      "history": [
+        {
+          "ts": "2026-07-19T05:00:23.163615+00:00",
+          "value": 30.0,
+          "reason": "Lisa Nguyen has no prior track record on file, and the team is working part-time on the project, which suggests limited commitment and resources. The claims about the team and prototype are unverified",
+          "opportunity_id": "7f073006-dc87-48ff-8841-276ff1d5c682"
+        },
+        {
+          "ts": "2026-07-19T05:39:39.154274+00:00",
+          "value": 30.0,
+          "reason": "Lisa Nguyen has no prior track record on file, and the team is working part-time on the project, which suggests limited commitment and experience. The unverified claims about the team and traction fur",
+          "opportunity_id": "7f073006-dc87-48ff-8841-276ff1d5c682"
+        }
+      ],
+      "confidence": 0.6
     },
     "axes": {
       "market": {
         "rating": "neutral",
-        "rationale": "The agent framework market is estimated at $300 million and is described as growing, which suggests potential. However, the claim is unverified, and without additional data, it's difficult to fully assess the market's attractiveness.",
+        "rationale": "The agent framework market is estimated at $300 million, which indicates a niche but potentially growing market. However, the claim is unverified, and without additional data, it's difficult to fully assess the market's potential.",
         "evidence_refs": [
           "7fc0f69a-2f27-50ab-b460-b7e27936decd"
         ]
@@ -1491,17 +1833,17 @@
       "founder": {
         "score": 30,
         "trend": "flat",
-        "rationale": "Lisa Nguyen has no prior track record on file, and the team is working part-time on the project, which suggests limited commitment and resources. The claims about the team and prototype are unverified, which further reduces confidence in the founder's ability to execute.",
+        "rationale": "Lisa Nguyen has no prior track record on file, and the team is working part-time on the project, which suggests limited commitment and experience. The unverified claims about the team and traction further reduce confidence in the founder's ability to execute effectively.",
         "evidence_refs": [
           "71a3d10e-37e2-573e-9dde-888bf397004c",
-          "48f2302a-cbff-53b0-ab71-537f2ea01d6b"
+          "6c04ae6a-6bd4-56ec-8158-3b3d6abc8235"
         ]
       },
       "idea_vs_market": {
         "verdict": "needs_pivot",
-        "rationale": "While the idea of simplifying agent frameworks could be valuable, the unverified nature of the market size and the limited traction (80 GitHub stars) suggest that the current approach may not be compelling enough to capture significant market share. A pivot or further validation might be necessary to align better with market needs.",
+        "rationale": "The idea of simplifying agent frameworks is promising, but the unverified status of the prototype and the limited traction suggest that the current approach may not be compelling enough to capture significant market share. A pivot or refinement of the idea might be necessary to better align with market needs.",
         "evidence_refs": [
-          "7fc0f69a-2f27-50ab-b460-b7e27936decd",
+          "48f2302a-cbff-53b0-ab71-537f2ea01d6b",
           "6c04ae6a-6bd4-56ec-8158-3b3d6abc8235"
         ]
       }
@@ -1526,12 +1868,12 @@
       "sector": "agent frameworks",
       "one_liner": "Orchestration framework for multi-step LLM agents."
     },
-    "deck_present": true,
+    "deck_present": false,
     "deck_url": null,
     "created_at": "2026-07-19T03:54:30.455603+00:00",
     "status": "memo_ready",
     "founder_score": {
-      "trend": "down",
+      "trend": "flat",
       "value": 20,
       "history": [
         {
@@ -1545,6 +1887,12 @@
           "value": 20.0,
           "reason": "The founder, Marcus Feld, has a history of making claims that are contradicted by available evidence. The revenue and traction claims have been contradicted, which significantly impacts trust in the f",
           "opportunity_id": "2db00f67-67d1-4aba-a75e-3f450129d1e7"
+        },
+        {
+          "ts": "2026-07-19T05:40:08.238273+00:00",
+          "value": 20.0,
+          "reason": "The founder, Marcus Feld, has a history of making claims that are contradicted by available evidence, such as the revenue and user base claims. This significantly impacts the trustworthiness of the fo",
+          "opportunity_id": "2db00f67-67d1-4aba-a75e-3f450129d1e7"
         }
       ],
       "confidence": 0.6
@@ -1557,17 +1905,16 @@
       },
       "founder": {
         "score": 20,
-        "trend": "down",
-        "rationale": "The founder, Marcus Feld, has a history of making claims that are contradicted by available evidence. The revenue and traction claims have been contradicted, which significantly impacts trust in the founder's statements. The team composition claim is unverified, further reducing confidence in the founder's ability to execute.",
+        "trend": "flat",
+        "rationale": "The founder, Marcus Feld, has a history of making claims that are contradicted by available evidence, such as the revenue and user base claims. This significantly impacts the trustworthiness of the founder's statements and thus the score remains low.",
         "evidence_refs": [
           "d937b210-a2c4-5d4e-97df-850374edfd54",
-          "d9b302f6-76e5-534d-aab5-4a6820531318",
-          "8ee516ec-b18f-5bd8-8546-fcc9899217d5"
+          "d9b302f6-76e5-534d-aab5-4a6820531318"
         ]
       },
       "idea_vs_market": {
         "verdict": "needs_pivot",
-        "rationale": "While the market is promising, the specific claims about traction and revenue are contradicted, suggesting that the product may not be resonating as expected with the target audience. This indicates a potential misalignment with market needs or execution challenges that need addressing.",
+        "rationale": "While the market is promising, the specific claims about traction and revenue are contradicted, suggesting that the product may not be as well-received or effective as needed to capture the market opportunity. The idea may need to pivot to better align with market needs or improve its execution to gain real traction.",
         "evidence_refs": [
           "d937b210-a2c4-5d4e-97df-850374edfd54",
           "d9b302f6-76e5-534d-aab5-4a6820531318"
@@ -1700,27 +2047,120 @@
     "axes": {}
   },
   {
-    "id": "d4081c05-b9a8-4874-8539-b1f035969a40",
+    "id": "a1be7235-4e31-4c41-b2e0-c593b50c34d2",
     "source": "inbound_apply",
     "founder": {
-      "name": "Mark Chen",
+      "name": "",
       "handles": {
-        "github": "markchen-evalguard",
+        "github": "",
         "twitter": "",
         "linkedin": ""
       },
-      "identity": "github:markchen-evalguard",
-      "location": "San Jose, CA"
+      "identity": null,
+      "location": ""
     },
     "company": {
-      "name": "EvalGuard Tech",
+      "name": "Unicode Deck Co",
       "stage": "pre-seed",
-      "sector": "eval & observability",
-      "one_liner": "Creating evaluation tools to improve AI model performance."
+      "sector": "",
+      "one_liner": ""
     },
     "deck_present": true,
+    "deck_url": "https://vzlqgccpvajxacponhud.supabase.co/storage/v1/object/public/decks/a1be7235-4e31-4c41-b2e0-c593b50c34d2/PitchDeck-2026-Unicode.pdf",
+    "created_at": "2026-07-19T06:15:59.276357+00:00",
+    "status": "new",
+    "founder_score": {
+      "trend": "flat",
+      "value": 0,
+      "history": [],
+      "confidence": 0.0
+    },
+    "axes": {}
+  },
+  {
+    "id": "23993a7b-7f59-4565-ac93-a1d2c9c029ad",
+    "source": "inbound_apply",
+    "founder": {
+      "name": "",
+      "handles": {
+        "github": "",
+        "twitter": "",
+        "linkedin": ""
+      },
+      "identity": null,
+      "location": ""
+    },
+    "company": {
+      "name": "Dedupe Co",
+      "stage": "pre-seed",
+      "sector": "",
+      "one_liner": ""
+    },
+    "deck_present": false,
     "deck_url": null,
-    "created_at": "2026-07-19T03:54:45.039505+00:00",
+    "created_at": "2026-07-19T06:15:59.959133+00:00",
+    "status": "new",
+    "founder_score": {
+      "trend": "flat",
+      "value": 0,
+      "history": [],
+      "confidence": 0.0
+    },
+    "axes": {}
+  },
+  {
+    "id": "2003f09c-839e-40d3-a6dc-51b5844d5d82",
+    "source": "outbound_github",
+    "founder": {
+      "name": "pliny",
+      "handles": {
+        "github": "elder-plinius",
+        "twitter": "elder_plinius",
+        "linkedin": ""
+      },
+      "identity": "github:elder-plinius",
+      "location": ""
+    },
+    "company": {
+      "name": "CL4R1T4S",
+      "stage": "pre-seed",
+      "sector": "agent frameworks",
+      "one_liner": "LEAKED SYSTEM PROMPTS FOR CHATGPT, CLAUDE, GEMINI, GROK, PERPLEXITY, CURSOR, LOVABLE, REPLIT, AND MORE! - AI SYSTEMS TRANSPARENCY FOR ALL! \ud83d\udc50"
+    },
+    "deck_present": false,
+    "deck_url": null,
+    "created_at": "2026-07-19T06:24:21.314596+00:00",
+    "status": "new",
+    "founder_score": {
+      "trend": "flat",
+      "value": 0,
+      "history": [],
+      "confidence": 0.0
+    },
+    "axes": {}
+  },
+  {
+    "id": "494688b9-5ba6-4595-b7c9-6936b48a4acd",
+    "source": "outbound_hn",
+    "founder": {
+      "name": "adiraja",
+      "handles": {
+        "github": "",
+        "twitter": "",
+        "linkedin": ""
+      },
+      "identity": "name:adiraja",
+      "location": ""
+    },
+    "company": {
+      "name": "NCompass Technologies",
+      "stage": "pre-seed",
+      "sector": "inference",
+      "one_liner": "yet another AI Inference API, but hear us out"
+    },
+    "deck_present": false,
+    "deck_url": null,
+    "created_at": "2026-07-19T06:27:15.236043+00:00",
     "status": "new",
     "founder_score": {
       "trend": "flat",

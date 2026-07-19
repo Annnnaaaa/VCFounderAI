@@ -37,7 +37,10 @@ NON_PRODUCT = ("awesome", "tutorial", "course", "handbook", "cookbook", "roadmap
                "demo", "starter", "boilerplate", "template",
                # educational "build X yourself" repos: high stars, not companies
                "from scratch", "from-scratch", "step by step", "step-by-step",
-               "教程", "study", "notes", "curriculum", "bootcamp", "exercises")
+               "教程", "study", "notes", "curriculum", "bootcamp", "exercises",
+               # prompt-leak / jailbreak archives: viral star counts, no product
+               "leaked", "jailbreak", "system prompt", "prompt collection",
+               "prompt library", "you can actually run")
 
 # Well-known orgs/accounts that are not pre-seed founders.
 BIG_CO = {
