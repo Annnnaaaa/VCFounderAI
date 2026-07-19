@@ -17,7 +17,7 @@
             "source": "github"
           }
         ],
-        "note": "The GitHub repository shows 124065 stars, which matches the claim."
+        "note": "The GitHub repository 'awesome-llm-apps' has 124065 stars, which matches the claim."
       }
     },
     {
@@ -36,7 +36,7 @@
             "source": "github"
           }
         ],
-        "note": "The evidence shows the last push was on 2026-07-19, which corroborates the claim of a commit 0 days ago."
+        "note": "The evidence shows the last push was on 2026-07-19, which corroborates the claim that the last commit was 0 days ago."
       }
     },
     {
@@ -55,7 +55,7 @@
             "source": "github"
           }
         ],
-        "note": "The evidence directly supports the claim with matching numbers for followers and public repos."
+        "note": "The evidence directly supports the claim of having 9254 GitHub followers and 184 public repos."
       }
     }
   ]

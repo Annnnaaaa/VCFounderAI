@@ -9,9 +9,9 @@
       "source": "deck_slide_1",
       "trust": {
         "status": "unverified",
-        "confidence": 0.5,
+        "confidence": 0.8,
         "evidence": [],
-        "note": "There is no external evidence provided to verify or contradict the claim about the open-source library's stars."
+        "note": "There is no external evidence provided to verify or contradict the claim about securing 90 stars on the open-source library within 8 months."
       }
     },
     {
@@ -37,7 +37,7 @@
         "status": "unverified",
         "confidence": 0.5,
         "evidence": [],
-        "note": "The evidence provided does not address whether the basic version of the solution has been implemented in 5 startups. The evidence is about AI infrastructure startups but does not mention the specific solution or its implementation in any startups."
+        "note": "There is no external evidence provided to verify or contradict the claim that the basic version of the solution has been implemented in 5 startups."
       }
     },
     {
@@ -48,9 +48,9 @@
       "source": "deck_slide_3",
       "trust": {
         "status": "unverified",
-        "confidence": 0.7,
+        "confidence": 0.5,
         "evidence": [],
-        "note": "The evidence provided does not specifically address the size of the AI inference solutions market, which is claimed to be $400 million. The evidence discusses AI infrastructure startups and their roles but does not provide market size data."
+        "note": "There is no external evidence provided to verify or contradict the claim about the $400 million market size for AI inference solutions."
       }
     }
   ]

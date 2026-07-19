@@ -4,24 +4,24 @@
     "founder": {
       "score": 30,
       "trend": "flat",
-      "rationale": "Lisa Nguyen has no prior track record on file, and the team is working part-time on the project, which suggests limited commitment and resources. The claims about the team and prototype are unverified, which further reduces confidence in the founder's ability to execute.",
+      "rationale": "Lisa Nguyen has no prior track record on file, and the team is working part-time on the project, which suggests limited commitment and experience. The unverified claims about the team and traction further reduce confidence in the founder's ability to execute effectively.",
       "evidence_refs": [
         "71a3d10e-37e2-573e-9dde-888bf397004c",
-        "48f2302a-cbff-53b0-ab71-537f2ea01d6b"
+        "6c04ae6a-6bd4-56ec-8158-3b3d6abc8235"
       ]
     },
     "market": {
       "rating": "neutral",
-      "rationale": "The agent framework market is estimated at $300 million and is described as growing, which suggests potential. However, the claim is unverified, and without additional data, it's difficult to fully assess the market's attractiveness.",
+      "rationale": "The agent framework market is estimated at $300 million, which indicates a niche but potentially growing market. However, the claim is unverified, and without additional data, it's difficult to fully assess the market's potential.",
       "evidence_refs": [
         "7fc0f69a-2f27-50ab-b460-b7e27936decd"
       ]
     },
     "idea_vs_market": {
       "verdict": "needs_pivot",
-      "rationale": "While the idea of simplifying agent frameworks could be valuable, the unverified nature of the market size and the limited traction (80 GitHub stars) suggest that the current approach may not be compelling enough to capture significant market share. A pivot or further validation might be necessary to align better with market needs.",
+      "rationale": "The idea of simplifying agent frameworks is promising, but the unverified status of the prototype and the limited traction suggest that the current approach may not be compelling enough to capture significant market share. A pivot or refinement of the idea might be necessary to better align with market needs.",
       "evidence_refs": [
-        "7fc0f69a-2f27-50ab-b460-b7e27936decd",
+        "48f2302a-cbff-53b0-ab71-537f2ea01d6b",
         "6c04ae6a-6bd4-56ec-8158-3b3d6abc8235"
       ]
     }

@@ -17,7 +17,7 @@
             "source": "hn"
           }
         ],
-        "note": "The evidence directly supports the claim, showing the Show HN post with 24 points and 4 comments."
+        "note": "The evidence directly supports the claim, showing the Show HN launch reached 24 points with 4 comments."
       }
     },
     {
@@ -36,7 +36,7 @@
             "source": "hn"
           }
         ],
-        "note": "The evidence shows a GitHub repository link that matches the claim of a public product being shipped. The repository is publicly accessible, which supports the claim."
+        "note": "The evidence shows a GitHub link to the product, which supports the claim of having shipped a public product."
       }
     }
   ]

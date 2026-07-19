@@ -9,7 +9,7 @@
       "source": "deck_slide_2",
       "trust": {
         "status": "unverified",
-        "confidence": 0.5,
+        "confidence": 0.8,
         "evidence": [],
         "note": "There is no external evidence provided to verify or contradict the claim about the team composition and their employment status."
       }
@@ -24,7 +24,7 @@
         "status": "unverified",
         "confidence": 0.7,
         "evidence": [],
-        "note": "The evidence provided does not address the market size or growth of the agent framework market. It only describes the features and capabilities of the InfiAgent framework."
+        "note": "There is no external evidence provided to verify or contradict the claim about the agent framework market size."
       }
     },
     {
@@ -37,7 +37,7 @@
         "status": "unverified",
         "confidence": 0.5,
         "evidence": [],
-        "note": "There is no external evidence provided to verify or contradict the claim about the initial prototype being ready with basic functionality."
+        "note": "There is no external evidence provided to verify or contradict the claim about the prototype's readiness."
       }
     },
     {
@@ -50,7 +50,7 @@
         "status": "unverified",
         "confidence": 0.8,
         "evidence": [],
-        "note": "The evidence provided does not include any information about the number of stars on the GitHub repository, so the claim cannot be verified or contradicted."
+        "note": "There is no external evidence provided to verify or contradict the claim about the GitHub repository's stars."
       }
     }
   ]

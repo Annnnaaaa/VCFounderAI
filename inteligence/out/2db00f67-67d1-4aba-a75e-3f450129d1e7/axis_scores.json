@@ -3,12 +3,11 @@
   "axes": {
     "founder": {
       "score": 20,
-      "trend": "down",
-      "rationale": "The founder, Marcus Feld, has a history of making claims that are contradicted by available evidence. The revenue and traction claims have been contradicted, which significantly impacts trust in the founder's statements. The team composition claim is unverified, further reducing confidence in the founder's ability to execute.",
+      "trend": "flat",
+      "rationale": "The founder, Marcus Feld, has a history of making claims that are contradicted by available evidence, such as the revenue and user base claims. This significantly impacts the trustworthiness of the founder's statements and thus the score remains low.",
       "evidence_refs": [
         "d937b210-a2c4-5d4e-97df-850374edfd54",
-        "d9b302f6-76e5-534d-aab5-4a6820531318",
-        "8ee516ec-b18f-5bd8-8546-fcc9899217d5"
+        "d9b302f6-76e5-534d-aab5-4a6820531318"
       ]
     },
     "market": {
@@ -18,7 +17,7 @@
     },
     "idea_vs_market": {
       "verdict": "needs_pivot",
-      "rationale": "While the market is promising, the specific claims about traction and revenue are contradicted, suggesting that the product may not be resonating as expected with the target audience. This indicates a potential misalignment with market needs or execution challenges that need addressing.",
+      "rationale": "While the market is promising, the specific claims about traction and revenue are contradicted, suggesting that the product may not be as well-received or effective as needed to capture the market opportunity. The idea may need to pivot to better align with market needs or improve its execution to gain real traction.",
       "evidence_refs": [
         "d937b210-a2c4-5d4e-97df-850374edfd54",
         "d9b302f6-76e5-534d-aab5-4a6820531318"

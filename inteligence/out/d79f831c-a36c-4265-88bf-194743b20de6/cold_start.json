@@ -2,24 +2,24 @@
   "opportunity_id": "d79f831c-a36c-4265-88bf-194743b20de6",
   "is_cold_start": true,
   "founder_quality": {
-    "band": "medium",
+    "band": "low",
     "interval": [
-      0.36,
-      0.64
+      0.16,
+      0.43
     ],
     "signals_used": 2
   },
   "signals": [
     {
       "kind": "oss",
-      "weight": 0.4,
+      "weight": 0.3,
       "evidence_ref": "github:testfounder0bd621"
     },
     {
       "kind": "side_project",
-      "weight": 0.3,
+      "weight": 0.2,
       "evidence_ref": "github:testfounder0bd621"
     }
   ],
-  "caveat": "The assessment is based on limited information available from the GitHub profile, which suggests involvement in open source projects and potential side projects. However, without more detailed information on the nature and impact of these projects, the estimate remains uncertain."
+  "caveat": "The founder has a GitHub account with some open source contributions and side projects, but there is limited information available about their impact or quality. No other public information or domain insights are available."
 }

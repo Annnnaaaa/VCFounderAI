@@ -2,7 +2,7 @@
   "opportunity_id": "3c39b4c7-f14b-4fe0-9b98-4bbfa4169f5a",
   "axes": {
     "founder": {
-      "score": 85,
+      "score": 90,
       "trend": "up",
       "rationale": "Shubham Saboo has demonstrated significant traction and influence in the AI community, as evidenced by the high number of GitHub stars (124065) and followers (9254). The active maintenance of the project further supports the founder's commitment and capability.",
       "evidence_refs": [
@@ -13,12 +13,12 @@
     },
     "market": {
       "rating": "bull",
-      "rationale": "The market for AI infrastructure and applications, particularly those involving AI agents and retrieval-augmented generation (RAG), is experiencing rapid growth. The increasing demand for customizable AI solutions supports a bullish outlook.",
+      "rationale": "The market for AI applications, particularly those involving large language models (LLMs) and retrieval-augmented generation (RAG), is rapidly expanding. The ability to clone, customize, and ship AI applications aligns well with current market demands for flexible and scalable AI solutions.",
       "evidence_refs": []
     },
     "idea_vs_market": {
       "verdict": "survives",
-      "rationale": "The idea of providing a platform for 100+ AI Agent & RAG apps that are easily customizable and deployable aligns well with current market trends. The high GitHub engagement indicates strong market interest and validation.",
+      "rationale": "The idea of providing a platform for running, customizing, and deploying AI applications is well-aligned with the growing demand for AI-driven solutions. The high level of interest and engagement on GitHub suggests that the idea is resonating with the market.",
       "evidence_refs": [
         "ac3e7460-595e-518e-93c5-fd116dbcfd3b"
       ]

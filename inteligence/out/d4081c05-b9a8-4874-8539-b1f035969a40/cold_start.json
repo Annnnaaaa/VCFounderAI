@@ -1,0 +1,25 @@
+{
+  "opportunity_id": "d4081c05-b9a8-4874-8539-b1f035969a40",
+  "is_cold_start": true,
+  "founder_quality": {
+    "band": "medium",
+    "interval": [
+      0.36,
+      0.64
+    ],
+    "signals_used": 2
+  },
+  "signals": [
+    {
+      "kind": "oss",
+      "weight": 0.6,
+      "evidence_ref": "https://github.com/markchen-evalguard"
+    },
+    {
+      "kind": "domain_insight",
+      "weight": 0.4,
+      "evidence_ref": "Mark Chen's company, EvalGuard Tech, focuses on AI model evaluation tools, indicating some domain insight."
+    }
+  ],
+  "caveat": "The assessment is based on limited public information and contributions, primarily from open-source work and the company's focus area."
+}

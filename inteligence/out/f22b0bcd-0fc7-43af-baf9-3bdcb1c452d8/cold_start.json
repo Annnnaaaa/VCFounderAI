@@ -12,14 +12,14 @@
   "signals": [
     {
       "kind": "side_project",
-      "weight": 0.4,
-      "evidence_ref": "Cactus \u2013 Ollama for Smartphones"
+      "weight": 0.3,
+      "evidence_ref": "Cactus \u2013 Ollama for Smartphones seems to be a side project or early-stage venture, indicating initiative and entrepreneurial spirit."
     },
     {
       "kind": "domain_insight",
-      "weight": 0.3,
-      "evidence_ref": "Cactus \u2013 Ollama for Smartphones"
+      "weight": 0.2,
+      "evidence_ref": "The project 'Cactus \u2013 Ollama for Smartphones' suggests some level of insight or interest in smartphone technology or software development."
     }
   ],
-  "caveat": "The assessment is based on limited information available about the founder and their project."
+  "caveat": "The founder has a very limited public footprint and no public handles, making it difficult to assess their capabilities or track record beyond the current project."
 }

@@ -1,0 +1,57 @@
+{
+  "opportunity_id": "d4081c05-b9a8-4874-8539-b1f035969a40",
+  "claims": [
+    {
+      "claim_id": "93286bd0-49a9-5a9a-89a8-272f6c896332",
+      "opportunity_id": "d4081c05-b9a8-4874-8539-b1f035969a40",
+      "text": "Gained 65 stars on our GitHub project in the first year",
+      "type": "traction",
+      "source": "deck_slide_1",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.8,
+        "evidence": [],
+        "note": "There is no external evidence provided to verify or contradict the claim about GitHub stars."
+      }
+    },
+    {
+      "claim_id": "5b5aca44-3c88-5c1a-bc85-a60d0703c2be",
+      "opportunity_id": "d4081c05-b9a8-4874-8539-b1f035969a40",
+      "text": "Currently a solo founder with no external hires",
+      "type": "team",
+      "source": "deck_slide_2",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.8,
+        "evidence": [],
+        "note": "There is no external evidence provided to verify or contradict the claim about the founder status and team composition."
+      }
+    },
+    {
+      "claim_id": "fc93aa06-0928-5f60-bfa5-9c88fb13419d",
+      "opportunity_id": "d4081c05-b9a8-4874-8539-b1f035969a40",
+      "text": "Working version of the tool available for limited beta testing",
+      "type": "tech",
+      "source": "deck_slide_4",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.8,
+        "evidence": [],
+        "note": "There is no external evidence provided to verify or contradict the claim about the tool being available for limited beta testing."
+      }
+    },
+    {
+      "claim_id": "17a84232-8145-53a4-8b85-9941c1fc9832",
+      "opportunity_id": "d4081c05-b9a8-4874-8539-b1f035969a40",
+      "text": "Potential market size of $250 million for AI evaluation tools",
+      "type": "market",
+      "source": "deck_slide_3",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.8,
+        "evidence": [],
+        "note": "There is no external evidence provided to verify or contradict the claim about the market size for AI evaluation tools."
+      }
+    }
+  ]
+}

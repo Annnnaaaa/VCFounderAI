@@ -18,8 +18,8 @@
     {
       "kind": "domain_insight",
       "weight": 0.4,
-      "evidence_ref": "InfiAgent Solutions is focused on simplifying agent frameworks, indicating some level of domain insight in software development."
+      "evidence_ref": "InfiAgent Solutions \u2014 Simplifying agent frameworks for developers everywhere."
     }
   ],
-  "caveat": "The assessment is based on limited public information and contributions, primarily from open-source work and inferred domain insight."
+  "caveat": "The assessment is based on limited public information and contributions."
 }

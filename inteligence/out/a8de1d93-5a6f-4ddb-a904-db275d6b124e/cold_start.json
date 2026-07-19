@@ -4,8 +4,8 @@
   "founder_quality": {
     "band": "medium",
     "interval": [
-      0.36,
-      0.64
+      0.27,
+      0.54
     ],
     "signals_used": 2
   },
@@ -13,13 +13,13 @@
     {
       "kind": "oss",
       "weight": 0.6,
-      "evidence_ref": "https://github.com/jasonlee-datanexus/DataNexusTools"
+      "evidence_ref": "https://github.com/jasonlee-datanexus"
     },
     {
       "kind": "domain_insight",
       "weight": 0.4,
-      "evidence_ref": "claim_id:Jason has a background in data management and has worked with small businesses to improve their data handling processes."
+      "evidence_ref": "DataNexus Tools focuses on vector data tools for small businesses, indicating some domain insight."
     }
   ],
-  "caveat": "The assessment is based on limited public information and contributions, primarily from open-source work and claimed domain expertise."
+  "caveat": "The assessment is based on limited public information and contributions, primarily from open-source work and domain focus."
 }

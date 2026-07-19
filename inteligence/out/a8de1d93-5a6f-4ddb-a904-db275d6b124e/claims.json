@@ -2,32 +2,6 @@
   "opportunity_id": "a8de1d93-5a6f-4ddb-a904-db275d6b124e",
   "claims": [
     {
-      "claim_id": "708bd520-1a6a-5aa8-a14c-2950e5302d87",
-      "opportunity_id": "a8de1d93-5a6f-4ddb-a904-db275d6b124e",
-      "text": "Over 150 GitHub stars on our initial open-source project",
-      "type": "traction",
-      "source": "deck_slide_1",
-      "trust": {
-        "status": "unverified",
-        "confidence": 0.5,
-        "evidence": [],
-        "note": "There is no external evidence provided to verify or contradict the claim about GitHub stars."
-      }
-    },
-    {
-      "claim_id": "c6878d80-87df-55f7-88de-907bb3c7861e",
-      "opportunity_id": "a8de1d93-5a6f-4ddb-a904-db275d6b124e",
-      "text": "Small team of 3 working part-time on the project",
-      "type": "team",
-      "source": "deck_slide_2",
-      "trust": {
-        "status": "unverified",
-        "confidence": 0.8,
-        "evidence": [],
-        "note": "There is no external evidence provided to verify or contradict the claim about the team size and their part-time status."
-      }
-    },
-    {
       "claim_id": "d5d0b57d-7709-5ef6-b190-78ea7dc0dfb4",
       "opportunity_id": "a8de1d93-5a6f-4ddb-a904-db275d6b124e",
       "text": "Targeting a $500 million market in data tooling for SMEs",
@@ -35,9 +9,9 @@
       "source": "deck_slide_3",
       "trust": {
         "status": "unverified",
-        "confidence": 0.5,
+        "confidence": 0.8,
         "evidence": [],
-        "note": "There is no external evidence provided to verify or contradict the claim about the market size."
+        "note": "The evidence provided does not address the size of the data tooling market for SMEs, so the claim remains unverified."
       }
     },
     {
@@ -50,7 +24,52 @@
         "status": "unverified",
         "confidence": 0.8,
         "evidence": [],
-        "note": "There is no external evidence provided to verify the claim that the prototype is completed and in user testing phase."
+        "note": "There is no external evidence provided to verify or contradict the claim about the prototype being completed and in user testing."
+      }
+    },
+    {
+      "claim_id": "708bd520-1a6a-5aa8-a14c-2950e5302d87",
+      "opportunity_id": "a8de1d93-5a6f-4ddb-a904-db275d6b124e",
+      "text": "Over 150 GitHub stars on our initial open-source project",
+      "type": "traction",
+      "source": "deck_slide_1",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.8,
+        "evidence": [],
+        "note": "None of the evidence items provide information about the number of GitHub stars on the project, so the claim remains unverified."
+      }
+    },
+    {
+      "claim_id": "c6878d80-87df-55f7-88de-907bb3c7861e",
+      "opportunity_id": "a8de1d93-5a6f-4ddb-a904-db275d6b124e",
+      "text": "Small team of 3 working part-time on the project",
+      "type": "team",
+      "source": "deck_slide_2",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.8,
+        "evidence": [],
+        "note": "The provided evidence does not address the claim about the team size or their part-time status."
+      }
+    },
+    {
+      "claim_id": "ce1a4782-a649-5a5b-b47b-e7c3f643dff5",
+      "opportunity_id": "a8de1d93-5a6f-4ddb-a904-db275d6b124e",
+      "text": "Public web presence: Jason Lee",
+      "type": "market",
+      "source": "tavily",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 0.9,
+        "evidence": [
+          {
+            "url": "https://www.linkedin.com/in/jason-lee-6591b318",
+            "snippet": "Jason Lee\nOpenAI\nSan Francisco, California, United States\n500 connections, 2632 followers\n\n\nAbout\nNone\n\n\nExperience\nN/A\n\n\nEducation\nUniversity of Illinois at Urbana-Champaign\nN/A\n2004 - 2008\nNone",
+            "source": "tavily"
+          }
+        ],
+        "note": "The LinkedIn profile provides a public web presence for Jason Lee, corroborating the claim."
       }
     }
   ]

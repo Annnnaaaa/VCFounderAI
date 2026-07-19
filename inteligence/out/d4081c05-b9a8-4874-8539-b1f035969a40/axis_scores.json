@@ -1,0 +1,27 @@
+{
+  "opportunity_id": "d4081c05-b9a8-4874-8539-b1f035969a40",
+  "axes": {
+    "founder": {
+      "score": 30,
+      "trend": "flat",
+      "rationale": "Mark Chen is a solo founder with no external hires, which can be challenging in scaling and executing the business effectively. There is no prior track record or verified achievements to boost confidence in his ability to lead and grow the company.",
+      "evidence_refs": [
+        "5b5aca44-3c88-5c1a-bc85-a60d0703c2be"
+      ]
+    },
+    "market": {
+      "rating": "neutral",
+      "rationale": "The market for AI evaluation tools is potentially significant, with an estimated size of $250 million. However, this claim is unverified, and the competitive landscape and demand dynamics are not detailed, making it difficult to fully assess the market potential.",
+      "evidence_refs": [
+        "17a84232-8145-53a4-8b85-9941c1fc9832"
+      ]
+    },
+    "idea_vs_market": {
+      "verdict": "survives",
+      "rationale": "The idea of creating evaluation tools to improve AI model performance is relevant given the growing complexity and deployment of AI models. While the market size claim is unverified, the concept aligns with industry needs for better AI model evaluation and performance tools.",
+      "evidence_refs": [
+        "17a84232-8145-53a4-8b85-9941c1fc9832"
+      ]
+    }
+  }
+}

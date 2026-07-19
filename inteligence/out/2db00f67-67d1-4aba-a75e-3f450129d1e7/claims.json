@@ -22,7 +22,7 @@
             "source": "github"
           }
         ],
-        "note": "The claim of $30K MRR and 40% growth is contradicted by the lack of a pricing or billing page on the website (evidence 0) and the very recent creation of the GitHub repository with minimal activity (evidence 1). This suggests the traction claimed is implausible."
+        "note": "The claim of $30K MRR and 40% month-over-month growth is contradicted by the lack of a pricing or billing page on the website (evidence 0) and the very recent creation of the GitHub repository with minimal activity (evidence 1), making the claimed traction implausible."
       }
     },
     {
@@ -35,7 +35,7 @@
         "status": "unverified",
         "confidence": 0.8,
         "evidence": [],
-        "note": "The evidence provided does not address the claim about the team composition of 4 ex-FAANG infrastructure engineers. The evidence is unrelated to the claim."
+        "note": "There is no external evidence provided to verify or contradict the claim about the team composition."
       }
     },
     {
@@ -48,7 +48,7 @@
         "status": "unverified",
         "confidence": 0.8,
         "evidence": [],
-        "note": "None of the evidence items provide information about the number of companies using the product in production."
+        "note": "There is no external evidence provided to verify or contradict the claim that the product is used in production by 12 companies."
       }
     },
     {
@@ -72,7 +72,7 @@
             "source": "tavily"
           }
         ],
-        "note": "The GitHub repository is very new with minimal activity, and the website lacks any indication of a paid tier or billing, making the claim of 2,000 paying developers implausible."
+        "note": "The GitHub repository is very new with minimal activity, and the website lacks any indication of a paid tier or pricing, making the claim of 2,000 paying developers implausible."
       }
     }
   ]
