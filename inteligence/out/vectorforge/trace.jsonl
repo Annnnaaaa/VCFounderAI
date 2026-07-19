@@ -1,0 +1,6 @@
+{"opportunity_id": "vectorforge", "step": "deck_extract", "detail": "Loaded 4 pre-attached claims from bundle (no deck vision needed)", "evidence_refs": ["vf-c1", "vf-c2", "vf-c3", "vf-c4"], "ts": "2026-07-18T22:06:50.471034+00:00"}
+{"opportunity_id": "vectorforge", "step": "screen", "detail": "viable=True: VectorForge fits well within the pre-seed AI infrastructure thesis as it focuses on a GPU-native vector database, which is essential for real-time retrieval-augmented generation (RAG) at inference scale.", "evidence_refs": [], "ts": "2026-07-18T22:07:00.468467+00:00"}
+{"opportunity_id": "vectorforge", "step": "verify", "detail": "Trust verdicts: 4 corroborated, 0 unverified, 0 contradicted", "evidence_refs": [], "ts": "2026-07-18T22:07:04.476588+00:00"}
+{"opportunity_id": "vectorforge", "step": "axis_score", "detail": "founder=85/100 (up), market=bull, idea_vs_market=survives", "evidence_refs": ["vf-c2", "vf-c3"], "ts": "2026-07-18T22:07:07.193718+00:00"}
+{"opportunity_id": "vectorforge", "step": "memo", "detail": "recommendation=invest; 4 citations, 2 gap flags", "evidence_refs": ["vf-c1", "vf-c2", "vf-c3", "vf-c4"], "ts": "2026-07-18T22:07:12.115034+00:00"}
+{"opportunity_id": "vectorforge", "step": "validate", "detail": "No unbacked factual statements found (clean).", "evidence_refs": [], "ts": "2026-07-18T22:07:17.459474+00:00"}

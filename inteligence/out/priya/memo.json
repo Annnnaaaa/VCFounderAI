@@ -1,0 +1,39 @@
+{
+  "opportunity_id": "priya",
+  "sections": {
+    "company_snapshot": "Opportunity Priya is an early-stage venture focused on optimizing local inference latency through innovative use of KV-cache technology. The company is led by a solo technical founder with significant expertise in the domain [claim:pr-c2].",
+    "investment_hypotheses": [
+      "The founder's deep domain expertise in local inference provides a strong technical foundation for the venture [claim:pr-c2].",
+      "The market for AI infrastructure, particularly in optimizing local inference, is growing, offering potential for significant returns if the technology proves effective [claim:pr-c1]."
+    ],
+    "swot": {
+      "strengths": [
+        "Solo technical founder with deep domain insight in local inference [claim:pr-c2].",
+        "Prototype potentially offers a novel solution to reduce local inference latency [claim:pr-c1]."
+      ],
+      "weaknesses": [
+        "Prototype's effectiveness in reusing KV-cache across sessions is unverified [claim:pr-c1].",
+        "Lack of a team and prior startup experience may hinder execution [claim:pr-c2]."
+      ],
+      "opportunities": [
+        "Growing demand for efficient AI operations creates a market opportunity for innovative solutions [claim:pr-c1]."
+      ],
+      "threats": [
+        "Competitive market with established players in AI infrastructure.",
+        "Need for significant technical differentiation to capture market share."
+      ]
+    },
+    "problem_product": "The problem being addressed is the high latency in local inference operations, which can be a bottleneck in AI applications. The product aims to solve this by reusing KV-cache across sessions, although this claim remains unverified [claim:pr-c1].",
+    "traction_kpis": "The project 'llmcache' has garnered 120 GitHub stars, indicating some level of community interest and validation of the technical approach [claim:pr-c2]."
+  },
+  "gap_flags": [
+    "Cap table: not disclosed",
+    "Financials: pre-revenue, none"
+  ],
+  "claim_refs": [
+    "pr-c2",
+    "pr-c1"
+  ],
+  "recommendation": "needs_call",
+  "what_would_change_my_mind": "Verification of the prototype's effectiveness in reducing local inference latency."
+}

@@ -1,0 +1,38 @@
+{
+  "opportunity_id": "priya",
+  "one_liner": "Solo builder prototyping a lightweight inference cache for local LLMs.",
+  "sector": "AI infrastructure / inference tooling",
+  "stage": "pre-seed",
+  "is_cold_start": true,
+  "founder_ctx": "Priya — solo founder, no company yet, no funding history, no prior startups. Public footprint: a personal open-source project 'llmcache' with 120 GitHub stars (built over the last 8 months, steady solo commits), and one well-received technical blog post on KV-cache reuse for local inference. No team, no revenue, no design partners. Evidence refs: github.com/priya/llmcache (120 stars), priya.dev/blog/kv-cache-reuse.",
+  "claims": [
+    {
+      "claim_id": "pr-c1",
+      "type": "tech",
+      "source": "deck_slide_2",
+      "text": "Prototype reuses KV-cache across sessions to cut local inference latency.",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.0,
+        "note": "pending verification",
+        "evidence": [
+          {"source": "github", "url": "https://github.com/priya/llmcache", "snippet": "priya/llmcache — 120 stars, single maintainer, 8 months of commits, working demo notebook and benchmarks in README."}
+        ]
+      }
+    },
+    {
+      "claim_id": "pr-c2",
+      "type": "team",
+      "source": "deck_slide_1",
+      "text": "Solo technical founder with deep local-inference domain insight.",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.0,
+        "note": "pending verification",
+        "evidence": [
+          {"source": "tavily", "url": "https://priya.dev/blog/kv-cache-reuse", "snippet": "Technical blog post on KV-cache reuse for local LLMs, shared widely in inference communities; detailed and technically credible."}
+        ]
+      }
+    }
+  ]
+}

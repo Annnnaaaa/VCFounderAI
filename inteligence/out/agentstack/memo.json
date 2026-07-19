@@ -1,0 +1,40 @@
+{
+  "opportunity_id": "agentstack",
+  "sections": {
+    "company_snapshot": "AgentStack is a nascent company focused on developing a runtime for parallel tool-calling agents with sub-second scheduling capabilities [claim:as-c3]. The company is positioned within the emerging multi-agent orchestration market, which has seen a surge in new entrants [claim:as-c4].",
+    "investment_hypotheses": [
+      "AgentStack is entering a rapidly growing market with potential for significant innovation and disruption [claim:as-c4].",
+      "If the technology can deliver on its promise of sub-second scheduling, it could offer a competitive advantage in the orchestration space [claim:as-c3]."
+    ],
+    "swot": {
+      "strengths": [
+        "Positioned in an emerging market with many new entrants, indicating potential for growth [claim:as-c4]."
+      ],
+      "weaknesses": [
+        "Contradicted revenue and traction claims undermine credibility [claim:as-c1].",
+        "Lack of founder experience in relevant fields such as infrastructure and machine learning."
+      ],
+      "opportunities": [
+        "Growing interest in multi-agent orchestration frameworks presents a chance to capture market share [claim:as-c4]."
+      ],
+      "threats": [
+        "Unverified technology claims could lead to competitive disadvantage if not substantiated [claim:as-c3].",
+        "High competition in the emerging market could dilute potential market share [claim:as-c4]."
+      ]
+    },
+    "problem_product": "AgentStack aims to solve the problem of efficiently managing parallel tool-calling agents with a focus on sub-second scheduling [claim:as-c3]. However, the product's usability and traction are currently in question, as evidenced by the lack of a functional website and minimal GitHub activity [claim:as-c1].",
+    "traction_kpis": "The company claims to have 2,000 paying developers and $30K MRR, but this is contradicted by external evidence showing minimal product activity and no pricing or checkout system [claim:as-c1]. The claim of being the fastest-growing agent runtime with 3x week-over-week active workflows is unverified [claim:as-c2]."
+  },
+  "gap_flags": [
+    "Cap table: not disclosed",
+    "Financials: pre-revenue, none"
+  ],
+  "claim_refs": [
+    "as-c3",
+    "as-c4",
+    "as-c1",
+    "as-c2"
+  ],
+  "recommendation": "pass",
+  "what_would_change_my_mind": "Verified traction and technology benchmarks demonstrating sub-second scheduling."
+}

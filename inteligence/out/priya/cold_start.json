@@ -1,0 +1,25 @@
+{
+  "opportunity_id": "priya",
+  "is_cold_start": true,
+  "founder_quality": {
+    "band": "medium",
+    "interval": [
+      0.42,
+      0.69
+    ],
+    "signals_used": 2
+  },
+  "signals": [
+    {
+      "kind": "oss",
+      "weight": 0.6,
+      "evidence_ref": "github.com/priya/llmcache"
+    },
+    {
+      "kind": "public_writing",
+      "weight": 0.5,
+      "evidence_ref": "priya.dev/blog/kv-cache-reuse"
+    }
+  ],
+  "caveat": "The assessment is based on limited evidence from a single open-source project and one technical blog post, which suggests some technical capability and domain insight but lacks broader validation or market traction."
+}

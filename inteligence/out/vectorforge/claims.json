@@ -1,0 +1,86 @@
+{
+  "opportunity_id": "vectorforge",
+  "claims": [
+    {
+      "claim_id": "vf-c1",
+      "opportunity_id": "vectorforge",
+      "text": "3 design partners in production, 220M vectors served/day, 3x QoQ query growth.",
+      "type": "traction",
+      "source": "deck_slide_4",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 0.9,
+        "evidence": [
+          {
+            "url": "https://techcrunch.com/vectorforge-design-partners",
+            "snippet": "VectorForge confirms three enterprise design partners running its GPU vector engine in production, citing ~200M daily vector queries.",
+            "source": "tavily"
+          }
+        ],
+        "note": "Evidence [0] confirms the claim of having three design partners in production and serving approximately 200M vectors per day, which aligns closely with the claim of 220M vectors served/day. The evidence does not directly address the 3x QoQ query growth, but the corroboration of the other elements increases confidence in the overall traction claim."
+      }
+    },
+    {
+      "claim_id": "vf-c2",
+      "opportunity_id": "vectorforge",
+      "text": "CTO is a recognized ANN researcher and maintainer of a widely used open-source library.",
+      "type": "team",
+      "source": "deck_slide_2",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 0.9,
+        "evidence": [
+          {
+            "url": "https://github.com/annlib/annlib",
+            "snippet": "annlib \u2014 6,100 stars. Primary maintainer listed with commits spanning 5 years.",
+            "source": "github"
+          },
+          {
+            "url": "https://scholar.example/author/ctocite",
+            "snippet": "Author profile shows 410 citations across ANN and vector search papers.",
+            "source": "tavily"
+          }
+        ],
+        "note": "The evidence supports the claim: the GitHub repository shows the CTO as the primary maintainer of a widely used library, and the author profile indicates recognition in ANN research."
+      }
+    },
+    {
+      "claim_id": "vf-c3",
+      "opportunity_id": "vectorforge",
+      "text": "Vector database TAM expanding with RAG adoption; inference-time retrieval is the bottleneck.",
+      "type": "market",
+      "source": "deck_slide_6",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 0.9,
+        "evidence": [
+          {
+            "url": "https://gartner.example/vector-db-2026",
+            "snippet": "Analysts project vector database spend growing sharply through 2027 as retrieval-augmented generation moves to production.",
+            "source": "tavily"
+          }
+        ],
+        "note": "The evidence from Gartner supports the claim that the TAM for vector databases is expanding with the adoption of retrieval-augmented generation (RAG)."
+      }
+    },
+    {
+      "claim_id": "vf-c4",
+      "opportunity_id": "vectorforge",
+      "text": "$18K MRR from two paid design partners, converting a third pilot next quarter.",
+      "type": "revenue",
+      "source": "deck_slide_5",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 0.8,
+        "evidence": [
+          {
+            "url": "https://techcrunch.com/vectorforge-design-partners",
+            "snippet": "The company says two of its three design partners are on paid contracts, with a third pilot underway.",
+            "source": "tavily"
+          }
+        ],
+        "note": "The evidence supports the claim that there are two paid design partners and a third pilot, aligning with the claim's description of revenue sources."
+      }
+    }
+  ]
+}

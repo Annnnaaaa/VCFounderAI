@@ -1,0 +1,28 @@
+{
+  "opportunity_id": "vectorforge",
+  "axes": {
+    "founder": {
+      "score": 85,
+      "trend": "up",
+      "rationale": "The founders have strong technical backgrounds relevant to the AI-infra space. The CEO's experience as a Staff Engineer at Pinecone, a well-regarded company in the vector database space, and the CTO's academic credentials and contributions to the field of approximate nearest-neighbor search, as evidenced by his 400+ citations and maintenance of a popular open-source library, are significant strengths.",
+      "evidence_refs": [
+        "vf-c2"
+      ]
+    },
+    "market": {
+      "rating": "bull",
+      "rationale": "The market for vector databases is expanding, driven by the adoption of Retrieval-Augmented Generation (RAG) and the need for efficient inference-time retrieval, which is currently a bottleneck. This indicates a growing demand for solutions like Vectorforge's.",
+      "evidence_refs": [
+        "vf-c3"
+      ]
+    },
+    "idea_vs_market": {
+      "verdict": "survives",
+      "rationale": "The idea of serving vectors efficiently aligns well with the expanding market for vector databases and the identified bottleneck in inference-time retrieval. The traction with design partners and the growth in vectors served further validate the market fit.",
+      "evidence_refs": [
+        "vf-c1",
+        "vf-c4"
+      ]
+    }
+  }
+}

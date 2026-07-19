@@ -1,0 +1,85 @@
+{
+  "opportunity_id": "agentstack",
+  "claims": [
+    {
+      "claim_id": "as-c1",
+      "opportunity_id": "agentstack",
+      "text": "2,000 paying developers and $30K MRR three months after launch.",
+      "type": "revenue",
+      "source": "deck_slide_3",
+      "trust": {
+        "status": "contradicted",
+        "confidence": 0.9,
+        "evidence": [
+          {
+            "url": "https://github.com/agentstack/runtime",
+            "snippet": "agentstack/runtime \u2014 40 stars, repository created 3 weeks ago, 12 commits, no releases tagged.",
+            "source": "github"
+          },
+          {
+            "url": "https://agentstack.dev/pricing",
+            "snippet": "Page not found. The site currently shows only a waitlist form; no pricing tiers or checkout are published.",
+            "source": "tavily"
+          },
+          {
+            "url": "https://news.ycombinator.com/item?id=agentstack",
+            "snippet": "Show HN: AgentStack (posted 18 days ago) \u2014 6 points, 2 comments. Commenters ask when it will be usable.",
+            "source": "hn"
+          }
+        ],
+        "note": "The claim of having 2,000 paying developers and $30K MRR is contradicted by the evidence. The GitHub repository is only 3 weeks old with minimal activity, the website lacks a pricing page or checkout system, and the Hacker News post indicates the product is not yet usable. These factors make the claimed traction implausible."
+      }
+    },
+    {
+      "claim_id": "as-c2",
+      "opportunity_id": "agentstack",
+      "text": "Fastest-growing agent runtime; 3x week-over-week active workflows.",
+      "type": "traction",
+      "source": "deck_slide_4",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.6,
+        "evidence": [],
+        "note": "The evidence does not provide any information about the growth rate or active workflows, so the claim cannot be verified or contradicted."
+      }
+    },
+    {
+      "claim_id": "as-c3",
+      "opportunity_id": "agentstack",
+      "text": "Runtime supports parallel tool-calling agents with sub-second scheduling.",
+      "type": "tech",
+      "source": "deck_slide_5",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.6,
+        "evidence": [
+          {
+            "url": "https://github.com/agentstack/runtime",
+            "snippet": "README describes a scheduler and tool-calling abstraction; example scripts present, no benchmarks published.",
+            "source": "github"
+          }
+        ],
+        "note": "The README mentions a scheduler and tool-calling abstraction, but there are no benchmarks or specific details confirming sub-second scheduling."
+      }
+    },
+    {
+      "claim_id": "as-c4",
+      "opportunity_id": "agentstack",
+      "text": "Multi-agent orchestration is an emerging category with many entrants.",
+      "type": "market",
+      "source": "deck_slide_6",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 0.9,
+        "evidence": [
+          {
+            "url": "https://blog.example/agent-frameworks-2026",
+            "snippet": "Survey lists a dozen agent-orchestration frameworks launched in the past year, most open-source and pre-revenue.",
+            "source": "tavily"
+          }
+        ],
+        "note": "The evidence lists a dozen agent-orchestration frameworks launched recently, supporting the claim that it's an emerging category with many entrants."
+      }
+    }
+  ]
+}

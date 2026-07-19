@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"D:/Anna Malkhasyan/Documents/Source/Repos/VCFounderAI/inteligence\" && ls -la && echo \"---PYTHON---\" && python --version 2>&1 && echo \"---PARENT---\" && ls ../)"
+    ]
+  }
+}

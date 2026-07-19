@@ -1,0 +1,68 @@
+{
+  "opportunity_id": "agentstack",
+  "one_liner": "AgentStack — hosted orchestration runtime for multi-agent LLM workflows.",
+  "sector": "AI infrastructure / agent frameworks",
+  "stage": "pre-seed",
+  "is_cold_start": false,
+  "founder_ctx": "Solo founder, first-time. Ex-frontend engineer at a mid-size SaaS. No prior infra or ML background disclosed.",
+  "claims": [
+    {
+      "claim_id": "as-c1",
+      "type": "revenue",
+      "source": "deck_slide_3",
+      "text": "2,000 paying developers and $30K MRR three months after launch.",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.0,
+        "note": "pending verification",
+        "evidence": [
+          {"source": "github", "url": "https://github.com/agentstack/runtime", "snippet": "agentstack/runtime — 40 stars, repository created 3 weeks ago, 12 commits, no releases tagged."},
+          {"source": "tavily", "url": "https://agentstack.dev/pricing", "snippet": "Page not found. The site currently shows only a waitlist form; no pricing tiers or checkout are published."},
+          {"source": "hn", "url": "https://news.ycombinator.com/item?id=agentstack", "snippet": "Show HN: AgentStack (posted 18 days ago) — 6 points, 2 comments. Commenters ask when it will be usable."}
+        ]
+      }
+    },
+    {
+      "claim_id": "as-c2",
+      "type": "traction",
+      "source": "deck_slide_4",
+      "text": "Fastest-growing agent runtime; 3x week-over-week active workflows.",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.0,
+        "note": "pending verification",
+        "evidence": [
+          {"source": "github", "url": "https://github.com/agentstack/runtime", "snippet": "agentstack/runtime — 40 stars, 3 open issues, last commit 4 days ago; no usage metrics or telemetry references in the repo."}
+        ]
+      }
+    },
+    {
+      "claim_id": "as-c3",
+      "type": "tech",
+      "source": "deck_slide_5",
+      "text": "Runtime supports parallel tool-calling agents with sub-second scheduling.",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.0,
+        "note": "pending verification",
+        "evidence": [
+          {"source": "github", "url": "https://github.com/agentstack/runtime", "snippet": "README describes a scheduler and tool-calling abstraction; example scripts present, no benchmarks published."}
+        ]
+      }
+    },
+    {
+      "claim_id": "as-c4",
+      "type": "market",
+      "source": "deck_slide_6",
+      "text": "Multi-agent orchestration is an emerging category with many entrants.",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.0,
+        "note": "pending verification",
+        "evidence": [
+          {"source": "tavily", "url": "https://blog.example/agent-frameworks-2026", "snippet": "Survey lists a dozen agent-orchestration frameworks launched in the past year, most open-source and pre-revenue."}
+        ]
+      }
+    }
+  ]
+}

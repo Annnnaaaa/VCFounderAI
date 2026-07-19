@@ -1,0 +1,68 @@
+{
+  "opportunity_id": "vectorforge",
+  "one_liner": "VectorForge — GPU-native vector database for real-time RAG at inference scale.",
+  "sector": "AI infrastructure / vector databases",
+  "stage": "pre-seed",
+  "is_cold_start": false,
+  "founder_ctx": "Two co-founders. CEO: ex-Staff Engineer on Pinecone's query engine (3 yrs). CTO: PhD in approximate nearest-neighbor search, 400+ citations, maintainer of a 6k-star ANN library.",
+  "claims": [
+    {
+      "claim_id": "vf-c1",
+      "type": "traction",
+      "source": "deck_slide_4",
+      "text": "3 design partners in production, 220M vectors served/day, 3x QoQ query growth.",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.0,
+        "note": "pending verification",
+        "evidence": [
+          {"source": "tavily", "url": "https://techcrunch.com/vectorforge-design-partners", "snippet": "VectorForge confirms three enterprise design partners running its GPU vector engine in production, citing ~200M daily vector queries."},
+          {"source": "github", "url": "https://github.com/vectorforge/core", "snippet": "vectorforge/core — 2,900 stars, 180 forks, active commits over 14 months, benchmarks showing 3x QPS vs CPU baselines."}
+        ]
+      }
+    },
+    {
+      "claim_id": "vf-c2",
+      "type": "team",
+      "source": "deck_slide_2",
+      "text": "CTO is a recognized ANN researcher and maintainer of a widely used open-source library.",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.0,
+        "note": "pending verification",
+        "evidence": [
+          {"source": "github", "url": "https://github.com/annlib/annlib", "snippet": "annlib — 6,100 stars. Primary maintainer listed with commits spanning 5 years."},
+          {"source": "tavily", "url": "https://scholar.example/author/ctocite", "snippet": "Author profile shows 410 citations across ANN and vector search papers."}
+        ]
+      }
+    },
+    {
+      "claim_id": "vf-c3",
+      "type": "market",
+      "source": "deck_slide_6",
+      "text": "Vector database TAM expanding with RAG adoption; inference-time retrieval is the bottleneck.",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.0,
+        "note": "pending verification",
+        "evidence": [
+          {"source": "tavily", "url": "https://gartner.example/vector-db-2026", "snippet": "Analysts project vector database spend growing sharply through 2027 as retrieval-augmented generation moves to production."}
+        ]
+      }
+    },
+    {
+      "claim_id": "vf-c4",
+      "type": "revenue",
+      "source": "deck_slide_5",
+      "text": "$18K MRR from two paid design partners, converting a third pilot next quarter.",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.0,
+        "note": "pending verification",
+        "evidence": [
+          {"source": "tavily", "url": "https://techcrunch.com/vectorforge-design-partners", "snippet": "The company says two of its three design partners are on paid contracts, with a third pilot underway."}
+        ]
+      }
+    }
+  ]
+}

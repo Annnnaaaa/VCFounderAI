@@ -1,0 +1,29 @@
+{
+  "opportunity_id": "agentstack",
+  "axes": {
+    "founder": {
+      "score": 40,
+      "trend": "flat",
+      "rationale": "The founder is a solo, first-time entrepreneur with a background as a frontend engineer at a mid-size SaaS company. There is no disclosed experience in infrastructure or machine learning, which are critical for the AI-infra space. The lack of relevant experience and the contradiction in revenue claims negatively impact the score.",
+      "evidence_refs": [
+        "as-c1"
+      ]
+    },
+    "market": {
+      "rating": "bull",
+      "rationale": "The market for multi-agent orchestration is emerging and has been corroborated as having many entrants, indicating a growing interest and potential for innovation in this space.",
+      "evidence_refs": [
+        "as-c4"
+      ]
+    },
+    "idea_vs_market": {
+      "verdict": "needs_pivot",
+      "rationale": "The idea of supporting parallel tool-calling agents with sub-second scheduling is unverified, and the traction claims are also unverified. Given the contradiction in revenue claims, the current idea may not be sustainable without further validation and adjustments to align with market needs.",
+      "evidence_refs": [
+        "as-c1",
+        "as-c2",
+        "as-c3"
+      ]
+    }
+  }
+}

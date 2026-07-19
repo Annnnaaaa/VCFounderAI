@@ -1,0 +1,37 @@
+{
+  "opportunity_id": "priya",
+  "claims": [
+    {
+      "claim_id": "pr-c1",
+      "opportunity_id": "priya",
+      "text": "Prototype reuses KV-cache across sessions to cut local inference latency.",
+      "type": "tech",
+      "source": "deck_slide_2",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.6,
+        "evidence": [],
+        "note": "The evidence provides information about the GitHub repository but does not specifically address whether the prototype reuses KV-cache across sessions to cut local inference latency."
+      }
+    },
+    {
+      "claim_id": "pr-c2",
+      "opportunity_id": "priya",
+      "text": "Solo technical founder with deep local-inference domain insight.",
+      "type": "team",
+      "source": "deck_slide_1",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 0.8,
+        "evidence": [
+          {
+            "url": "https://priya.dev/blog/kv-cache-reuse",
+            "snippet": "Technical blog post on KV-cache reuse for local LLMs, shared widely in inference communities; detailed and technically credible.",
+            "source": "tavily"
+          }
+        ],
+        "note": "The technical blog post on KV-cache reuse for local LLMs suggests the founder has deep domain insight in local inference, supporting the claim of being a solo technical founder with such expertise."
+      }
+    }
+  ]
+}

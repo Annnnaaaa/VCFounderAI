@@ -1,0 +1,17 @@
+{
+  "opportunity_id": "petpal",
+  "one_liner": "PetPal — a social app for dog owners to book playdates and share photos.",
+  "sector": "consumer social / pets",
+  "stage": "seed",
+  "is_cold_start": false,
+  "founder_ctx": "Two founders from consumer marketing backgrounds.",
+  "claims": [
+    {
+      "claim_id": "pp-c1",
+      "type": "traction",
+      "source": "deck_slide_3",
+      "text": "40,000 downloads and an active community of dog owners.",
+      "trust": {"status": "unverified", "confidence": 0.0, "note": "pending", "evidence": []}
+    }
+  ]
+}

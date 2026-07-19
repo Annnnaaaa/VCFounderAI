@@ -1,0 +1,27 @@
+{
+  "opportunity_id": "priya",
+  "axes": {
+    "founder": {
+      "score": 65,
+      "trend": "flat",
+      "rationale": "Priya is a solo technical founder with a demonstrated ability to build and maintain an open-source project, as evidenced by 'llmcache' with 120 GitHub stars. Her technical blog post further corroborates her domain insight in local inference. However, the lack of a team, funding history, or prior startup experience limits the score.",
+      "evidence_refs": [
+        "pr-c2",
+        "github.com/priya/llmcache",
+        "priya.dev/blog/kv-cache-reuse"
+      ]
+    },
+    "market": {
+      "rating": "neutral",
+      "rationale": "The market for AI infrastructure, particularly in optimizing local inference, is growing but competitive. While there is potential for innovation, the presence of established players and the need for significant technical differentiation make it a challenging space for new entrants.",
+      "evidence_refs": []
+    },
+    "idea_vs_market": {
+      "verdict": "survives",
+      "rationale": "The idea of reusing KV-cache to reduce local inference latency is technically sound and aligns with current market needs for efficiency in AI operations. However, the unverified status of the prototype's effectiveness means further validation is needed to ensure market fit.",
+      "evidence_refs": [
+        "pr-c1"
+      ]
+    }
+  }
+}
