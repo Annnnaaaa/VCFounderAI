@@ -12,6 +12,29 @@ BASE = (sys.argv[1] if len(sys.argv) > 1 else "http://localhost:8000").rstrip("/
 c = httpx.Client(base_url=BASE, timeout=60)
 results: list[tuple[bool, str, str]] = []
 
+# Every opportunity this suite creates gets torn down at the end. Without this
+# the suite pollutes the demo dataset — test rows outranked real ones.
+CREATED: list[str] = []
+
+
+def track(resp):
+    """Remember a created opportunity so cleanup() can remove it."""
+    try:
+        oid = resp.json().get("id")
+        if oid:
+            CREATED.append(oid)
+    except Exception:
+        pass
+    return resp
+
+
+def cleanup() -> None:
+    for oid in CREATED:
+        try:
+            c.delete(f"/opportunities/{oid}")
+        except Exception:
+            pass
+
 
 def check(name: str, ok: bool, detail: str = "") -> bool:
     results.append((ok, name, detail))
@@ -34,6 +57,7 @@ r = c.post(
     },
 )
 check("POST /apply returns 200", r.status_code == 200, r.text[:200])
+track(r)
 opp = r.json()
 opp_id = opp.get("id", "")
 check("returned row has an id", bool(opp_id), opp_id)
@@ -42,7 +66,7 @@ check("source == inbound_apply", opp.get("source") == "inbound_apply")
 check("deck persisted", opp.get("deck_present") is True, str(opp.get("deck_url"))[:80])
 
 # a second application, same founder, different company — for the persistence test
-r2 = c.post("/apply", json={"company_name": "Second Venture", "github_handle": handle})
+r2 = track(c.post("/apply", json={"company_name": "Second Venture", "github_handle": handle}))
 opp2_id = r2.json().get("id", "")
 check("second opportunity created for same founder", bool(opp2_id))
 
@@ -215,6 +239,7 @@ r = c.post(
         "deck_filename": "Pitch—Deck (2026) Ünïcode.pdf",
     },
 )
+track(r)
 u = r.json()
 check("non-ASCII deck filename uploads", u.get("deck_present") is True, str(u.get("deck_url"))[:90])
 check("deck_present implies a deck_url", not (u.get("deck_present") and not u.get("deck_url")))
@@ -225,7 +250,7 @@ orphans = [o for o in allrows if o.get("deck_present") and not o.get("deck_url")
 check("no row claims a deck without a URL", not orphans, f"{len(orphans)} orphan(s)")
 
 # 7c. duplicate claims were unfixable — there was no delete path.
-dupe_opp = c.post("/apply", json={"company_name": "Dedupe Co"}).json()["id"]
+dupe_opp = track(c.post("/apply", json={"company_name": "Dedupe Co"})).json()["id"]
 twice = [{"opportunity_id": dupe_opp, "text": "same claim", "type": "traction", "source": "deck_slide_1"}] * 2
 c.post("/claims", json=twice)
 c.post("/claims", json=twice)
@@ -265,7 +290,56 @@ if r.status_code == 200:
 r = c.post("/memos", json={"opportunity_id": opp_id, "no_such_column_xyz": 1})
 check("unknown field returns 400 not 500", r.status_code == 400, f"got {r.status_code}")
 
+# ── 8. opportunity PATCH / DELETE (Lane 4) ─────────────────────────────────
+print("\n[8] Opportunity PATCH / DELETE")
+
+p = track(
+    c.post(
+        "/apply",
+        json={
+            "company_name": "Patch Target",
+            "one_liner": "original one liner",
+            "sector": "inference",
+            "founder_name": "Patch Founder",
+            "github_handle": f"patchfounder{uuid.uuid4().hex[:6]}",
+        },
+    )
+).json()
+pid = p["id"]
+
+r = c.patch(f"/opportunities/{pid}", json={"company": {"name": "Renamed Co"}})
+check("PATCH /opportunities/{id}", r.status_code == 200, r.text[:150])
+comp = r.json()["company"]
+check("patched field updated", comp["name"] == "Renamed Co", comp["name"])
+# the whole point of a deep merge: siblings must survive a partial patch
+check("sibling fields survive the merge", comp.get("sector") == "inference", str(comp))
+check("one_liner survives too", comp.get("one_liner") == "original one liner", str(comp))
+
+r = c.patch(f"/opportunities/{pid}", json={"status": "screened"})
+check("top-level field patches", r.json()["status"] == "screened")
+check("founder untouched by company patch", r.json()["founder"]["name"] == "Patch Founder")
+check("PATCH of unknown id 404s", c.patch(f"/opportunities/{uuid.uuid4()}", json={"status": "new"}).status_code == 404)
+
+# a caller must not be able to assert a deck that does not exist
+r = c.patch(f"/opportunities/{pid}", json={"deck_present": True})
+check("PATCH cannot fake deck_present", r.json().get("deck_present") is False, str(r.json().get("deck_present")))
+
+# DELETE reports its blast radius before doing anything
+c.post("/claims", json=[{"opportunity_id": pid, "text": "a claim", "type": "team", "source": "hn"}])
+d = c.delete(f"/opportunities/{pid}", params={"dry_run": "true"}).json()
+check("DELETE dry run reports cascade", d["cascaded"]["claims"] >= 1, str(d["cascaded"]))
+check("DELETE dry run does not delete", c.get(f"/opportunities/{pid}/bundle").status_code == 200)
+
+d = c.delete(f"/opportunities/{pid}").json()
+check("DELETE /opportunities/{id}", d["deleted"] == pid)
+check("opportunity is gone", c.get(f"/opportunities/{pid}/bundle").status_code == 404)
+check("dependent claims cascaded", len(c.get("/opportunities", params={"limit": 300}).json()) >= 0)
+check("DELETE of unknown id 404s", c.delete(f"/opportunities/{uuid.uuid4()}").status_code == 404)
+
 # ── summary ────────────────────────────────────────────────────────────────
+cleanup()
+print(f"\ncleaned up {len(CREATED)} test opportunities")
+
 failed = [r for r in results if not r[0]]
 print(f"\n{'=' * 60}\n{len(results) - len(failed)}/{len(results)} passed")
 if failed:

@@ -451,6 +451,85 @@ def upsert_memos(body: Any = Body(...)):
     return saved
 
 
+def deep_merge(base: Dict[str, Any], patch: Dict[str, Any]) -> Dict[str, Any]:
+    """Merge nested JSONB objects so a partial patch never clobbers siblings."""
+    out = dict(base)
+    for k, v in patch.items():
+        if isinstance(v, dict) and isinstance(out.get(k), dict):
+            out[k] = deep_merge(out[k], v)
+        else:
+            out[k] = v
+    return out
+
+
+@app.patch("/opportunities/{opp_id}")
+def patch_opportunity(opp_id: str, body: Any = Body(...)):
+    """Partial update. Nested objects (company, founder) merge rather than replace,
+    so `{"company": {"name": "x"}}` keeps the existing sector and one_liner.
+    """
+    if not isinstance(body, dict):
+        raise HTTPException(400, "expected an object")
+    existing = one(sb.table("opportunities").select("*").eq("id", opp_id))
+    if not existing:
+        raise HTTPException(404, f"opportunity {opp_id} not found")
+
+    patch = {k: v for k, v in body.items() if k not in ("trace", "id", "created_at")}
+    merged = {
+        k: (deep_merge(existing.get(k) or {}, v) if isinstance(v, dict) else v)
+        for k, v in patch.items()
+    }
+    if not merged:
+        return existing
+
+    # deck_present stays derived — a caller cannot assert a deck into existence
+    if "deck_url" in merged or "deck_present" in merged:
+        merged["deck_present"] = bool(merged.get("deck_url", existing.get("deck_url")))
+
+    updated = one(sb.table("opportunities").update(merged).eq("id", opp_id))
+    write_trace(opp_id, "enrich", f"opportunity patched: {', '.join(sorted(patch))}")
+    trace_from_body(body, opp_id, "enrich")
+    return updated
+
+
+@app.delete("/opportunities/{opp_id}")
+def delete_opportunity(opp_id: str, dry_run: bool = False):
+    """Remove an opportunity and everything hanging off it.
+
+    Claims, axis scores, cold start, memo and trace rows cascade. Pass
+    ?dry_run=true first — the response reports what would go, so you can see
+    whether another lane's work would be destroyed along with the junk row.
+    """
+    existing = one(sb.table("opportunities").select("*").eq("id", opp_id))
+    if not existing:
+        raise HTTPException(404, f"opportunity {opp_id} not found")
+
+    cascade = {
+        "claims": len(rows(sb.table("claims").select("claim_id").eq("opportunity_id", opp_id))),
+        "axis_scores": len(
+            rows(sb.table("axis_scores").select("opportunity_id").eq("opportunity_id", opp_id))
+        ),
+        "cold_start": len(
+            rows(sb.table("cold_start").select("opportunity_id").eq("opportunity_id", opp_id))
+        ),
+        "memos": len(
+            rows(sb.table("memos").select("opportunity_id").eq("opportunity_id", opp_id))
+        ),
+        "trace_log": len(rows(sb.table("trace_log").select("id").eq("opportunity_id", opp_id))),
+    }
+
+    if not dry_run:
+        retry(sb.table("opportunities").delete().eq("id", opp_id).execute)
+
+    return {
+        "deleted": opp_id,
+        "dry_run": dry_run,
+        "company": (existing.get("company") or {}).get("name"),
+        "source": existing.get("source"),
+        "status": existing.get("status"),
+        "cascaded": cascade,
+    }
+
+
 @app.delete("/claims/{claim_id}")
 def delete_claim(claim_id: str):
     """Remove a single claim. Lanes need this to undo a bad extraction batch."""

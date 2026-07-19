@@ -30,6 +30,8 @@ Each endpoint also writes its own trace row automatically, so you only need `tra
 | `POST /trace` | anyone | Standalone trace rows. |
 | `POST /founder-score` | Lane 3 | See below. |
 | `DELETE /claims/{claim_id}` | Lane 2/3 | Removes one claim. 404 if unknown. |
+| `PATCH /opportunities/{id}` | Lane 4 | Partial update. Nested objects **deep merge** — `{"company":{"name":"x"}}` keeps sector and one_liner. |
+| `DELETE /opportunities/{id}` | Lane 4 | Removes the row; claims, axis scores, cold start, memo and traces cascade. `?dry_run=true` reports the blast radius first — **always dry-run before deleting a scored row.** |
 | `POST /opportunities/{id}/claims/dedupe` | Lane 2/3 | Collapses claims identical in `(text, type, source)`, keeping the earliest. `?dry_run=true` reports without deleting. Use after re-running an extraction batch. |
 
 An unknown field now returns **400 with the offending column name**, not a 500. If you get `unknown column — schema migration needed`, the field needs a migration — ask, don't work around it.
