@@ -29,6 +29,12 @@ Each endpoint also writes its own trace row automatically, so you only need `tra
 | `POST /memos` | Lane 3 | Upsert on `opportunity_id`. Flips status → `memo_ready`. |
 | `POST /trace` | anyone | Standalone trace rows. |
 | `POST /founder-score` | Lane 3 | See below. |
+| `DELETE /claims/{claim_id}` | Lane 2/3 | Removes one claim. 404 if unknown. |
+| `POST /opportunities/{id}/claims/dedupe` | Lane 2/3 | Collapses claims identical in `(text, type, source)`, keeping the earliest. `?dry_run=true` reports without deleting. Use after re-running an extraction batch. |
+
+An unknown field now returns **400 with the offending column name**, not a 500. If you get `unknown column — schema migration needed`, the field needs a migration — ask, don't work around it.
+
+`POST /memos` accepts `what_would_change_my_mind` (jsonb — string or list) alongside `sections`, `gap_flags`, `claim_refs`, `recommendation`.
 
 ### `POST /apply`
 ```json
@@ -87,6 +93,7 @@ Accepts `github:handle`, a bare handle, or a name. 404 if unknown.
 
 ## Rules
 
+- `deck_present` is **derived, never trusted**. It is true only when `deck_url` is non-null, enforced by a DB constraint. Don't set it yourself — send `deck_url`/`deck_base64` and let the spine decide. Render the deck affordance off `deck_url`, not `deck_present`.
 - The three axes are **never** averaged. There is no combined score field anywhere, and there will not be one.
 - Trust Score is **per claim**, never per company.
 - Cold start reports a band + interval, not a point score.
