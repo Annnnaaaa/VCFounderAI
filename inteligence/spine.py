@@ -57,6 +57,11 @@ _LIVE = _api_up()
 
 
 def is_live() -> bool:
+    """Re-probe when down: the Spine free tier sleeps, so a cold boot here must
+    not lock this process into mock mode forever."""
+    global _LIVE
+    if not _LIVE:
+        _LIVE = _api_up()
     return _LIVE
 
 
@@ -67,7 +72,7 @@ _MOCK_IDS: set[str] = set()
 
 
 def _writes_live(opportunity_id: str | None) -> bool:
-    return _LIVE and opportunity_id is not None and opportunity_id not in _MOCK_IDS
+    return is_live() and opportunity_id is not None and opportunity_id not in _MOCK_IDS
 
 
 def _out_path(opportunity_id: str, name: str) -> Path:
@@ -95,7 +100,7 @@ _DEFAULT_THESIS = {
 def get_thesis() -> Dict[str, Any]:
     """The fund lens. Everything filters through it — the screen prompt reads
     this live rather than hardcoding the thesis."""
-    if _LIVE:
+    if is_live():
         try:
             r = requests.get(f"{SPINE_URL}/thesis", timeout=TIMEOUT)
             r.raise_for_status()
@@ -146,7 +151,7 @@ def _adapt_bundle(b: Dict[str, Any]) -> Dict[str, Any]:
 
 
 def get_opportunity(opportunity_id: str) -> Dict[str, Any]:
-    if _LIVE:
+    if is_live():
         try:
             r = requests.get(
                 f"{SPINE_URL}/opportunities/{opportunity_id}/bundle", timeout=TIMEOUT
@@ -168,7 +173,7 @@ def get_opportunity(opportunity_id: str) -> Dict[str, Any]:
 
 
 def list_opportunities() -> List[Dict[str, Any]]:
-    if not _LIVE:
+    if not is_live():
         return []
     try:
         r = requests.get(f"{SPINE_URL}/opportunities", timeout=TIMEOUT)
@@ -293,16 +298,30 @@ def push_founder_score(
 
 
 def set_status(opportunity_id: str, status: str, raw_opportunity: dict | None = None) -> None:
-    """POST /opportunities is a FULL UPSERT — a partial body wipes founder and
-    deck_url. Re-send the preserved record with only status changed."""
+    """PATCH just the status. Falls back to the legacy full-upsert path for a
+    Spine that predates PATCH /opportunities/{id} — that path must re-send the
+    preserved record because POST /opportunities replaces the whole row."""
     _write_local(opportunity_id, "status.json", {"opportunity_id": opportunity_id, "status": status})
     if not _writes_live(opportunity_id):
+        return
+    try:
+        r = requests.patch(
+            f"{SPINE_URL}/opportunities/{opportunity_id}", json={"status": status}, timeout=TIMEOUT
+        )
+        if r.status_code != 405:  # 405 = old server without PATCH
+            r.raise_for_status()
+            return
+    except requests.HTTPError as e:  # noqa: BLE001
+        print(f"[spine] status PATCH failed ({e}); trying legacy upsert")
+    except Exception as e:  # noqa: BLE001
+        print(f"[spine] status PATCH failed ({e})")
         return
     body = dict(raw_opportunity or {})
     body["id"] = opportunity_id
     body["status"] = status
     body.pop("created_at", None)
     body.pop("founder_score", None)  # server-owned, don't clobber history
+    body.pop("axes", None)  # list-endpoint decoration, not a DB column
     try:
         requests.post(f"{SPINE_URL}/opportunities", json=body, timeout=TIMEOUT).raise_for_status()
     except Exception as e:  # noqa: BLE001

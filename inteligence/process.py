@@ -195,8 +195,10 @@ def _status_counts(claims: List[Claim]) -> Dict[str, int]:
 
 def _all_ids(force: bool = False) -> List[str]:
     """Rows still awaiting analysis. Already-decided rows (passed / memo_ready)
-    are skipped unless --force, so a batch re-run is cheap and idempotent."""
-    done = {"passed"} if force else {"passed", "memo_ready"}
+    are skipped unless --force. --force re-runs EVERYTHING, including passed
+    rows — otherwise a loosened thesis could never resurface a company that was
+    screened out under the old one."""
+    done = set() if force else {"passed", "memo_ready"}
     return [r["id"] for r in spine.list_opportunities() if r.get("status") not in done]
 
 
