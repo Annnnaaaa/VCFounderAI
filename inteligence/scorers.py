@@ -65,12 +65,23 @@ def verify_claim(claim: Claim, evidence: List[Evidence]) -> Trust:
         f"EVIDENCE:\n{ev_lines}"
     )
     v: TrustVerdict = structured(TrustVerdict, TRUST_SYSTEM, user)
-    cited = [evidence[i] for i in v.evidence_indices if 0 <= i < len(evidence)]
+
+    # Retain EVERY evidence item we were given. Trust.evidence is Lane 4's
+    # sourcing data, not our scratch space — writing back only the cited subset
+    # PATCHes the uncited items out of the DB permanently (there is no undo).
+    # Which items drove the verdict is recorded in the note instead.
+    cited_idx = sorted({i for i in v.evidence_indices if 0 <= i < len(evidence)})
+    note = v.note
+    if cited_idx:
+        decisive = ", ".join(evidence[i].url for i in cited_idx)
+        note = f"{v.note} [decisive evidence: {decisive}]"
+    elif evidence:
+        note = f"{v.note} [no evidence item was decisive; {len(evidence)} retained]"
     return Trust(
         status=v.status,
         confidence=v.confidence,
-        evidence=cited,
-        note=v.note,
+        evidence=list(evidence),
+        note=note,
     )
 
 

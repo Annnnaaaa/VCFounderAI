@@ -84,6 +84,37 @@ def check_cold_start_interval() -> bool:
     return ok
 
 
+def check_evidence_preserved() -> bool:
+    """Verification must never delete evidence Lane 4 attached.
+
+    Regression guard: the verifier once wrote back only the CITED evidence
+    subset, which PATCHed the uncited items out of the DB permanently. Feed a
+    claim mixed-relevance evidence and assert every item survives.
+    """
+    import scorers
+    from models import Claim, Evidence, Trust
+
+    ev = [
+        Evidence(url="https://github.com/acme/repo",
+                 snippet="acme/repo - 12000 stars, active daily commits over 3 years.",
+                 source="github"),
+        Evidence(url="https://weather.example/forecast",
+                 snippet="Cloudy with a chance of rain on Tuesday.", source="tavily"),
+        Evidence(url="https://blog.example/unrelated",
+                 snippet="A recipe for sourdough bread starter.", source="tavily"),
+    ]
+    c = Claim(claim_id="guard", opportunity_id="guard",
+              text="The project has over 10,000 GitHub stars.", type="traction",
+              source="deck_slide_2",
+              trust=Trust(status="unverified", confidence=0.0, evidence=ev, note="pending"))
+    t = scorers.verify_claim(c, ev)
+    ok = len(t.evidence) == len(ev)
+    print(f"evidence preservation: {len(ev)} supplied -> {len(t.evidence)} retained "
+          f"{'ok' if ok else 'FAIL (evidence destroyed)'}")
+    return ok
+
+
 if __name__ == "__main__":
-    results = [check_no_leak(), check_contract(), check_cold_start_interval()]
+    results = [check_no_leak(), check_contract(), check_cold_start_interval(),
+               check_evidence_preserved()]
     print("\nALL CHECKS PASSED" if all(results) else "\nSOME CHECKS FAILED")

@@ -105,10 +105,36 @@ Models are env-overridable: `OPENAI_MODEL` (default `gpt-4o`) and
    carry today's date with an instruction to trust it over intuition. Re-running
    the affected rows took them from 1 contradicted to 0, while AgentStack's
    genuine contradiction still fires.
-6. **Unreadable decks** — the seeded decks are 24-byte stubs
+6. **Verification destroyed uncited evidence** — `verify_claim` wrote back only
+   the evidence the model *cited*, and `PATCH /claims/{id}/trust` replaces the
+   evidence list, so uncited items were erased from Lane 4's data with no undo.
+   Reproduced at 3 items in → 1 retained. All supplied evidence is now retained;
+   the decisive items are named in `trust.note` instead. Guarded by
+   `check.py::check_evidence_preserved`.
+7. **Unreadable decks** — the seeded decks are 24-byte stubs
    (`%PDF-1.4 fake deck bytes`); PyMuPDF raised an unhandled error. Now raises
    `UnreadableDeck`, which is traced and yields zero claims rather than an
    evidence-free memo.
+
+## Evidence provenance (raised by Lane 4)
+
+Lane 4 reported that scripted seed evidence is no longer distinguishable from
+real Tavily results. Two separate things were tangled in that report:
+
+- **`trust.note` is owned by this lane.** Verification overwrites it with the
+  verifier's rationale — by design, since it explains the trust verdict. Any
+  provenance marker Lane 4 writes there *will* be overwritten on every run. A
+  scan of all 84 live claims found no seed/fixture markers in `trust.note`, so
+  nothing detectable was lost; but that field is the wrong home for provenance.
+- **`trust.evidence` was being truncated** — a real bug on our side, now fixed
+  (item 6 above).
+
+**Recommended fix, needs Lane 1:** provenance belongs on the evidence item, not
+in the note — an `Evidence.origin` field (`seed` | `live`) that no lane
+overwrites. Today `Evidence.source` only carries `tavily`/`github`/`hn`, which
+cannot express "scripted." Until that field exists, fictional demo companies
+and real sourced rows are genuinely indistinguishable in the DB, and this lane
+cannot fix that alone.
 
 ## Open integration asks (Lane 1)
 
