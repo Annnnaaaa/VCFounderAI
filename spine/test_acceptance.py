@@ -336,6 +336,89 @@ check("opportunity is gone", c.get(f"/opportunities/{pid}/bundle").status_code =
 check("dependent claims cascaded", len(c.get("/opportunities", params={"limit": 300}).json()) >= 0)
 check("DELETE of unknown id 404s", c.delete(f"/opportunities/{uuid.uuid4()}").status_code == 404)
 
+# ── 9. evidence provenance (seed vs live) ──────────────────────────────────
+print("\n[9] Evidence provenance")
+
+seed_opp = track(c.post("/apply", json={"company_name": "Scripted Demo Co", "origin": "seed"})).json()
+live_opp = track(c.post("/apply", json={"company_name": "Real Submission Co"})).json()
+check("origin stored on the opportunity", seed_opp.get("origin") == "seed", str(seed_opp.get("origin")))
+check("origin defaults to live", live_opp.get("origin") == "live", str(live_opp.get("origin")))
+
+ev = [{"url": "https://example.com/x", "snippet": "…", "source": "tavily"}]
+sc = c.post(
+    "/claims",
+    json=[{
+        "opportunity_id": seed_opp["id"], "text": "scripted traction", "type": "traction",
+        "source": "tavily",
+        "trust": {"status": "corroborated", "confidence": 0.9, "evidence": ev, "note": ""},
+    }],
+).json()[0]
+check(
+    "evidence on a seed row is stamped seed",
+    all(e.get("origin") == "seed" for e in sc["trust"]["evidence"]),
+    str(sc["trust"]["evidence"]),
+)
+
+# a lane must not be able to pass scripted evidence off as real
+sneaky = [{"url": "https://example.com/y", "snippet": "…", "source": "tavily", "origin": "live"}]
+sc2 = c.post(
+    "/claims",
+    json=[{
+        "opportunity_id": seed_opp["id"], "text": "sneaky", "type": "market", "source": "tavily",
+        "trust": {"status": "corroborated", "confidence": 0.9, "evidence": sneaky, "note": ""},
+    }],
+).json()[0]
+check(
+    "a lane cannot claim live evidence on a seed row",
+    all(e.get("origin") == "seed" for e in sc2["trust"]["evidence"]),
+    str(sc2["trust"]["evidence"]),
+)
+
+# a wholesale trust overwrite must not drop the stamp
+r = c.patch(
+    f"/claims/{sc['claim_id']}/trust",
+    json={"trust": {"status": "contradicted", "confidence": 0.2,
+                    "evidence": [{"url": "https://example.com/z", "snippet": "…",
+                                  "source": "tavily", "origin": "live"}], "note": "redo"}},
+)
+check(
+    "PATCH trust re-stamps rather than trusting the caller",
+    all(e.get("origin") == "seed" for e in r.json()["trust"]["evidence"]),
+    str(r.json()["trust"]["evidence"]),
+)
+
+lc = c.post(
+    "/claims",
+    json=[{
+        "opportunity_id": live_opp["id"], "text": "real traction", "type": "traction",
+        "source": "github",
+        "trust": {"status": "corroborated", "confidence": 0.8, "evidence": ev, "note": ""},
+    }],
+).json()[0]
+check(
+    "evidence on a live row is stamped live",
+    all(e.get("origin") == "live" for e in lc["trust"]["evidence"]),
+    str(lc["trust"]["evidence"]),
+)
+
+# correcting a misclassified row must re-stamp everything hanging off it
+c.patch(f"/opportunities/{seed_opp['id']}", json={"origin": "live"})
+restamped = c.get(f"/opportunities/{seed_opp['id']}/bundle").json()["claims"]
+check(
+    "correcting origin re-stamps existing evidence",
+    all(e.get("origin") == "live" for cl in restamped for e in cl["trust"]["evidence"]),
+    str([e.get("origin") for cl in restamped for e in cl["trust"]["evidence"]]),
+)
+check("origin change is traced",
+      any("origin" in t["detail"] for t in c.get(f"/opportunities/{seed_opp['id']}/bundle").json()["trace_log"]))
+check("junk origin rejected",
+      c.patch(f"/opportunities/{live_opp['id']}", json={"origin": "fake"}).status_code == 400)
+
+# the whole point: the demo set must be separable in one query
+allo = c.get("/opportunities", params={"limit": 300}).json()
+check("every row carries an origin", all(o.get("origin") in ("seed", "live") for o in allo),
+      str({o.get("origin") for o in allo}))
+
 # ── summary ────────────────────────────────────────────────────────────────
 cleanup()
 print(f"\ncleaned up {len(CREATED)} test opportunities")

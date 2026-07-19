@@ -189,6 +189,7 @@ class ApplyBody(Loose):
     deck_url: Optional[str] = None
     deck_base64: Optional[str] = None
     deck_filename: Optional[str] = None
+    origin: Optional[str] = None  # seed | live — scripted demo row vs real submission
 
 
 def safe_object_key(filename: str) -> str:
@@ -296,6 +297,8 @@ def apply(body: ApplyBody):
         "status": "new",
         "founder_score": prior,
     }
+    if has_origin_column():
+        row["origin"] = body.origin if body.origin in ORIGINS else "live"
     created = one(sb.table("opportunities").insert(row))
     write_trace(opp_id, "deck_extract", f"inbound application received for {body.company_name}")
     trace_from_body(body.model_dump(), opp_id, "deck_extract")
@@ -326,6 +329,11 @@ def create_opportunities(body: Any = Body(...)):
         it.setdefault("source", "outbound_github")
         # deck_present is derived, never trusted — it must imply an openable deck
         it["deck_present"] = bool(it.get("deck_url"))
+        if has_origin_column():
+            if it.get("origin") not in ORIGINS:
+                it["origin"] = "live"  # bulk sourcing is live unless the lane says otherwise
+        else:
+            it.pop("origin", None)
         it.setdefault(
             "founder_score", {"value": 0, "confidence": 0.0, "trend": "flat", "history": []}
         )
@@ -344,10 +352,63 @@ def create_opportunities(body: Any = Body(...)):
     return created
 
 
+ORIGINS = ("seed", "live")
+
+# migration_02 adds opportunities.origin. Deploy order must not matter: if the
+# code ships before the migration runs, writing the column would 400 every
+# inbound application. So probe for it and degrade to pre-migration behaviour,
+# re-checking periodically so the field lights up without a restart.
+_origin_col: Dict[str, Any] = {"present": None, "checked_at": 0.0}
+_ORIGIN_PROBE_TTL = 60.0
+
+
+def has_origin_column() -> bool:
+    now = time.monotonic()
+    if _origin_col["present"] is None or now - _origin_col["checked_at"] > _ORIGIN_PROBE_TTL:
+        try:
+            retry(sb.table("opportunities").select("origin").limit(1).execute)
+            _origin_col["present"] = True
+        except Exception:  # noqa: BLE001
+            _origin_col["present"] = False
+        _origin_col["checked_at"] = now
+    return bool(_origin_col["present"])
+
+
+def opportunity_origin(opp_id: Optional[str]) -> str:
+    """Provenance of the row an artifact hangs off. Unknown parents are 'seed'.
+
+    Defaulting the unknown case to 'live' would let unattributable data pass as
+    real, which is the failure this field exists to prevent.
+    """
+    if not has_origin_column():
+        return ""  # pre-migration: nothing to stamp with
+    if not opp_id:
+        return "seed"
+    opp = one(sb.table("opportunities").select("origin").eq("id", opp_id))
+    return (opp or {}).get("origin") or "seed"
+
+
+def stamp_evidence(trust: Dict[str, Any], origin: str) -> Dict[str, Any]:
+    """Stamp every evidence item with the provenance of its opportunity.
+
+    Lanes cannot set this. Evidence about a scripted company is scripted no
+    matter which tool retrieved it, so a 'seed' opportunity forces 'seed' on
+    all of its evidence; only a 'live' opportunity can carry 'live' evidence.
+    """
+    if not isinstance(trust, dict) or not origin:
+        return trust
+    out = dict(trust)
+    out["evidence"] = [
+        {**e, "origin": origin} if isinstance(e, dict) else e for e in (out.get("evidence") or [])
+    ]
+    return out
+
+
 @app.post("/claims")
 def create_claims(body: Any = Body(...)):
     items = as_list(body, "claims")
     payload = []
+    origin_cache: Dict[Optional[str], str] = {}
     for it in items:
         it = dict(it)
         it.pop("trace", None)
@@ -355,6 +416,10 @@ def create_claims(body: Any = Body(...)):
         it.setdefault(
             "trust", {"status": "unverified", "confidence": 0.0, "evidence": [], "note": ""}
         )
+        opp = it.get("opportunity_id")
+        if opp not in origin_cache:
+            origin_cache[opp] = opportunity_origin(opp)
+        it["trust"] = stamp_evidence(it["trust"], origin_cache[opp])
         payload.append(it)
     created = rows(sb.table("claims").upsert(payload))
     for c in created:
@@ -368,6 +433,12 @@ def create_claims(body: Any = Body(...)):
 def patch_claim_trust(claim_id: str, body: Any = Body(...)):
     body = body if isinstance(body, dict) else {}
     trust = body.get("trust", {k: v for k, v in body.items() if k != "trace"})
+    existing = one(sb.table("claims").select("opportunity_id").eq("claim_id", claim_id))
+    if not existing:
+        raise HTTPException(404, f"claim {claim_id} not found")
+    # a trust update replaces the evidence array — re-stamp so origin cannot be
+    # dropped or rewritten by a lane overwriting the object wholesale
+    trust = stamp_evidence(trust, opportunity_origin(existing.get("opportunity_id")))
     updated = one(
         sb.table("claims").update({"trust": trust}).eq("claim_id", claim_id)
     )
@@ -485,7 +556,31 @@ def patch_opportunity(opp_id: str, body: Any = Body(...)):
     if "deck_url" in merged or "deck_present" in merged:
         merged["deck_present"] = bool(merged.get("deck_url", existing.get("deck_url")))
 
+    # origin is correctable but never silently: reject junk values, trace the change,
+    # and re-stamp existing evidence so claims cannot keep a stale provenance
+    if "origin" in merged:
+        if not has_origin_column():
+            raise HTTPException(400, "origin unavailable — run migration_02.sql")
+        if merged["origin"] not in ORIGINS:
+            raise HTTPException(400, f"origin must be one of {ORIGINS}")
+        if merged["origin"] != existing.get("origin"):
+            write_trace(
+                opp_id,
+                "enrich",
+                f"origin {existing.get('origin')} -> {merged['origin']} (evidence re-stamped)",
+            )
+
     updated = one(sb.table("opportunities").update(merged).eq("id", opp_id))
+
+    if "origin" in merged and merged["origin"] != existing.get("origin"):
+        for cl in rows(sb.table("claims").select("claim_id,trust").eq("opportunity_id", opp_id)):
+            retry(
+                sb.table("claims")
+                .update({"trust": stamp_evidence(cl.get("trust") or {}, merged["origin"])})
+                .eq("claim_id", cl["claim_id"])
+                .execute
+            )
+
     write_trace(opp_id, "enrich", f"opportunity patched: {', '.join(sorted(patch))}")
     trace_from_body(body, opp_id, "enrich")
     return updated

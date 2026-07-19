@@ -36,6 +36,19 @@ Each endpoint also writes its own trace row automatically, so you only need `tra
 
 An unknown field now returns **400 with the offending column name**, not a 500. If you get `unknown column — schema migration needed`, the field needs a migration — ask, don't work around it.
 
+### Evidence provenance — `origin`
+
+Every opportunity carries `origin: "seed" | "live"`. `seed` means the row is scripted demo data; `live` means it was really sourced or really submitted. This is **independent of `source`** — `source` names the tool that fetched something (`tavily`/`github`/`hn`), not whether the thing is real.
+
+Each item in `trust.evidence[]` also carries `origin`, and **the spine stamps it — lanes cannot set it.** Evidence inherits its opportunity's origin, because evidence about a scripted company is scripted no matter which tool retrieved it. Setting `origin` on an evidence item you POST is ignored.
+
+- `POST /apply` accepts `origin` (defaults to `live` — a real form submission).
+- `POST /opportunities` accepts `origin` per row (defaults to `live`).
+- `PATCH /opportunities/{id}` can correct a misclassified row; doing so re-stamps all of its existing evidence and writes a trace entry.
+- Filter the demo set out with `GET /opportunities` and check `origin`, or query `origin=eq.live` directly.
+
+If a judge asks "how do you know this is real?", `origin` is the answer. Show `seed` rows as clearly scripted in the UI rather than hiding them.
+
 `POST /memos` accepts `what_would_change_my_mind` (jsonb — string or list) alongside `sections`, `gap_flags`, `claim_refs`, `recommendation`.
 
 ### `POST /apply`
