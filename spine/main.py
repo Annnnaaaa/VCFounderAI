@@ -5,14 +5,19 @@ Run: uvicorn main:app --reload --port 8000
 import base64
 import os
 import re
+import threading
+import time
+import unicodedata
 import uuid
 from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional
 
 import httpx
 from dotenv import load_dotenv
-from fastapi import Body, FastAPI, HTTPException
+from fastapi import Body, FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
+from postgrest.exceptions import APIError
 from pydantic import BaseModel, ConfigDict
 from supabase import Client, create_client
 
@@ -26,9 +31,65 @@ DECK_BUCKET = "decks"
 if not SUPABASE_URL or not SUPABASE_SERVICE_KEY:
     raise RuntimeError("SUPABASE_URL and SUPABASE_SERVICE_KEY must be set in .env")
 
-sb: Client = create_client(SUPABASE_URL, SUPABASE_SERVICE_KEY)
+class _ThreadLocalSupabase:
+    """One Supabase client per thread.
 
-app = FastAPI(title="VC Brain Spine", version="1.0")
+    FastAPI runs sync `def` endpoints in a threadpool, so a single shared client
+    means concurrent requests race on one HTTP/2 socket — which surfaces as
+    httpx.ReadError and a 500. Attribute access is proxied to a per-thread client.
+    """
+
+    _local = threading.local()
+
+    @property
+    def _client(self) -> Client:
+        client = getattr(self._local, "client", None)
+        if client is None:
+            client = create_client(SUPABASE_URL, SUPABASE_SERVICE_KEY)
+            self._local.client = client
+        return client
+
+    def __getattr__(self, name: str) -> Any:
+        return getattr(self._client, name)
+
+
+sb = _ThreadLocalSupabase()
+
+# transient socket/stream faults worth one more attempt
+_TRANSIENT = ("ReadError", "WriteError", "ConnectError", "RemoteProtocolError", "PoolTimeout")
+
+
+def retry(fn, attempts: int = 3, base_delay: float = 0.15):
+    """Defense in depth: per-thread clients fix the race, this absorbs real blips."""
+    last: Optional[Exception] = None
+    for i in range(attempts):
+        try:
+            return fn()
+        except Exception as e:  # noqa: BLE001
+            if type(e).__name__ not in _TRANSIENT and not any(
+                t in str(e) for t in ("ReadError", "10035", "Connection reset")
+            ):
+                raise
+            last = e
+            time.sleep(base_delay * (2**i))
+    raise last  # type: ignore[misc]
+
+app = FastAPI(title="VC Brain Spine", version="1.1")
+
+
+@app.exception_handler(APIError)
+def postgrest_error(request: Request, exc: APIError) -> JSONResponse:
+    """Surface schema mismatches as an actionable 400 instead of an opaque 500."""
+    code = getattr(exc, "code", "") or ""
+    message = getattr(exc, "message", None) or str(exc)
+    if code in ("PGRST204", "42703"):
+        return JSONResponse(
+            status_code=400,
+            content={"detail": f"unknown column — schema migration needed: {message}"},
+        )
+    return JSONResponse(status_code=400, content={"detail": message, "code": code})
+
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -78,7 +139,7 @@ def write_trace(
         "ts": now_iso(),
     }
     try:
-        sb.table("trace_log").insert(row).execute()
+        retry(sb.table("trace_log").insert(row).execute)
     except Exception as e:  # tracing must never break a write
         row["_trace_error"] = str(e)
     return row
@@ -100,12 +161,17 @@ def trace_from_body(body: Dict[str, Any], default_opp: Optional[str], default_st
         )
 
 
-def rows(resp) -> List[Dict[str, Any]]:
-    return resp.data or []
+def ex(q):
+    """Execute a Supabase query builder, retrying transient socket faults."""
+    return retry(q.execute) if hasattr(q, "execute") else q
 
 
-def one(resp) -> Optional[Dict[str, Any]]:
-    d = resp.data or []
+def rows(q) -> List[Dict[str, Any]]:
+    return ex(q).data or []
+
+
+def one(q) -> Optional[Dict[str, Any]]:
+    d = ex(q).data or []
     return d[0] if d else None
 
 
@@ -125,8 +191,28 @@ class ApplyBody(Loose):
     deck_filename: Optional[str] = None
 
 
+def safe_object_key(filename: str) -> str:
+    """Supabase storage rejects non-ASCII and empty keys with InvalidKey.
+
+    Fold accents to ASCII, replace anything else with '-', and always end up
+    with a non-empty name.
+    """
+    ascii_name = (
+        unicodedata.normalize("NFKD", filename).encode("ascii", "ignore").decode("ascii")
+    )
+    ascii_name = re.sub(r"[^A-Za-z0-9._-]+", "-", ascii_name).strip("-._")
+    if not ascii_name or ascii_name.startswith("."):
+        ascii_name = f"deck{ascii_name or '.pdf'}"
+    return ascii_name[:120]
+
+
 def store_deck(opp_id: str, body: ApplyBody) -> tuple[bool, Optional[str]]:
-    """Persist deck bytes to Supabase storage. Returns (deck_present, public_url)."""
+    """Persist deck bytes to Supabase storage.
+
+    Returns (deck_present, url). deck_present is true only when a deck is
+    actually reachable — either stored bytes or a link we can hand the UI.
+    An unbacked deck_present renders a deck affordance that resolves to nothing.
+    """
     data: Optional[bytes] = None
     filename = body.deck_filename or "deck.pdf"
 
@@ -143,20 +229,23 @@ def store_deck(opp_id: str, body: ApplyBody) -> tuple[bool, Optional[str]]:
             data = r.content
             filename = body.deck_url.rsplit("/", 1)[-1].split("?")[0] or filename
         except Exception:
-            # keep the link even if we could not fetch the bytes
+            # the bytes are out of reach but the link still resolves for the UI
+            write_trace(opp_id, "deck_extract", f"deck fetch failed, keeping link {body.deck_url}")
             return True, body.deck_url
 
     if not data:
         return False, None
 
-    path = f"{opp_id}/{filename}"
+    path = f"{opp_id}/{safe_object_key(filename)}"
     try:
         sb.storage.from_(DECK_BUCKET).upload(
             path, data, {"content-type": "application/pdf", "upsert": "true"}
         )
         return True, sb.storage.from_(DECK_BUCKET).get_public_url(path)
-    except Exception:
-        return True, body.deck_url
+    except Exception as e:  # noqa: BLE001
+        # never claim a deck the UI cannot open — record why and report honestly
+        write_trace(opp_id, "deck_extract", f"deck upload failed: {type(e).__name__}: {e}")
+        return (True, body.deck_url) if body.deck_url else (False, None)
 
 
 @app.post("/apply")
@@ -172,7 +261,7 @@ def apply(body: ApplyBody):
     prior = {"value": 0, "confidence": 0.0, "trend": "flat", "history": []}
     if identity:
         existing = one(
-            sb.table("founder_scores").select("*").eq("identity", identity).execute()
+            sb.table("founder_scores").select("*").eq("identity", identity)
         )
         if existing:  # a returning founder carries their history in
             prior = {
@@ -207,7 +296,7 @@ def apply(body: ApplyBody):
         "status": "new",
         "founder_score": prior,
     }
-    created = one(sb.table("opportunities").insert(row).execute())
+    created = one(sb.table("opportunities").insert(row))
     write_trace(opp_id, "deck_extract", f"inbound application received for {body.company_name}")
     trace_from_body(body.model_dump(), opp_id, "deck_extract")
     return created
@@ -235,7 +324,8 @@ def create_opportunities(body: Any = Body(...)):
         it.setdefault("created_at", now_iso())
         it.setdefault("status", "new")
         it.setdefault("source", "outbound_github")
-        it.setdefault("deck_present", False)
+        # deck_present is derived, never trusted — it must imply an openable deck
+        it["deck_present"] = bool(it.get("deck_url"))
         it.setdefault(
             "founder_score", {"value": 0, "confidence": 0.0, "trend": "flat", "history": []}
         )
@@ -246,7 +336,7 @@ def create_opportunities(body: Any = Body(...)):
                 f["identity"] = normalize_identity(gh, f.get("name"))
         payload.append(it)
 
-    created = rows(sb.table("opportunities").upsert(payload).execute())
+    created = rows(sb.table("opportunities").upsert(payload))
     for c in created:
         write_trace(c["id"], "enrich", f"sourced via {c.get('source')}")
     if isinstance(body, dict):
@@ -266,7 +356,7 @@ def create_claims(body: Any = Body(...)):
             "trust", {"status": "unverified", "confidence": 0.0, "evidence": [], "note": ""}
         )
         payload.append(it)
-    created = rows(sb.table("claims").upsert(payload).execute())
+    created = rows(sb.table("claims").upsert(payload))
     for c in created:
         write_trace(c.get("opportunity_id"), "verify", f"claim recorded: {c.get('text', '')[:120]}")
     if isinstance(body, dict):
@@ -279,7 +369,7 @@ def patch_claim_trust(claim_id: str, body: Any = Body(...)):
     body = body if isinstance(body, dict) else {}
     trust = body.get("trust", {k: v for k, v in body.items() if k != "trace"})
     updated = one(
-        sb.table("claims").update({"trust": trust}).eq("claim_id", claim_id).execute()
+        sb.table("claims").update({"trust": trust}).eq("claim_id", claim_id)
     )
     if not updated:
         raise HTTPException(404, f"claim {claim_id} not found")
@@ -299,7 +389,7 @@ def upsert_axis_scores(body: Any = Body(...)):
     payload = [{k: v for k, v in dict(it).items() if k != "trace"} for it in items]
     for p in payload:
         p["updated_at"] = now_iso()
-    saved = rows(sb.table("axis_scores").upsert(payload, on_conflict="opportunity_id").execute())
+    saved = rows(sb.table("axis_scores").upsert(payload, on_conflict="opportunity_id"))
     for s in saved:
         axes = s.get("axes") or {}
         write_trace(
@@ -309,9 +399,12 @@ def upsert_axis_scores(body: Any = Body(...)):
             f"market={(axes.get('market') or {}).get('rating')} "
             f"idea_vs_market={(axes.get('idea_vs_market') or {}).get('verdict')}",
         )
-        sb.table("opportunities").update({"status": "screened"}).eq(
-            "id", s["opportunity_id"]
-        ).execute()
+        retry(
+            sb.table("opportunities")
+            .update({"status": "screened"})
+            .eq("id", s["opportunity_id"])
+            .execute
+        )
     if isinstance(body, dict):
         trace_from_body(body, None, "axis_score")
     return saved
@@ -323,7 +416,7 @@ def upsert_cold_start(body: Any = Body(...)):
     payload = [{k: v for k, v in dict(it).items() if k != "trace"} for it in items]
     for p in payload:
         p["updated_at"] = now_iso()
-    saved = rows(sb.table("cold_start").upsert(payload, on_conflict="opportunity_id").execute())
+    saved = rows(sb.table("cold_start").upsert(payload, on_conflict="opportunity_id"))
     for s in saved:
         fq = s.get("founder_quality") or {}
         write_trace(
@@ -342,17 +435,70 @@ def upsert_memos(body: Any = Body(...)):
     payload = [{k: v for k, v in dict(it).items() if k != "trace"} for it in items]
     for p in payload:
         p["updated_at"] = now_iso()
-    saved = rows(sb.table("memos").upsert(payload, on_conflict="opportunity_id").execute())
+    saved = rows(sb.table("memos").upsert(payload, on_conflict="opportunity_id"))
     for s in saved:
         write_trace(
             s["opportunity_id"], "memo", f"memo written, recommendation={s.get('recommendation')}"
         )
-        sb.table("opportunities").update({"status": "memo_ready"}).eq(
-            "id", s["opportunity_id"]
-        ).execute()
+        retry(
+            sb.table("opportunities")
+            .update({"status": "memo_ready"})
+            .eq("id", s["opportunity_id"])
+            .execute
+        )
     if isinstance(body, dict):
         trace_from_body(body, None, "memo")
     return saved
+
+
+@app.delete("/claims/{claim_id}")
+def delete_claim(claim_id: str):
+    """Remove a single claim. Lanes need this to undo a bad extraction batch."""
+    existing = one(sb.table("claims").select("*").eq("claim_id", claim_id))
+    if not existing:
+        raise HTTPException(404, f"claim {claim_id} not found")
+    retry(sb.table("claims").delete().eq("claim_id", claim_id).execute)
+    write_trace(
+        existing.get("opportunity_id"),
+        "verify",
+        f"claim deleted: {existing.get('text', '')[:100]}",
+    )
+    return {"deleted": claim_id, "opportunity_id": existing.get("opportunity_id")}
+
+
+@app.post("/opportunities/{opp_id}/claims/dedupe")
+def dedupe_claims(opp_id: str, dry_run: bool = False):
+    """Collapse claims identical in (text, type, source), keeping the earliest.
+
+    A re-run of an extraction batch duplicates every claim; the UI then renders
+    each one twice. Pass ?dry_run=true to see what would go without deleting.
+    """
+    claims = rows(
+        sb.table("claims").select("*").eq("opportunity_id", opp_id).order("created_at")
+    )
+    seen: Dict[tuple, str] = {}
+    doomed: List[Dict[str, Any]] = []
+    for c in claims:
+        key = (c.get("text"), c.get("type"), c.get("source"))
+        if key in seen:
+            doomed.append(c)
+        else:
+            seen[key] = c["claim_id"]
+
+    if not dry_run:
+        for c in doomed:
+            retry(sb.table("claims").delete().eq("claim_id", c["claim_id"]).execute)
+        if doomed:
+            write_trace(opp_id, "verify", f"deduped {len(doomed)} duplicate claims")
+
+    return {
+        "opportunity_id": opp_id,
+        "before": len(claims),
+        "kept": len(seen),
+        "removed": len(doomed),
+        "dry_run": dry_run,
+        "removed_claim_ids": [c["claim_id"] for c in doomed],
+    }
 
 
 @app.post("/trace")
@@ -386,7 +532,7 @@ def post_founder_score(body: FounderScoreBody):
     display_name = body.founder_name or body.name
     identity = body.identity or normalize_identity(body.github_handle, display_name)
 
-    existing = one(sb.table("founder_scores").select("*").eq("identity", identity).execute())
+    existing = one(sb.table("founder_scores").select("*").eq("identity", identity))
     history: List[Dict[str, Any]] = list(existing["history"]) if existing else []
 
     history.append(
@@ -415,7 +561,7 @@ def post_founder_score(body: FounderScoreBody):
         "history": history,
         "updated_at": now_iso(),
     }
-    saved = one(sb.table("founder_scores").upsert(row, on_conflict="identity").execute())
+    saved = one(sb.table("founder_scores").upsert(row, on_conflict="identity"))
 
     # mirror onto every opportunity belonging to this founder
     snapshot = {
@@ -424,9 +570,12 @@ def post_founder_score(body: FounderScoreBody):
         "trend": saved["trend"],
         "history": saved["history"],
     }
-    sb.table("opportunities").update({"founder_score": snapshot}).eq(
-        "founder->>identity", identity
-    ).execute()
+    retry(
+        sb.table("opportunities")
+        .update({"founder_score": snapshot})
+        .eq("founder->>identity", identity)
+        .execute
+    )
 
     write_trace(
         body.opportunity_id,
@@ -439,10 +588,10 @@ def post_founder_score(body: FounderScoreBody):
 
 @app.get("/founder-score/{identity:path}")
 def get_founder_score(identity: str):
-    found = one(sb.table("founder_scores").select("*").eq("identity", identity).execute())
+    found = one(sb.table("founder_scores").select("*").eq("identity", identity))
     if not found:  # tolerate a bare handle or name
         for guess in (f"github:{identity.lower()}", normalize_identity(None, identity)):
-            found = one(sb.table("founder_scores").select("*").eq("identity", guess).execute())
+            found = one(sb.table("founder_scores").select("*").eq("identity", guess))
             if found:
                 break
     if not found:
@@ -469,14 +618,14 @@ def list_opportunities(
         q = q.eq("source", source)
     if status:
         q = q.eq("status", status)
-    opps = rows(q.limit(limit).execute())
+    opps = rows(q.limit(limit))
     if not opps:
         return []
 
     ids = [o["id"] for o in opps]
     axis_by_opp = {
         a["opportunity_id"]: a.get("axes") or {}
-        for a in rows(sb.table("axis_scores").select("*").in_("opportunity_id", ids).execute())
+        for a in rows(sb.table("axis_scores").select("*").in_("opportunity_id", ids))
     }
 
     def founder_axis(o: Dict[str, Any]) -> float:
@@ -499,7 +648,7 @@ def list_opportunities(
 @app.get("/opportunities/{opp_id}/bundle")
 def get_bundle(opp_id: str):
     """One call → everything Lovable needs for the detail page."""
-    opp = one(sb.table("opportunities").select("*").eq("id", opp_id).execute())
+    opp = one(sb.table("opportunities").select("*").eq("id", opp_id))
     if not opp:
         raise HTTPException(404, f"opportunity {opp_id} not found")
 
@@ -507,33 +656,33 @@ def get_bundle(opp_id: str):
     founder_score = None
     if identity:
         founder_score = one(
-            sb.table("founder_scores").select("*").eq("identity", identity).execute()
+            sb.table("founder_scores").select("*").eq("identity", identity)
         )
 
     return {
         "opportunity": opp,
-        "claims": rows(sb.table("claims").select("*").eq("opportunity_id", opp_id).execute()),
+        "claims": rows(sb.table("claims").select("*").eq("opportunity_id", opp_id)),
         "axis_scores": one(
-            sb.table("axis_scores").select("*").eq("opportunity_id", opp_id).execute()
+            sb.table("axis_scores").select("*").eq("opportunity_id", opp_id)
         ),
         "cold_start": one(
-            sb.table("cold_start").select("*").eq("opportunity_id", opp_id).execute()
+            sb.table("cold_start").select("*").eq("opportunity_id", opp_id)
         ),
-        "memo": one(sb.table("memos").select("*").eq("opportunity_id", opp_id).execute()),
+        "memo": one(sb.table("memos").select("*").eq("opportunity_id", opp_id)),
         "founder_score": founder_score or opp.get("founder_score"),
         "trace_log": rows(
             sb.table("trace_log")
             .select("*")
             .eq("opportunity_id", opp_id)
             .order("ts", desc=False)
-            .execute()
+            
         ),
     }
 
 
 @app.get("/thesis")
 def get_thesis():
-    t = one(sb.table("thesis").select("*").limit(1).execute())
+    t = one(sb.table("thesis").select("*").limit(1))
     if not t:
         raise HTTPException(404, "no thesis row — run schema.sql")
     return t
@@ -543,12 +692,12 @@ def get_thesis():
 def put_thesis(body: Any = Body(...)):
     body = body if isinstance(body, dict) else {}
     params = body.get("params", {k: v for k, v in body.items() if k != "trace"})
-    existing = one(sb.table("thesis").select("id").limit(1).execute())
+    existing = one(sb.table("thesis").select("id").limit(1))
     row = {"params": params, "updated_at": now_iso()}
     if existing:
-        saved = one(sb.table("thesis").update(row).eq("id", existing["id"]).execute())
+        saved = one(sb.table("thesis").update(row).eq("id", existing["id"]))
     else:
-        saved = one(sb.table("thesis").insert(row).execute())
+        saved = one(sb.table("thesis").insert(row))
     trace_from_body(body, None, "enrich")
     return saved
 

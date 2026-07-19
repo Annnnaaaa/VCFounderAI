@@ -183,6 +183,88 @@ steps = {e["step"] for e in c.get(f"/opportunities/{opp_id}/bundle").json()["tra
 for step in ["deck_extract", "verify", "axis_score", "cold_start", "memo"]:
     check(f"trace step '{step}' recorded", step in steps, str(sorted(steps)))
 
+# ── 7. regressions reported by Lane 3 ──────────────────────────────────────
+print("\n[7] Regressions")
+
+# 7a. /bundle used to 500 under concurrency: one shared Supabase client was
+#     raced across FastAPI's threadpool. 37/60 failed before the fix.
+import collections
+import concurrent.futures as cf
+
+pool_ids = [o["id"] for o in c.get("/opportunities", params={"limit": 30}).json()][:12]
+
+
+def _bundle(i: str):
+    try:
+        return httpx.get(f"{BASE}/opportunities/{i}/bundle", timeout=90).status_code
+    except Exception as e:
+        return type(e).__name__
+
+
+with cf.ThreadPoolExecutor(max_workers=12) as pool:
+    codes = collections.Counter(pool.map(_bundle, pool_ids * 5))
+check("/bundle survives 60 concurrent reads", set(codes) == {200}, str(dict(codes)))
+
+# 7b. a non-ASCII deck filename used to fail the storage upload (InvalidKey),
+#     leaving deck_present=true with deck_url=null — a deck link to nowhere.
+r = c.post(
+    "/apply",
+    json={
+        "company_name": "Unicode Deck Co",
+        "deck_base64": base64.b64encode(b"%PDF-1.4 x").decode(),
+        "deck_filename": "Pitch—Deck (2026) Ünïcode.pdf",
+    },
+)
+u = r.json()
+check("non-ASCII deck filename uploads", u.get("deck_present") is True, str(u.get("deck_url"))[:90])
+check("deck_present implies a deck_url", not (u.get("deck_present") and not u.get("deck_url")))
+
+# the invariant must hold across every row, not just the one we just made
+allrows = c.get("/opportunities", params={"limit": 300}).json()
+orphans = [o for o in allrows if o.get("deck_present") and not o.get("deck_url")]
+check("no row claims a deck without a URL", not orphans, f"{len(orphans)} orphan(s)")
+
+# 7c. duplicate claims were unfixable — there was no delete path.
+dupe_opp = c.post("/apply", json={"company_name": "Dedupe Co"}).json()["id"]
+twice = [{"opportunity_id": dupe_opp, "text": "same claim", "type": "traction", "source": "deck_slide_1"}] * 2
+c.post("/claims", json=twice)
+c.post("/claims", json=twice)
+d = c.post(f"/opportunities/{dupe_opp}/claims/dedupe", params={"dry_run": "true"}).json()
+check("dry run reports duplicates without deleting", d["removed"] == 3 and d["dry_run"], str(d["removed"]))
+check("dry run left the claims alone", len(c.get(f"/opportunities/{dupe_opp}/bundle").json()["claims"]) == 4)
+d = c.post(f"/opportunities/{dupe_opp}/claims/dedupe").json()
+check("dedupe collapses to distinct claims", d["kept"] == 1 and d["removed"] == 3, str(d))
+remaining = c.get(f"/opportunities/{dupe_opp}/bundle").json()["claims"]
+check("one claim survives", len(remaining) == 1, str(len(remaining)))
+
+r = c.delete(f"/claims/{remaining[0]['claim_id']}")
+check("DELETE /claims/{id}", r.status_code == 200, r.text[:120])
+check("claim is gone", len(c.get(f"/opportunities/{dupe_opp}/bundle").json()["claims"]) == 0)
+check("DELETE of unknown claim 404s", c.delete(f"/claims/{uuid.uuid4()}").status_code == 404)
+
+# 7d. what_would_change_my_mind 500'd because the column did not exist.
+#     Requires migration_01.sql to have been applied.
+r = c.post(
+    "/memos",
+    json={
+        "opportunity_id": opp_id,
+        "sections": {"company_snapshot": "x"},
+        "recommendation": "needs_call",
+        "what_would_change_my_mind": ["A credible incumbent shipping the same wedge"],
+    },
+)
+check(
+    "POST /memos accepts what_would_change_my_mind",
+    r.status_code == 200,
+    "run migration_01.sql" if r.status_code == 400 else r.text[:160],
+)
+if r.status_code == 200:
+    check("field round-trips", r.json()[0].get("what_would_change_my_mind") == ["A credible incumbent shipping the same wedge"])
+
+# an unknown column should be an actionable 400, never an opaque 500
+r = c.post("/memos", json={"opportunity_id": opp_id, "no_such_column_xyz": 1})
+check("unknown field returns 400 not 500", r.status_code == 400, f"got {r.status_code}")
+
 # ── summary ────────────────────────────────────────────────────────────────
 failed = [r for r in results if not r[0]]
 print(f"\n{'=' * 60}\n{len(results) - len(failed)}/{len(results)} passed")
