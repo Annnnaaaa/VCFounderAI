@@ -1,0 +1,80 @@
+<svg viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#64748b"/>
+    </marker>
+    <marker id="arrowIndigo" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4f46e5"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="60" y="62" font-size="34" font-weight="700" fill="#0f172a">VCFounderAI — Architecture</text>
+  <text x="60" y="92" font-size="17" fill="#64748b">Four independent lanes · one frozen REST contract · trust enforced in code, not prompts</text>
+
+  <!-- ========== UI (top) ========== -->
+  <rect x="520" y="130" width="560" height="130" rx="14" fill="#ffffff" stroke="#4f46e5" stroke-width="2.5"/>
+  <text x="545" y="165" font-size="21" font-weight="700" fill="#4f46e5">Investor UI  ·  React (Lovable)</text>
+  <text x="545" y="192" font-size="15" fill="#334155">vcfounderai.amiracle.net</text>
+  <text x="545" y="218" font-size="15" fill="#334155">Pipeline table · 3-axis detail · claims &amp; trust chips · cold-start interval bar</text>
+  <text x="545" y="240" font-size="15" fill="#334155">cited memo view · reasoning-trace timeline · live thesis config</text>
+
+  <!-- UI <-> Spine arrows -->
+  <line x1="770" y1="260" x2="770" y2="380" stroke="#4f46e5" stroke-width="2.5" marker-end="url(#arrowIndigo)"/>
+  <line x1="830" y1="380" x2="830" y2="260" stroke="#4f46e5" stroke-width="2.5" marker-end="url(#arrowIndigo)"/>
+  <text x="850" y="330" font-size="14" fill="#4f46e5">GET /opportunities · /bundle · GET/PUT /thesis</text>
+
+  <!-- ========== Inbound (left) ========== -->
+  <rect x="60" y="390" width="300" height="120" rx="14" fill="#ffffff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="85" y="425" font-size="19" font-weight="700" fill="#0369a1">Inbound founder</text>
+  <text x="85" y="452" font-size="15" fill="#334155">Application form + pitch deck PDF</text>
+  <text x="85" y="476" font-size="15" fill="#334155">deck stored in Supabase bucket</text>
+
+  <line x1="360" y1="450" x2="510" y2="450" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="375" y="438" font-size="14" fill="#64748b">POST /apply</text>
+
+  <!-- ========== Spine (center) ========== -->
+  <rect x="520" y="380" width="560" height="160" rx="14" fill="#eef2ff" stroke="#4f46e5" stroke-width="3"/>
+  <text x="545" y="417" font-size="21" font-weight="700" fill="#312e81">Spine  ·  FastAPI on Render</text>
+  <text x="545" y="444" font-size="15" fill="#334155">Owns the frozen contract: opportunities · claims · trust · axis scores</text>
+  <text x="545" y="466" font-size="15" fill="#334155">cold-start · memos · founder-score history · thesis · trace log</text>
+  <text x="545" y="494" font-size="15" fill="#334155">Bulk upserts · claim dedupe · every write auto-logs a trace row</text>
+  <text x="545" y="521" font-size="14" font-weight="600" fill="#4f46e5">DB rule: no combined-score field exists — axes can never be averaged</text>
+
+  <!-- Spine <-> Supabase -->
+  <line x1="1080" y1="460" x2="1230" y2="460" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+  <rect x="1240" y="390" width="300" height="120" rx="14" fill="#ffffff" stroke="#059669" stroke-width="2"/>
+  <text x="1265" y="425" font-size="19" font-weight="700" fill="#047857">Supabase</text>
+  <text x="1265" y="452" font-size="15" fill="#334155">Postgres — all pipeline state</text>
+  <text x="1265" y="476" font-size="15" fill="#334155">Storage — public `decks` bucket</text>
+
+  <!-- ========== Sourcing (bottom left) ========== -->
+  <rect x="60" y="620" width="440" height="170" rx="14" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
+  <text x="85" y="655" font-size="19" font-weight="700" fill="#b45309">Sourcing workers  ·  Python</text>
+  <text x="85" y="683" font-size="15" fill="#334155">Scan GitHub + Hacker News for founder-shaped signals</text>
+  <text x="85" y="706" font-size="15" fill="#334155">— founders who never applied</text>
+  <text x="85" y="731" font-size="15" fill="#334155">Tavily research attaches evidence snippets + URLs to claims</text>
+  <text x="85" y="759" font-size="14" fill="#94a3b8">APIs: GitHub · HN (Algolia) · Tavily</text>
+
+  <line x1="380" y1="620" x2="580" y2="545" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="330" y="590" font-size="14" fill="#64748b">POST /opportunities · claims + evidence</text>
+
+  <!-- ========== Intelligence (bottom right) ========== -->
+  <rect x="700" y="620" width="840" height="170" rx="14" fill="#ffffff" stroke="#9333ea" stroke-width="2"/>
+  <text x="725" y="655" font-size="19" font-weight="700" fill="#7e22ce">Intelligence pipeline  ·  Python + OpenAI GPT-4o</text>
+  <text x="725" y="688" font-size="16" font-weight="600" fill="#0f172a">deck_extract → screen → verify → axis_score → cold_start → memo → validate</text>
+  <text x="725" y="716" font-size="15" fill="#334155">GPT-4o vision reads deck PDFs (PyMuPDF) · strict structured outputs via Pydantic — no JSON parsing</text>
+  <text x="725" y="740" font-size="15" fill="#334155">Cheap-model fast-pass screens against the live thesis · validator flags unbacked memo statements</text>
+  <text x="725" y="766" font-size="14" fill="#94a3b8">Every step posts a trace row → the UI's reasoning timeline</text>
+
+  <line x1="1000" y1="620" x2="920" y2="545" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="1080" y1="545" x2="1120" y2="620" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="1105" y="588" font-size="14" fill="#64748b">GET bundle / thesis → POST trust · axes · cold-start · memos · trace</text>
+
+  <!-- ========== Guarantees strip ========== -->
+  <rect x="60" y="820" width="1480" height="56" rx="12" fill="#0f172a"/>
+  <text x="90" y="855" font-size="15.5" font-weight="600" fill="#ffffff">Engineered guarantees:</text>
+  <text x="292" y="855" font-size="15.5" fill="#cbd5e1">3 axes never averaged  ·  trust is per-claim, evidence cited by index  ·  cold-start interval width set in code  ·  founder score history never resets  ·  full trace on every row</text>
+</svg>
