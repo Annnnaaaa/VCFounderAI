@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//d/Anna Malkhasyan/Documents/Source/Repos/VCFounderAI/**)",
+      "Bash(ls -la sourcing/)"
+    ]
+  }
+}

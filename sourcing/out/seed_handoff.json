@@ -1,0 +1,569 @@
+{
+  "opportunities": [
+    {
+      "id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952",
+      "source": "inbound_apply",
+      "founder": {
+        "name": "Lena Vogt",
+        "handles": {
+          "github": "lenavogt",
+          "twitter": "lenavogt_dev",
+          "linkedin": "lena-vogt-infra"
+        },
+        "location": "Berlin, Germany"
+      },
+      "company": {
+        "name": "VectorForge",
+        "one_liner": "Low-latency inference runtime for quantized open-weight models.",
+        "sector": "inference",
+        "stage": "pre-seed"
+      },
+      "deck_present": true,
+      "created_at": "2026-07-19T04:00:35.920527+00:00",
+      "status": "new"
+    },
+    {
+      "id": "2db00f67-67d1-4aba-a75e-3f450129d1e7",
+      "source": "inbound_apply",
+      "founder": {
+        "name": "Marcus Feld",
+        "handles": {
+          "github": "marcusfeld",
+          "twitter": "marcusfeld",
+          "linkedin": "marcus-feld"
+        },
+        "location": "Austin, TX, USA"
+      },
+      "company": {
+        "name": "AgentStack",
+        "one_liner": "Orchestration framework for multi-step LLM agents.",
+        "sector": "agent frameworks",
+        "stage": "pre-seed"
+      },
+      "deck_present": true,
+      "created_at": "2026-07-19T04:00:35.921523+00:00",
+      "status": "new"
+    },
+    {
+      "id": "968a1c60-1cb9-417b-8de2-3977e426405b",
+      "source": "inbound_apply",
+      "founder": {
+        "name": "Priya Nair",
+        "handles": {
+          "github": "priyanair-ml",
+          "twitter": "",
+          "linkedin": ""
+        },
+        "location": "Bengaluru, India"
+      },
+      "company": {
+        "name": "",
+        "one_liner": "Solo builder working on LLM evaluation methodology; no company formed yet.",
+        "sector": "eval & observability",
+        "stage": "pre-seed"
+      },
+      "deck_present": false,
+      "created_at": "2026-07-19T04:00:35.921523+00:00",
+      "status": "new"
+    },
+    {
+      "id": "a8de1d93-5a6f-4ddb-a904-db275d6b124e",
+      "source": "inbound_apply",
+      "founder": {
+        "name": "Jason Lee",
+        "handles": {
+          "github": "jasonlee-datanexus",
+          "twitter": "",
+          "linkedin": ""
+        },
+        "location": "Seattle, WA"
+      },
+      "company": {
+        "name": "DataNexus Tools",
+        "one_liner": "Providing simple vector data tools for small businesses.",
+        "sector": "vector/data tooling",
+        "stage": "pre-seed"
+      },
+      "deck_present": true,
+      "created_at": "2026-07-19T04:00:35.954672+00:00",
+      "status": "new"
+    },
+    {
+      "id": "7f073006-dc87-48ff-8841-276ff1d5c682",
+      "source": "inbound_apply",
+      "founder": {
+        "name": "Lisa Nguyen",
+        "handles": {
+          "github": "lisa-nguyen-infiagent",
+          "twitter": "",
+          "linkedin": ""
+        },
+        "location": "Austin, TX"
+      },
+      "company": {
+        "name": "InfiAgent Solutions",
+        "one_liner": "Simplifying agent frameworks for developers everywhere.",
+        "sector": "agent frameworks",
+        "stage": "pre-seed"
+      },
+      "deck_present": true,
+      "created_at": "2026-07-19T04:00:35.954672+00:00",
+      "status": "new"
+    },
+    {
+      "id": "d4081c05-b9a8-4874-8539-b1f035969a40",
+      "source": "inbound_apply",
+      "founder": {
+        "name": "Mark Chen",
+        "handles": {
+          "github": "markchen-evalguard",
+          "twitter": "",
+          "linkedin": ""
+        },
+        "location": "San Jose, CA"
+      },
+      "company": {
+        "name": "EvalGuard Tech",
+        "one_liner": "Creating evaluation tools to improve AI model performance.",
+        "sector": "eval & observability",
+        "stage": "pre-seed"
+      },
+      "deck_present": true,
+      "created_at": "2026-07-19T04:00:35.954672+00:00",
+      "status": "new"
+    },
+    {
+      "id": "af2771fb-b9f7-4fd9-abca-a31a59ae9d2d",
+      "source": "inbound_apply",
+      "founder": {
+        "name": "Sara Patel",
+        "handles": {
+          "github": "sarapatel-inferboost",
+          "twitter": "",
+          "linkedin": ""
+        },
+        "location": "Boston, MA"
+      },
+      "company": {
+        "name": "InferBoost Systems",
+        "one_liner": "Building lightweight inference solutions for startups.",
+        "sector": "inference",
+        "stage": "pre-seed"
+      },
+      "deck_present": true,
+      "created_at": "2026-07-19T04:00:35.954672+00:00",
+      "status": "new"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "5143e3f6-9f9d-5dbd-851d-35ebfc5c5ab6",
+      "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952",
+      "text": "800 GitHub stars on the VectorForge inference runtime",
+      "type": "traction",
+      "source": "deck_slide_2",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 0.92,
+        "evidence": [
+          {
+            "url": "https://github.com/lenavogt/vectorforge",
+            "snippet": "vectorforge \u2014 low-latency inference runtime. 812 stars, 47 forks, last commit 2 days ago.",
+            "source": "github"
+          }
+        ],
+        "note": "[seed fixture] Repo star count (812) matches the deck's ~800 claim."
+      }
+    },
+    {
+      "claim_id": "9a6039eb-8bf6-53d6-9ec6-403c522b41ca",
+      "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952",
+      "text": "Show HN launch reached the front page",
+      "type": "traction",
+      "source": "deck_slide_2",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 0.88,
+        "evidence": [
+          {
+            "url": "https://news.ycombinator.com/item?id=40218877",
+            "snippet": "Show HN: VectorForge \u2013 3x faster quantized inference on commodity GPUs (287 points, 94 comments)",
+            "source": "hn"
+          }
+        ],
+        "note": "[seed fixture] Show HN post at 287 points is consistent with a front-page run."
+      }
+    },
+    {
+      "claim_id": "0277f5cf-a79d-508c-b9e8-bf92ec7f8625",
+      "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952",
+      "text": "Founder spent 4 years as an inference engineer on a production ML serving team",
+      "type": "team",
+      "source": "deck_slide_1",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 0.8,
+        "evidence": [
+          {
+            "url": "https://github.com/lenavogt",
+            "snippet": "Lena Vogt \u2014 Berlin. 1.4k followers. Repos: vectorforge, kv-cache-bench, triton-kernels-notes.",
+            "source": "github"
+          }
+        ],
+        "note": "[seed fixture] Public repo history is consistent with a deep inference background."
+      }
+    },
+    {
+      "claim_id": "9d6f0ead-ce64-591d-9bde-1a4a9581eab0",
+      "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952",
+      "text": "Sub-50ms p99 cold start for 7B quantized models",
+      "type": "tech",
+      "source": "deck_slide_3",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.35,
+        "evidence": [],
+        "note": "[seed fixture] Benchmark is self-reported; no independent third-party reproduction found."
+      }
+    },
+    {
+      "claim_id": "89efb466-6513-5e97-8de6-85cc8d17f8cc",
+      "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952",
+      "text": "Inference tooling spend is growing as open-weight models displace hosted APIs",
+      "type": "market",
+      "source": "deck_slide_4",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.3,
+        "evidence": [],
+        "note": "[seed fixture] Directionally plausible but no cited source in the deck."
+      }
+    },
+    {
+      "claim_id": "d9b302f6-76e5-534d-aab5-4a6820531318",
+      "opportunity_id": "2db00f67-67d1-4aba-a75e-3f450129d1e7",
+      "text": "2,000 paying developers on the platform",
+      "type": "traction",
+      "source": "deck_slide_3",
+      "trust": {
+        "status": "contradicted",
+        "confidence": 0.9,
+        "evidence": [
+          {
+            "url": "https://github.com/marcusfeld/agentstack",
+            "snippet": "agentstack \u2014 created 21 days ago. 40 stars, 3 forks, 2 contributors.",
+            "source": "github"
+          },
+          {
+            "url": "https://agentstack.dev",
+            "snippet": "AgentStack \u2014 Docs, GitHub, Discord. No pricing or billing page present; no paid tier advertised.",
+            "source": "tavily"
+          }
+        ],
+        "note": "[seed fixture] Repo is 3 weeks old with 40 stars and 2 contributors, and the site has no paid tier \u2014 inconsistent with 2,000 paying developers."
+      }
+    },
+    {
+      "claim_id": "d937b210-a2c4-5d4e-97df-850374edfd54",
+      "opportunity_id": "2db00f67-67d1-4aba-a75e-3f450129d1e7",
+      "text": "$30K MRR and growing 40% month over month",
+      "type": "revenue",
+      "source": "deck_slide_3",
+      "trust": {
+        "status": "contradicted",
+        "confidence": 0.88,
+        "evidence": [
+          {
+            "url": "https://agentstack.dev",
+            "snippet": "AgentStack \u2014 Docs, GitHub, Discord. No pricing or billing page present; no paid tier advertised.",
+            "source": "tavily"
+          },
+          {
+            "url": "https://github.com/marcusfeld/agentstack",
+            "snippet": "agentstack \u2014 created 21 days ago. 40 stars, 3 forks, 2 contributors.",
+            "source": "github"
+          }
+        ],
+        "note": "[seed fixture] No pricing page, no billing flow, and no paid tier on the product site \u2014 no mechanism to collect $30K MRR."
+      }
+    },
+    {
+      "claim_id": "9d83b524-ab64-59ee-9a81-5c7c354bf369",
+      "opportunity_id": "2db00f67-67d1-4aba-a75e-3f450129d1e7",
+      "text": "Used in production by 12 companies",
+      "type": "traction",
+      "source": "deck_slide_4",
+      "trust": {
+        "status": "contradicted",
+        "confidence": 0.72,
+        "evidence": [
+          {
+            "url": "https://github.com/marcusfeld/agentstack",
+            "snippet": "agentstack \u2014 created 21 days ago. 40 stars, 3 forks, 2 contributors.",
+            "source": "github"
+          }
+        ],
+        "note": "[seed fixture] No public adopters, case studies or dependent repos; 2 contributors on a 3-week-old project."
+      }
+    },
+    {
+      "claim_id": "8ee516ec-b18f-5bd8-8546-fcc9899217d5",
+      "opportunity_id": "2db00f67-67d1-4aba-a75e-3f450129d1e7",
+      "text": "Team of 4 ex-FAANG infrastructure engineers",
+      "type": "team",
+      "source": "deck_slide_1",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.3,
+        "evidence": [],
+        "note": "[seed fixture] No public profiles found for the claimed team members; not disproven, just unevidenced."
+      }
+    },
+    {
+      "claim_id": "d6948ac2-9a05-51e5-9d04-6ecbad72745f",
+      "opportunity_id": "968a1c60-1cb9-417b-8de2-3977e426405b",
+      "text": "Author of a 120-star open-source LLM evaluation harness",
+      "type": "tech",
+      "source": "github",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 0.85,
+        "evidence": [
+          {
+            "url": "https://github.com/priyanair-ml/evalharness",
+            "snippet": "evalharness \u2014 task-agnostic evaluation harness for LLMs. 120 stars, 14 forks, 61 commits.",
+            "source": "github"
+          }
+        ],
+        "note": "[seed fixture] Repo is the primary source for its own star count."
+      }
+    },
+    {
+      "claim_id": "427891b5-fd9a-53eb-a372-51272227f256",
+      "opportunity_id": "968a1c60-1cb9-417b-8de2-3977e426405b",
+      "text": "Published a detailed methodology post on avoiding contamination in LLM eval sets",
+      "type": "tech",
+      "source": "tavily",
+      "trust": {
+        "status": "corroborated",
+        "confidence": 0.7,
+        "evidence": [
+          {
+            "url": "https://priyanair.dev/posts/eval-contamination",
+            "snippet": "On contamination in LLM eval sets \u2014 why held-out splits leak, and a cheap detection recipe.",
+            "source": "tavily"
+          }
+        ],
+        "note": "[seed fixture] Single substantive public post; demonstrates domain insight but is a thin track record on its own."
+      }
+    },
+    {
+      "claim_id": "708bd520-1a6a-5aa8-a14c-2950e5302d87",
+      "opportunity_id": "a8de1d93-5a6f-4ddb-a904-db275d6b124e",
+      "text": "Over 150 GitHub stars on our initial open-source project",
+      "type": "traction",
+      "source": "deck_slide_1",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.0,
+        "evidence": [],
+        "note": "PENDING_VERIFICATION \u2014 not yet checked against external sources."
+      }
+    },
+    {
+      "claim_id": "c6878d80-87df-55f7-88de-907bb3c7861e",
+      "opportunity_id": "a8de1d93-5a6f-4ddb-a904-db275d6b124e",
+      "text": "Small team of 3 working part-time on the project",
+      "type": "team",
+      "source": "deck_slide_2",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.0,
+        "evidence": [],
+        "note": "PENDING_VERIFICATION \u2014 not yet checked against external sources."
+      }
+    },
+    {
+      "claim_id": "d5d0b57d-7709-5ef6-b190-78ea7dc0dfb4",
+      "opportunity_id": "a8de1d93-5a6f-4ddb-a904-db275d6b124e",
+      "text": "Targeting a $500 million market in data tooling for SMEs",
+      "type": "market",
+      "source": "deck_slide_3",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.0,
+        "evidence": [],
+        "note": "PENDING_VERIFICATION \u2014 not yet checked against external sources."
+      }
+    },
+    {
+      "claim_id": "f599f952-049a-5d0c-afee-2cbea36082b8",
+      "opportunity_id": "a8de1d93-5a6f-4ddb-a904-db275d6b124e",
+      "text": "Prototype completed and in user testing phase",
+      "type": "tech",
+      "source": "deck_slide_4",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.0,
+        "evidence": [],
+        "note": "PENDING_VERIFICATION \u2014 not yet checked against external sources."
+      }
+    },
+    {
+      "claim_id": "6c04ae6a-6bd4-56ec-8158-3b3d6abc8235",
+      "opportunity_id": "7f073006-dc87-48ff-8841-276ff1d5c682",
+      "text": "Achieved 80 stars on our GitHub repository in 6 months",
+      "type": "traction",
+      "source": "deck_slide_1",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.0,
+        "evidence": [],
+        "note": "PENDING_VERIFICATION \u2014 not yet checked against external sources."
+      }
+    },
+    {
+      "claim_id": "71a3d10e-37e2-573e-9dde-888bf397004c",
+      "opportunity_id": "7f073006-dc87-48ff-8841-276ff1d5c682",
+      "text": "Team of 2 founders working on project alongside full-time jobs",
+      "type": "team",
+      "source": "deck_slide_2",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.0,
+        "evidence": [],
+        "note": "PENDING_VERIFICATION \u2014 not yet checked against external sources."
+      }
+    },
+    {
+      "claim_id": "7fc0f69a-2f27-50ab-b460-b7e27936decd",
+      "opportunity_id": "7f073006-dc87-48ff-8841-276ff1d5c682",
+      "text": "Focused on the growing agent framework market estimated at $300 million",
+      "type": "market",
+      "source": "deck_slide_3",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.0,
+        "evidence": [],
+        "note": "PENDING_VERIFICATION \u2014 not yet checked against external sources."
+      }
+    },
+    {
+      "claim_id": "48f2302a-cbff-53b0-ab71-537f2ea01d6b",
+      "opportunity_id": "7f073006-dc87-48ff-8841-276ff1d5c682",
+      "text": "Initial prototype ready with basic functionality",
+      "type": "tech",
+      "source": "deck_slide_4",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.0,
+        "evidence": [],
+        "note": "PENDING_VERIFICATION \u2014 not yet checked against external sources."
+      }
+    },
+    {
+      "claim_id": "93286bd0-49a9-5a9a-89a8-272f6c896332",
+      "opportunity_id": "d4081c05-b9a8-4874-8539-b1f035969a40",
+      "text": "Gained 65 stars on our GitHub project in the first year",
+      "type": "traction",
+      "source": "deck_slide_1",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.0,
+        "evidence": [],
+        "note": "PENDING_VERIFICATION \u2014 not yet checked against external sources."
+      }
+    },
+    {
+      "claim_id": "5b5aca44-3c88-5c1a-bc85-a60d0703c2be",
+      "opportunity_id": "d4081c05-b9a8-4874-8539-b1f035969a40",
+      "text": "Currently a solo founder with no external hires",
+      "type": "team",
+      "source": "deck_slide_2",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.0,
+        "evidence": [],
+        "note": "PENDING_VERIFICATION \u2014 not yet checked against external sources."
+      }
+    },
+    {
+      "claim_id": "17a84232-8145-53a4-8b85-9941c1fc9832",
+      "opportunity_id": "d4081c05-b9a8-4874-8539-b1f035969a40",
+      "text": "Potential market size of $250 million for AI evaluation tools",
+      "type": "market",
+      "source": "deck_slide_3",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.0,
+        "evidence": [],
+        "note": "PENDING_VERIFICATION \u2014 not yet checked against external sources."
+      }
+    },
+    {
+      "claim_id": "fc93aa06-0928-5f60-bfa5-9c88fb13419d",
+      "opportunity_id": "d4081c05-b9a8-4874-8539-b1f035969a40",
+      "text": "Working version of the tool available for limited beta testing",
+      "type": "tech",
+      "source": "deck_slide_4",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.0,
+        "evidence": [],
+        "note": "PENDING_VERIFICATION \u2014 not yet checked against external sources."
+      }
+    },
+    {
+      "claim_id": "6281e8c4-30a5-5c0d-8861-abc954f2df36",
+      "opportunity_id": "af2771fb-b9f7-4fd9-abca-a31a59ae9d2d",
+      "text": "Secured 90 stars on our open-source library within 8 months",
+      "type": "traction",
+      "source": "deck_slide_1",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.0,
+        "evidence": [],
+        "note": "PENDING_VERIFICATION \u2014 not yet checked against external sources."
+      }
+    },
+    {
+      "claim_id": "2882a51a-02ec-5a4c-a455-e69ec6dcf754",
+      "opportunity_id": "af2771fb-b9f7-4fd9-abca-a31a59ae9d2d",
+      "text": "Team of 4 developers contributing part-time to the project",
+      "type": "team",
+      "source": "deck_slide_2",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.0,
+        "evidence": [],
+        "note": "PENDING_VERIFICATION \u2014 not yet checked against external sources."
+      }
+    },
+    {
+      "claim_id": "3c8ce56e-a546-5a4a-9650-16aa550a916f",
+      "opportunity_id": "af2771fb-b9f7-4fd9-abca-a31a59ae9d2d",
+      "text": "Targeting a $400 million market in AI inference solutions",
+      "type": "market",
+      "source": "deck_slide_3",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.0,
+        "evidence": [],
+        "note": "PENDING_VERIFICATION \u2014 not yet checked against external sources."
+      }
+    },
+    {
+      "claim_id": "3cd84fe9-5224-5b0e-bf80-27c8689723c3",
+      "opportunity_id": "af2771fb-b9f7-4fd9-abca-a31a59ae9d2d",
+      "text": "Basic version of our solution has been implemented in 5 startups",
+      "type": "tech",
+      "source": "deck_slide_4",
+      "trust": {
+        "status": "unverified",
+        "confidence": 0.0,
+        "evidence": [],
+        "note": "PENDING_VERIFICATION \u2014 not yet checked against external sources."
+      }
+    }
+  ]
+}

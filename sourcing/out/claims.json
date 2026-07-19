@@ -1,0 +1,1432 @@
+[
+  {
+    "claim_id": "ac3e7460-595e-518e-93c5-fd116dbcfd3b",
+    "opportunity_id": "3c39b4c7-f14b-4fe0-9b98-4bbfa4169f5a",
+    "text": "124065 GitHub stars on awesome-llm-apps",
+    "type": "traction",
+    "source": "github",
+    "trust": {
+      "note": "The GitHub repository shows 124065 stars, which matches the claim.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+          "source": "github",
+          "snippet": "Shubhamsaboo/awesome-llm-apps \u2014 100+ AI Agent & RAG apps you can actually run \u2014 clone, customize, ship.. 124065 stars, 18309 forks, last push 2026-07-19T00:39:40Z."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:16:37.846214+00:00"
+  },
+  {
+    "claim_id": "ef9207e6-5e3c-51e2-90ad-6b6929c52f0d",
+    "opportunity_id": "3c39b4c7-f14b-4fe0-9b98-4bbfa4169f5a",
+    "text": "Actively maintained \u2014 last commit 0 days ago",
+    "type": "tech",
+    "source": "github",
+    "trust": {
+      "note": "The evidence shows the last push was on 2026-07-19, which corroborates the claim of a commit 0 days ago.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+          "source": "github",
+          "snippet": "Shubhamsaboo/awesome-llm-apps \u2014 100+ AI Agent & RAG apps you can actually run \u2014 clone, customize, ship.. 124065 stars, 18309 forks, last push 2026-07-19T00:39:40Z."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:16:37.846214+00:00"
+  },
+  {
+    "claim_id": "e520ea3d-532d-53aa-9ca2-a549c42dbea1",
+    "opportunity_id": "3c39b4c7-f14b-4fe0-9b98-4bbfa4169f5a",
+    "text": "9254 GitHub followers across 184 public repos",
+    "type": "team",
+    "source": "github",
+    "trust": {
+      "note": "The evidence directly supports the claim with matching numbers for followers and public repos.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://github.com/Shubhamsaboo",
+          "source": "github",
+          "snippet": "Shubhamsaboo \u2014 Shubham Saboo. 9254 followers, 184 public repos. Senior AI PM @ Google Cloud | Building open-source repository of practical world class tutorials on AI Agents, RAG and LLMs \u23f3"
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:16:37.846214+00:00"
+  },
+  {
+    "claim_id": "c0fb9434-f723-59a9-94ac-4c3b6985eec5",
+    "opportunity_id": "cc3cae99-7b04-4dcc-9eac-c9ed053e2334",
+    "text": "Actively maintained \u2014 last commit 15 days ago",
+    "type": "tech",
+    "source": "github",
+    "trust": {
+      "note": "The last push date of 2026-07-03 is 16 days before today's date, which closely aligns with the claim of a commit 15 days ago, supporting the claim of active maintenance.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://github.com/JuliusBrussee/caveman",
+          "source": "github",
+          "snippet": "JuliusBrussee/caveman \u2014 \ud83e\udea8 why use many token when few token do trick \u2014 Claude Code skill that cuts 65% of tokens by talking like caveman. 90587 stars, 5135 forks, last push 2026-07-03T11:10:42Z."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:19:19.605156+00:00"
+  },
+  {
+    "claim_id": "ceff7917-ba85-5d13-8125-4a68965fe5da",
+    "opportunity_id": "cc3cae99-7b04-4dcc-9eac-c9ed053e2334",
+    "text": "2263 GitHub followers across 50 public repos",
+    "type": "team",
+    "source": "github",
+    "trust": {
+      "note": "The evidence directly supports the claim of having 2263 GitHub followers and 50 public repos.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://github.com/JuliusBrussee",
+          "source": "github",
+          "snippet": "JuliusBrussee \u2014 Julius Brussee. 2263 followers, 50 public repos."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:19:19.605156+00:00"
+  },
+  {
+    "claim_id": "debd7448-729f-5b7b-b470-357219bccc3b",
+    "opportunity_id": "cc3cae99-7b04-4dcc-9eac-c9ed053e2334",
+    "text": "90587 GitHub stars on caveman",
+    "type": "traction",
+    "source": "github",
+    "trust": {
+      "note": "The GitHub repository shows 90587 stars, which matches the claim.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://github.com/JuliusBrussee/caveman",
+          "source": "github",
+          "snippet": "JuliusBrussee/caveman \u2014 \ud83e\udea8 why use many token when few token do trick \u2014 Claude Code skill that cuts 65% of tokens by talking like caveman. 90587 stars, 5135 forks, last push 2026-07-03T11:10:42Z."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:19:19.605156+00:00"
+  },
+  {
+    "claim_id": "795676cc-0115-5baf-ab48-7d8d257312c7",
+    "opportunity_id": "23ee693a-f9b9-42c1-abab-494ed4e33551",
+    "text": "38957 GitHub followers across 150 public repos",
+    "type": "team",
+    "source": "github",
+    "trust": {
+      "note": "The evidence from the GitHub profile directly supports the claim of having 38957 followers and 150 public repos.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://github.com/rasbt",
+          "source": "github",
+          "snippet": "rasbt \u2014 Sebastian Raschka. 38957 followers, 150 public repos. AI Research Engineer working on LLMs."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:19:19.605156+00:00"
+  },
+  {
+    "claim_id": "1728fdcd-f383-514c-b54c-a70d160c29cb",
+    "opportunity_id": "23ee693a-f9b9-42c1-abab-494ed4e33551",
+    "text": "99331 GitHub stars on LLMs-from-scratch",
+    "type": "traction",
+    "source": "github",
+    "trust": {
+      "note": "The GitHub repository shows 99331 stars, which matches the claim.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://github.com/rasbt/LLMs-from-scratch",
+          "source": "github",
+          "snippet": "rasbt/LLMs-from-scratch \u2014 Implement a ChatGPT-like LLM in PyTorch from scratch, step by step. 99331 stars, 15244 forks, last push 2026-07-11T20:45:39Z."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:19:19.605156+00:00"
+  },
+  {
+    "claim_id": "847de1ac-ddc8-5ebe-88c0-34953b533267",
+    "opportunity_id": "23ee693a-f9b9-42c1-abab-494ed4e33551",
+    "text": "Actively maintained \u2014 last commit 7 days ago",
+    "type": "tech",
+    "source": "github",
+    "trust": {
+      "note": "The last push date of 2026-07-11 is 8 days before today's date, which supports the claim of being actively maintained with a recent commit.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://github.com/rasbt/LLMs-from-scratch",
+          "source": "github",
+          "snippet": "rasbt/LLMs-from-scratch \u2014 Implement a ChatGPT-like LLM in PyTorch from scratch, step by step. 99331 stars, 15244 forks, last push 2026-07-11T20:45:39Z."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:19:19.605156+00:00"
+  },
+  {
+    "claim_id": "ad37482c-da47-4bbb-af41-6187a034310b",
+    "opportunity_id": "0b8540a9-707e-4e57-99c1-8128636390a8",
+    "text": "$2M ARR, 3x YoY",
+    "type": "revenue",
+    "source": "deck_slide_4",
+    "trust": {
+      "note": "two independent sources",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://example.com/a",
+          "source": "tavily",
+          "snippet": "\u2026"
+        }
+      ],
+      "confidence": 0.82
+    },
+    "created_at": "2026-07-18T21:31:24.600272+00:00"
+  },
+  {
+    "claim_id": "a868ad50-2dc7-4968-947d-63639d318cae",
+    "opportunity_id": "5c3d0c02-ccbe-450e-bf56-c33ef2b47df7",
+    "text": "$2M ARR, 3x YoY",
+    "type": "revenue",
+    "source": "deck_slide_4",
+    "trust": {
+      "note": "two independent sources",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://example.com/a",
+          "source": "tavily",
+          "snippet": "\u2026"
+        }
+      ],
+      "confidence": 0.82
+    },
+    "created_at": "2026-07-18T21:39:17.543924+00:00"
+  },
+  {
+    "claim_id": "a3e724ab-1e25-489d-ab1c-fad77c1e5e7a",
+    "opportunity_id": "da1e6211-b317-467f-9af3-c15f7f339598",
+    "text": "probe claim",
+    "type": "traction",
+    "source": "deck_slide_1",
+    "trust": {
+      "note": "probe patch",
+      "status": "contradicted",
+      "evidence": [
+        {
+          "url": "https://e.com",
+          "source": "tavily",
+          "snippet": "s"
+        }
+      ],
+      "confidence": 0.9
+    },
+    "created_at": "2026-07-19T04:12:12.986289+00:00"
+  },
+  {
+    "claim_id": "45e94260-4821-5939-be00-a27d296030a2",
+    "opportunity_id": "eb5c3f1a-5ecd-42ce-b500-2e21fd1dae07",
+    "text": "87763 GitHub stars on claude-mem",
+    "type": "traction",
+    "source": "github",
+    "trust": {
+      "note": "The GitHub repository for 'claude-mem' shows 87763 stars, which matches the claim.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://github.com/thedotmack/claude-mem",
+          "source": "github",
+          "snippet": "thedotmack/claude-mem \u2014 Persistent Context Across Sessions for Every Agent \u2013  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More. 87763 stars, 7617 forks, last push 2026-07-18T10:51:25Z."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:19:19.605156+00:00"
+  },
+  {
+    "claim_id": "a2e7a580-685f-5383-a2e4-e49fe072b13f",
+    "opportunity_id": "eb5c3f1a-5ecd-42ce-b500-2e21fd1dae07",
+    "text": "Actively maintained \u2014 last commit 0 days ago",
+    "type": "tech",
+    "source": "github",
+    "trust": {
+      "note": "The claim states the last commit was 0 days ago, but the evidence shows the last push was on 2026-07-18, which contradicts the claim.",
+      "status": "contradicted",
+      "evidence": [
+        {
+          "url": "https://github.com/thedotmack/claude-mem",
+          "source": "github",
+          "snippet": "thedotmack/claude-mem \u2014 Persistent Context Across Sessions for Every Agent \u2013  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More. 87763 stars, 7617 forks, last push 2026-07-18T10:51:25Z."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:19:19.605156+00:00"
+  },
+  {
+    "claim_id": "5f329b8d-b5d5-5d52-88d4-e8bace4fd14d",
+    "opportunity_id": "eb5c3f1a-5ecd-42ce-b500-2e21fd1dae07",
+    "text": "1830 GitHub followers across 121 public repos",
+    "type": "team",
+    "source": "github",
+    "trust": {
+      "note": "The evidence directly supports the claim with matching follower count and number of public repos.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://github.com/thedotmack",
+          "source": "github",
+          "snippet": "thedotmack \u2014 Alex Newman. 1830 followers, 121 public repos."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:19:19.605156+00:00"
+  },
+  {
+    "claim_id": "4cd88158-f1e0-5c4e-93c4-fd2e0a129b51",
+    "opportunity_id": "8b5d7c23-cf16-4e9c-90b1-6d469dc5699f",
+    "text": "Actively maintained \u2014 last commit 0 days ago",
+    "type": "tech",
+    "source": "github",
+    "trust": {
+      "note": "The claim states the last commit was 0 days ago, but the evidence shows the last push was on 2026-07-19, which is in the future, contradicting the claim.",
+      "status": "contradicted",
+      "evidence": [
+        {
+          "url": "https://github.com/ruvnet/ruflo",
+          "source": "github",
+          "snippet": "ruvnet/ruflo \u2014 \ud83c\udf0a The leading agent meta-harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, RAG integration, and native Claude Code / Codex / Hermes and many more Integrated. 65074 stars, 7727 forks, last push 2026-07-19T00:24:20Z."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:19:19.605156+00:00"
+  },
+  {
+    "claim_id": "689af3ee-eebd-55f9-af62-fbd11a1fd613",
+    "opportunity_id": "8b5d7c23-cf16-4e9c-90b1-6d469dc5699f",
+    "text": "10326 GitHub followers across 197 public repos",
+    "type": "team",
+    "source": "github",
+    "trust": {
+      "note": "The GitHub profile directly confirms the claim of 10326 followers and 197 public repos.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://github.com/ruvnet",
+          "source": "github",
+          "snippet": "ruvnet \u2014 rUv. 10326 followers, 197 public repos. Unicorn Breeder."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:19:19.605156+00:00"
+  },
+  {
+    "claim_id": "31068a8b-50b8-5bb5-8aca-b83ad188d9c4",
+    "opportunity_id": "8b5d7c23-cf16-4e9c-90b1-6d469dc5699f",
+    "text": "65074 GitHub stars on ruflo",
+    "type": "traction",
+    "source": "github",
+    "trust": {
+      "note": "The GitHub repository for 'ruflo' shows 65074 stars, which matches the claim.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://github.com/ruvnet/ruflo",
+          "source": "github",
+          "snippet": "ruvnet/ruflo \u2014 \ud83c\udf0a The leading agent meta-harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, RAG integration, and native Claude Code / Codex / Hermes and many more Integrated. 65074 stars, 7727 forks, last push 2026-07-19T00:24:20Z."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:19:19.605156+00:00"
+  },
+  {
+    "claim_id": "39102606-e494-5286-b81a-0c97dc564c4c",
+    "opportunity_id": "61e434eb-e4f2-4a88-ad83-a94795aefaba",
+    "text": "47658 GitHub stars on LocalAI",
+    "type": "traction",
+    "source": "github",
+    "trust": {
+      "note": "The GitHub repository for LocalAI shows 47658 stars, which matches the claim.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://github.com/mudler/LocalAI",
+          "source": "github",
+          "snippet": "mudler/LocalAI \u2014 LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.. 47658 stars, 4256 forks, last push 2026-07-19T03:42:17Z."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:19:19.605156+00:00"
+  },
+  {
+    "claim_id": "b0545b7e-ff57-5f67-8ffa-1fb98437abd0",
+    "opportunity_id": "61e434eb-e4f2-4a88-ad83-a94795aefaba",
+    "text": "Actively maintained \u2014 last commit 0 days ago",
+    "type": "tech",
+    "source": "github",
+    "trust": {
+      "note": "The claim states the last commit was 0 days ago, but the evidence shows the last push was on 2026-07-19, which is in the future and not 0 days ago.",
+      "status": "contradicted",
+      "evidence": [
+        {
+          "url": "https://github.com/mudler/LocalAI",
+          "source": "github",
+          "snippet": "mudler/LocalAI \u2014 LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.. 47658 stars, 4256 forks, last push 2026-07-19T03:42:17Z."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:19:19.605156+00:00"
+  },
+  {
+    "claim_id": "a3463490-b84c-552c-82a2-1f116b082f6a",
+    "opportunity_id": "61e434eb-e4f2-4a88-ad83-a94795aefaba",
+    "text": "2376 GitHub followers across 304 public repos",
+    "type": "team",
+    "source": "github",
+    "trust": {
+      "note": "The evidence directly supports the claim, showing 2376 followers and 304 public repos on GitHub.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://github.com/mudler",
+          "source": "github",
+          "snippet": "mudler \u2014 Ettore Di Giacinto. 2376 followers, 304 public repos. Local AI is the way.\r\n\r\nex-SUSE/Rancher, ex-gentoo, ex-Sabayon, @mocaccinoOS"
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:19:19.605156+00:00"
+  },
+  {
+    "claim_id": "d7560e6c-42c6-5f36-bd69-a534548cc2d9",
+    "opportunity_id": "9fa3bf8d-2686-4f83-ad31-b8939bbf2cde",
+    "text": "73361 GitHub stars on LlamaFactory",
+    "type": "traction",
+    "source": "github",
+    "trust": {
+      "note": "The GitHub repository for LlamaFactory shows 73361 stars, which matches the claim.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://github.com/hiyouga/LlamaFactory",
+          "source": "github",
+          "snippet": "hiyouga/LlamaFactory \u2014 Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024). 73361 stars, 8959 forks, last push 2026-07-17T14:50:13Z."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:19:19.605156+00:00"
+  },
+  {
+    "claim_id": "6ff60277-4228-5a64-a12f-a77b453b9409",
+    "opportunity_id": "9fa3bf8d-2686-4f83-ad31-b8939bbf2cde",
+    "text": "Actively maintained \u2014 last commit 1 days ago",
+    "type": "tech",
+    "source": "github",
+    "trust": {
+      "note": "The claim states the last commit was 1 day ago, but the evidence shows the last push was on 2026-07-17, which is in the future, contradicting the claim.",
+      "status": "contradicted",
+      "evidence": [
+        {
+          "url": "https://github.com/hiyouga/LlamaFactory",
+          "source": "github",
+          "snippet": "hiyouga/LlamaFactory \u2014 Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024). 73361 stars, 8959 forks, last push 2026-07-17T14:50:13Z."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:19:19.605156+00:00"
+  },
+  {
+    "claim_id": "5a5bc5c4-b5db-522a-9b79-50c0ef7ca5be",
+    "opportunity_id": "9fa3bf8d-2686-4f83-ad31-b8939bbf2cde",
+    "text": "6428 GitHub followers across 64 public repos",
+    "type": "team",
+    "source": "github",
+    "trust": {
+      "note": "The evidence directly supports the claim by showing the GitHub profile with 6428 followers and 64 public repos.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://github.com/hiyouga",
+          "source": "github",
+          "snippet": "hiyouga \u2014 Yaowei Zheng. 6428 followers, 64 public repos. No code All live"
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:19:19.605156+00:00"
+  },
+  {
+    "claim_id": "5143e3f6-9f9d-5dbd-851d-35ebfc5c5ab6",
+    "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952",
+    "text": "800 GitHub stars on the VectorForge inference runtime",
+    "type": "traction",
+    "source": "deck_slide_2",
+    "trust": {
+      "note": "The GitHub repository for VectorForge shows 812 stars, which supports the claim of having 800 stars.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://github.com/lenavogt/vectorforge",
+          "source": "github",
+          "snippet": "vectorforge \u2014 low-latency inference runtime. 812 stars, 47 forks, last commit 2 days ago."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:01:19.522661+00:00"
+  },
+  {
+    "claim_id": "9a6039eb-8bf6-53d6-9ec6-403c522b41ca",
+    "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952",
+    "text": "Show HN launch reached the front page",
+    "type": "traction",
+    "source": "deck_slide_2",
+    "trust": {
+      "note": "The evidence shows a 'Show HN' post with 287 points and 94 comments, indicating it likely reached the front page of Hacker News.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://news.ycombinator.com/item?id=40218877",
+          "source": "hn",
+          "snippet": "Show HN: VectorForge \u2013 3x faster quantized inference on commodity GPUs (287 points, 94 comments)"
+        },
+        {
+          "url": "https://forgeglobal.com/vector-launch_ipo",
+          "source": "tavily",
+          "snippet": "Individual InvestorsEmployee ShareholdersInstitutional InvestorsPrivate CompaniesAccredited InvestorsSeed & Angel InvestorsAsset Managers & Hedge FundsFamily OfficesVenture Capital FirmsWealth Managers & RIAsWho We Serve Trading Data Liquidity Programs Retirement Individual InvestingForge Marketplac"
+        },
+        {
+          "url": "https://www.cbinsights.com/research/generative-ai-infrastructure-vector-database",
+          "source": "tavily",
+          "snippet": "Powerful AI-driven discovery, research and insight tools. Personal AI-powered insights on any web page. Instant insights, in the moment. Put our agents to work and turn insights into action. Unique insight and data, plus the creativity of generative AI. Data and insight on 10M+ companies. Data and i"
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:01:19.522661+00:00"
+  },
+  {
+    "claim_id": "0277f5cf-a79d-508c-b9e8-bf92ec7f8625",
+    "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952",
+    "text": "Founder spent 4 years as an inference engineer on a production ML serving team",
+    "type": "team",
+    "source": "deck_slide_1",
+    "trust": {
+      "note": "The evidence provided does not address the claim about the founder's experience as an inference engineer on a production ML serving team. The GitHub profile lists repositories but does not provide information about the founder's professional background or work history.",
+      "status": "unverified",
+      "evidence": [
+        {
+          "url": "https://www.thesaasnews.com/news/vector-receives-strategic-investment-from-bvp-forge",
+          "source": "tavily",
+          "snippet": "To complete Subscribe, click the confirmation link in your inbox. Vector, a San Francisco, CA-based logistics technology company, has received a strategic growth investment. The round was led by BVP Forge, a private equity firm focused on growth-stage, self-sustaining, software-enabled businesses. B"
+        }
+      ],
+      "confidence": 0.5
+    },
+    "created_at": "2026-07-19T04:01:19.522661+00:00"
+  },
+  {
+    "claim_id": "89efb466-6513-5e97-8de6-85cc8d17f8cc",
+    "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952",
+    "text": "Inference tooling spend is growing as open-weight models displace hosted APIs",
+    "type": "market",
+    "source": "deck_slide_4",
+    "trust": {
+      "note": "There is no external evidence provided to support or contradict the claim about the growth in inference tooling spend due to the displacement of hosted APIs by open-weight models.",
+      "status": "unverified",
+      "evidence": [],
+      "confidence": 0.5
+    },
+    "created_at": "2026-07-19T04:01:19.522661+00:00"
+  },
+  {
+    "claim_id": "8860dd30-e736-4d21-9038-59b42a9965be",
+    "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952",
+    "text": "Founder spent 4 years as an inference engineer on a production ML serving team",
+    "type": "team",
+    "source": "deck_slide_1",
+    "trust": {
+      "note": "There is no external evidence provided to verify or contradict the claim about the founder's experience as an inference engineer.",
+      "status": "unverified",
+      "evidence": [
+        {
+          "url": "https://www.thesaasnews.com/news/vector-receives-strategic-investment-from-bvp-forge",
+          "source": "tavily",
+          "snippet": "To complete Subscribe, click the confirmation link in your inbox. Vector, a San Francisco, CA-based logistics technology company, has received a strategic growth investment. The round was led by BVP Forge, a private equity firm focused on growth-stage, self-sustaining, software-enabled businesses. B"
+        }
+      ],
+      "confidence": 0.8
+    },
+    "created_at": "2026-07-19T04:19:08.791303+00:00"
+  },
+  {
+    "claim_id": "20694d4e-d940-4379-9496-1cc9951eed61",
+    "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952",
+    "text": "Sub-50ms p99 cold start for 7B quantized models",
+    "type": "tech",
+    "source": "deck_slide_3",
+    "trust": {
+      "note": "There is no external evidence provided to verify or contradict the claim about the sub-50ms p99 cold start for 7B quantized models.",
+      "status": "unverified",
+      "evidence": [],
+      "confidence": 0.5
+    },
+    "created_at": "2026-07-19T04:19:09.650953+00:00"
+  },
+  {
+    "claim_id": "e15fb62e-c5b6-4ad2-b85e-56c1202fd974",
+    "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952",
+    "text": "Inference tooling spend is growing as open-weight models displace hosted APIs",
+    "type": "market",
+    "source": "deck_slide_4",
+    "trust": {
+      "note": "There is no external evidence provided to verify or contradict the claim about the growth in inference tooling spend due to the displacement of hosted APIs by open-weight models.",
+      "status": "unverified",
+      "evidence": [],
+      "confidence": 0.5
+    },
+    "created_at": "2026-07-19T04:19:10.64481+00:00"
+  },
+  {
+    "claim_id": "9d6f0ead-ce64-591d-9bde-1a4a9581eab0",
+    "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952",
+    "text": "Sub-50ms p99 cold start for 7B quantized models",
+    "type": "tech",
+    "source": "deck_slide_3",
+    "trust": {
+      "note": "There is no external evidence provided to verify or contradict the claim about the sub-50ms p99 cold start for 7B quantized models.",
+      "status": "unverified",
+      "evidence": [],
+      "confidence": 0.5
+    },
+    "created_at": "2026-07-19T04:01:19.522661+00:00"
+  },
+  {
+    "claim_id": "f15ec9b5-edd6-4b37-91d6-02fad2d1b782",
+    "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952",
+    "text": "800 GitHub stars on the VectorForge inference runtime",
+    "type": "traction",
+    "source": "deck_slide_2",
+    "trust": {
+      "note": "The GitHub repository for VectorForge shows 812 stars, which supports the claim of having 800 stars.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://github.com/lenavogt/vectorforge",
+          "source": "github",
+          "snippet": "vectorforge \u2014 low-latency inference runtime. 812 stars, 47 forks, last commit 2 days ago."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:19:06.725665+00:00"
+  },
+  {
+    "claim_id": "95fd04f3-a9bf-49fb-a3e6-f3011b6609b4",
+    "opportunity_id": "0a7f6ac8-ccf9-43dd-9763-373e92e14952",
+    "text": "Show HN launch reached the front page",
+    "type": "traction",
+    "source": "deck_slide_2",
+    "trust": {
+      "note": "The evidence shows a 'Show HN' post with significant engagement (287 points, 94 comments), indicating it reached the front page of Hacker News.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://news.ycombinator.com/item?id=40218877",
+          "source": "hn",
+          "snippet": "Show HN: VectorForge \u2013 3x faster quantized inference on commodity GPUs (287 points, 94 comments)"
+        },
+        {
+          "url": "https://forgeglobal.com/vector-launch_ipo",
+          "source": "tavily",
+          "snippet": "Individual InvestorsEmployee ShareholdersInstitutional InvestorsPrivate CompaniesAccredited InvestorsSeed & Angel InvestorsAsset Managers & Hedge FundsFamily OfficesVenture Capital FirmsWealth Managers & RIAsWho We Serve Trading Data Liquidity Programs Retirement Individual InvestingForge Marketplac"
+        },
+        {
+          "url": "https://www.cbinsights.com/research/generative-ai-infrastructure-vector-database",
+          "source": "tavily",
+          "snippet": "Powerful AI-driven discovery, research and insight tools. Personal AI-powered insights on any web page. Instant insights, in the moment. Put our agents to work and turn insights into action. Unique insight and data, plus the creativity of generative AI. Data and insight on 10M+ companies. Data and i"
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:19:07.672644+00:00"
+  },
+  {
+    "claim_id": "a8cf87ad-c3c3-5cec-bf7a-fd61fa4ec558",
+    "opportunity_id": "3c8e5cf0-23bb-4fa9-ad4d-5d0eec985835",
+    "text": "230972 GitHub stars on ECC",
+    "type": "traction",
+    "source": "github",
+    "trust": {
+      "note": "The evidence from the GitHub repository directly supports the claim of 230972 stars on ECC.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://github.com/affaan-m/ECC",
+          "source": "github",
+          "snippet": "affaan-m/ECC \u2014 The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.. 230972 stars, 35242 forks, last push 2026-07-17T21:16:52Z."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:16:37.846214+00:00"
+  },
+  {
+    "claim_id": "db8a390d-c9b7-5439-b18d-3d3cb15b1f11",
+    "opportunity_id": "3c8e5cf0-23bb-4fa9-ad4d-5d0eec985835",
+    "text": "Actively maintained \u2014 last commit 1 days ago",
+    "type": "tech",
+    "source": "github",
+    "trust": {
+      "note": "The claim states the last commit was 1 day ago, but the evidence shows the last push was on 2026-07-17, which is in the future and contradicts the claim.",
+      "status": "contradicted",
+      "evidence": [
+        {
+          "url": "https://github.com/affaan-m/ECC",
+          "source": "github",
+          "snippet": "affaan-m/ECC \u2014 The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.. 230972 stars, 35242 forks, last push 2026-07-17T21:16:52Z."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:16:37.846214+00:00"
+  },
+  {
+    "claim_id": "01826965-db42-52d8-98e7-a0f32b6b18b7",
+    "opportunity_id": "3c8e5cf0-23bb-4fa9-ad4d-5d0eec985835",
+    "text": "8506 GitHub followers across 27 public repos",
+    "type": "team",
+    "source": "github",
+    "trust": {
+      "note": "The GitHub profile of Affaan Mustafa shows 8506 followers and 27 public repositories, directly supporting the claim.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://github.com/affaan-m",
+          "source": "github",
+          "snippet": "affaan-m \u2014 Affaan Mustafa. 8506 followers, 27 public repos. Fixed rate compute rentals for AI Teams @Ito-Markets | B={(e\u1d62,w\u1d62)}; V\u1d2e=\u03a3\u1d62w\u1d62\u2119\u03b1(e\u1d62=1) | OSS meta-harness for AI agents @ECC-Tools"
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:16:37.846214+00:00"
+  },
+  {
+    "claim_id": "dd3219c8-58dd-5777-b87c-7a648db717b8",
+    "opportunity_id": "3c8e5cf0-23bb-4fa9-ad4d-5d0eec985835",
+    "text": "230973 GitHub stars on ECC",
+    "type": "traction",
+    "source": "github",
+    "trust": {
+      "note": "The GitHub repository shows 230973 stars, which matches the claim.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://github.com/affaan-m/ECC",
+          "source": "github",
+          "snippet": "affaan-m/ECC \u2014 The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.. 230973 stars, 35242 forks, last push 2026-07-17T21:16:52Z."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:19:19.605156+00:00"
+  },
+  {
+    "claim_id": "e35946c6-9912-5a7f-bf35-5fc5fe9f1883",
+    "opportunity_id": "415b8eaa-75e5-451d-acbc-2b319c57d5e9",
+    "text": "85638 GitHub stars on ponytail",
+    "type": "traction",
+    "source": "github",
+    "trust": {
+      "note": "The GitHub repository for 'ponytail' shows 85638 stars, which matches the claim.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://github.com/DietrichGebert/ponytail",
+          "source": "github",
+          "snippet": "DietrichGebert/ponytail \u2014 Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.. 85638 stars, 4667 forks, last push 2026-07-15T21:32:15Z."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:19:19.605156+00:00"
+  },
+  {
+    "claim_id": "0e0a5fd6-c315-53e0-aad1-4c8c177b6207",
+    "opportunity_id": "415b8eaa-75e5-451d-acbc-2b319c57d5e9",
+    "text": "Actively maintained \u2014 last commit 3 days ago",
+    "type": "tech",
+    "source": "github",
+    "trust": {
+      "note": "The claim states the last commit was 3 days ago, but the evidence shows the last push was on 2026-07-15, which is in the future and contradicts the claim.",
+      "status": "contradicted",
+      "evidence": [
+        {
+          "url": "https://github.com/DietrichGebert/ponytail",
+          "source": "github",
+          "snippet": "DietrichGebert/ponytail \u2014 Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.. 85638 stars, 4667 forks, last push 2026-07-15T21:32:15Z."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:19:19.605156+00:00"
+  },
+  {
+    "claim_id": "bcce91f2-ca25-5669-b2b4-44ca547eadba",
+    "opportunity_id": "415b8eaa-75e5-451d-acbc-2b319c57d5e9",
+    "text": "1201 GitHub followers across 3 public repos",
+    "type": "team",
+    "source": "github",
+    "trust": {
+      "note": "The evidence directly supports the claim, showing 1201 followers and 3 public repos on the GitHub profile.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://github.com/DietrichGebert",
+          "source": "github",
+          "snippet": "DietrichGebert \u2014 DietrichGebert. 1201 followers, 3 public repos."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:19:19.605156+00:00"
+  },
+  {
+    "claim_id": "d8db5cfd-946c-50fb-a317-48c2b7133f2a",
+    "opportunity_id": "505c0bde-92dc-42b9-bc72-641ed98a0a43",
+    "text": "Show HN launch reached 216 points with 113 comments",
+    "type": "traction",
+    "source": "hn",
+    "trust": {
+      "note": "The evidence directly supports the claim, showing the Show HN launch reached 216 points with 113 comments.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://news.ycombinator.com/item?id=48688700",
+          "source": "hn",
+          "snippet": "Show HN: Smart model routing directly in Claude, Codex and Cursor \u2014 216 points, 113 comments, by adchurch."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:38:46.682072+00:00"
+  },
+  {
+    "claim_id": "f4d79c41-fcc0-5382-8449-0c65f23451a1",
+    "opportunity_id": "505c0bde-92dc-42b9-bc72-641ed98a0a43",
+    "text": "Shipped a public product at https://github.com/workweave/router",
+    "type": "tech",
+    "source": "hn",
+    "trust": {
+      "note": "The evidence shows that the product is publicly available at the provided GitHub link, supporting the claim.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://github.com/workweave/router",
+          "source": "hn",
+          "snippet": "Product link submitted with the Show HN post: Smart model routing directly in Claude, Codex and Cursor"
+        }
+      ],
+      "confidence": 0.9
+    },
+    "created_at": "2026-07-19T04:38:46.682072+00:00"
+  },
+  {
+    "claim_id": "d6948ac2-9a05-51e5-9d04-6ecbad72745f",
+    "opportunity_id": "968a1c60-1cb9-417b-8de2-3977e426405b",
+    "text": "Author of a 120-star open-source LLM evaluation harness",
+    "type": "tech",
+    "source": "github",
+    "trust": {
+      "note": "The GitHub repository 'evalharness' has 120 stars, which corroborates the claim.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://github.com/priyanair-ml/evalharness",
+          "source": "github",
+          "snippet": "evalharness \u2014 task-agnostic evaluation harness for LLMs. 120 stars, 14 forks, 61 commits."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:01:19.522661+00:00"
+  },
+  {
+    "claim_id": "427891b5-fd9a-53eb-a372-51272227f256",
+    "opportunity_id": "968a1c60-1cb9-417b-8de2-3977e426405b",
+    "text": "Published a detailed methodology post on avoiding contamination in LLM eval sets",
+    "type": "tech",
+    "source": "tavily",
+    "trust": {
+      "note": "The evidence is a link to a blog post by Priya Nair on contamination in LLM eval sets, which aligns with the claim of publishing a detailed methodology post on this topic.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://priyanair.dev/posts/eval-contamination",
+          "source": "tavily",
+          "snippet": "On contamination in LLM eval sets \u2014 why held-out splits leak, and a cheap detection recipe."
+        }
+      ],
+      "confidence": 0.9
+    },
+    "created_at": "2026-07-19T04:01:19.522661+00:00"
+  },
+  {
+    "claim_id": "bd6ae710-7770-5cef-8184-c03c9ac4b61b",
+    "opportunity_id": "232b78a3-cc40-4fbd-b9b7-970975ada49c",
+    "text": "Show HN launch reached 58 points with 28 comments",
+    "type": "traction",
+    "source": "hn",
+    "trust": {
+      "note": "The evidence directly supports the claim by showing the Show HN post with 58 points and 28 comments.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://news.ycombinator.com/item?id=43292058",
+          "source": "hn",
+          "snippet": "Show HN: A big tech dev experience for an open source CMS \u2014 58 points, 28 comments, by randall."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:38:46.682072+00:00"
+  },
+  {
+    "claim_id": "f22bc34c-0419-5739-8f7a-1d2d7d0181ae",
+    "opportunity_id": "232b78a3-cc40-4fbd-b9b7-970975ada49c",
+    "text": "Shipped a public product at https://contentfoundry.com/",
+    "type": "tech",
+    "source": "hn",
+    "trust": {
+      "note": "The evidence shows that the product link was submitted with a Show HN post, indicating that the product is publicly available at the provided URL.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://contentfoundry.com/",
+          "source": "hn",
+          "snippet": "Product link submitted with the Show HN post: A big tech dev experience for an open source CMS"
+        }
+      ],
+      "confidence": 0.9
+    },
+    "created_at": "2026-07-19T04:38:46.682072+00:00"
+  },
+  {
+    "claim_id": "bd9950de-2298-52f4-bf03-9e7639f9c2e1",
+    "opportunity_id": "117ddf0b-334e-4605-bae3-09845828c794",
+    "text": "Show HN launch reached 95 points with 19 comments",
+    "type": "traction",
+    "source": "hn",
+    "trust": {
+      "note": "The evidence directly supports the claim, showing the Show HN launch reached 95 points with 19 comments.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://news.ycombinator.com/item?id=41459121",
+          "source": "hn",
+          "snippet": "Show HN: Nomadic \u2013 Minimize RAG Hallucinations with 1 Hyperparameter Experiment \u2014 95 points, 19 comments, by mustafabal."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:38:46.682072+00:00"
+  },
+  {
+    "claim_id": "ebcb7311-e382-5f71-86b8-330cd8af4e76",
+    "opportunity_id": "f22b0bcd-0fc7-43af-baf9-3bdcb1c452d8",
+    "text": "Show HN launch reached 231 points with 82 comments",
+    "type": "traction",
+    "source": "hn",
+    "trust": {
+      "note": "The evidence directly supports the claim by showing the exact points and comments mentioned.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://news.ycombinator.com/item?id=44524544",
+          "source": "hn",
+          "snippet": "Show HN: Cactus \u2013 Ollama for Smartphones \u2014 231 points, 82 comments, by HenryNdubuaku."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:38:46.682072+00:00"
+  },
+  {
+    "claim_id": "3ce27cf5-2c4f-59a2-94e3-0bf497e02712",
+    "opportunity_id": "f22b0bcd-0fc7-43af-baf9-3bdcb1c452d8",
+    "text": "Shipped a public product at https://github.com/cactus-compute/cactus",
+    "type": "tech",
+    "source": "hn",
+    "trust": {
+      "note": "The evidence shows that the product is publicly available at the provided GitHub link, corroborating the claim.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://github.com/cactus-compute/cactus",
+          "source": "hn",
+          "snippet": "Product link submitted with the Show HN post: Cactus \u2013 Ollama for Smartphones"
+        }
+      ],
+      "confidence": 0.9
+    },
+    "created_at": "2026-07-19T04:38:46.682072+00:00"
+  },
+  {
+    "claim_id": "7b56f198-6103-55cf-ad32-155f2cad8c4b",
+    "opportunity_id": "8c905734-f012-4a64-b676-f64363316d45",
+    "text": "Show HN launch reached 24 points with 4 comments",
+    "type": "traction",
+    "source": "hn",
+    "trust": {
+      "note": "The evidence directly supports the claim, showing the Show HN post with 24 points and 4 comments.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://news.ycombinator.com/item?id=40212925",
+          "source": "hn",
+          "snippet": "Show HN: LLM-powered NPCs running on your hardware \u2014 24 points, 4 comments, by Tantris."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:38:46.682072+00:00"
+  },
+  {
+    "claim_id": "df6c443e-2f07-5c32-8e13-c21a3a144ea1",
+    "opportunity_id": "8c905734-f012-4a64-b676-f64363316d45",
+    "text": "Shipped a public product at https://github.com/GigaxGames/gigax",
+    "type": "tech",
+    "source": "hn",
+    "trust": {
+      "note": "The evidence shows a GitHub repository link that matches the claim of a public product being shipped. The repository is publicly accessible, which supports the claim.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://github.com/GigaxGames/gigax",
+          "source": "hn",
+          "snippet": "Product link submitted with the Show HN post: LLM-powered NPCs running on your hardware"
+        }
+      ],
+      "confidence": 0.9
+    },
+    "created_at": "2026-07-19T04:38:46.682072+00:00"
+  },
+  {
+    "claim_id": "805abfdc-f793-57da-bcd6-df4042cc832c",
+    "opportunity_id": "c31c7aac-a6ac-4d36-a851-d8a84365ca68",
+    "text": "Show HN launch reached 455 points with 256 comments",
+    "type": "traction",
+    "source": "hn",
+    "trust": {
+      "note": "The evidence directly supports the claim by showing the exact number of points and comments on the Show HN post.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://news.ycombinator.com/item?id=41710227",
+          "source": "hn",
+          "snippet": "Show HN: A real time AI video agent with under 1 second of latency \u2014 455 points, 256 comments, by hassaanr."
+        }
+      ],
+      "confidence": 1.0
+    },
+    "created_at": "2026-07-19T04:38:46.682072+00:00"
+  },
+  {
+    "claim_id": "1b13e04a-67a6-4af2-953b-7ca84c7a01aa",
+    "opportunity_id": "d79f831c-a36c-4265-88bf-194743b20de6",
+    "text": "probe with trust",
+    "type": "tech",
+    "source": "deck_slide_1",
+    "trust": {
+      "note": "There is no external evidence provided to verify or contradict the claim.",
+      "status": "unverified",
+      "evidence": [],
+      "confidence": 0.5
+    },
+    "created_at": "2026-07-19T03:57:24.108911+00:00"
+  },
+  {
+    "claim_id": "d5d0b57d-7709-5ef6-b190-78ea7dc0dfb4",
+    "opportunity_id": "a8de1d93-5a6f-4ddb-a904-db275d6b124e",
+    "text": "Targeting a $500 million market in data tooling for SMEs",
+    "type": "market",
+    "source": "deck_slide_3",
+    "trust": {
+      "note": "There is no external evidence provided to verify or contradict the claim about the market size.",
+      "status": "unverified",
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=JikMQM7uUnI",
+          "source": "tavily",
+          "snippet": "How Marketplaces Actually Make Money | Faire CFO (Ex-Square IPO)\nRun the Numbers with CJ Gustafson\n9520 subscribers\n7 likes\n382 views\n16 Mar 2026\nIn this episode of Run the Numbers, CJ sits down with Jason Lee, CFO of Faire, to unpack the economics of wholesale marketplaces. They break down how Fair"
+        },
+        {
+          "url": "https://councils.forbes.com/profile/Jason-Lee-Co-founder-Predexon-Predexon/195b41f3-1fc1-4d85-982a-5c36b7f485ad",
+          "source": "tavily",
+          "snippet": "Jason Lee is the co-founder of Predexon, a developer-first infrastructure/API platform unifying trading and data across prediction markets."
+        }
+      ],
+      "confidence": 0.5
+    },
+    "created_at": "2026-07-19T04:01:19.522661+00:00"
+  },
+  {
+    "claim_id": "f599f952-049a-5d0c-afee-2cbea36082b8",
+    "opportunity_id": "a8de1d93-5a6f-4ddb-a904-db275d6b124e",
+    "text": "Prototype completed and in user testing phase",
+    "type": "tech",
+    "source": "deck_slide_4",
+    "trust": {
+      "note": "There is no external evidence provided to verify the claim that the prototype is completed and in user testing phase.",
+      "status": "unverified",
+      "evidence": [],
+      "confidence": 0.8
+    },
+    "created_at": "2026-07-19T04:01:19.522661+00:00"
+  },
+  {
+    "claim_id": "708bd520-1a6a-5aa8-a14c-2950e5302d87",
+    "opportunity_id": "a8de1d93-5a6f-4ddb-a904-db275d6b124e",
+    "text": "Over 150 GitHub stars on our initial open-source project",
+    "type": "traction",
+    "source": "deck_slide_1",
+    "trust": {
+      "note": "There is no external evidence provided to verify or contradict the claim about GitHub stars.",
+      "status": "unverified",
+      "evidence": [
+        {
+          "url": "https://github.com/DartHealth",
+          "source": "tavily",
+          "snippet": "You signed in with another tab or window. You signed out in another tab or window. You switched accounts on another tab or window. ## Dart Health Revolutionizes how Benefits Providers Connect to Employer Data. Health and Benefits Providers often face unpredictable data formats that take a long time "
+        },
+        {
+          "url": "https://github.com/vllm-project/aibrix/issues?q=is%3Aissue+state%3Aopen+no%3Amilestone",
+          "source": "tavily",
+          "snippet": "Title: GitHub \u00b7 Where software is built\n# Search code, repositories, users, issues, pull requests... You signed in with another tab or window. You signed out in another tab or window. You switched accounts on another tab or window. * Notifications  You must be signed in to change notification settin"
+        },
+        {
+          "url": "https://github.com/vllm-project/aibrix/issues",
+          "source": "tavily",
+          "snippet": "Title: GitHub \u00b7 Where software is built\n## Navigation Menu. # Search code, repositories, users, issues, pull requests... You signed in with another tab or window. You signed out in another tab or window. You switched accounts on another tab or window. * Notifications  You must be signed in to change"
+        }
+      ],
+      "confidence": 0.5
+    },
+    "created_at": "2026-07-19T04:01:19.522661+00:00"
+  },
+  {
+    "claim_id": "c6878d80-87df-55f7-88de-907bb3c7861e",
+    "opportunity_id": "a8de1d93-5a6f-4ddb-a904-db275d6b124e",
+    "text": "Small team of 3 working part-time on the project",
+    "type": "team",
+    "source": "deck_slide_2",
+    "trust": {
+      "note": "There is no external evidence provided to verify or contradict the claim about the team size and their part-time status.",
+      "status": "unverified",
+      "evidence": [
+        {
+          "url": "https://github.com/vllm-project/aibrix/issues?q=is%3Aissue+state%3Aopen+no%3Amilestone",
+          "source": "tavily",
+          "snippet": "Title: GitHub \u00b7 Where software is built\n# Search code, repositories, users, issues, pull requests... You signed in with another tab or window. You signed out in another tab or window. You switched accounts on another tab or window. * Notifications  You must be signed in to change notification settin"
+        },
+        {
+          "url": "https://github.com/vllm-project/aibrix/issues",
+          "source": "tavily",
+          "snippet": "Title: GitHub \u00b7 Where software is built\n## Navigation Menu. # Search code, repositories, users, issues, pull requests... You signed in with another tab or window. You signed out in another tab or window. You switched accounts on another tab or window. * Notifications  You must be signed in to change"
+        }
+      ],
+      "confidence": 0.8
+    },
+    "created_at": "2026-07-19T04:01:19.522661+00:00"
+  },
+  {
+    "claim_id": "ce1a4782-a649-5a5b-b47b-e7c3f643dff5",
+    "opportunity_id": "a8de1d93-5a6f-4ddb-a904-db275d6b124e",
+    "text": "Public web presence: Jason Lee",
+    "type": "market",
+    "source": "tavily",
+    "trust": {
+      "note": "Web result naming this company/founder, found during enrichment; corroborates a public footprint.",
+      "status": "corroborated",
+      "evidence": [
+        {
+          "url": "https://www.linkedin.com/in/jason-lee-6591b318",
+          "source": "tavily",
+          "snippet": "Jason Lee\nOpenAI\nSan Francisco, California, United States\n500 connections, 2632 followers\n\n\nAbout\nNone\n\n\nExperience\nN/A\n\n\nEducation\nUniversity of Illinois at Urbana-Champaign\nN/A\n2004 - 2008\nNone"
+        }
+      ],
+      "confidence": 0.6
+    },
+    "created_at": "2026-07-19T04:59:00.148407+00:00"
+  },
+  {
+    "claim_id": "6281e8c4-30a5-5c0d-8861-abc954f2df36",
+    "opportunity_id": "af2771fb-b9f7-4fd9-abca-a31a59ae9d2d",
+    "text": "Secured 90 stars on our open-source library within 8 months",
+    "type": "traction",
+    "source": "deck_slide_1",
+    "trust": {
+      "note": "None of the search results provide information about the open-source library or the claim of securing 90 stars within 8 months.",
+      "status": "unverified",
+      "evidence": [],
+      "confidence": 0.0
+    },
+    "created_at": "2026-07-19T04:01:19.522661+00:00"
+  },
+  {
+    "claim_id": "2882a51a-02ec-5a4c-a455-e69ec6dcf754",
+    "opportunity_id": "af2771fb-b9f7-4fd9-abca-a31a59ae9d2d",
+    "text": "Team of 4 developers contributing part-time to the project",
+    "type": "team",
+    "source": "deck_slide_2",
+    "trust": {
+      "note": "None of the search results provide specific information about a team of 4 developers contributing part-time to the project.",
+      "status": "unverified",
+      "evidence": [],
+      "confidence": 0.0
+    },
+    "created_at": "2026-07-19T04:01:19.522661+00:00"
+  },
+  {
+    "claim_id": "3cd84fe9-5224-5b0e-bf80-27c8689723c3",
+    "opportunity_id": "af2771fb-b9f7-4fd9-abca-a31a59ae9d2d",
+    "text": "Basic version of our solution has been implemented in 5 startups",
+    "type": "tech",
+    "source": "deck_slide_4",
+    "trust": {
+      "note": "None of the search results provide specific information about the implementation of the solution in 5 startups.",
+      "status": "unverified",
+      "evidence": [],
+      "confidence": 0.0
+    },
+    "created_at": "2026-07-19T04:01:19.522661+00:00"
+  },
+  {
+    "claim_id": "3c8ce56e-a546-5a4a-9650-16aa550a916f",
+    "opportunity_id": "af2771fb-b9f7-4fd9-abca-a31a59ae9d2d",
+    "text": "Targeting a $400 million market in AI inference solutions",
+    "type": "market",
+    "source": "deck_slide_3",
+    "trust": {
+      "note": "None of the search results provide specific information about a $400 million market in AI inference solutions.",
+      "status": "unverified",
+      "evidence": [],
+      "confidence": 0.0
+    },
+    "created_at": "2026-07-19T04:01:19.522661+00:00"
+  },
+  {
+    "claim_id": "71a3d10e-37e2-573e-9dde-888bf397004c",
+    "opportunity_id": "7f073006-dc87-48ff-8841-276ff1d5c682",
+    "text": "Team of 2 founders working on project alongside full-time jobs",
+    "type": "team",
+    "source": "deck_slide_2",
+    "trust": {
+      "note": "There is no external evidence provided to verify or contradict the claim about the team composition and their employment status.",
+      "status": "unverified",
+      "evidence": [],
+      "confidence": 0.5
+    },
+    "created_at": "2026-07-19T04:01:19.522661+00:00"
+  },
+  {
+    "claim_id": "7fc0f69a-2f27-50ab-b460-b7e27936decd",
+    "opportunity_id": "7f073006-dc87-48ff-8841-276ff1d5c682",
+    "text": "Focused on the growing agent framework market estimated at $300 million",
+    "type": "market",
+    "source": "deck_slide_3",
+    "trust": {
+      "note": "The evidence provided does not address the market size or growth of the agent framework market. It only describes the features and capabilities of the InfiAgent framework.",
+      "status": "unverified",
+      "evidence": [],
+      "confidence": 0.7
+    },
+    "created_at": "2026-07-19T04:01:19.522661+00:00"
+  },
+  {
+    "claim_id": "48f2302a-cbff-53b0-ab71-537f2ea01d6b",
+    "opportunity_id": "7f073006-dc87-48ff-8841-276ff1d5c682",
+    "text": "Initial prototype ready with basic functionality",
+    "type": "tech",
+    "source": "deck_slide_4",
+    "trust": {
+      "note": "There is no external evidence provided to verify or contradict the claim about the initial prototype being ready with basic functionality.",
+      "status": "unverified",
+      "evidence": [],
+      "confidence": 0.5
+    },
+    "created_at": "2026-07-19T04:01:19.522661+00:00"
+  },
+  {
+    "claim_id": "6c04ae6a-6bd4-56ec-8158-3b3d6abc8235",
+    "opportunity_id": "7f073006-dc87-48ff-8841-276ff1d5c682",
+    "text": "Achieved 80 stars on our GitHub repository in 6 months",
+    "type": "traction",
+    "source": "deck_slide_1",
+    "trust": {
+      "note": "The evidence provided does not include any information about the number of stars on the GitHub repository, so the claim cannot be verified or contradicted.",
+      "status": "unverified",
+      "evidence": [],
+      "confidence": 0.8
+    },
+    "created_at": "2026-07-19T04:01:19.522661+00:00"
+  },
+  {
+    "claim_id": "d937b210-a2c4-5d4e-97df-850374edfd54",
+    "opportunity_id": "2db00f67-67d1-4aba-a75e-3f450129d1e7",
+    "text": "$30K MRR and growing 40% month over month",
+    "type": "revenue",
+    "source": "deck_slide_3",
+    "trust": {
+      "note": "The claim of $30K MRR and 40% growth is contradicted by the lack of a pricing or billing page on the website (evidence 0) and the very recent creation of the GitHub repository with minimal activity (evidence 1). This suggests the traction claimed is implausible.",
+      "status": "contradicted",
+      "evidence": [
+        {
+          "url": "https://agentstack.dev",
+          "source": "tavily",
+          "snippet": "AgentStack \u2014 Docs, GitHub, Discord. No pricing or billing page present; no paid tier advertised."
+        },
+        {
+          "url": "https://github.com/marcusfeld/agentstack",
+          "source": "github",
+          "snippet": "agentstack \u2014 created 21 days ago. 40 stars, 3 forks, 2 contributors."
+        }
+      ],
+      "confidence": 0.9
+    },
+    "created_at": "2026-07-19T04:01:19.522661+00:00"
+  },
+  {
+    "claim_id": "8ee516ec-b18f-5bd8-8546-fcc9899217d5",
+    "opportunity_id": "2db00f67-67d1-4aba-a75e-3f450129d1e7",
+    "text": "Team of 4 ex-FAANG infrastructure engineers",
+    "type": "team",
+    "source": "deck_slide_1",
+    "trust": {
+      "note": "The evidence provided does not address the claim about the team composition of 4 ex-FAANG infrastructure engineers. The evidence is unrelated to the claim.",
+      "status": "unverified",
+      "evidence": [],
+      "confidence": 0.8
+    },
+    "created_at": "2026-07-19T04:01:19.522661+00:00"
+  },
+  {
+    "claim_id": "9d83b524-ab64-59ee-9a81-5c7c354bf369",
+    "opportunity_id": "2db00f67-67d1-4aba-a75e-3f450129d1e7",
+    "text": "Used in production by 12 companies",
+    "type": "traction",
+    "source": "deck_slide_4",
+    "trust": {
+      "note": "None of the evidence items provide information about the number of companies using the product in production.",
+      "status": "unverified",
+      "evidence": [],
+      "confidence": 0.8
+    },
+    "created_at": "2026-07-19T04:01:19.522661+00:00"
+  },
+  {
+    "claim_id": "d9b302f6-76e5-534d-aab5-4a6820531318",
+    "opportunity_id": "2db00f67-67d1-4aba-a75e-3f450129d1e7",
+    "text": "2,000 paying developers on the platform",
+    "type": "traction",
+    "source": "deck_slide_3",
+    "trust": {
+      "note": "The GitHub repository is very new with minimal activity, and the website lacks any indication of a paid tier or billing, making the claim of 2,000 paying developers implausible.",
+      "status": "contradicted",
+      "evidence": [
+        {
+          "url": "https://github.com/marcusfeld/agentstack",
+          "source": "github",
+          "snippet": "agentstack \u2014 created 21 days ago. 40 stars, 3 forks, 2 contributors."
+        },
+        {
+          "url": "https://agentstack.dev",
+          "source": "tavily",
+          "snippet": "AgentStack \u2014 Docs, GitHub, Discord. No pricing or billing page present; no paid tier advertised."
+        }
+      ],
+      "confidence": 0.9
+    },
+    "created_at": "2026-07-19T04:01:19.522661+00:00"
+  },
+  {
+    "claim_id": "93286bd0-49a9-5a9a-89a8-272f6c896332",
+    "opportunity_id": "d4081c05-b9a8-4874-8539-b1f035969a40",
+    "text": "Gained 65 stars on our GitHub project in the first year",
+    "type": "traction",
+    "source": "deck_slide_1",
+    "trust": {
+      "note": "None of the search results provide information about the number of stars gained on the GitHub project.",
+      "status": "unverified",
+      "evidence": [],
+      "confidence": 0.0
+    },
+    "created_at": "2026-07-19T04:01:19.522661+00:00"
+  },
+  {
+    "claim_id": "5b5aca44-3c88-5c1a-bc85-a60d0703c2be",
+    "opportunity_id": "d4081c05-b9a8-4874-8539-b1f035969a40",
+    "text": "Currently a solo founder with no external hires",
+    "type": "team",
+    "source": "deck_slide_2",
+    "trust": {
+      "note": "The search results do not provide any information regarding Mark Chen's current employment status or whether he is a solo founder with no external hires.",
+      "status": "unverified",
+      "evidence": [],
+      "confidence": 0.0
+    },
+    "created_at": "2026-07-19T04:01:19.522661+00:00"
+  },
+  {
+    "claim_id": "fc93aa06-0928-5f60-bfa5-9c88fb13419d",
+    "opportunity_id": "d4081c05-b9a8-4874-8539-b1f035969a40",
+    "text": "Working version of the tool available for limited beta testing",
+    "type": "tech",
+    "source": "deck_slide_4",
+    "trust": {
+      "note": "The search results do not provide specific information about a limited beta testing version of the tool.",
+      "status": "unverified",
+      "evidence": [],
+      "confidence": 0.0
+    },
+    "created_at": "2026-07-19T04:01:19.522661+00:00"
+  },
+  {
+    "claim_id": "17a84232-8145-53a4-8b85-9941c1fc9832",
+    "opportunity_id": "d4081c05-b9a8-4874-8539-b1f035969a40",
+    "text": "Potential market size of $250 million for AI evaluation tools",
+    "type": "market",
+    "source": "deck_slide_3",
+    "trust": {
+      "note": "The search results do not provide specific information regarding a potential market size of $250 million for AI evaluation tools.",
+      "status": "unverified",
+      "evidence": [],
+      "confidence": 0.0
+    },
+    "created_at": "2026-07-19T04:01:19.522661+00:00"
+  }
+]

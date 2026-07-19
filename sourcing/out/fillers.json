@@ -1,0 +1,122 @@
+[
+  {
+    "founder_name": "Jason Lee",
+    "company_name": "DataNexus Tools",
+    "one_liner": "Providing simple vector data tools for small businesses.",
+    "sector": "vector/data tooling",
+    "location": "Seattle, WA",
+    "github_handle": "jasonlee-datanexus",
+    "claims": [
+      {
+        "text": "Over 150 GitHub stars on our initial open-source project",
+        "type": "traction",
+        "slide": 1
+      },
+      {
+        "text": "Small team of 3 working part-time on the project",
+        "type": "team",
+        "slide": 2
+      },
+      {
+        "text": "Targeting a $500 million market in data tooling for SMEs",
+        "type": "market",
+        "slide": 3
+      },
+      {
+        "text": "Prototype completed and in user testing phase",
+        "type": "tech",
+        "slide": 4
+      }
+    ]
+  },
+  {
+    "founder_name": "Lisa Nguyen",
+    "company_name": "InfiAgent Solutions",
+    "one_liner": "Simplifying agent frameworks for developers everywhere.",
+    "sector": "agent frameworks",
+    "location": "Austin, TX",
+    "github_handle": "lisa-nguyen-infiagent",
+    "claims": [
+      {
+        "text": "Achieved 80 stars on our GitHub repository in 6 months",
+        "type": "traction",
+        "slide": 1
+      },
+      {
+        "text": "Team of 2 founders working on project alongside full-time jobs",
+        "type": "team",
+        "slide": 2
+      },
+      {
+        "text": "Focused on the growing agent framework market estimated at $300 million",
+        "type": "market",
+        "slide": 3
+      },
+      {
+        "text": "Initial prototype ready with basic functionality",
+        "type": "tech",
+        "slide": 4
+      }
+    ]
+  },
+  {
+    "founder_name": "Mark Chen",
+    "company_name": "EvalGuard Tech",
+    "one_liner": "Creating evaluation tools to improve AI model performance.",
+    "sector": "eval & observability",
+    "location": "San Jose, CA",
+    "github_handle": "markchen-evalguard",
+    "claims": [
+      {
+        "text": "Gained 65 stars on our GitHub project in the first year",
+        "type": "traction",
+        "slide": 1
+      },
+      {
+        "text": "Currently a solo founder with no external hires",
+        "type": "team",
+        "slide": 2
+      },
+      {
+        "text": "Potential market size of $250 million for AI evaluation tools",
+        "type": "market",
+        "slide": 3
+      },
+      {
+        "text": "Working version of the tool available for limited beta testing",
+        "type": "tech",
+        "slide": 4
+      }
+    ]
+  },
+  {
+    "founder_name": "Sara Patel",
+    "company_name": "InferBoost Systems",
+    "one_liner": "Building lightweight inference solutions for startups.",
+    "sector": "inference",
+    "location": "Boston, MA",
+    "github_handle": "sarapatel-inferboost",
+    "claims": [
+      {
+        "text": "Secured 90 stars on our open-source library within 8 months",
+        "type": "traction",
+        "slide": 1
+      },
+      {
+        "text": "Team of 4 developers contributing part-time to the project",
+        "type": "team",
+        "slide": 2
+      },
+      {
+        "text": "Targeting a $400 million market in AI inference solutions",
+        "type": "market",
+        "slide": 3
+      },
+      {
+        "text": "Basic version of our solution has been implemented in 5 startups",
+        "type": "tech",
+        "slide": 4
+      }
+    ]
+  }
+]
