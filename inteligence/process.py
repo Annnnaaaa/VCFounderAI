@@ -88,8 +88,12 @@ def process(opportunity_id: str) -> None:
         return
 
     if not claims:
+        # Distinct from "new": this row HAS been screened and is in-thesis, it
+        # just has nothing to reason over. Leaving it at "new" makes it look
+        # unprocessed forever, with no hint that a deck is what's missing.
         trace(oid, "screen", "In-thesis but no claims available to verify — "
                              "stopping before scoring rather than inventing evidence.")
+        spine.set_status(oid, "needs_evidence", raw_opp)
         print(f"--- {oid}: in-thesis but no claims/deck; nothing to score.")
         return
 

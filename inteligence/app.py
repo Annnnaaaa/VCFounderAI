@@ -90,6 +90,25 @@ def _now() -> str:
     return datetime.now(timezone.utc).isoformat()
 
 
+def _outcome_label(opportunity_id: str) -> str:
+    """Post-run status of a row, mapped to a word the UI can show."""
+    try:
+        r = _requests.get(
+            f"{spine.SPINE_URL}/opportunities/{opportunity_id}/bundle",
+            timeout=spine.TIMEOUT,
+        )
+        r.raise_for_status()
+        status = (r.json().get("opportunity") or {}).get("status") or ""
+    except Exception:  # noqa: BLE001
+        return "analyzed"
+    return {
+        "memo_ready": "analyzed",
+        "screened": "analyzed",
+        "needs_evidence": "needs evidence",
+        "passed": "passed",
+    }.get(status, status or "analyzed")
+
+
 def _rescreen_worker(opps: List[Dict[str, Any]], dry_run: bool) -> None:
     changes: List[Dict[str, str]] = []
     try:
@@ -97,7 +116,9 @@ def _rescreen_worker(opps: List[Dict[str, Any]], dry_run: bool) -> None:
         for o in opps:
             oid = o["id"]
             company = o.get("company") or {}
+            name = company.get("name") or "(untitled)"
             status = o.get("status") or "new"
+            _job["current"] = {"id": oid, "company": name, "phase": "screening"}
             try:
                 sr = screen_mod.screen(
                     company.get("one_liner", ""),
@@ -108,21 +129,34 @@ def _rescreen_worker(opps: List[Dict[str, Any]], dry_run: bool) -> None:
                 raw = {k: v for k, v in o.items() if k != "axes"}
                 if not sr.viable:
                     if status != "passed":
-                        changes.append({"id": oid, "from": status, "to": "passed"})
+                        changes.append({"id": oid, "company": name, "from": status,
+                                        "to": "would pass" if dry_run else "passed",
+                                        "reason": sr.reason})
                         if not dry_run:
                             trace(oid, "screen",
                                   f"re-screen vs current thesis: viable=false — {sr.reason}")
                             spine.set_status(oid, "passed", raw)
                 elif status != "memo_ready":
                     # in-thesis but not fully analyzed (incl. previously passed)
-                    changes.append({"id": oid, "from": status, "to": "reprocess"})
+                    changes.append({"id": oid, "company": name, "from": status,
+                                    "to": "would analyze" if dry_run else "analyzing",
+                                    "reason": sr.reason})
                     if not dry_run:
+                        _job["current"] = {"id": oid, "company": name,
+                                           "phase": "full analysis"}
                         trace(oid, "screen",
                               f"re-screen vs current thesis: viable=true — {sr.reason}; "
                               "running full pipeline")
                         process.process(oid)
+                        # Report what actually happened, not what we attempted:
+                        # a row with no deck stops early and stays unanalyzed.
+                        changes[-1]["to"] = _outcome_label(oid)
+                else:
+                    changes.append({"id": oid, "company": name, "from": status,
+                                    "to": "unchanged", "reason": sr.reason})
             except Exception as e:  # noqa: BLE001 — one bad row must not kill the job
-                changes.append({"id": oid, "from": status, "to": f"error: {e}"})
+                changes.append({"id": oid, "company": name, "from": status,
+                                "to": "error", "reason": str(e)[:200]})
             _job["done"] = _job.get("done", 0) + 1
             _job["changes"] = changes
         _job["state"] = "finished"
@@ -130,6 +164,7 @@ def _rescreen_worker(opps: List[Dict[str, Any]], dry_run: bool) -> None:
         _job["state"] = "failed"
         _job["error"] = str(e)
     finally:
+        _job["current"] = None
         _job["finished_at"] = _now()
 
 
@@ -149,6 +184,7 @@ def rescreen(dry_run: bool = False):
                 "total": len(opps),
                 "done": 0,
                 "changes": [],
+                "current": None,
                 "started_at": _now(),
             }
         )

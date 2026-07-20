@@ -797,10 +797,11 @@ def list_opportunities(
         return []
 
     ids = [o["id"] for o in opps]
-    axis_by_opp = {
-        a["opportunity_id"]: a.get("axes") or {}
-        for a in rows(sb.table("axis_scores").select("*").in_("opportunity_id", ids))
-    }
+    axis_rows = rows(sb.table("axis_scores").select("*").in_("opportunity_id", ids))
+    axis_by_opp = {a["opportunity_id"]: a.get("axes") or {} for a in axis_rows}
+    # When analysis last touched this row. created_at is the application date and
+    # never moves, so without this the UI has no way to show that a re-screen ran.
+    analyzed_by_opp = {a["opportunity_id"]: a.get("updated_at") for a in axis_rows}
 
     def founder_axis(o: Dict[str, Any]) -> float:
         axes = axis_by_opp.get(o["id"], {})
@@ -811,6 +812,7 @@ def list_opportunities(
 
     for o in opps:
         o["axes"] = axis_by_opp.get(o["id"], {})  # so the list view can render axes
+        o["analyzed_at"] = analyzed_by_opp.get(o["id"])
 
     if min_founder_score is not None:
         opps = [o for o in opps if founder_axis(o) >= min_founder_score]
