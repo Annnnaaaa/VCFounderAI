@@ -110,6 +110,20 @@ class Loose(BaseModel):
     model_config = ConfigDict(extra="allow")
 
 
+def clean_handle(handle: Optional[str]) -> str:
+    """Bare handle from whatever the applicant typed.
+
+    People paste "https://github.com/octocat", "@octocat" or "octocat/". Storing
+    the raw string means the UI renders github.com/https://github.com/octocat,
+    so normalize once here, on the way in.
+    """
+    h = (handle or "").strip()
+    if not h:
+        return ""
+    h = re.sub(r"^https?://(www\.)?github\.com/", "", h, flags=re.I)
+    return h.lstrip("@").strip("/")
+
+
 def normalize_identity(github_handle: Optional[str], name: Optional[str]) -> str:
     """Founder identity key: github handle wins, else normalized name."""
     if github_handle:
@@ -255,9 +269,10 @@ def apply(body: ApplyBody):
     opp_id = str(uuid.uuid4())
     deck_present, deck_url = store_deck(opp_id, body)
 
+    github = clean_handle(body.github_handle)
     identity = None
-    if body.github_handle or body.founder_name:
-        identity = normalize_identity(body.github_handle, body.founder_name)
+    if github or body.founder_name:
+        identity = normalize_identity(github, body.founder_name)
 
     prior = {"value": 0, "confidence": 0.0, "trend": "flat", "history": []}
     if identity:
@@ -278,7 +293,7 @@ def apply(body: ApplyBody):
         "founder": {
             "name": body.founder_name or "",
             "handles": {
-                "github": body.github_handle or "",
+                "github": github,
                 "twitter": body.twitter or "",
                 "linkedin": body.linkedin or "",
             },
@@ -876,6 +891,75 @@ def put_thesis(body: Any = Body(...)):
         saved = one(sb.table("thesis").insert(row))
     trace_from_body(body, None, "enrich")
     return saved
+
+
+# ── job runs (durable progress for long pipeline jobs) ─────────────────────
+# migration_03 adds job_runs. Same deploy-order rule as `origin`: probe for the
+# table and degrade to a no-op rather than 500ing every progress update.
+_jobs_table: Dict[str, Any] = {"present": None, "checked_at": 0.0}
+_JOBS_PROBE_TTL = 60.0
+
+
+def has_jobs_table() -> bool:
+    now = time.monotonic()
+    if _jobs_table["present"] is None or now - _jobs_table["checked_at"] > _JOBS_PROBE_TTL:
+        try:
+            retry(sb.table("job_runs").select("id").limit(1).execute)
+            _jobs_table["present"] = True
+        except Exception:  # noqa: BLE001
+            _jobs_table["present"] = False
+        _jobs_table["checked_at"] = now
+    return bool(_jobs_table["present"])
+
+
+@app.post("/jobs")
+def create_job(body: Any = Body(...)):
+    """Open a job run. Returns the row (with its id) so the worker can PATCH it."""
+    if not has_jobs_table():
+        raise HTTPException(503, "job_runs unavailable — run migration_03.sql")
+    body = body if isinstance(body, dict) else {}
+    row = {
+        "id": str(uuid.uuid4()),
+        "kind": body.get("kind") or "rescreen",
+        "state": "running",
+        "dry_run": bool(body.get("dry_run")),
+        "total": int(body.get("total") or 0),
+        "done": 0,
+        "changes": [],
+        "started_at": now_iso(),
+    }
+    return one(sb.table("job_runs").insert(row))
+
+
+@app.patch("/jobs/{job_id}")
+def update_job(job_id: str, body: Any = Body(...)):
+    """Progress update. Only the fields a worker owns are writable."""
+    if not has_jobs_table():
+        raise HTTPException(503, "job_runs unavailable — run migration_03.sql")
+    body = body if isinstance(body, dict) else {}
+    patch = {
+        k: v
+        for k, v in body.items()
+        if k in ("state", "total", "done", "current", "changes", "error", "finished_at")
+    }
+    if not patch:
+        raise HTTPException(400, "nothing to update")
+    if patch.get("state") in ("finished", "failed"):
+        patch.setdefault("finished_at", now_iso())
+    updated = one(sb.table("job_runs").update(patch).eq("id", job_id))
+    if not updated:
+        raise HTTPException(404, f"job {job_id} not found")
+    return updated
+
+
+@app.get("/jobs/latest")
+def latest_job():
+    """Most recent run. This is what the UI falls back to when the intelligence
+    service is asleep and its in-memory progress is gone."""
+    if not has_jobs_table():
+        return {"state": "idle"}
+    found = one(sb.table("job_runs").select("*").order("started_at", desc=True).limit(1))
+    return found or {"state": "idle"}
 
 
 @app.get("/health")

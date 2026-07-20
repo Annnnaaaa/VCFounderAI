@@ -90,6 +90,33 @@ def _now() -> str:
     return datetime.now(timezone.utc).isoformat()
 
 
+# ── durable mirror of the job (survives this service being restarted) ───────
+# In-memory state is the fast path; the Spine's job_runs table is the record
+# that outlives a free-tier spin-down mid-run.
+def _job_open(kind: str, total: int, dry_run: bool) -> Optional[str]:
+    try:
+        r = _requests.post(
+            f"{spine.SPINE_URL}/jobs",
+            json={"kind": kind, "total": total, "dry_run": dry_run},
+            timeout=spine.TIMEOUT,
+        )
+        r.raise_for_status()
+        return r.json().get("id")
+    except Exception:  # noqa: BLE001 — progress reporting must never break the run
+        return None
+
+
+def _job_sync(job_id: Optional[str], patch: Dict[str, Any]) -> None:
+    if not job_id:
+        return
+    try:
+        _requests.patch(
+            f"{spine.SPINE_URL}/jobs/{job_id}", json=patch, timeout=spine.TIMEOUT
+        )
+    except Exception:  # noqa: BLE001
+        pass
+
+
 def _outcome_label(opportunity_id: str) -> str:
     """Post-run status of a row, mapped to a word the UI can show."""
     try:
@@ -111,6 +138,8 @@ def _outcome_label(opportunity_id: str) -> str:
 
 def _rescreen_worker(opps: List[Dict[str, Any]], dry_run: bool) -> None:
     changes: List[Dict[str, str]] = []
+    job_id = _job_open("rescreen", len(opps), dry_run)
+    _job["job_id"] = job_id
     try:
         thesis = spine.get_thesis()
         for o in opps:
@@ -159,6 +188,8 @@ def _rescreen_worker(opps: List[Dict[str, Any]], dry_run: bool) -> None:
                                 "to": "error", "reason": str(e)[:200]})
             _job["done"] = _job.get("done", 0) + 1
             _job["changes"] = changes
+            _job_sync(job_id, {"done": _job["done"], "changes": changes,
+                               "current": _job.get("current")})
         _job["state"] = "finished"
     except Exception as e:  # noqa: BLE001
         _job["state"] = "failed"
@@ -166,6 +197,10 @@ def _rescreen_worker(opps: List[Dict[str, Any]], dry_run: bool) -> None:
     finally:
         _job["current"] = None
         _job["finished_at"] = _now()
+        _job_sync(job_id, {"state": _job["state"], "done": _job.get("done", 0),
+                           "changes": changes, "current": None,
+                           "error": _job.get("error"),
+                           "finished_at": _job["finished_at"]})
 
 
 @app.post("/rescreen")
@@ -197,6 +232,63 @@ def rescreen(dry_run: bool = False):
 @app.get("/rescreen/status")
 def rescreen_status():
     return _job
+
+
+def _analyze_worker(oid: str, name: str) -> None:
+    job_id = _job_open("analyze", 1, False)
+    _job["job_id"] = job_id
+    changes: List[Dict[str, str]] = []
+    try:
+        _job["current"] = {"id": oid, "company": name, "phase": "full analysis"}
+        _job_sync(job_id, {"current": _job["current"]})
+        process.process(oid)
+        changes = [{"id": oid, "company": name, "from": "requested",
+                    "to": _outcome_label(oid), "reason": "analysis requested manually"}]
+        _job["state"] = "finished"
+    except Exception as e:  # noqa: BLE001
+        changes = [{"id": oid, "company": name, "from": "requested",
+                    "to": "error", "reason": str(e)[:200]}]
+        _job["state"] = "failed"
+        _job["error"] = str(e)
+    finally:
+        _job["done"] = 1
+        _job["changes"] = changes
+        _job["current"] = None
+        _job["finished_at"] = _now()
+        _job_sync(job_id, {"state": _job["state"], "done": 1, "changes": changes,
+                           "current": None, "error": _job.get("error"),
+                           "finished_at": _job["finished_at"]})
+
+
+@app.post("/analyze/{opportunity_id}")
+def analyze_one(opportunity_id: str):
+    """Run the full pipeline on ONE opportunity, in the background.
+
+    /process/{id} does the same thing synchronously, but a deck-vision run plus
+    verification plus a memo takes minutes — long enough that the browser gives
+    up first. This returns immediately and reports through the same job status
+    the re-screen uses, so the UI narrates both the same way.
+    """
+    with _job_lock:
+        if _job.get("state") == "running":
+            raise HTTPException(409, "a job is already running")
+        try:
+            r = _requests.get(
+                f"{spine.SPINE_URL}/opportunities/{opportunity_id}/bundle",
+                timeout=spine.TIMEOUT,
+            )
+            r.raise_for_status()
+            opp = r.json().get("opportunity") or {}
+        except Exception as e:  # noqa: BLE001
+            raise HTTPException(404, f"opportunity {opportunity_id} not reachable: {e}")
+        name = (opp.get("company") or {}).get("name") or "(untitled)"
+        _job.clear()
+        _job.update({"state": "running", "kind": "analyze", "dry_run": False,
+                     "total": 1, "done": 0, "changes": [], "current": None,
+                     "started_at": _now()})
+        threading.Thread(target=_analyze_worker, args=(opportunity_id, name),
+                         daemon=True).start()
+    return {"started": True, "opportunity_id": opportunity_id, "company": name}
 
 
 # ───────────────────────────── NL query ─────────────────────────────────────
